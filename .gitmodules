@@ -1,0 +1,3 @@
+[submodule "Modules/breadwallet-core"]
+	path = Modules/breadwallet-core
+	url = https://github.com/Jenova7/breadwallet-core.git
