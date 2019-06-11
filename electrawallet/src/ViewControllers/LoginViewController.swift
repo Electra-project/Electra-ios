@@ -52,8 +52,8 @@ class LoginViewController: UIViewController, Subscriber, Trackable {
     private var pinPadPottom: NSLayoutConstraint?
     private var topControlTop: NSLayoutConstraint?
     private var unlockTimer: Timer?
-    private let pinPadBackground = MotionGradientView()
-    private let logoBackground = MotionGradientView()
+    private let pinPadBackground = UIView()
+    private let logoBackground = UIView()
     private var hasAttemptedToShowBiometrics = false
     private let lockedOverlay = UIVisualEffectView()
     private var isResetting = false
@@ -121,8 +121,8 @@ class LoginViewController: UIViewController, Subscriber, Trackable {
     private func addSubviews() {
         view.addSubview(backgroundView)
         view.addSubview(pinViewContainer)
-        view.addSubview(logo)
-        //logoBackground.addSubview(logo)
+        view.addSubview(logoBackground)
+        logoBackground.addSubview(logo)
         if keyMaster != nil {
             view.addSubview(pinPadBackground)
         } else {
@@ -132,7 +132,9 @@ class LoginViewController: UIViewController, Subscriber, Trackable {
 
     private func addConstraints() {
         backgroundView.constrain(toSuperviewEdges: nil)
-        backgroundView.backgroundColor = .darkBackground
+        //backgroundView.backgroundColor = .darkBackground
+        
+        backgroundView.backgroundColor = UIColor(patternImage: UIImage(named:"Background")!)
         pinViewContainer.constrain(toSuperviewEdges: nil)
         topControlTop = logoBackground.topAnchor.constraint(equalTo: view.topAnchor,
                                                             constant: topControlHeight
@@ -155,6 +157,7 @@ class LoginViewController: UIViewController, Subscriber, Trackable {
                 pinPadPottom ])
             addChild(pinPad)
             pinPadBackground.addSubview(pinPad.view)
+            pinPadBackground.backgroundColor = .clear
             pinPad.view.constrain(toSuperviewEdges: nil)
             pinPad.didMove(toParent: self)
         } else {
