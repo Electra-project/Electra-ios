@@ -14,16 +14,16 @@ JNI_OBJS=$(JNI_SRCS:.c=.o)
 # JNI Header Files that we are interest in keeping (that are not empty)
 JNI_HDRS=$(JNI_SRCS:.c=.h)
 
-JAVA_SRCS=../../Java/root/com/breadwallet/core/BRCoreJniReference.java \
-	root/com/breadwallet/core/ethereum/BREthereumAccount.java \
-	root/com/breadwallet/core/ethereum/BREthereumAmount.java \
-	root/com/breadwallet/core/ethereum/BREthereumLightNode.java \
-	root/com/breadwallet/core/ethereum/BREthereumNetwork.java \
-	root/com/breadwallet/core/ethereum/BREthereumToken.java \
-	root/com/breadwallet/core/ethereum/BREthereumTransaction.java \
-	root/com/breadwallet/core/ethereum/BREthereumBlock.java \
-	root/com/breadwallet/core/ethereum/BREthereumWallet.java \
-	root/com/breadwallet/core/ethereum/test/BREthereumLightNodeClientTest.java \
+JAVA_SRCS=../../Java/root/com/electraproject/core/BRCoreJniReference.java \
+	root/com/electraproject/core/ethereum/BREthereumAccount.java \
+	root/com/electraproject/core/ethereum/BREthereumAmount.java \
+	root/com/electraproject/core/ethereum/BREthereumLightNode.java \
+	root/com/electraproject/core/ethereum/BREthereumNetwork.java \
+	root/com/electraproject/core/ethereum/BREthereumToken.java \
+	root/com/electraproject/core/ethereum/BREthereumTransaction.java \
+	root/com/electraproject/core/ethereum/BREthereumBlock.java \
+	root/com/electraproject/core/ethereum/BREthereumWallet.java \
+	root/com/electraproject/core/ethereum/test/BREthereumLightNodeClientTest.java \
 
 JAVA_OBJS=$(JAVA_SRCS:.java=.class)
 
@@ -89,12 +89,12 @@ compile: $(JNI_LIB) java_comp
 
 test: $(JNI_LIB) java_comp
 	java -Xss1m -Dlight.node.test -classpath build -Djava.library.path=. \
-		 com.breadwallet.core.ethereum.test.BREthereumLightNodeClientTest $(ARGS) # -D.
+		 com.electraproject.core.ethereum.test.BREthereumLightNodeClientTest $(ARGS) # -D.
 
 debug: $(JNI_LIB) java_comp
 	java -Xss1m -Xdebug -Xrunjdwp:transport=dt_socket,address=8008,server=y,suspend=n \
 		 -Dlight.node.test -classpath build -Djava.library.path=. \
-		 com.breadwallet.core.ethereum.test.BREthereumLightNodeClientTest $(ARGS) # -D.
+		 com.electraproject.core.ethereum.test.BREthereumLightNodeClientTest $(ARGS) # -D.
 
 $(JNI_LIB): $(JNI_OBJS) $(CORE_OBJS)
 	cc -dynamiclib -o $(JNI_LIB) $(JNI_OBJS) $(CORE_OBJS)
@@ -104,9 +104,9 @@ java_comp:	FORCE
 	javac -d build $(JAVA_SRCS)
 
 jni_hdr: java_comp
-	@(cd build/com/breadwallet/core/ethereum; \
+	@(cd build/com/electraproject/core/ethereum; \
 	  for class in BREthereum*.class; do \
-	      javah -jni -d $(DIR) -classpath $(DIR)/build com.breadwallet.core.ethereum.$${class%%.class}; \
+	      javah -jni -d $(DIR) -classpath $(DIR)/build com.electraproject.core.ethereum.$${class%%.class}; \
 	  done)
 	@rm -f com_breadwallet_core_ethereum_BREthereum*_*.h .h
 
@@ -133,9 +133,9 @@ FORCE:
 # 	java -Djava.library.path=/Users/ebg Foo
 #
 
-# (cd ${APP}/app/build/intermediates/classes/debug/com/breadwallet/core; for class in BRCore*.class; do \
+# (cd ${APP}/app/build/intermediates/classes/debug/com/electraproject/core; for class in BRCore*.class; do \
 #     javah -jni -d ${APP}/app/src/main/cpp/breadwallet-core/Java/ \
 #	-classpath ${APP}/app/build/intermediates/classes/debug/ \
-#	com.breadwallet.core.${class%%.class}; \
+#	com.electraproject.core.${class%%.class}; \
 #	done)
 # 15RBcXQMTfebbAfUFeBbcDfs1fVvPayWdU

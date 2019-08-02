@@ -45,7 +45,7 @@ static char *JNI_TRANSACTION_IS_REGISTERED_TYPE = "Z";
  * Signature: ()[B
  */
 JNIEXPORT jbyteArray JNICALL
-Java_com_breadwallet_core_BRCoreTransaction_getHash
+Java_com_electraproject_core_BRCoreTransaction_getHash
         (JNIEnv *env, jobject thisObject) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference (env, thisObject);
 
@@ -63,7 +63,7 @@ Java_com_breadwallet_core_BRCoreTransaction_getHash
  * Method:    getVersion
  * Signature: ()J
  */
-JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransaction_getVersion
+JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCoreTransaction_getVersion
         (JNIEnv *env, jobject thisObject) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference (env, thisObject);
     return (jlong) transaction->version;
@@ -72,9 +72,9 @@ JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransaction_getVersion
 /*
  * Class:     com_breadwallet_core_BRCoreTransaction
  * Method:    getInputs
- * Signature: ()[Lcom/breadwallet/core/BRCoreTransactionInput;
+ * Signature: ()[Lcom/electraproject/core/BRCoreTransactionInput;
  */
-JNIEXPORT jobjectArray JNICALL Java_com_breadwallet_core_BRCoreTransaction_getInputs
+JNIEXPORT jobjectArray JNICALL Java_com_electraproject_core_BRCoreTransaction_getInputs
         (JNIEnv *env, jobject thisObject) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference (env, thisObject);
 
@@ -98,9 +98,9 @@ JNIEXPORT jobjectArray JNICALL Java_com_breadwallet_core_BRCoreTransaction_getIn
 /*
  * Class:     com_breadwallet_core_BRCoreTransaction
  * Method:    getOutputs
- * Signature: ()[Lcom/breadwallet/core/BRCoreTransactionOutput;
+ * Signature: ()[Lcom/electraproject/core/BRCoreTransactionOutput;
  */
-JNIEXPORT jobjectArray JNICALL Java_com_breadwallet_core_BRCoreTransaction_getOutputs
+JNIEXPORT jobjectArray JNICALL Java_com_electraproject_core_BRCoreTransaction_getOutputs
         (JNIEnv *env, jobject thisObject) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference (env, thisObject);
 
@@ -127,7 +127,7 @@ JNIEXPORT jobjectArray JNICALL Java_com_breadwallet_core_BRCoreTransaction_getOu
  * Method:    getLockTime
  * Signature: ()J
  */
-JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransaction_getLockTime
+JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCoreTransaction_getLockTime
         (JNIEnv *env, jobject thisObject) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference (env, thisObject);
     return (jlong) transaction->lockTime;
@@ -139,7 +139,7 @@ JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransaction_getLockTime
  * Signature: (J)V
  */
 JNIEXPORT void JNICALL
-Java_com_breadwallet_core_BRCoreTransaction_setLockTime
+Java_com_electraproject_core_BRCoreTransaction_setLockTime
         (JNIEnv *env, jobject thisObject, jlong lockTime) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference (env, thisObject);
     transaction->lockTime = (uint32_t) lockTime;
@@ -150,7 +150,7 @@ Java_com_breadwallet_core_BRCoreTransaction_setLockTime
  * Method:    getBlockHeight
  * Signature: ()J
  */
-JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransaction_getBlockHeight
+JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCoreTransaction_getBlockHeight
         (JNIEnv *env, jobject thisObject) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference (env, thisObject);
     return (jlong) transaction->blockHeight;
@@ -162,7 +162,7 @@ JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransaction_getBlockHeig
  * Signature: ()J
  */
 JNIEXPORT jlong JNICALL
-Java_com_breadwallet_core_BRCoreTransaction_getTimestamp
+Java_com_electraproject_core_BRCoreTransaction_getTimestamp
         (JNIEnv *env, jobject thisObject) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference (env, thisObject);
     return (jlong) transaction->timestamp;
@@ -173,7 +173,7 @@ Java_com_breadwallet_core_BRCoreTransaction_getTimestamp
  * Method:    setTimestamp
  * Signature: (J)V
  */
-JNIEXPORT void JNICALL Java_com_breadwallet_core_BRCoreTransaction_setTimestamp
+JNIEXPORT void JNICALL Java_com_electraproject_core_BRCoreTransaction_setTimestamp
         (JNIEnv *env, jobject thisObject, jlong timestamp) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference (env, thisObject);
     transaction->timestamp = (uint32_t) timestamp;
@@ -185,7 +185,7 @@ JNIEXPORT void JNICALL Java_com_breadwallet_core_BRCoreTransaction_setTimestamp
  * Method:    serialize
  * Signature: ()[B
  */
-JNIEXPORT jbyteArray JNICALL Java_com_breadwallet_core_BRCoreTransaction_serialize
+JNIEXPORT jbyteArray JNICALL Java_com_electraproject_core_BRCoreTransaction_serialize
         (JNIEnv *env, jobject thisObject) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference (env, thisObject);
 
@@ -204,10 +204,10 @@ JNIEXPORT jbyteArray JNICALL Java_com_breadwallet_core_BRCoreTransaction_seriali
 /*
  * Class:     com_breadwallet_core_BRCoreTransaction
  * Method:    addInput
- * Signature: (Lcom/breadwallet/core/BRCoreTransactionInput;)V
+ * Signature: (Lcom/electraproject/core/BRCoreTransactionInput;)V
  */
 JNIEXPORT void JNICALL
-Java_com_breadwallet_core_BRCoreTransaction_addInput
+Java_com_electraproject_core_BRCoreTransaction_addInput
         (JNIEnv *env, jobject thisObject, jobject transactionInputObject) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference (env, thisObject);
     BRTxInput *input = (BRTxInput *) getJNIReference (env, transactionInputObject);
@@ -222,10 +222,10 @@ Java_com_breadwallet_core_BRCoreTransaction_addInput
 /*
  * Class:     com_breadwallet_core_BRCoreTransaction
  * Method:    addOutput
- * Signature: (Lcom/breadwallet/core/BRCoreTransactionOutput;)V
+ * Signature: (Lcom/electraproject/core/BRCoreTransactionOutput;)V
  */
 JNIEXPORT void JNICALL
-Java_com_breadwallet_core_BRCoreTransaction_addOutput
+Java_com_electraproject_core_BRCoreTransaction_addOutput
         (JNIEnv *env, jobject thisObject, jobject transactionOutputObject) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference(env, thisObject);
     BRTxOutput *output = (BRTxOutput *) getJNIReference(env, transactionOutputObject);
@@ -240,7 +240,7 @@ Java_com_breadwallet_core_BRCoreTransaction_addOutput
  * Method:    shuffleOutputs
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_breadwallet_core_BRCoreTransaction_shuffleOutputs
+JNIEXPORT void JNICALL Java_com_electraproject_core_BRCoreTransaction_shuffleOutputs
         (JNIEnv *env, jobject thisObject) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference (env, thisObject);
     BRTransactionShuffleOutputs (transaction);
@@ -251,7 +251,7 @@ JNIEXPORT void JNICALL Java_com_breadwallet_core_BRCoreTransaction_shuffleOutput
  * Method:    getSize
  * Signature: ()J
  */
-JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransaction_getSize
+JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCoreTransaction_getSize
         (JNIEnv *env, jobject thisObject) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference (env, thisObject);
     return (jlong) BRTransactionSize (transaction);
@@ -263,7 +263,7 @@ JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransaction_getSize
  * Signature: ()J
  */
 JNIEXPORT jlong JNICALL
-Java_com_breadwallet_core_BRCoreTransaction_getStandardFee
+Java_com_electraproject_core_BRCoreTransaction_getStandardFee
         (JNIEnv *env, jobject thisObject) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference (env, thisObject);
     return (jlong) BRTransactionStandardFee (transaction);
@@ -275,7 +275,7 @@ Java_com_breadwallet_core_BRCoreTransaction_getStandardFee
  * Signature: ()Z
  */
 JNIEXPORT jboolean JNICALL
-Java_com_breadwallet_core_BRCoreTransaction_isSigned
+Java_com_electraproject_core_BRCoreTransaction_isSigned
         (JNIEnv *env, jobject thisObject) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference (env, thisObject);
     assert (NULL != transaction);
@@ -285,10 +285,10 @@ Java_com_breadwallet_core_BRCoreTransaction_isSigned
 /*
  * Class:     com_breadwallet_core_BRCoreTransaction
  * Method:    sign
- * Signature: ([Lcom/breadwallet/core/BRCoreKey;I)V
+ * Signature: ([Lcom/electraproject/core/BRCoreKey;I)V
  */
 JNIEXPORT void JNICALL
-Java_com_breadwallet_core_BRCoreTransaction_sign
+Java_com_electraproject_core_BRCoreTransaction_sign
         (JNIEnv *env, jobject thisObject, jobjectArray keyObjectArray, jint forkId) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference (env, thisObject);
 
@@ -312,7 +312,7 @@ Java_com_breadwallet_core_BRCoreTransaction_sign
  * Method:    isStandard
  * Signature: ()Z
  */
-JNIEXPORT jboolean JNICALL Java_com_breadwallet_core_BRCoreTransaction_isStandard
+JNIEXPORT jboolean JNICALL Java_com_electraproject_core_BRCoreTransaction_isStandard
         (JNIEnv *env, jobject thisObject) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference (env, thisObject);
     return (jboolean) BRTransactionIsStandard (transaction);
@@ -323,7 +323,7 @@ JNIEXPORT jboolean JNICALL Java_com_breadwallet_core_BRCoreTransaction_isStandar
  * Method:    getReverseHash
  * Signature: ()Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_com_breadwallet_core_BRCoreTransaction_getReverseHash
+JNIEXPORT jstring JNICALL Java_com_electraproject_core_BRCoreTransaction_getReverseHash
         (JNIEnv *env, jobject thisObject) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference (env, thisObject);
 
@@ -337,7 +337,7 @@ JNIEXPORT jstring JNICALL Java_com_breadwallet_core_BRCoreTransaction_getReverse
  * Method:    getMinOutputAmount
  * Signature: ()J
  */
-JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransaction_getMinOutputAmount
+JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCoreTransaction_getMinOutputAmount
         (JNIEnv *env, jclass thisClass) {
     return TX_MIN_OUTPUT_AMOUNT;
 }
@@ -348,7 +348,7 @@ JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransaction_getMinOutput
  * Signature: ()V
  */
 JNIEXPORT void JNICALL
-Java_com_breadwallet_core_BRCoreTransaction_disposeNative
+Java_com_electraproject_core_BRCoreTransaction_disposeNative
         (JNIEnv *env, jobject thisObject) {
     BRTransaction *transaction = (BRTransaction *) getJNIReference (env, thisObject);
 
@@ -363,16 +363,16 @@ Java_com_breadwallet_core_BRCoreTransaction_disposeNative
  * Method:    initializeNative
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_breadwallet_core_BRCoreTransaction_initializeNative
+JNIEXPORT void JNICALL Java_com_electraproject_core_BRCoreTransaction_initializeNative
         (JNIEnv *env, jclass thisClass) {
-    transactionInputClass = (*env)->FindClass(env, "com/breadwallet/core/BRCoreTransactionInput");
+    transactionInputClass = (*env)->FindClass(env, "com/electraproject/core/BRCoreTransactionInput");
     assert (NULL != transactionInputClass);
     transactionInputClass = (*env)->NewGlobalRef (env, transactionInputClass);
 
     transactionInputConstructor = (*env)->GetMethodID(env, transactionInputClass, "<init>", "(J)V");
     assert (NULL != transactionInputConstructor);
 
-    transactionOutputClass = (*env)->FindClass(env, "com/breadwallet/core/BRCoreTransactionOutput");
+    transactionOutputClass = (*env)->FindClass(env, "com/electraproject/core/BRCoreTransactionOutput");
     assert(NULL != transactionOutputClass);
     transactionOutputClass = (*env)->NewGlobalRef (env, transactionOutputClass);
 
@@ -386,7 +386,7 @@ JNIEXPORT void JNICALL Java_com_breadwallet_core_BRCoreTransaction_initializeNat
  * Signature: ([BJJ)J
  */
 JNIEXPORT jlong JNICALL
-Java_com_breadwallet_core_BRCoreTransaction_createJniCoreTransaction
+Java_com_electraproject_core_BRCoreTransaction_createJniCoreTransaction
         (JNIEnv *env, jclass thisClass,
          jbyteArray transactionByteArray,
          jlong blockHeight,
@@ -411,7 +411,7 @@ Java_com_breadwallet_core_BRCoreTransaction_createJniCoreTransaction
  * Method:    createJniCoreTransactionSerialized
  * Signature: ([B)J
  */
-JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransaction_createJniCoreTransactionSerialized
+JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCoreTransaction_createJniCoreTransactionSerialized
         (JNIEnv *env, jclass thisClass, jbyteArray transactionByteArray) {
 
     // static native long createJniCoreTransaction (byte[] buffer, long blockHeight, long timeStamp);
@@ -427,7 +427,7 @@ JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransaction_createJniCor
  * Method:    createJniCoreTransactionEmpty
  * Signature: ()J
  */
-JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransaction_createJniCoreTransactionEmpty
+JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCoreTransaction_createJniCoreTransactionEmpty
         (JNIEnv *env, jclass thisClass) {
     return (jlong) BRTransactionNew();
 }

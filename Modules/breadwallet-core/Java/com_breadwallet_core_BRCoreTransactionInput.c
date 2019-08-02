@@ -33,7 +33,7 @@
  * Method:    createTransactionInput
  * Signature: ([BJJ[B[B[BJ)J
  */
-JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_createTransactionInput
+JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCoreTransactionInput_createTransactionInput
         (JNIEnv *env, jclass thisClass, jbyteArray hashByteArray, jlong index, jlong amount,
          jbyteArray scriptByteArray,
          jbyteArray signatureByteArray,
@@ -47,7 +47,7 @@ JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_createT
 
     input->txHash = UInt256Get((const void *) hashData);
     input->index = (uint32_t) index;
-    input->amount = (uint32_t) amount;
+    input->amount = (uint64_t) amount;
 
     // script
     input->script = NULL;
@@ -67,15 +67,6 @@ JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_createT
              : (*env)->GetByteArrayElements(env, signatureByteArray, 0));
     BRTxInputSetSignature(input, signature, signatureLen);
 
-    // witness
-    input->witness = NULL;
-    size_t witnessLen = (size_t) (*env)->GetArrayLength(env, witnessByteArray);
-    const uint8_t *witness = (const uint8_t *)
-            (0 == witnessLen
-             ? NULL
-             : (*env)->GetByteArrayElements(env, witnessByteArray, 0));
-    BRTxInputSetWitness(input, witness, witnessLen);
-
     input->sequence = (uint32_t) (sequence == -1 ? TXIN_SEQUENCE : sequence);
 
     return (jlong) input;
@@ -86,7 +77,7 @@ JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_createT
  * Method:    getAddress
  * Signature: ()Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_getAddress
+JNIEXPORT jstring JNICALL Java_com_electraproject_core_BRCoreTransactionInput_getAddress
         (JNIEnv *env, jobject thisObject) {
     BRTxInput *input = (BRTxInput *) getJNIReference (env, thisObject);
     
@@ -103,7 +94,7 @@ JNIEXPORT jstring JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_getAd
  * Method:    setAddress
  * Signature: (Ljava/lang/String;)V
  */
-JNIEXPORT void JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_setAddress
+JNIEXPORT void JNICALL Java_com_electraproject_core_BRCoreTransactionInput_setAddress
         (JNIEnv *env, jobject thisObject , jstring addressObject) {
     BRTxInput *input = (BRTxInput *) getJNIReference (env, thisObject);
     
@@ -123,7 +114,7 @@ JNIEXPORT void JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_setAddre
  * Method:    getHash
  * Signature: ()[B
  */
-JNIEXPORT jbyteArray JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_getHash
+JNIEXPORT jbyteArray JNICALL Java_com_electraproject_core_BRCoreTransactionInput_getHash
         (JNIEnv *env, jobject thisObject) {
     BRTxInput *input = (BRTxInput *) getJNIReference (env, thisObject);
 
@@ -140,7 +131,7 @@ JNIEXPORT jbyteArray JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_ge
  * Method:    getIndex
  * Signature: ()J
  */
-JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_getIndex
+JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCoreTransactionInput_getIndex
         (JNIEnv *env, jobject thisObject) {
     BRTxInput *input = (BRTxInput *) getJNIReference (env, thisObject);
     return (jlong) input->index;
@@ -151,7 +142,7 @@ JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_getInde
  * Method:    getAmount
  * Signature: ()J
  */
-JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_getAmount
+JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCoreTransactionInput_getAmount
         (JNIEnv *env, jobject thisObject) {
     BRTxInput *input = (BRTxInput *) getJNIReference (env, thisObject);
     return (jlong) input->amount;
@@ -162,7 +153,7 @@ JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_getAmou
  * Method:    getScript
  * Signature: ()[B
  */
-JNIEXPORT jbyteArray JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_getScript
+JNIEXPORT jbyteArray JNICALL Java_com_electraproject_core_BRCoreTransactionInput_getScript
         (JNIEnv *env, jobject thisObject) {
     BRTxInput *input = (BRTxInput *) getJNIReference (env, thisObject);
     
@@ -178,7 +169,7 @@ JNIEXPORT jbyteArray JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_ge
  * Method:    getSignature
  * Signature: ()[B
  */
-JNIEXPORT jbyteArray JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_getSignature
+JNIEXPORT jbyteArray JNICALL Java_com_electraproject_core_BRCoreTransactionInput_getSignature
         (JNIEnv *env, jobject thisObject) {
     BRTxInput *input = (BRTxInput *) getJNIReference (env, thisObject);
 
@@ -194,7 +185,7 @@ JNIEXPORT jbyteArray JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_ge
  * Method:    getSequence
  * Signature: ()J
  */
-JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCoreTransactionInput_getSequence
+JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCoreTransactionInput_getSequence
         (JNIEnv *env, jobject thisObject) {
     BRTxInput *input = (BRTxInput *) getJNIReference (env, thisObject);
     return (jlong) input->sequence;

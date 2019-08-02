@@ -23,6 +23,7 @@
 //  THE SOFTWARE.
 
 #include "BRCrypto.h"
+#include "nist5.h"
 #include <stdlib.h>
 #include <string.h>
 #include <assert.h>
@@ -1193,4 +1194,8 @@ void BRScrypt(void *dk, size_t dkLen, const void *pw, size_t pwLen, const void *
     mem_clean(z, sizeof(z));
     mem_clean(v, 128*r*n);
     free(v);
+}
+
+void BRNist5(const char* input, char* output) {
+    nist5_hash(input, output);
 }

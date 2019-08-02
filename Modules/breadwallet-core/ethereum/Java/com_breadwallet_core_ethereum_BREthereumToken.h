@@ -12,7 +12,7 @@ extern "C" {
  * Method:    getAddress
  * Signature: ()Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_com_breadwallet_core_ethereum_BREthereumToken_getAddress
+JNIEXPORT jstring JNICALL Java_com_electraproject_core_ethereum_BREthereumToken_getAddress
   (JNIEnv *, jobject);
 
 /*
@@ -20,7 +20,7 @@ JNIEXPORT jstring JNICALL Java_com_breadwallet_core_ethereum_BREthereumToken_get
  * Method:    getSymbol
  * Signature: ()Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_com_breadwallet_core_ethereum_BREthereumToken_getSymbol
+JNIEXPORT jstring JNICALL Java_com_electraproject_core_ethereum_BREthereumToken_getSymbol
   (JNIEnv *, jobject);
 
 /*
@@ -28,7 +28,7 @@ JNIEXPORT jstring JNICALL Java_com_breadwallet_core_ethereum_BREthereumToken_get
  * Method:    getName
  * Signature: ()Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_com_breadwallet_core_ethereum_BREthereumToken_getName
+JNIEXPORT jstring JNICALL Java_com_electraproject_core_ethereum_BREthereumToken_getName
   (JNIEnv *, jobject);
 
 /*
@@ -36,7 +36,7 @@ JNIEXPORT jstring JNICALL Java_com_breadwallet_core_ethereum_BREthereumToken_get
  * Method:    getDescription
  * Signature: ()Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_com_breadwallet_core_ethereum_BREthereumToken_getDescription
+JNIEXPORT jstring JNICALL Java_com_electraproject_core_ethereum_BREthereumToken_getDescription
   (JNIEnv *, jobject);
 
 /*
@@ -44,7 +44,7 @@ JNIEXPORT jstring JNICALL Java_com_breadwallet_core_ethereum_BREthereumToken_get
  * Method:    getDecimals
  * Signature: ()I
  */
-JNIEXPORT jint JNICALL Java_com_breadwallet_core_ethereum_BREthereumToken_getDecimals
+JNIEXPORT jint JNICALL Java_com_electraproject_core_ethereum_BREthereumToken_getDecimals
   (JNIEnv *, jobject);
 
 /*
@@ -52,7 +52,7 @@ JNIEXPORT jint JNICALL Java_com_breadwallet_core_ethereum_BREthereumToken_getDec
  * Method:    jniGetTokenBRD
  * Signature: ()J
  */
-JNIEXPORT jlong JNICALL Java_com_breadwallet_core_ethereum_BREthereumToken_jniGetTokenBRD
+JNIEXPORT jlong JNICALL Java_com_electraproject_core_ethereum_BREthereumToken_jniGetTokenBRD
   (JNIEnv *, jclass);
 
 /*
@@ -60,7 +60,7 @@ JNIEXPORT jlong JNICALL Java_com_breadwallet_core_ethereum_BREthereumToken_jniGe
  * Method:    jniTokenAll
  * Signature: ()[J
  */
-JNIEXPORT jlongArray JNICALL Java_com_breadwallet_core_ethereum_BREthereumToken_jniTokenAll
+JNIEXPORT jlongArray JNICALL Java_com_electraproject_core_ethereum_BREthereumToken_jniTokenAll
   (JNIEnv *, jclass);
 
 #ifdef __cplusplus

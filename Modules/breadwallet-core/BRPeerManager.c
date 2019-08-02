@@ -1118,13 +1118,6 @@ static int _BRPeerManagerVerifyBlock(BRPeerManager *manager, BRMerkleBlock *bloc
         }
     }
 
-    // verify block difficulty
-    if (r && ! manager->params->verifyDifficulty(block, manager->blocks)) {
-        peer_log(peer, "relayed block with invalid difficulty target %x, blockHash: %s", block->target,
-                 u256hex(block->blockHash));
-        r = 0;
-    }
-    
     if (r) {
         BRMerkleBlock *checkpoint = BRSetGet(manager->checkpoints, block);
 
@@ -1224,12 +1217,6 @@ static void _peerRelayedBlock(void *info, BRMerkleBlock *block)
             BRSetAdd(manager->orphans, block); // BUG: limit total orphans to avoid memory exhaustion attack
             manager->lastOrphan = block;
         }
-    }
-    else if (! _BRPeerManagerVerifyBlock(manager, block, prev, peer)) { // block is invalid
-        peer_log(peer, "relayed invalid block");
-        BRMerkleBlockFree(block);
-        block = NULL;
-        _BRPeerManagerPeerMisbehavin(manager, peer);
     }
     else if (UInt256Eq(block->prevBlock, manager->lastBlock->blockHash)) { // new block extends main chain
         if ((block->height % 500) == 0 || txCount > 0 || block->height >= BRPeerLastBlock(peer)) {

@@ -12,7 +12,7 @@ extern "C" {
  * Method:    getCustomerMemo
  * Signature: ()Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_com_breadwallet_core_BRCorePaymentProtocolPaymentACK_getCustomerMemo
+JNIEXPORT jstring JNICALL Java_com_electraproject_core_BRCorePaymentProtocolPaymentACK_getCustomerMemo
   (JNIEnv *, jobject);
 
 /*
@@ -20,23 +20,23 @@ JNIEXPORT jstring JNICALL Java_com_breadwallet_core_BRCorePaymentProtocolPayment
  * Method:    getMerchantData
  * Signature: ()[B
  */
-JNIEXPORT jbyteArray JNICALL Java_com_breadwallet_core_BRCorePaymentProtocolPaymentACK_getMerchantData
+JNIEXPORT jbyteArray JNICALL Java_com_electraproject_core_BRCorePaymentProtocolPaymentACK_getMerchantData
   (JNIEnv *, jobject);
 
 /*
  * Class:     com_breadwallet_core_BRCorePaymentProtocolPaymentACK
  * Method:    getTransactions
- * Signature: ()[Lcom/breadwallet/core/BRCoreTransaction;
+ * Signature: ()[Lcom/electraproject/core/BRCoreTransaction;
  */
-JNIEXPORT jobjectArray JNICALL Java_com_breadwallet_core_BRCorePaymentProtocolPaymentACK_getTransactions
+JNIEXPORT jobjectArray JNICALL Java_com_electraproject_core_BRCorePaymentProtocolPaymentACK_getTransactions
   (JNIEnv *, jobject);
 
 /*
  * Class:     com_breadwallet_core_BRCorePaymentProtocolPaymentACK
  * Method:    getRefundTo
- * Signature: ()[Lcom/breadwallet/core/BRCoreTransactionOutput;
+ * Signature: ()[Lcom/electraproject/core/BRCoreTransactionOutput;
  */
-JNIEXPORT jobjectArray JNICALL Java_com_breadwallet_core_BRCorePaymentProtocolPaymentACK_getRefundTo
+JNIEXPORT jobjectArray JNICALL Java_com_electraproject_core_BRCorePaymentProtocolPaymentACK_getRefundTo
   (JNIEnv *, jobject);
 
 /*
@@ -44,7 +44,7 @@ JNIEXPORT jobjectArray JNICALL Java_com_breadwallet_core_BRCorePaymentProtocolPa
  * Method:    getMerchantMemo
  * Signature: ()Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_com_breadwallet_core_BRCorePaymentProtocolPaymentACK_getMerchantMemo
+JNIEXPORT jstring JNICALL Java_com_electraproject_core_BRCorePaymentProtocolPaymentACK_getMerchantMemo
   (JNIEnv *, jobject);
 
 /*
@@ -52,7 +52,7 @@ JNIEXPORT jstring JNICALL Java_com_breadwallet_core_BRCorePaymentProtocolPayment
  * Method:    createPaymentProtocolPaymentACK
  * Signature: ([B)J
  */
-JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCorePaymentProtocolPaymentACK_createPaymentProtocolPaymentACK
+JNIEXPORT jlong JNICALL Java_com_electraproject_core_BRCorePaymentProtocolPaymentACK_createPaymentProtocolPaymentACK
   (JNIEnv *, jclass, jbyteArray);
 
 /*
@@ -60,7 +60,7 @@ JNIEXPORT jlong JNICALL Java_com_breadwallet_core_BRCorePaymentProtocolPaymentAC
  * Method:    serialize
  * Signature: ()[B
  */
-JNIEXPORT jbyteArray JNICALL Java_com_breadwallet_core_BRCorePaymentProtocolPaymentACK_serialize
+JNIEXPORT jbyteArray JNICALL Java_com_electraproject_core_BRCorePaymentProtocolPaymentACK_serialize
   (JNIEnv *, jobject);
 
 /*
@@ -68,7 +68,7 @@ JNIEXPORT jbyteArray JNICALL Java_com_breadwallet_core_BRCorePaymentProtocolPaym
  * Method:    disposeNative
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_breadwallet_core_BRCorePaymentProtocolPaymentACK_disposeNative
+JNIEXPORT void JNICALL Java_com_electraproject_core_BRCorePaymentProtocolPaymentACK_disposeNative
   (JNIEnv *, jobject);
 
 #ifdef __cplusplus

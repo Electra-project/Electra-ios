@@ -41,7 +41,7 @@ static const char *tokenBRDAddress = "0x558ec3152e2eb2174905cd19aea4e34a23de9ad6
  * Signature: ()Ljava/lang/String;
  */
 JNIEXPORT jstring JNICALL
-Java_com_breadwallet_core_ethereum_BREthereumToken_getAddress
+Java_com_electraproject_core_ethereum_BREthereumToken_getAddress
         (JNIEnv *env, jobject thisObject) {
     BREthereumToken token = (BREthereumToken) getJNIReference(env, thisObject);
     return (*env)->NewStringUTF(env, tokenGetAddress(token));
@@ -53,7 +53,7 @@ Java_com_breadwallet_core_ethereum_BREthereumToken_getAddress
  * Signature: ()Ljava/lang/String;
  */
 JNIEXPORT jstring JNICALL
-Java_com_breadwallet_core_ethereum_BREthereumToken_getSymbol
+Java_com_electraproject_core_ethereum_BREthereumToken_getSymbol
         (JNIEnv *env, jobject thisObject) {
     BREthereumToken token = (BREthereumToken) getJNIReference(env, thisObject);
     return (*env)->NewStringUTF(env, tokenGetSymbol(token));
@@ -65,7 +65,7 @@ Java_com_breadwallet_core_ethereum_BREthereumToken_getSymbol
  * Signature: ()Ljava/lang/String;
  */
 JNIEXPORT jstring JNICALL
-Java_com_breadwallet_core_ethereum_BREthereumToken_getName
+Java_com_electraproject_core_ethereum_BREthereumToken_getName
         (JNIEnv *env, jobject thisObject)  {
     BREthereumToken token = (BREthereumToken) getJNIReference(env, thisObject);
     return (*env)->NewStringUTF(env, tokenGetName(token));
@@ -77,7 +77,7 @@ Java_com_breadwallet_core_ethereum_BREthereumToken_getName
  * Signature: ()Ljava/lang/String;
  */
 JNIEXPORT jstring JNICALL
-Java_com_breadwallet_core_ethereum_BREthereumToken_getDescription
+Java_com_electraproject_core_ethereum_BREthereumToken_getDescription
         (JNIEnv *env, jobject thisObject) {
     BREthereumToken token = (BREthereumToken) getJNIReference(env, thisObject);
     return (*env)->NewStringUTF(env, tokenGetDescription(token));
@@ -89,7 +89,7 @@ Java_com_breadwallet_core_ethereum_BREthereumToken_getDescription
  * Signature: ()I
  */
 JNIEXPORT jint JNICALL
-Java_com_breadwallet_core_ethereum_BREthereumToken_getDecimals
+Java_com_electraproject_core_ethereum_BREthereumToken_getDecimals
         (JNIEnv *env, jobject thisObject) {
     BREthereumToken token = (BREthereumToken) getJNIReference(env, thisObject);
     return tokenGetDecimals (token);
@@ -101,7 +101,7 @@ Java_com_breadwallet_core_ethereum_BREthereumToken_getDecimals
  * Signature: ()J
  */
 JNIEXPORT jlong JNICALL
-Java_com_breadwallet_core_ethereum_BREthereumToken_jniGetTokenBRD
+Java_com_electraproject_core_ethereum_BREthereumToken_jniGetTokenBRD
         (JNIEnv *env, jclass thisClass) {
     return (jlong) tokenLookup(tokenBRDAddress);
 }
@@ -112,7 +112,7 @@ Java_com_breadwallet_core_ethereum_BREthereumToken_jniGetTokenBRD
  * Signature: ()[J
  */
 JNIEXPORT jlongArray JNICALL
-Java_com_breadwallet_core_ethereum_BREthereumToken_jniTokenAll
+Java_com_electraproject_core_ethereum_BREthereumToken_jniTokenAll
         (JNIEnv *env, jclass thisClass) {
     int count = tokenCount();
 

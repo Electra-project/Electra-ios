@@ -47,8 +47,8 @@
 #define MAX_MSG_LENGTH     0x02000000
 #define MAX_GETDATA_HASHES 50000
 #define ENABLED_SERVICES   0ULL  // we don't provide full blocks to remote nodes
-#define PROTOCOL_VERSION   70013
-#define MIN_PROTO_VERSION  70002 // peers earlier than this protocol version not supported (need v0.9 txFee relay rules)
+#define PROTOCOL_VERSION   70916
+#define MIN_PROTO_VERSION  70916 // peers earlier than this protocol version not supported (need v0.9 txFee relay rules)
 #define LOCAL_HOST         ((UInt128) { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xff, 0xff, 0x7f, 0x00, 0x00, 0x01 })
 #define CONNECT_TIMEOUT    3.0
 #define MESSAGE_TIMEOUT    10.0
@@ -501,11 +501,6 @@ static int _BRPeerAcceptHeadersMessage(BRPeer *peer, const uint8_t *msg, size_t 
                     peer_log(peer, "malformed headers message with length: %zu", msgLen);
                     r = 0;
                 }
-                else if (! BRMerkleBlockIsValid(block, (uint32_t)now)) {
-                    peer_log(peer, "invalid block header: %s", u256hex(block->blockHash));
-                    BRMerkleBlockFree(block);
-                    r = 0;
-                }
                 else if (ctx->relayedBlock) {
                     ctx->relayedBlock(ctx->info, block);
                 }
@@ -557,7 +552,7 @@ static int _BRPeerAcceptGetdataMessage(BRPeer *peer, const uint8_t *msg, size_t 
                 case inv_tx:
                     if (ctx->requestedTx) tx = ctx->requestedTx(ctx->info, hash);
 
-                    if (tx && BRTransactionVSize(tx) < TX_MAX_SIZE) {
+                    if (tx && BRTransactionSize(tx) < TX_MAX_SIZE) {
                         uint8_t buf[BRTransactionSerialize(tx, NULL, 0)];
                         size_t bufLen = BRTransactionSerialize(tx, buf, sizeof(buf));
                         char txHex[bufLen*2 + 1];
@@ -721,12 +716,6 @@ static int _BRPeerAcceptMerkleblockMessage(BRPeer *peer, const uint8_t *msg, siz
         peer_log(peer, "malformed merkleblock message with length: %zu", msgLen);
         r = 0;
     }
-    else if (! BRMerkleBlockIsValid(block, (uint32_t)time(NULL))) {
-        peer_log(peer, "invalid merkleblock: %s", u256hex(block->blockHash));
-        BRMerkleBlockFree(block);
-        block = NULL;
-        r = 0;
-    }
     else if (! ctx->sentFilter && ! ctx->sentGetdata) {
         peer_log(peer, "got merkleblock message before loading a filter");
         BRMerkleBlockFree(block);
@@ -848,7 +837,7 @@ static int _BRPeerAcceptMessage(BRPeer *peer, const uint8_t *msg, size_t msgLen,
     }
     else if (strncmp(MSG_VERSION, type, 12) == 0) r = _BRPeerAcceptVersionMessage(peer, msg, msgLen);
     else if (strncmp(MSG_VERACK, type, 12) == 0) r = _BRPeerAcceptVerackMessage(peer, msg, msgLen);
-    else if (strncmp(MSG_ADDR, type, 12) == 0) r = _BRPeerAcceptAddrMessage(peer, msg, msgLen);
+    //else if (strncmp(MSG_ADDR, type, 12) == 0) r = _BRPeerAcceptAddrMessage(peer, msg, msgLen);
     else if (strncmp(MSG_INV, type, 12) == 0) r = _BRPeerAcceptInvMessage(peer, msg, msgLen);
     else if (strncmp(MSG_TX, type, 12) == 0) r = _BRPeerAcceptTxMessage(peer, msg, msgLen);
     else if (strncmp(MSG_HEADERS, type, 12) == 0) r = _BRPeerAcceptHeadersMessage(peer, msg, msgLen);
@@ -1574,7 +1563,7 @@ void BRPeerSendGetdata(BRPeer *peer, const UInt256 txHashes[], size_t txCount, c
         off += BRVarIntSet(&msg[off], (off <= msgLen ? msgLen - off : 0), count);
         
         for (i = 0; i < txCount; i++) {
-            UInt32SetLE(&msg[off], inv_witness_tx);
+            UInt32SetLE(&msg[off], inv_tx);
             off += sizeof(uint32_t);
             UInt256Set(&msg[off], txHashes[i]);
             off += sizeof(UInt256);

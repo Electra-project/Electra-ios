@@ -31,8 +31,8 @@
 #include <string.h>
 #include <assert.h>
 
-#define MAX_PROOF_OF_WORK 0x1d00ffff    // highest value for difficulty target (higher values are less difficult)
-#define TARGET_TIMESPAN   (14*24*60*60) // the targeted timespan between difficulty target adjustments
+#define MAX_PROOF_OF_WORK 0x1e0fffff    // highest value for difficulty target (higher values are less difficult)
+#define TARGET_TIMESPAN   (15*60) // the targeted timespan between difficulty target adjustments
 
 inline static int _ceil_log2(int x)
 {
@@ -118,6 +118,12 @@ BRMerkleBlock *BRMerkleBlockParse(const uint8_t *buf, size_t bufLen)
         off += sizeof(uint32_t);
         block->nonce = UInt32GetLE(&buf[off]);
         off += sizeof(uint32_t);
+        if (block->version > 9) {
+            block->nAccumulatorCheckpoint = UInt256Get(&buf[off]);
+            if (bufLen == 81)
+                bufLen += sizeof(uint32_t);
+            off += sizeof(UInt256);
+        }
         
         if (off + sizeof(uint32_t) <= bufLen) {
             block->totalTx = UInt32GetLE(&buf[off]);
@@ -134,8 +140,12 @@ BRMerkleBlock *BRMerkleBlockParse(const uint8_t *buf, size_t bufLen)
             block->flags = (off + len <= bufLen) ? malloc(len) : NULL;
             if (block->flags) memcpy(block->flags, &buf[off], len);
         }
-        
-        BRSHA256_2(&block->blockHash, buf, 80);
+
+        if (block->version <= 6) {
+            BRNist5(buf, &block->blockHash);
+        } else {
+            BRSHA256_2(&block->blockHash, buf, block->version > 9 ? 112 : 80);
+        }
     }
     
     return block;
