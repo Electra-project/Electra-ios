@@ -39,7 +39,7 @@ class OnboardingViewController: UIViewController {
     // restoration, PIN creation, etc.
     private var didExitWithAction: DidExitOnboardingWithAction?
         
-    private let logoImageView: UIImageView = UIImageView(image: UIImage(named: "LogoGradientLarge"))
+    private let logoImageView: UIImageView = UIImageView(image: UIImage(named: "eca_white"))//(image: UIImage(named: "LogoGradientLarge"))
     
     private var showingLogo: Bool = false {
         didSet {
@@ -154,9 +154,9 @@ class OnboardingViewController: UIViewController {
     var lastPageIndex: Int { return pageCount - 1 }
     
     // CTA's that appear at the bottom of the screen
-    private var topButton = BRDButton(title: "", type: .primary)
-    private var bottomButton = BRDButton(title: "", type: .darkOpaque)
-    private var nextButton = BRDButton(title: S.OnboardingScreen.next, type: .primary)
+    private var topButton = BRDButton(title: "", type: .electraColor)
+    private var bottomButton = BRDButton(title: "", type: .electraColor)
+    private var nextButton = BRDButton(title: S.OnboardingScreen.next, type: .electraColor)
     
     // Constraints used to show and hide the bottom buttons.
     private var topButtonAnimationConstraint: NSLayoutConstraint?
@@ -776,7 +776,7 @@ class OnboardingViewController: UIViewController {
         super.viewDidLoad()
         
         navigationController?.isNavigationBarHidden = true
-        view.backgroundColor = .darkBackground
+        view.backgroundColor = .electraBackgroundColor
                 
         setUpLogo()
         setUpPages()

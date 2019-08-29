@@ -16,6 +16,7 @@ enum ButtonType {
     case darkOpaque
     case secondaryTransparent
     case search
+    case electraColor
 }
 
 private let minTargetSize: CGFloat = 48.0
@@ -180,6 +181,9 @@ class BRDButton: UIControl {
             imageView?.tintColor = .grayTextTint
         case .darkOpaque:
             container.backgroundColor = .darkOpaqueButton
+            label.textColor = .white
+        case .electraColor:
+            container.backgroundColor = .electraButtonColor
             label.textColor = .white
         case .secondaryTransparent:
             container.backgroundColor = .transparentButton

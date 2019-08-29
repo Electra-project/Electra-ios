@@ -48,7 +48,7 @@ class LoginViewController: UIViewController, Subscriber, Trackable {
     private let isPresentedForLock: Bool
     private let disabledView: WalletDisabledView
     private let activityView = UIActivityIndicatorView(style: .whiteLarge)
-    private var logo = UIImageView(image: #imageLiteral(resourceName: "Eca_white"))
+    private var logo = UIImageView(image: #imageLiteral(resourceName: "eca_white"))
     private var pinPadPottom: NSLayoutConstraint?
     private var topControlTop: NSLayoutConstraint?
     private var unlockTimer: Timer?

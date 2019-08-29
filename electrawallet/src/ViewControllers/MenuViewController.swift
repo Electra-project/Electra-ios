@@ -31,8 +31,9 @@ class MenuViewController: UITableViewController {
         tableView.register(MenuCell.self, forCellReuseIdentifier: MenuCell.cellIdentifier)
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
-        tableView.backgroundColor = .darkBackground
+        tableView.backgroundColor =  .electraBackgroundColor//.darkBackground 
         tableView.rowHeight = 48.0
+        self.view.backgroundColor = .electraBackgroundColor
         
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         

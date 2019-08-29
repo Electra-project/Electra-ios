@@ -12,7 +12,7 @@ import SafariServices
 class AboutViewController: UIViewController {
 
     private let titleLabel = UILabel(font: .customBold(size: 26.0), color: .white)
-    private let logo = UIImageView(image: #imageLiteral(resourceName: "LogoCutout").withRenderingMode(.alwaysTemplate))
+    private let logo = UIImageView(image: #imageLiteral(resourceName: "eca_white").withRenderingMode(.alwaysTemplate))//(image: #imageLiteral(resourceName: "LogoCutout").withRenderingMode(.alwaysTemplate))
     private let logoBackground = MotionGradientView()
     private let walletID = WalletIDCell()
     private let blog = AboutCell(text: S.About.blog)

@@ -10,6 +10,9 @@ import UIKit
 
 extension UIColor {
 
+    static var electraBackgroundColor: UIColor {
+        return UIColor(patternImage: #imageLiteral(resourceName: "Background"))
+    }
     static var newGradientStart: UIColor {
         return UIColor.fromHex("FB5491")
     }
@@ -19,7 +22,7 @@ extension UIColor {
     }
 
     static var darkBackground: UIColor {
-        return UIColor.fromHex("302442")
+        return UIColor(patternImage: #imageLiteral(resourceName: "Background")) //return UIColor.fromHex("302442")
     }
 
     static var darkerBackground: UIColor {
@@ -208,6 +211,10 @@ extension UIColor {
         return UIColor(white: 1.0, alpha: 0.05)
     }
     
+    static var electraButtonColor: UIColor {
+        return UIColor(red: 26.0/255.0, green: 20.0/255.0, blue: 63.0/255.0, alpha: 1.0)
+    }
+    
     static var blueGradientStart: UIColor {
         return UIColor(red: 99.0/255.0, green: 188.0/255.0, blue: 255.0/255.0, alpha: 1.0)
     }
@@ -265,7 +272,7 @@ extension UIColor {
     }
     
     static var navigationBackground: UIColor {
-        return UIColor.fromHex("251935")
+        return  .electraBackgroundColor //UIColor.fromHex("251935")
     }
     
     static var transparentCellBackground: UIColor {
@@ -285,7 +292,7 @@ extension UIColor {
     }
     
     static var pageIndicatorDot: UIColor {
-        return  UIColor.fromHex("027AFF")
+        return  UIColor.fromHex("1F1E3D")
     }
     
     static var onboardingHeadingText: UIColor {

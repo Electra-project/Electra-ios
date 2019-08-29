@@ -19,7 +19,7 @@ class LinkWalletViewController: UIViewController {
     private let bodyBackground = UIView(color: .darkerBackground)
     private let approve = BRDButton(title: S.LinkWallet.approve, type: .primary)
     private let decline = BRDButton(title: S.LinkWallet.decline, type: .secondary)
-    private let logo = UIImageView(image: #imageLiteral(resourceName: "LogoCutout").withRenderingMode(.alwaysTemplate))
+    private let logo = UIImageView(image: #imageLiteral(resourceName: "eca_white").withRenderingMode(.alwaysTemplate))//(image: #imageLiteral(resourceName: "LogoCutout").withRenderingMode(.alwaysTemplate))
     private let logoBackground = MotionGradientView()
     private let logoFooter = UILabel(font: .customBold(size: 20.0), color: UIColor.fromHex("FAA43A"))
     private let titleLabel = UILabel(font: .customBody(size: 14.0), color: .white)

@@ -107,7 +107,7 @@ open class BRWebViewController: UIViewController, WKNavigationDelegate, BRWebSoc
         let request = URLRequest(url: indexUrl)
         
         view = UIView(frame: CGRect.zero)
-        view.backgroundColor = .darkBackground
+        view.backgroundColor = .electraBackgroundColor
         
         webView = WKWebView(frame: CGRect.zero, configuration: config)
         webView?.navigationDelegate = self

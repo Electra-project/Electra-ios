@@ -13,7 +13,7 @@ class HomeScreenViewController: UIViewController, Subscriber, Trackable {
     private let walletAuthenticator: WalletAuthenticator
     private let assetList = AssetListTableView()
     private let subHeaderView = UIView()
-    private let logo = UIImageView(image: #imageLiteral(resourceName: "LogoGradient"))
+    private let logo = UIImageView(image: #imageLiteral(resourceName: "eca_white")) //eca_white.png
     private let total = UILabel(font: .customBold(size: 30.0), color: .white)
     private let totalHeader = UILabel(font: .customBody(size: 12.0), color: .white)
     private let debugLabel = UILabel(font: .customBody(size: 12.0), color: .transparentWhiteText) // debug info

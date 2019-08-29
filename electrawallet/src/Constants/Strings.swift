@@ -432,7 +432,7 @@ enum S {
         static let next = NSLocalizedString("Onboarding.next", value: "Next", comment: "Button that navigates to the next page in the onboarding flow.")
         static let restoreWallet = NSLocalizedString("Onboarding.restoreWallet", value: "Restore wallet", comment: "Button that allows the user to restore an existing crypto wallet")
         static let skip = NSLocalizedString("Onboarding.skip", value: "Skip", comment: "Button that allows the user to skip to the end of the onboarding flow.")
-        static let pageOneTitle = NSLocalizedString("OnboardingPageOne.title", value: "Welcome to your new global wallet!", comment: "Title displayed on the first page of the onboarding flow.")
+        static let pageOneTitle = NSLocalizedString("OnboardingPageOne.title", value: "Welcome to your new Electra wallet!", comment: "Title displayed on the first page of the onboarding flow.")
         static let pageTwoTitle = NSLocalizedString("OnboardingPageTwo.title", value: "Join the 1.5 million people around the world who trust BRD.", comment: "Title displayed on the second page of the onboarding flow.")
         static let pageTwoSubtitle = NSLocalizedString("OnboardingPageTwo.subtitle", value: "Join the 1.5 million people around the world who trust BRD.", comment: "Subtitle displayed on the second page of the onboarding flow.")  
         static let pageThreeTitle = NSLocalizedString("OnboardingPageThree.title", value: "Buy and trade bitcoin, tokens, and other digital currencies.", comment: "Title displayed on the third page of the onboarding flow.")  

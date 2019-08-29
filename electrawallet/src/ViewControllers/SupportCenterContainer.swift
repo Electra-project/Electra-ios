@@ -28,7 +28,7 @@ class SupportCenterContainer: UIViewController {
     let blur = UIVisualEffectView()
 
     override func viewDidLoad() {
-        view.backgroundColor = .clear
+        view.backgroundColor = .electraBackgroundColor
         addChildViewController(webView, layout: {
             webView.view.constrain([
                 webView.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),

@@ -59,6 +59,7 @@ class RewardsView: UIView {
         setUpConstraints()
         setUpStyle()
         setUpIconIfAppropriate()
+        self.backgroundColor = .electraBackgroundColor
     }
 
     private func setUpSubviews() {

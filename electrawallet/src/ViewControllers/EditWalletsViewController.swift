@@ -68,9 +68,9 @@ class EditWalletsViewController: UIViewController, Subscriber {
     }
 
     override func viewDidLoad() {
-        view.backgroundColor = .darkBackground
+        view.backgroundColor = .electraBackgroundColor
         view.addSubview(tableView)
-        tableView.backgroundColor = .darkBackground
+        tableView.backgroundColor = .electraBackgroundColor
         tableView.keyboardDismissMode = .interactive
         tableView.separatorStyle = .none
         tableView.rowHeight = 66.0

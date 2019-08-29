@@ -26,7 +26,7 @@ class StartViewController: UIViewController {
     private let didTapRecover: () -> Void
     private let didTapCreate: () -> Void
     private let background = UIView()
-    private var logo = UIImageView(image: #imageLiteral(resourceName: "LogoCutout").withRenderingMode(.alwaysTemplate))
+    private var logo = UIImageView(image: #imageLiteral(resourceName: "eca_white").withRenderingMode(.alwaysTemplate))//(image: #imageLiteral(resourceName: "LogoCutout").withRenderingMode(.alwaysTemplate))
     private let faqButton = UIButton.buildFaqButton(articleId: ArticleIds.startView)
     
     override func viewDidLoad() {
