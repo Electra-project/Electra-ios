@@ -60,6 +60,7 @@ class ExchangeUpdater: Subscriber {
                         }
                         Store.perform(action: WalletChange(currency).setExchangeRates(currentRate: self.findCurrentRate(rates: fiatRates), rates: fiatRates))
                     } else {
+                        // TODO : Add ECA Rate
                         assert(false, "missing exchange rate")
                         print("ERROR: missing exchange rate for \(currency.code)")
                     }
