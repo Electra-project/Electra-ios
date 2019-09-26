@@ -121,9 +121,18 @@ class ApplicationController: Subscriber, Trackable {
                 btcWalletManager.db?.loadTransactions { txns in
                     btcWalletManager.db?.loadBlocks { blocks in
                         let preForkTransactions = txns.compactMap {$0}.filter { $0.pointee.blockHeight < C.bCashForkBlockHeight }
+                        
+                        guard preForkTransactions.count > 0
+                        else
+                        {
+                            completion()
+                            return
+                        }
+                        
                         let preForkBlocks = blocks.compactMap {$0}.filter { $0.pointee.height < C.bCashForkBlockHeight }
                         var bchWalletManager: BTCWalletManager?
-                        if !preForkBlocks.isEmpty || blocks.isEmpty {
+                        // No need to retrieve bch from fork
+                       /* if !preForkBlocks.isEmpty || blocks.isEmpty {
                             bchWalletManager = try? BTCWalletManager(currency: bch,
                                                                      masterPubKey: mpk,
                                                                      earliestKeyTime: creationTime,
@@ -133,7 +142,7 @@ class ApplicationController: Subscriber, Trackable {
                                                                      masterPubKey: mpk,
                                                                      earliestKeyTime: C.bCashForkTimeStamp,
                                                                      dbPath: bch.dbPath)
-                        }
+                        }*/
                         self.walletManagers[bch.code] = bchWalletManager
                         bchWalletManager?.initWallet(transactions: preForkTransactions)
                         bchWalletManager?.initPeerManager(blocks: preForkBlocks)
