@@ -76,7 +76,7 @@ extension BRAPIClient {
                         let array = dict["body"] as? [Any] else {
                             return self.exchangeRates(currencyCode: code, isFallback: true, handler)
                     }
-                    handler(.success(array.compactMap { Rate(data: $0, reciprocalCode: code) }))
+                    handler(.success(array.compactMap { Rate(data: $0, reciprocalCode: "BTC") }))
                 }
             } else {
                 if isFallback {
@@ -88,7 +88,77 @@ extension BRAPIClient {
         }
         task.resume()
     }
-
+    
+    /// Fetches BTC exchange rates for ECA using Coingecko API
+    func ecaExchangeRates(_ handler: @escaping (RatesResult) -> Void) {
+        
+        var combinedRates: [Rate] = []
+        var errorResult: RatesResult?
+        
+        let group = DispatchGroup()
+        group.enter()
+       
+        let request = URLRequest(url: URL(string: "https://api.coingecko.com/api/v3/coins/electra/tickers")!)
+        dataTaskWithRequest(request, handler: { data, _, error in
+            guard error == nil, let data = data else {
+                errorResult = .error(error?.localizedDescription ?? "unknown error")
+                return group.leave()
+            }
+            do {
+                let prices = try CGHelper.newJSONDecoder().decode(CoingeckoResult.self, from: data)
+                
+                guard let tickers = prices.tickers else {
+                    errorResult = .error("exchange rate API error")
+                    return group.leave()
+                }
+                
+                // Matching Android wallet ignore list
+                let excludingExchangeList = ["Crypto Hub", "Cryptopia", "Nova Exchange"];
+                
+                var summedValue = 0.0;
+                var exchangeCount = 0;
+                
+                for ticker in tickers
+                {
+                    if let market = ticker.market, let exchange = market.name, let target = ticker.target, let last = ticker.last, let volume = ticker.volume
+                    {
+                        let filtered = excludingExchangeList.filter({ $0.range(of: exchange, options: .caseInsensitive) != nil })
+                       
+                        if filtered.count == 0 && target.caseInsensitiveCompare("BTC") == .orderedSame && last > 0 && volume > 0
+                        {
+                            summedValue += last
+                            exchangeCount += 1
+                        }
+                    }
+                }
+                
+                if exchangeCount > 0
+                {
+                    let ecaRate = summedValue / Double(exchangeCount)
+                    combinedRates.append(Rate(code: "BTC", name: Currencies.btc.name, rate: ecaRate, reciprocalCode: Currencies.btc.code.lowercased()))
+                    print("ECA Rate: \(ecaRate.asRoundedString(digits: 8) )")
+                }
+                else
+                {
+                    errorResult = .error("exchange rate API error - No ECA data found.")
+                }
+                
+                group.leave()
+            } catch let e {
+                errorResult = .error(e.localizedDescription)
+                group.leave()
+            }
+        }).resume()
+        
+        group.notify(queue: .main) {
+            if let errorResult = errorResult {
+                handler(errorResult)
+            } else {
+                handler(.success(combinedRates))
+            }
+        }
+    }
+    
     /// Fetches BTC exchange rates of given currencies from CryptoCompare API
     func tokenExchangeRates(tokens: [Currency], _ handler: @escaping (RatesResult) -> Void) {
         // fsyms param (comma-separated ticker symbols) max length is 300 characters
