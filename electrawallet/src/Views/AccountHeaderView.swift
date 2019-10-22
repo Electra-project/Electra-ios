@@ -308,7 +308,9 @@ class AccountHeaderView: UIView, GradientDrawable, Subscriber {
         if let state = currency.state, let rate = state.rates.first(where: {$0.code == "BTC"})
         {
             // Need to retrieve Satoshi rate
-            exchangeRateLabel.text = String(format: S.AccountHeader.exchangeRate, "\((rate.rate * Double(C.satoshis)).asRoundedString(digits: 0)) Sat.", currency.code)
+            let satoshiRate = rate.rate * Double(C.satoshis)
+            // Displays an extra dighit when under 10 sat
+            exchangeRateLabel.text = String(format: S.AccountHeader.exchangeRate, "\(satoshiRate.asRoundedString(digits: satoshiRate < 10 ? 1 : 0)) Sat.", currency.code)
         }
          else
         {
