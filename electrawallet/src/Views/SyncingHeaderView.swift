@@ -12,7 +12,7 @@ class SyncingHeaderView: UIView, Subscriber {
 
     static let height: CGFloat = 40.0
     let syncIndicator = SyncingIndicator(style: .account)
-    private let date = UILabel(font: .customBody(size: 12.0), color: .lightText)
+    private let date = UILabel(font: .customBody(size: 12.0), color: .primaryText)
     private let currency: Currency
     private var syncState: SyncState = .success {
         didSet {
@@ -53,7 +53,10 @@ class SyncingHeaderView: UIView, Subscriber {
     }
 
     private func setInitialState() {
-        backgroundColor = .syncingBackground
+        backgroundColor = UIColor.white.withAlphaComponent(0.0)// .syncingBackground
+        layer.cornerRadius = 10
+        layer.borderWidth = 1
+        layer.borderColor = UIColor.white.cgColor
 
         Store.subscribe(self, selector: { $0[self.currency]?.syncState != $1[self.currency]?.syncState },
                         callback: { state in
@@ -77,7 +80,9 @@ class SyncingHeaderView: UIView, Subscriber {
             let dateString = DateFormatter.mediumDateFormatter.string(from: date)
             self.date.text = String(format: S.SyncingView.syncedThrough, dateString)
         case .success:
-            self.date.text = ""
+            let date = Date(timeIntervalSince1970: Double(self.lastBlockTimestamp))
+            let dateString = DateFormatter.longUniversalDateFormatter.string(from: date)
+            self.date.text = String(format: S.SyncingView.syncedThrough, dateString)
         }
     }
 

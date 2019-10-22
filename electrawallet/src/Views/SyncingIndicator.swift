@@ -49,7 +49,8 @@ class SyncingIndicator: UIView {
                 self.text = S.SyncingView.syncing
                 setNeedsLayout()
             case .success:
-                self.text = ""
+                break
+                //self.text = ""
             }
         }
     }
@@ -75,7 +76,7 @@ class SyncingIndicator: UIView {
         setupConstraints()
         
         label.font = (style == .home) ? .customBold(size:12.0) : .customBody(size: 12.0)
-        label.textColor = (style == .home) ? .transparentWhiteText : .lightText
+        label.textColor = (style == .home) ? .transparentWhiteText : .primaryText
         label.textAlignment = .right
         label.text = text
     }
@@ -120,7 +121,7 @@ class ProgressCircle: UIView {
 
     init(style: SyncingIndicatorStyle) {
         self.style = style
-        self.startBackgroundColor = (style == .home) ? .transparentWhiteText : UIColor.fromHex("828282")
+        self.startBackgroundColor = (style == .home) ? .transparentWhiteText : .primaryText
         super.init(frame: .zero)
     }
 
