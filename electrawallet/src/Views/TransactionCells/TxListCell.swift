@@ -12,8 +12,8 @@ class TxListCell: UITableViewCell {
 
     // MARK: - Views
     
-    private let timestamp = UILabel(font: .customBody(size: 16.0), color: .darkGray)
-    private let descriptionLabel = UILabel(font: .customBody(size: 14.0), color: .lightGray)
+    private let timestamp = UILabel(font: .customBold(size: 16.0), color: .ecaDarkPurple)
+    private let descriptionLabel = UILabel(font: .customBody(size: 14.0), color: .ecaMediumPurple) 
     private let amount = UILabel(font: .customBold(size: 18.0))
     private let statusIndicator = TxStatusIndicator(width: 44.0)
     private let failedIndicator = UIButton(type: .system)
@@ -92,7 +92,7 @@ class TxListCell: UITableViewCell {
             timestamp.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: C.padding[2])])
         descriptionLabel.constrain([
             descriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -C.padding[2]),
-            descriptionLabel.trailingAnchor.constraint(equalTo: timestamp.trailingAnchor)])
+            descriptionLabel.trailingAnchor.constraint(equalTo: amount.leadingAnchor, constant: -C.padding[2])])
         pendingConstraints = [
             descriptionLabel.centerYAnchor.constraint(equalTo: statusIndicator.centerYAnchor),
             descriptionLabel.leadingAnchor.constraint(equalTo: statusIndicator.trailingAnchor, constant: C.padding[1]),

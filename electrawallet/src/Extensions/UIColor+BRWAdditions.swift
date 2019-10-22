@@ -243,6 +243,14 @@ extension UIColor {
         return UIColor(red: 120.0/255.0, green: 143.0/255.0, blue: 158.0/255.0, alpha: 1.0)
     }
     
+    static var ecaDarkPurple: UIColor {
+        return UIColor(red: 0.110, green: 0.070, blue: 0.257, alpha: 1.0)
+    }
+    
+    static var ecaMediumPurple: UIColor {
+        return UIColor(red: 0.093, green: 0.048, blue: 0.253, alpha: 1.0)
+    }
+    
     static var receivedGreen: UIColor {
         return UIColor(red: 155.0/255.0, green: 213.0/255.0, blue: 85.0/255.0, alpha: 1.0)
     }
