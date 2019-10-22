@@ -14,6 +14,7 @@ class AccountViewController: UIViewController, Subscriber, Trackable {
     
     // MARK: - Public
     let currency: Currency
+    var didTapMenu: (() -> Void)?
     
     init(currency: Currency, walletManager: WalletManager) {
         self.walletManager = walletManager
@@ -151,6 +152,18 @@ class AccountViewController: UIViewController, Subscriber, Trackable {
         searchButton.tintColor = .white
         searchButton.tap = showSearchHeaderView
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: searchButton)
+        
+        let menuButton = UIButton(type: .system)
+        menuButton.setImage(#imageLiteral(resourceName: "menu_white"), for: .normal)
+        menuButton.imageView?.contentMode = .scaleAspectFit
+        menuButton.frame = CGRect(x: 0.0, y: 12.0, width: 22.0, height: 22.0) // for iOS 10
+        menuButton.widthAnchor.constraint(equalToConstant: 22.0).isActive = true
+        menuButton.heightAnchor.constraint(equalToConstant: 22.0).isActive = true
+        
+        menuButton.tintColor = .white
+        menuButton.tap = menu
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: menuButton)
+
     }
 
     private func addSubviews() {
@@ -199,9 +212,9 @@ class AccountViewController: UIViewController, Subscriber, Trackable {
         // Store this constraint so it can be easily updated later when showing/hiding the rewards view.
         tableViewTopConstraint = transactionsTableView.view.topAnchor.constraint(equalTo: headerContainer.bottomAnchor)
         
-        transactionsTableView.view.backgroundColor = .clear
+        transactionsTableView.view.backgroundColor = UIColor.white.withAlphaComponent(0.0)
 
-        view.backgroundColor = .transactionsViewControllerBackground
+        view.backgroundColor = UIColor.white.withAlphaComponent(0.0)
         addChildViewController(transactionsTableView, layout: {
             transactionsTableView.view.constrain([
                 tableViewTopConstraint,
@@ -332,6 +345,8 @@ class AccountViewController: UIViewController, Subscriber, Trackable {
         saveEvent(rewardsTappedEvent)
         Store.trigger(name: .openPlatformUrl("/rewards"))
     }
+    
+    @objc private func menu() { didTapMenu?() }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return searchHeaderview.isHidden ? .lightContent : .default

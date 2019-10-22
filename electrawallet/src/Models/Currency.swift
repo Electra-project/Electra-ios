@@ -343,14 +343,14 @@ extension ERC20Token: Codable {
 // MARK: Instances
 
 public struct Currencies {
-    static let btc = Bitcoin(name: "Bitcoin",
-                             code: "BTC",
-                             symbol: S.Symbols.btc,
-                             colors: (UIColor(red: 0.972549, green: 0.623529, blue: 0.200000, alpha: 1.0),
-                                      UIColor(red: 0.898039, green: 0.505882, blue: 0.031373, alpha: 1.0)),
+    static let btc = Bitcoin(name: "Electra",
+                             code: "ECA",
+                             symbol: "ECA",
+                             colors: (UIColor(red: 0.618, green: 0.002, blue: 0.728, alpha: 1.0),
+                                      UIColor(red: 0.255, green: 0.002, blue: 0.451, alpha: 1.0)),
                              dbPath: "BreadWallet.sqlite",
                              forkId: 0,
-                             urlSchemes: ["bitcoin"])
+                             urlSchemes: ["electra"])
     
     static let bch = Bitcoin(name: "Bitcoin Cash",
                              code: "BCH",
