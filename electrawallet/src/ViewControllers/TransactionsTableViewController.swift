@@ -75,12 +75,9 @@ class TransactionsTableViewController: UITableViewController, Subscriber, Tracka
         tableView.separatorStyle = .none
         tableView.estimatedRowHeight = 60.0
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.backgroundColor = .whiteTint
         
         emptyMessage.textAlignment = .center
         emptyMessage.text = S.TransactionDetails.emptyMessage
-        
-        //setContentInset()
 
         setupSubscriptions()
     }
@@ -132,14 +129,16 @@ class TransactionsTableViewController: UITableViewController, Subscriber, Tracka
 
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return hasExtraSection ? 2 : 1
+        // Bad practice: Using sections to achieve wanted design quickly (space between cells and rounded corner cells
+        // Will redo if extra time
+        return hasExtraSection ? transactions.count + 1 : transactions.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if hasExtraSection && section == 0 {
             return 1
         } else {
-            return transactions.count
+            return 1
         }
     }
 
@@ -155,7 +154,7 @@ class TransactionsTableViewController: UITableViewController, Subscriber, Tracka
         if hasExtraSection && section == 1 {
             return C.padding[2]
         } else {
-            return 0
+            return 5
         }
     }
 
@@ -163,7 +162,7 @@ class TransactionsTableViewController: UITableViewController, Subscriber, Tracka
         if hasExtraSection && section == 1 {
             return UIView(color: .clear)
         } else {
-            return nil
+            return UIView(color: UIColor.white.withAlphaComponent(0.0))
         }
     }
 
@@ -211,7 +210,8 @@ extension TransactionsTableViewController {
                                                        for: indexPath) as? TxListCell
             else { assertionFailure(); return UITableViewCell() }
         let rate = self.rate ?? Rate.empty
-        let viewModel = TxListViewModel(tx: transactions[indexPath.row])
+        
+        let viewModel = TxListViewModel(tx: transactions[hasExtraSection ? indexPath.section - 1 : indexPath.section])
         cell.setTransaction(viewModel,
                             isBtcSwapped: isBtcSwapped,
                             rate: rate,

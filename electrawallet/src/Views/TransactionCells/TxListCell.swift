@@ -15,7 +15,6 @@ class TxListCell: UITableViewCell {
     private let timestamp = UILabel(font: .customBody(size: 16.0), color: .darkGray)
     private let descriptionLabel = UILabel(font: .customBody(size: 14.0), color: .lightGray)
     private let amount = UILabel(font: .customBold(size: 18.0))
-    private let separator = UIView(color: .separatorGray)
     private let statusIndicator = TxStatusIndicator(width: 44.0)
     private let failedIndicator = UIButton(type: .system)
     private var pendingConstraints = [NSLayoutConstraint]()
@@ -32,6 +31,14 @@ class TxListCell: UITableViewCell {
         setupViews()
     }
     
+    override func requestSetFrame(_ frame: CGRect) {
+        let inset: CGFloat = 7.0
+        var newFrame = frame
+        newFrame.origin.x += inset
+        newFrame.size.width -= 2 * inset
+        super.requestSetFrame(newFrame)
+    }
+
     func setTransaction(_ viewModel: TxListViewModel, isBtcSwapped: Bool, rate: Rate, maxDigits: Int, isSyncing: Bool) {
         self.viewModel = viewModel
         
@@ -77,7 +84,6 @@ class TxListCell: UITableViewCell {
         contentView.addSubview(statusIndicator)
         contentView.addSubview(failedIndicator)
         contentView.addSubview(amount)
-        contentView.addSubview(separator)
     }
     
     private func addConstraints() {
@@ -109,7 +115,6 @@ class TxListCell: UITableViewCell {
             amount.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
             amount.leadingAnchor.constraint(equalTo: descriptionLabel.trailingAnchor, constant: C.padding[6]),
             amount.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -C.padding[2])])
-        separator.constrainBottomCorners(height: 0.5)
     }
     
     private func setupStyle() {
@@ -124,6 +129,9 @@ class TxListCell: UITableViewCell {
         failedIndicator.setTitleColor(.white, for: .normal)
         failedIndicator.backgroundColor = .failedRed
         failedIndicator.layer.cornerRadius = 3
+        
+        //self.backgroundColor = .red
+        self.layer.cornerRadius = 20
     }
     
     required init?(coder aDecoder: NSCoder) {
