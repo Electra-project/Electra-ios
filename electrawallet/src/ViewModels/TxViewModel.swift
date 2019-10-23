@@ -90,6 +90,12 @@ extension DateFormatter {
         df.setLocalizedDateFormatFromTemplate("MMM d, YYYY")
         return df
     }()
+    
+    static let longUniversalDateFormatter: DateFormatter = {
+        let df = DateFormatter()
+        df.setLocalizedDateFormatFromTemplate("MMMM d, yyy HH:mm")
+        return df
+    }()
 }
 
 private extension String {

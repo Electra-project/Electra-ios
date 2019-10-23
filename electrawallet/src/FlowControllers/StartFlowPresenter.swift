@@ -15,11 +15,13 @@ class StartFlowPresenter: Subscriber, Trackable {
     init(keyMaster: KeyMaster,
          rootViewController: RootNavigationController, 
          createHomeScreen: @escaping (UINavigationController) -> HomeScreenViewController,
+         createECAScreen: @escaping (UINavigationController) -> AccountViewController?,
          createBuyScreen: @escaping () -> BRWebViewController) {
         self.keyMaster = keyMaster
         self.rootViewController = rootViewController
         self.navigationControllerDelegate = StartNavigationDelegate()
         self.createHomeScreen = createHomeScreen
+        self.createECAScreen = createECAScreen
         self.createBuyScreen = createBuyScreen
         addSubscriptions()
     }
@@ -32,6 +34,7 @@ class StartFlowPresenter: Subscriber, Trackable {
     private var loginViewController: UIViewController?
     private let loginTransitionDelegate = LoginTransitionDelegate()
     private var createHomeScreen: ((UINavigationController) -> HomeScreenViewController)?
+    private var createECAScreen: ((UINavigationController) -> AccountViewController?)?
     private var createBuyScreen: (() -> BRWebViewController)?
     private var shouldBuyCoinAfterOnboarding: Bool = false
     
@@ -128,7 +131,7 @@ class StartFlowPresenter: Subscriber, Trackable {
                 if let createHomeScreen = self.createHomeScreen {
                     let homeScreen = createHomeScreen(self.rootViewController)
                     self.rootViewController.pushViewController(homeScreen, animated: false)
-                }                
+                }
             })
         }
     }
@@ -193,6 +196,13 @@ class StartFlowPresenter: Subscriber, Trackable {
         } else {
             navigationController?.dismiss(animated: true) { [unowned self] in
                 self.navigationController = nil
+            }
+            if let createECAScreen = self.createECAScreen {
+                let ecaScreen = createECAScreen(self.rootViewController)
+                if let screen = ecaScreen
+                {
+                    self.rootViewController.pushViewController(screen, animated: false)
+                }
             }
         }
     }

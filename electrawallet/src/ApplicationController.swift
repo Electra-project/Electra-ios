@@ -121,9 +121,18 @@ class ApplicationController: Subscriber, Trackable {
                 btcWalletManager.db?.loadTransactions { txns in
                     btcWalletManager.db?.loadBlocks { blocks in
                         let preForkTransactions = txns.compactMap {$0}.filter { $0.pointee.blockHeight < C.bCashForkBlockHeight }
+                        
+                        guard preForkTransactions.count > 0
+                        else
+                        {
+                            completion()
+                            return
+                        }
+                        
                         let preForkBlocks = blocks.compactMap {$0}.filter { $0.pointee.height < C.bCashForkBlockHeight }
                         var bchWalletManager: BTCWalletManager?
-                        if !preForkBlocks.isEmpty || blocks.isEmpty {
+                        // No need to retrieve bch from fork
+                       /* if !preForkBlocks.isEmpty || blocks.isEmpty {
                             bchWalletManager = try? BTCWalletManager(currency: bch,
                                                                      masterPubKey: mpk,
                                                                      earliestKeyTime: creationTime,
@@ -133,7 +142,7 @@ class ApplicationController: Subscriber, Trackable {
                                                                      masterPubKey: mpk,
                                                                      earliestKeyTime: C.bCashForkTimeStamp,
                                                                      dbPath: bch.dbPath)
-                        }
+                        }*/
                         self.walletManagers[bch.code] = bchWalletManager
                         bchWalletManager?.initWallet(transactions: preForkTransactions)
                         bchWalletManager?.initPeerManager(blocks: preForkBlocks)
@@ -361,6 +370,7 @@ class ApplicationController: Subscriber, Trackable {
         startFlowController = StartFlowPresenter(keyMaster: keyStore,
                                                  rootViewController: rootViewController,
                                                  createHomeScreen: createHomeScreen,
+                                                 createECAScreen: createECAHomeScreen,
                                                  createBuyScreen: createBuyScreen)
 
         urlController = URLController(walletAuthenticator: keyStore)
@@ -441,6 +451,13 @@ class ApplicationController: Subscriber, Trackable {
         UIBarButtonItem.appearance().setBackButtonBackgroundImage(#imageLiteral(resourceName: "TransparentPixel"), for: .normal, barMetrics: .default)
     }
     
+    private func addECAScreeHandlers(ecaScreen: AccountViewController,
+                                     navigationController: UINavigationController) {
+        ecaScreen.didTapMenu = {
+                   self.modalPresenter?.presentMenu()
+               }
+    }
+    
     private func addHomeScreenHandlers(homeScreen: HomeScreenViewController, 
                                        navigationController: UINavigationController) {
         
@@ -497,6 +514,30 @@ class ApplicationController: Subscriber, Trackable {
         return homeScreen
     }
     
+    private func createECAHomeScreen(navigationController: UINavigationController) -> AccountViewController?
+    {
+        var ecaHomeScreen: AccountViewController?
+        
+        var currency = Store.state.currencies.first(where: { $0.code == UserDefaults.selectedCurrencyCode })
+        
+        if currency == nil, self.walletManagers.count == 1
+        {
+            currency = Currencies.btc
+        }
+        
+        if let currency = currency,
+            let walletManager = self.walletManagers[currency.code],
+            keyStore.noWallet == false
+        {
+            ecaHomeScreen = AccountViewController(currency: currency, walletManager: walletManager)
+            if let screen = ecaHomeScreen {
+                addECAScreeHandlers(ecaScreen: screen, navigationController: navigationController)
+            }
+        }
+        
+        return ecaHomeScreen
+    }
+    
     private func setupRootViewController() {
         let navigationController = RootNavigationController(keyMaster: keyStore)
                 
@@ -509,12 +550,11 @@ class ApplicationController: Subscriber, Trackable {
             navigationController.pushViewController(homeScreen, animated: false)
             
             // State restoration
-            if let currency = Store.state.currencies.first(where: { $0.code == UserDefaults.selectedCurrencyCode }),
-                let walletManager = self.walletManagers[currency.code],
-                keyStore.noWallet == false {
-                let accountViewController = AccountViewController(currency: currency, walletManager: walletManager)
-                navigationController.pushViewController(accountViewController, animated: true)
+            if let ecaScreen = createECAHomeScreen(navigationController: navigationController)
+            {
+                    navigationController.pushViewController(ecaScreen, animated: true)
             }
+            
         }
                 
         window.rootViewController = navigationController

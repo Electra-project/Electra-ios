@@ -30,8 +30,10 @@ class KVStoreCoordinator: Subscriber {
             set(currencyMetaData)
             try? kvStore.syncKey(tokenListMetaDataKey, completionHandler: {_ in })
         }
-
-        assert(Store.state.availableTokens.count > 1, "missing token list")
+       
+        // No token list required
+       // assert(Store.state.availableTokens.count > 1, "missing token list")
+       
         if currencyMetaData.enabledCurrencies.isEmpty {
             print("no wallets enabled in metadata, reverting to default")
             currencyMetaData.enabledCurrencies = CurrencyListMetaData.defaultCurrencies
@@ -71,10 +73,11 @@ class KVStoreCoordinator: Subscriber {
             } else {
                 //Since a WalletState wasn't found, it must be a token address
                 let tokenAddress = $0.replacingOccurrences(of: C.erc20Prefix, with: "")
-                if tokenAddress.lowercased() == Currencies.brd.address.lowercased() {
+                // No BRD
+                /*if tokenAddress.lowercased() == Currencies.brd.address.lowercased() {
                     newWallets[Currencies.brd.code] = oldWallets[Currencies.brd.code]!.mutate(displayOrder: displayOrder)
                     displayOrder += 1
-                } else {
+                } else {*/
                     let filteredTokens = tokens.filter { $0.address.lowercased() == tokenAddress.lowercased() }
                     if let token = filteredTokens.first {
                         if let oldWallet = oldWallets[token.code] {
@@ -87,7 +90,7 @@ class KVStoreCoordinator: Subscriber {
                         unknownTokensToRemove.append($0)
                         print("unknown token \(tokenAddress) in metadata will be removed")
                     }
-                }
+               // }
             }
         }
         

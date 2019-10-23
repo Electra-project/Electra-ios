@@ -16,9 +16,9 @@ class AccountHeaderView: UIView, GradientDrawable, Subscriber {
 
     // MARK: - Views
     
-    private let currencyName = UILabel(font: .customBody(size: 18.0))
+    private let currencyLogo = UIImageView(image: #imageLiteral(resourceName: "eca_white"))
+    private let skinContainerView = UIView()
     private let exchangeRateLabel = UILabel(font: .customBody(size: 14.0))
-    private let balanceLabel = UILabel(font: .customBody(size: 14.0))
     private let primaryBalance: UpdatingLabel
     private let secondaryBalance: UpdatingLabel
     private let conversionSymbol = UIImageView(image: #imageLiteral(resourceName: "conversion"))
@@ -39,8 +39,6 @@ class AccountHeaderView: UIView, GradientDrawable, Subscriber {
         didSet {
             if isSyncIndicatorVisible {
                 showSyncView()
-            } else {
-                hideSyncView()
             }
         }
     }
@@ -119,19 +117,16 @@ class AccountHeaderView: UIView, GradientDrawable, Subscriber {
     }
 
     private func setData() {
-        currencyName.textColor = .white
-        currencyName.textAlignment = .center
-        currencyName.text = currency.name
+        skinContainerView.backgroundColor = UIColor(red: 0.110, green: 0.070, blue: 0.257, alpha: 1.0)
+        skinContainerView.layer.cornerRadius = 10
+        skinContainerView.layer.borderWidth = 1
+        skinContainerView.layer.borderColor = UIColor.white.cgColor
         
         exchangeRateLabel.textColor = .transparentWhiteText
         exchangeRateLabel.textAlignment = .center
         
-        balanceLabel.textColor = .transparentWhiteText
-        balanceLabel.text = S.Account.balance
-        conversionSymbol.tintColor = .whiteTint
-        
-        primaryBalance.textAlignment = .right
-        secondaryBalance.textAlignment = .right
+        primaryBalance.textAlignment = .center
+        secondaryBalance.textAlignment = .center
         
         swapLabels()
 
@@ -142,9 +137,10 @@ class AccountHeaderView: UIView, GradientDrawable, Subscriber {
     }
 
     private func addSubviews() {
-        addSubview(currencyName)
+        addSubview(skinContainerView)
+        addSubview(currencyLogo)
+        addSubview(skinContainerView)
         addSubview(exchangeRateLabel)
-        addSubview(balanceLabel)
         addSubview(primaryBalance)
         addSubview(secondaryBalance)
         addSubview(conversionSymbol)
@@ -171,45 +167,61 @@ class AccountHeaderView: UIView, GradientDrawable, Subscriber {
     }
 
     private func addConstraints() {
-        currencyName.constrain([
-            currencyName.constraint(.leading, toView: self, constant: C.padding[2]),
-            currencyName.constraint(.trailing, toView: self, constant: -C.padding[2]),
-            currencyName.constraint(.top, toView: self, constant: E.isIPhoneX ? C.padding[5] : C.padding[3])])
-        exchangeRateLabel.pinTo(viewAbove: currencyName)
-        balanceLabel.constrain([
-            balanceLabel.topAnchor.constraint(equalTo: exchangeRateLabel.bottomAnchor, constant: C.padding[4]),
-            balanceLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -C.padding[2])])
+        currencyLogo.contentMode = .scaleAspectFit
+        currencyLogo.constrain([
+            currencyLogo.constraint(.leading, toView: self, constant: C.padding[1]),
+            currencyLogo.constraint(.trailing, toView: self, constant: -C.padding[1]),
+            currencyLogo.constraint(.height, constant: 55),
+            currencyLogo.constraint(.top, toView: self, constant: E.isIPhoneX ? C.padding[5] : C.padding[3])])
+        
         primaryBalance.constrain([
-            primaryBalance.firstBaselineAnchor.constraint(equalTo: balanceLabel.bottomAnchor, constant: 30.0)])
+            primaryBalance.constraint(.leading, toView: self, constant: C.padding[2]),
+            primaryBalance.constraint(.trailing, toView: self, constant: -C.padding[2])])
+        
         secondaryBalance.constrain([
-            secondaryBalance.firstBaselineAnchor.constraint(equalTo: balanceLabel.bottomAnchor, constant: 30.0)])
+            secondaryBalance.trailingAnchor.constraint(equalTo: primaryBalance.trailingAnchor),
+            secondaryBalance.leadingAnchor.constraint(equalTo: primaryBalance.leadingAnchor)])
+        
+        conversionSymbol.contentMode = .scaleAspectFit
         conversionSymbol.constrain([
-            conversionSymbol.heightAnchor.constraint(equalToConstant: 12.0),
-            conversionSymbol.heightAnchor.constraint(equalTo: conversionSymbol.widthAnchor),
-            conversionSymbol.bottomAnchor.constraint(equalTo: primaryBalance.firstBaselineAnchor)])
+            conversionSymbol.constraint(.height, constant: 20.0),
+            conversionSymbol.constraint(.leading, toView: self, constant: C.padding[2]),
+            conversionSymbol.constraint(.trailing, toView: self, constant: -C.padding[2])])
+
         currencyTapView.constrain([
-            currencyTapView.trailingAnchor.constraint(equalTo: balanceLabel.trailingAnchor),
-            currencyTapView.topAnchor.constraint(equalTo: primaryBalance.topAnchor, constant: -C.padding[1]),
-            currencyTapView.bottomAnchor.constraint(equalTo: primaryBalance.bottomAnchor, constant: C.padding[1]) ])
+            currencyTapView.trailingAnchor.constraint(equalTo: primaryBalance.trailingAnchor),
+            currencyTapView.leadingAnchor.constraint(equalTo: primaryBalance.leadingAnchor)])
+
+        skinContainerView.constrain([
+            skinContainerView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            skinContainerView.topAnchor.constraint(equalTo: currencyLogo.bottomAnchor, constant: C.padding[1]),
+            skinContainerView.bottomAnchor.constraint(equalTo: currencyLogo.bottomAnchor, constant: C.padding[1] + 110),
+            skinContainerView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 7),
+            skinContainerView.widthAnchor.constraint(equalTo: widthAnchor, constant: -14)])
+        
+        exchangeRateLabel.constrain([
+            exchangeRateLabel.trailingAnchor.constraint(equalTo: skinContainerView.trailingAnchor, constant: -C.padding[1]),
+            exchangeRateLabel.bottomAnchor.constraint(equalTo: skinContainerView.bottomAnchor, constant: -C.padding[1])])
 
         regularConstraints = [
-            primaryBalance.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -C.padding[2]),
-            primaryBalance.leadingAnchor.constraint(equalTo: conversionSymbol.trailingAnchor, constant: C.padding[1]),
-            conversionSymbol.leadingAnchor.constraint(equalTo: secondaryBalance.trailingAnchor, constant: C.padding[1]),
-            currencyTapView.leadingAnchor.constraint(equalTo: secondaryBalance.leadingAnchor)
+            primaryBalance.topAnchor.constraint(equalTo: skinContainerView.topAnchor, constant: C.padding[1]),
+            conversionSymbol.topAnchor.constraint(equalTo: primaryBalance.bottomAnchor, constant: C.padding[1]),
+            secondaryBalance.topAnchor.constraint(equalTo: conversionSymbol.bottomAnchor),
+            currencyTapView.topAnchor.constraint(equalTo: primaryBalance.topAnchor),
+            currencyTapView.bottomAnchor.constraint(equalTo: secondaryBalance.bottomAnchor)
+            
         ]
         swappedConstraints = [
-            secondaryBalance.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -C.padding[2]),
-            secondaryBalance.leadingAnchor.constraint(equalTo: conversionSymbol.trailingAnchor, constant: C.padding[1]),
-            conversionSymbol.leadingAnchor.constraint(equalTo: primaryBalance.trailingAnchor, constant: C.padding[1]),
-            currencyTapView.leadingAnchor.constraint(equalTo: primaryBalance.leadingAnchor)
+             secondaryBalance.topAnchor.constraint(equalTo: skinContainerView.topAnchor, constant: C.padding[1]),
+             conversionSymbol.topAnchor.constraint(equalTo: secondaryBalance.bottomAnchor, constant: C.padding[1]),
+             primaryBalance.topAnchor.constraint(equalTo: conversionSymbol.bottomAnchor),
+             currencyTapView.topAnchor.constraint(equalTo: secondaryBalance.topAnchor),
+             currencyTapView.bottomAnchor.constraint(equalTo: primaryBalance.bottomAnchor)
         ]
         NSLayoutConstraint.activate(isBtcSwapped ? self.swappedConstraints : self.regularConstraints)
 
-        modeLabel.constrain([
-            modeLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: C.padding[2]),
-            modeLabel.centerYAnchor.constraint(equalTo: balanceLabel.centerYAnchor)])
         syncViewHeight = syncView.heightAnchor.constraint(equalToConstant: 40.0)
+        
         if let delistedTokenView = delistedTokenView {
             delistedTokenView.constrain([
                 delistedTokenView.topAnchor.constraint(equalTo: primaryBalance.firstBaselineAnchor, constant: C.padding[2]),
@@ -218,10 +230,10 @@ class AccountHeaderView: UIView, GradientDrawable, Subscriber {
                 delistedTokenView.leadingAnchor.constraint(equalTo: leadingAnchor)])
         } else {
             syncView.constrain([
-                syncView.topAnchor.constraint(equalTo: primaryBalance.firstBaselineAnchor, constant: C.padding[2]),
-                syncView.bottomAnchor.constraint(equalTo: bottomAnchor),
-                syncView.widthAnchor.constraint(equalTo: widthAnchor),
-                syncView.leadingAnchor.constraint(equalTo: leadingAnchor),
+                syncView.topAnchor.constraint(equalTo: skinContainerView.bottomAnchor, constant: C.padding[1]),
+                syncView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -C.padding[1]),
+                syncView.widthAnchor.constraint(equalTo: widthAnchor, constant: -14),
+                syncView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 7),
                 syncViewHeight])
         }
     }
@@ -236,7 +248,7 @@ class AccountHeaderView: UIView, GradientDrawable, Subscriber {
                                 if let rate = $0[self.currency]?.currentRate {
                                     let placeholderAmount = Amount(amount: 0, currency: self.currency, rate: rate)
                                     self.secondaryBalance.formatter = placeholderAmount.localFormat
-                                    self.primaryBalance.formatter = placeholderAmount.tokenFormat
+                                    //self.primaryBalance.formatter = placeholderAmount.tokenFormat
                                 }
                                 self.exchangeRate = $0[self.currency]?.currentRate
         })
@@ -247,7 +259,7 @@ class AccountHeaderView: UIView, GradientDrawable, Subscriber {
                                 if let rate = $0[self.currency]?.currentRate {
                                     let placeholderAmount = Amount(amount: 0, currency: self.currency, rate: rate)
                                     self.secondaryBalance.formatter = placeholderAmount.localFormat
-                                    self.primaryBalance.formatter = placeholderAmount.tokenFormat
+                                    //self.primaryBalance.formatter = placeholderAmount.tokenFormat
                                     self.setBalances()
                                 }
         })
@@ -293,12 +305,22 @@ class AccountHeaderView: UIView, GradientDrawable, Subscriber {
             return
         }
         
+        if let state = currency.state, let rate = state.rates.first(where: {$0.code == "BTC"})
+        {
+            // Need to retrieve Satoshi rate
+            let satoshiRate = rate.rate * Double(C.satoshis)
+            // Displays an extra dighit when under 10 sat
+            exchangeRateLabel.text = String(format: S.AccountHeader.exchangeRate, "\(satoshiRate.asRoundedString(digits: satoshiRate < 10 ? 1 : 0)) Sat.", currency.code)
+        }
+         else
+        {
         exchangeRateLabel.text = String(format: S.AccountHeader.exchangeRate, rate.localString, currency.code)
+        }
         
         let amount = Amount(amount: balance, currency: currency, rate: rate)
         
         if !hasInitialized {
-            primaryBalance.setValue(amount.tokenValue)
+            primaryBalance.text = amount.tokenDescription
             secondaryBalance.setValue(amount.fiatValue)
             swapLabels()
             hasInitialized = true
@@ -311,9 +333,11 @@ class AccountHeaderView: UIView, GradientDrawable, Subscriber {
                 secondaryBalance.isHidden = false
             }
             
-            primaryBalance.setValueAnimated(amount.tokenValue, completion: { [weak self] in
-                self?.swapLabels()
-            })
+            if conversionSymbol.isHidden {
+                conversionSymbol.isHidden = false
+            }
+            
+            primaryBalance.text = amount.tokenDescription
             secondaryBalance.setValueAnimated(amount.fiatValue, completion: { [weak self] in
                 self?.swapLabels()
             })
@@ -372,10 +396,10 @@ private extension UILabel {
     func shrink() {
         transform = .identity // must reset the view's transform before we calculate the next transform
         let scaleFactor: CGFloat = smallFontSize/largeFontSize
-        let deltaX = frame.width * (1-scaleFactor)
+        let deltaX = CGFloat(1.0)//frame.width * (1-scaleFactor)
         let deltaY = frame.height * (1-scaleFactor)
         let scale = CGAffineTransform(scaleX: scaleFactor, y: scaleFactor)
-        transform = scale.translatedBy(x: deltaX, y: deltaY/2.0)
+        transform = scale.translatedBy(x: deltaX, y: -(deltaY/2.0))
     }
     
     func reset() {

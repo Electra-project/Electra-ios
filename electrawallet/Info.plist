@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>BRD</string>
+	<string>electraWallet</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
