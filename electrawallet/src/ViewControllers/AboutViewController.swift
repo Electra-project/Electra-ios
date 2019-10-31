@@ -11,16 +11,16 @@ import SafariServices
 
 class AboutViewController: UIViewController {
 
-    private let titleLabel = UILabel(font: .customBold(size: 26.0), color: .white)
-    private let logo = UIImageView(image: #imageLiteral(resourceName: "eca_white").withRenderingMode(.alwaysTemplate))//(image: #imageLiteral(resourceName: "LogoCutout").withRenderingMode(.alwaysTemplate))
-    private let logoBackground = MotionGradientView()
-    private let walletID = WalletIDCell()
-    private let blog = AboutCell(text: S.About.blog)
-    private let twitter = AboutCell(text: S.About.twitter)
-    private let reddit = AboutCell(text: S.About.reddit)
+    private let titleLabel = UILabel(font: .customBold(size: 17.0), color: .white)
+    private let logo = UIImageView(image: #imageLiteral(resourceName: "eca_white").withRenderingMode(.alwaysTemplate))
+    private let website = AboutCell(text: S.About.website, image: #imageLiteral(resourceName: "website"))
+    private let twitter = AboutCell(text: S.About.twitter, image: #imageLiteral(resourceName: "twitter"))
+    private let telegram = AboutCell(text: S.About.telegram, image: #imageLiteral(resourceName: "telegram"))
+    private let discord = AboutCell(text: S.About.discord, image: #imageLiteral(resourceName: "discord"))
     private let privacy = UIButton(type: .system)
     private let footer = UILabel(font: .customBody(size: 13.0), color: .white)
     override func viewDidLoad() {
+        navigationItem.titleView = titleLabel
         addSubviews()
         addConstraints()
         setData()
@@ -28,53 +28,49 @@ class AboutViewController: UIViewController {
     }
 
     private func addSubviews() {
-        view.addSubview(titleLabel)
-        view.addSubview(logoBackground)
-        logoBackground.addSubview(logo)
-        view.addSubview(walletID)
-        view.addSubview(blog)
+        view.addSubview(logo)
+        view.addSubview(website)
+        view.addSubview(discord)
         view.addSubview(twitter)
-        view.addSubview(reddit)
+        view.addSubview(telegram)
         view.addSubview(privacy)
         view.addSubview(footer)
     }
 
     private func addConstraints() {
-        titleLabel.constrain([
-            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: C.padding[2]),
-            titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: C.padding[2]) ])
-        logoBackground.constrain([
-            logoBackground.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            logoBackground.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: C.padding[3]),
-            logoBackground.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.5),
-            logoBackground.heightAnchor.constraint(equalTo: logoBackground.widthAnchor, multiplier: logo.image!.size.height/logo.image!.size.width) ])
-        logo.constrain(toSuperviewEdges: nil)
-        walletID.constrain([
-            walletID.topAnchor.constraint(equalTo: logoBackground.bottomAnchor, constant: C.padding[2]),
-            walletID.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            walletID.trailingAnchor.constraint(equalTo: view.trailingAnchor) ])
-        blog.constrain([
-            blog.topAnchor.constraint(equalTo: walletID.bottomAnchor, constant: C.padding[2]),
-            blog.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            blog.trailingAnchor.constraint(equalTo: view.trailingAnchor) ])
+        logo.contentMode = .scaleAspectFit
+        logo.constrain([
+            logo.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            logo.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: C.padding[4]),
+            logo.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.75),
+            logo.heightAnchor.constraint(equalTo: logo.widthAnchor, multiplier: logo.image!.size.height/logo.image!.size.width)
+            ])
+        website.constrain([
+            website.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            website.bottomAnchor.constraint(equalTo: discord.topAnchor, constant: C.padding[-2]),
+            website.trailingAnchor.constraint(equalTo: view.trailingAnchor) ])
+        discord.constrain([
+            discord.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            discord.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            discord.trailingAnchor.constraint(equalTo: view.trailingAnchor) ])
         twitter.constrain([
-            twitter.topAnchor.constraint(equalTo: blog.bottomAnchor, constant: C.padding[2]),
+            twitter.topAnchor.constraint(equalTo: discord.bottomAnchor, constant: C.padding[2]),
             twitter.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             twitter.trailingAnchor.constraint(equalTo: view.trailingAnchor) ])
-        reddit.constrain([
-            reddit.topAnchor.constraint(equalTo: twitter.bottomAnchor, constant: C.padding[2]),
-            reddit.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            reddit.trailingAnchor.constraint(equalTo: view.trailingAnchor) ])
+        telegram.constrain([
+            telegram.topAnchor.constraint(equalTo: twitter.bottomAnchor, constant: C.padding[2]),
+            telegram.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            telegram.trailingAnchor.constraint(equalTo: view.trailingAnchor) ])
         privacy.constrain([
             privacy.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            privacy.topAnchor.constraint(equalTo: reddit.bottomAnchor, constant: C.padding[2])])
+            privacy.topAnchor.constraint(equalTo: telegram.bottomAnchor, constant: C.padding[2])])
         footer.constrain([
             footer.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             footer.topAnchor.constraint(equalTo: privacy.bottomAnchor) ])
     }
 
     private func setData() {
-        view.backgroundColor = .darkBackground
+        view.layer.contents =  #imageLiteral(resourceName: "Background").cgImage
         logo.tintColor = .darkBackground
         titleLabel.text = S.About.title
         privacy.setTitle(S.About.privacy, for: .normal)
@@ -87,17 +83,20 @@ class AboutViewController: UIViewController {
     }
 
     private func setActions() {
-        blog.button.tap = strongify(self) { myself in
-            myself.presentURL(string: "https://brd.com/blog/")
+        website.button.tap = strongify(self) { myself in
+            myself.presentURL(string: "https://electraproject.org")
         }
         twitter.button.tap = strongify(self) { myself in
-            myself.presentURL(string: "https://twitter.com/brdhq")
+            myself.presentURL(string: "https://twitter.com/ElectracoinECA")
         }
-        reddit.button.tap = strongify(self) { myself in
-            myself.presentURL(string: "https://reddit.com/r/brdapp/")
+        telegram.button.tap = strongify(self) { myself in
+            myself.presentURL(string: "https://t.me/Electracoin")
+        }
+        discord.button.tap = strongify(self) { myself in
+            myself.presentURL(string: "https://discord.gg/Dk4b2Tp")
         }
         privacy.tap = strongify(self) { myself in
-            myself.presentURL(string: "https://brd.com/privacy")
+            myself.presentURL(string: "https://electraproject.org/privacy-policy/")
         }
     }
 

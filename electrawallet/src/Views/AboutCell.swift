@@ -12,34 +12,45 @@ class AboutCell: UIView {
 
     let button: UIButton
 
-    init(text: String) {
-        button = UIButton.icon(image: #imageLiteral(resourceName: "OpenBrowser"), accessibilityLabel: text)
+    init(text: String, image: UIImage) {
+        button = UIButton.init(color: .transparent)
         label.text = text
+        icon.image = image
         super.init(frame: .zero)
         setup()
     }
 
     private let label = UILabel(font: .customBody(size: 16.0), color: .white)
     private let separator = UIView(color: .secondaryShadow)
-
+    private let icon = UIImageView()
+    
     private func setup() {
+        addSubview(icon)
         addSubview(label)
         addSubview(button)
         addSubview(separator)
-
+        
+        icon.contentMode = .scaleAspectFit
+        icon.constrain([
+            icon.leadingAnchor.constraint(equalTo: leadingAnchor, constant: C.padding[2]),
+            icon.heightAnchor.constraint(equalToConstant: 36), // 36: OpenBrowser reference
+            icon.centerYAnchor.constraint(equalTo: centerYAnchor),
+            icon.widthAnchor.constraint(equalTo: icon.heightAnchor)])
         label.constrain([
-            label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: C.padding[2]),
+            label.leadingAnchor.constraint(equalTo: icon.trailingAnchor, constant: C.padding[2]),
             label.topAnchor.constraint(equalTo: topAnchor, constant: C.padding[2]),
             label.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -C.padding[2]) ])
+        
         button.constrain([
-            button.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -C.padding[2]),
-            button.centerYAnchor.constraint(equalTo: label.centerYAnchor) ])
+            button.trailingAnchor.constraint(equalTo: trailingAnchor),
+            button.leadingAnchor.constraint(equalTo: leadingAnchor),
+            button.heightAnchor.constraint(equalTo: heightAnchor)])
         separator.constrain([
-            separator.leadingAnchor.constraint(equalTo: label.leadingAnchor),
-            separator.trailingAnchor.constraint(equalTo: button.trailingAnchor),
+            separator.leadingAnchor.constraint(equalTo: icon.leadingAnchor),
+            separator.trailingAnchor.constraint(equalTo: button.trailingAnchor, constant: -C.padding[2]),
             separator.bottomAnchor.constraint(equalTo: bottomAnchor),
             separator.heightAnchor.constraint(equalToConstant: 1.0) ])
-        button.tintColor = .primaryButton
+        button.tintColor = .transparentWhite
     }
 
     required init?(coder aDecoder: NSCoder) {
