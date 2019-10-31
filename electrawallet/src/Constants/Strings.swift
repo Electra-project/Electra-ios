@@ -309,6 +309,7 @@ enum S {
         static let resetCurrencies = NSLocalizedString("Settings.resetCurrencies", value: "Reset to Default Currencies", comment: "Reset currencies button")
         static let viewLegacyAddress = NSLocalizedString("Settings.ViewLegacyAddress", value: "View Legacy Receive Address", comment: "")
         static let enableSegwit = NSLocalizedString("Settings.EnableSegwit", value: "Enable Segwit", comment: "")
+        static let userAgreements = NSLocalizedString("Settings.UserAgreements", value: "User Agreement", comment: "")
     }
 
     enum About {

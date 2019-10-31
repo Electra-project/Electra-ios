@@ -509,6 +509,27 @@ class ModalPresenter: Subscriber, Trackable {
         ]
         
         let securityItems: [MenuItem] = [
+            // Biometrics
+            MenuItem(title: LAContext.biometricType() == .face ? S.SecurityCenter.Cells.faceIdTitle : S.SecurityCenter.Cells.touchIdTitle) { [unowned self] in
+                guard let btcWalletManager = self.walletManagers[Currencies.btc.code] as? BTCWalletManager else { return }
+                let biometricsSettings = BiometricsSettingsViewController(walletManager: btcWalletManager)
+                biometricsSettings.presentSpendingLimit = {
+                    self.pushBiometricsSpendingLimit(onNc: menuNav)
+                }
+                menuNav.pushViewController(biometricsSettings, animated: true)
+            },
+            
+            // Update PIN
+            MenuItem(title: S.UpdatePin.updateTitle) { [unowned self] in
+                let updatePin = UpdatePinViewController(keyMaster: self.keyStore, type: .update)
+                menuNav.pushViewController(updatePin, animated: true)
+            },
+            
+            // Paper key
+            MenuItem(title: S.SecurityCenter.Cells.paperKeyTitle) { [unowned self] in
+                self.presentWritePaperKey(fromViewController: menuNav)
+            },
+            
             // Unlink
             MenuItem(title: S.Settings.wipe) { [unowned self] in
                 let nc = ModalNavigationController()
@@ -532,26 +553,13 @@ class ModalPresenter: Subscriber, Trackable {
                 }
             },
             
-            // Update PIN
-            MenuItem(title: S.UpdatePin.updateTitle) { [unowned self] in
-                let updatePin = UpdatePinViewController(keyMaster: self.keyStore, type: .update)
-                menuNav.pushViewController(updatePin, animated: true)
-            },
+            // TODO: Redeem private key
             
-            // Biometrics
-            MenuItem(title: LAContext.biometricType() == .face ? S.SecurityCenter.Cells.faceIdTitle : S.SecurityCenter.Cells.touchIdTitle) { [unowned self] in
-                guard let btcWalletManager = self.walletManagers[Currencies.btc.code] as? BTCWalletManager else { return }
-                let biometricsSettings = BiometricsSettingsViewController(walletManager: btcWalletManager)
-                biometricsSettings.presentSpendingLimit = {
-                    self.pushBiometricsSpendingLimit(onNc: menuNav)
-                }
-                menuNav.pushViewController(biometricsSettings, animated: true)
-            },
+            // Rescan
+            MenuItem(title: S.Settings.sync, callback: {
+                menuNav.pushViewController(ReScanViewController(currency: Currencies.btc), animated: true)
+            })
             
-            // Paper key
-            MenuItem(title: S.SecurityCenter.Cells.paperKeyTitle) { [unowned self] in
-                self.presentWritePaperKey(fromViewController: menuNav)
-            }
         ]
         
         var rootItems: [MenuItem] = [
@@ -559,16 +567,16 @@ class ModalPresenter: Subscriber, Trackable {
             MenuItem(title: S.MenuButton.scan, icon: #imageLiteral(resourceName: "scan")) { [unowned self] in
                 self.presentLoginScan()
             },
-            
-            // Manage Wallets
-            MenuItem(title: S.MenuButton.manageWallets, icon: #imageLiteral(resourceName: "wallet")) {
-                guard let kvStore = Backend.kvStore else { return }
-                let vc = EditWalletsViewController(type: .manage, kvStore: kvStore)
-                menuNav.pushViewController(vc, animated: true)
-            },
-            
-            // Preferences
-            MenuItem(title: S.Settings.preferences, icon: #imageLiteral(resourceName: "prefs"), subMenu: preferencesItems, rootNav: menuNav),
+
+            // Display Currency
+            MenuItem(title: S.Settings.currency, icon: #imageLiteral(resourceName: "wallet"), accessoryText: {
+                let code = Store.state.defaultCurrencyCode
+                let components: [String : String] = [NSLocale.Key.currencyCode.rawValue: code]
+                let identifier = Locale.identifier(fromComponents: components)
+                return Locale(identifier: identifier).currencyCode ?? ""
+            }, callback: {
+                menuNav.pushViewController(DefaultCurrencyViewController(), animated: true)
+            }),
             
             // Security
             MenuItem(title: S.MenuButton.security,
@@ -577,14 +585,9 @@ class ModalPresenter: Subscriber, Trackable {
                      rootNav: menuNav,
                      faqButton: UIButton.buildFaqButton(articleId: ArticleIds.securityCenter)),
             
-            // Support
-            MenuItem(title: S.MenuButton.support, icon: #imageLiteral(resourceName: "support")) { [unowned self] in
-                self.presentFaq()
-            },
-                        
-            // Rewards
-            MenuItem(title: S.Settings.rewards, icon: #imageLiteral(resourceName: "Star")) {
-                self.presentPlatformWebViewController("/rewards")
+            // User Agreement
+            MenuItem(title: S.Settings.userAgreements, icon: #imageLiteral(resourceName: "support")) {
+                menuNav.pushViewController(AboutViewController(), animated: true)
             },
             
             // About
