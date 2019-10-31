@@ -295,7 +295,7 @@ class ApplicationController: Subscriber, Trackable {
         DispatchQueue.walletQueue.async {
             self.walletManagers[UserDefaults.mostRecentSelectedCurrencyCode]?.peerManager?.connect()
         }
-        updateTokenList {}
+        //updateTokenList {}
         updateAssetBundles()
         Backend.updateExchangeRates()
         Backend.updateFees()
@@ -640,7 +640,7 @@ class ApplicationController: Subscriber, Trackable {
         DispatchQueue.walletQueue.async {
             self.walletManagers[UserDefaults.mostRecentSelectedCurrencyCode]?.peerManager?.connect()
         }
-        updateTokenList {}
+        //updateTokenList {}
         Backend.updateExchangeRates()
         Backend.updateFees()
         Backend.kvStore?.syncAllKeys { print("KV finished syncing. err: \(String(describing: $0))") }
