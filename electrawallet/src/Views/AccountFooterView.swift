@@ -34,16 +34,16 @@ class AccountFooterView: UIView, Subscriber, Trackable {
     }
 
     private func setup() {
-        let separator = UIView(color: .separatorGray)
+        let separator = UIView(color: .transparent)
         addSubview(toolbar)
         addSubview(separator)
         
-        backgroundColor = currency.colors.1
-        
+        backgroundColor = .transparent
+
         toolbar.clipsToBounds = true // to remove separator line
-        toolbar.isOpaque = true
-        toolbar.isTranslucent = false
         toolbar.barTintColor = backgroundColor
+        toolbar.setBackgroundImage(UIImage(), forToolbarPosition: .any, barMetrics: .default)
+        toolbar.setShadowImage(UIImage(), forToolbarPosition: .any)
         
         // constraints
         toolbar.constrainTopCorners(height: AccountFooterView.height)
@@ -62,7 +62,7 @@ class AccountFooterView: UIView, Subscriber, Trackable {
                        (S.Button.receive, #selector(AccountFooterView.receive))].map { (title, selector) -> UIBarButtonItem in
                         let button = UIButton.rounded(title: title)
                         button.tintColor = .white
-                        button.backgroundColor = .transparentWhite
+                        button.backgroundColor = currency.colors.1
                         button.addTarget(self, action: selector, for: .touchUpInside)
                         return UIBarButtonItem(customView: button)
         }

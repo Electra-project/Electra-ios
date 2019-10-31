@@ -12,7 +12,7 @@ import BRCore
 private let largeFontSize: CGFloat = 28.0
 private let smallFontSize: CGFloat = 14.0
 
-class AccountHeaderView: UIView, GradientDrawable, Subscriber {
+class AccountHeaderView: UIView, Subscriber {
 
     // MARK: - Views
     
@@ -357,7 +357,6 @@ class AccountHeaderView: UIView, GradientDrawable, Subscriber {
     }
 
     override func draw(_ rect: CGRect) {
-        drawGradient(start: currency.colors.0, end: currency.colors.1, rect)
     }
 
     @objc private func currencySwitchTapped() {

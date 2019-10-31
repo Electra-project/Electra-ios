@@ -132,9 +132,8 @@ class LoginViewController: UIViewController, Subscriber, Trackable {
 
     private func addConstraints() {
         backgroundView.constrain(toSuperviewEdges: nil)
-        //backgroundView.backgroundColor = .darkBackground
+        backgroundView.layer.contents =  #imageLiteral(resourceName: "Background").cgImage
         
-        backgroundView.backgroundColor = UIColor(patternImage: UIImage(named:"Background")!)
         pinViewContainer.constrain(toSuperviewEdges: nil)
         topControlTop = logoBackground.topAnchor.constraint(equalTo: view.topAnchor,
                                                             constant: topControlHeight
