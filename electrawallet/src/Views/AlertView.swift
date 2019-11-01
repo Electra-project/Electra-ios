@@ -124,6 +124,8 @@ class AlertView: UIView, GradientDrawable {
         subheader.textAlignment = .center
         subheader.font = UIFont.customBody(size: 14.0)
         subheader.textColor = .white
+        
+        self.backgroundColor = .ecaLightPurple
     }
 
     private func addConstraints() {
@@ -150,7 +152,7 @@ class AlertView: UIView, GradientDrawable {
     }
 
     override func draw(_ rect: CGRect) {
-        drawGradient(rect)
+        //drawGradient(rect)
     }
 
     required init?(coder aDecoder: NSCoder) {

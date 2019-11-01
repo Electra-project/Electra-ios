@@ -41,14 +41,14 @@ class UpdatePinViewController: UIViewController, Subscriber {
     private let instruction = UILabel.wrapping(font: .customBody(size: 14.0), color: .white)
     private let caption = UILabel.wrapping(font: .customBody(size: 13.0), color: .white)
     private var pinView: PinView
-    private let pinPadBackground = UIView(color: .white)
+    private let pinPadBackground = UIView(color: .transparent)
     private let pinPad = PinPadViewController(style: .clear, keyboardType: .pinPad, maxDigits: 0, shouldShowBiometrics: false)
     private let spacer = UIView()
     private let keyMaster: KeyMaster
     
-    private lazy var faq = UIButton.buildFaqButton(articleId: ArticleIds.setPin, currency: nil, tapped: { [unowned self] in
+   /* private lazy var faq = UIButton.buildFaqButton(articleId: ArticleIds.setPin, currency: nil, tapped: { [unowned self] in
         self.trackEvent(event: .helpButton)
-    })
+    })*/
     
     private var step: Step = .verify {
         didSet {
@@ -107,7 +107,7 @@ class UpdatePinViewController: UIViewController, Subscriber {
         view.addSubview(instruction)
         view.addSubview(caption)
         view.addSubview(pinView)
-        view.addSubview(faq)
+       // view.addSubview(faq)
         view.addSubview(spacer)
         view.addSubview(pinPadBackground)
     }
@@ -116,7 +116,7 @@ class UpdatePinViewController: UIViewController, Subscriber {
         header.constrain([
             header.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: C.padding[2]),
             header.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: C.padding[2]),
-            header.trailingAnchor.constraint(equalTo: faq.leadingAnchor, constant: -C.padding[1]) ])
+            header.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -C.padding[1]) ])
         instruction.constrain([
             instruction.leadingAnchor.constraint(equalTo: header.leadingAnchor),
             instruction.topAnchor.constraint(equalTo: header.bottomAnchor, constant: C.padding[2]),
@@ -130,11 +130,11 @@ class UpdatePinViewController: UIViewController, Subscriber {
         spacer.constrain([
             spacer.topAnchor.constraint(equalTo: instruction.bottomAnchor),
             spacer.bottomAnchor.constraint(equalTo: caption.topAnchor) ])
-        faq.constrain([
+        /*faq.constrain([
             faq.topAnchor.constraint(equalTo: header.topAnchor),
             faq.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -C.padding[2]),
             faq.constraint(.height, constant: 44.0),
-            faq.constraint(.width, constant: 44.0)])
+            faq.constraint(.width, constant: 44.0)])*/
         caption.constrain([
             caption.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: C.padding[2]),
             caption.bottomAnchor.constraint(equalTo: pinPad.view.topAnchor, constant: -C.padding[2]),
@@ -155,8 +155,10 @@ class UpdatePinViewController: UIViewController, Subscriber {
 
     private func setData() {
         caption.text = S.UpdatePin.caption
-        view.backgroundColor = .darkBackground
+        view.layer.contents =  #imageLiteral(resourceName: "Background").cgImage
         header.text = isCreatingPin ? S.UpdatePin.createTitle : S.UpdatePin.updateTitle
+        header.textAlignment = .center
+        instruction.textAlignment = .center
         instruction.text = isCreatingPin ? S.UpdatePin.createInstruction : S.UpdatePin.enterCurrent
         pinPad.ouputDidUpdate = { [weak self] text in
             guard let step = self?.step else { return }

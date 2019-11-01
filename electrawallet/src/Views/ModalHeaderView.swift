@@ -31,7 +31,7 @@ class ModalHeaderView: UIView {
 
         super.init(frame: .zero)
         setupSubviews()
-        addFaqButton()
+        //addFaqButton()
     }
     
     func setTitle(_ title: String) {

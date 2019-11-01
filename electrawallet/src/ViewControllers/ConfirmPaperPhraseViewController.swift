@@ -35,7 +35,7 @@ class ConfirmPaperPhraseViewController: UIViewController {
                           word: self.words[self.indices.1])
     }()
     private let submit = BRDButton(title: S.Button.submit, type: .primary)
-    private let header = RadialGradientView(backgroundColor: .pink)
+    private let header = UIView() //RadialGradientView(backgroundColor: .pink)
     private let pin: String
     private let keyMaster: KeyMaster
     private let callback: () -> Void
@@ -71,7 +71,8 @@ class ConfirmPaperPhraseViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        view.backgroundColor = .darkBackground
+        view.layer.contents =  #imageLiteral(resourceName: "Background").cgImage
+        header.backgroundColor = .transparent
         label.text = S.ConfirmPaperPhrase.label
         label.textColor = .white
         
@@ -85,10 +86,6 @@ class ConfirmPaperPhraseViewController: UIViewController {
             NotificationCenter.default.addObserver(forName: UIApplication.willResignActiveNotification, object: nil, queue: nil) { [weak self] _ in
             self?.dismiss(animated: true, completion: nil)
         }
-
-        let faqButton = UIButton.buildFaqButton(articleId: ArticleIds.confirmPhrase)
-        faqButton.tintColor = .white
-        navigationItem.rightBarButtonItems = [UIBarButtonItem.negativePadding, UIBarButtonItem(customView: faqButton)]
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {

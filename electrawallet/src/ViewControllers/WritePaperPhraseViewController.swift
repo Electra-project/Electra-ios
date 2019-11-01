@@ -14,7 +14,7 @@ class WritePaperPhraseViewController: UIViewController {
     private let pin: String
     private let label = UILabel.wrapping(font: UIFont.customBody(size: 16.0))
     private let stepLabel = UILabel.wrapping(font: UIFont.customMedium(size: 13.0))
-    private let header = RadialGradientView(backgroundColor: .pink)
+    private let header = UIView() //RadialGradientView(backgroundColor: .pink)
     
     private lazy var phraseViews: [PhraseView] = {
         guard let phraseString = self.keyMaster.seedPhrase(pin: self.pin) else { return [] }
@@ -66,7 +66,8 @@ class WritePaperPhraseViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        view.backgroundColor = .darkBackground
+        view.layer.contents =  #imageLiteral(resourceName: "Background").cgImage
+        header.backgroundColor = .transparent
         
         label.text = S.WritePaperPhrase.instruction
         label.textAlignment = .center
@@ -86,7 +87,7 @@ class WritePaperPhraseViewController: UIViewController {
         }
 
         setUpCloseButton()
-        setUpFAQButton()
+        //setUpFAQButton()
     }
 
     private func setUpCloseButton() {
