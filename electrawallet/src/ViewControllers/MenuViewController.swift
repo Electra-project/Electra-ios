@@ -31,7 +31,8 @@ class MenuViewController: UITableViewController {
         tableView.register(MenuCell.self, forCellReuseIdentifier: MenuCell.cellIdentifier)
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
-        tableView.backgroundColor =  .electraBackgroundColor//.darkBackground 
+        //tableView.backgroundColor =  .electraBackgroundColor//.darkBackground
+        tableView.layer.contents =  #imageLiteral(resourceName: "Background").cgImage
         tableView.rowHeight = 48.0
         self.view.backgroundColor = .electraBackgroundColor
         

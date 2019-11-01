@@ -24,7 +24,7 @@ class StartPaperPhraseViewController: UIViewController {
     private let writePaperKeyButton: BRDButton
     private let illustration = UIImageView(image: #imageLiteral(resourceName: "PaperKey"))
     private let explanation = UILabel.wrapping(font: UIFont.customBody(size: 16.0), color: .white)
-    private let header = RadialGradientView(backgroundColor: .pink, offset: 64.0)
+    private let header = UIView()// RadialGradientView(backgroundColor: .pink, offset: 64.0)
     private let footer = UILabel.wrapping(font: .customBody(size: 13.0), color: .white)
     private let writePaperKeyCallback: () -> Void
     private var eventContext: EventContext = .none
@@ -36,7 +36,8 @@ class StartPaperPhraseViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        view.backgroundColor = .darkBackground
+        view.layer.contents =  #imageLiteral(resourceName: "Background").cgImage
+        header.backgroundColor = .transparent
         explanation.text = S.StartPaperPhrase.body
         addSubviews()
         addConstraints()
@@ -53,7 +54,7 @@ class StartPaperPhraseViewController: UIViewController {
         }
 
         setUpCloseButton()
-        setUpFAQButton()
+        //setUpFAQButton()
     }
 
     private func setUpCloseButton() {

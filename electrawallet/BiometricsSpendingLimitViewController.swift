@@ -17,8 +17,8 @@ class BiometricsSpendingLimitViewController: UITableViewController, Subscriber {
     private let limits: [UInt64] = [0, 1000000, 10000000, 100000000, 1000000000]
     private var selectedLimit: UInt64?
     private var header: UIView?
-    private let amount = UILabel(font: .customMedium(size: 26.0), color: .darkText)
-    private let body = UILabel.wrapping(font: .customBody(size: 13.0), color: .darkText)
+    private let amount = UILabel(font: .customMedium(size: 26.0), color: .white)
+    private let body = UILabel.wrapping(font: .customBody(size: 13.0), color: .white)
     
     init(walletManager: BTCWalletManager) {
         self.walletManager = walletManager
@@ -32,18 +32,19 @@ class BiometricsSpendingLimitViewController: UITableViewController, Subscriber {
         tableView.register(SeparatorCell.self, forCellReuseIdentifier: cellIdentifier)
         tableView.sectionHeaderHeight = UITableView.automaticDimension
         tableView.estimatedSectionHeaderHeight = 50.0
-        tableView.backgroundColor = .whiteTint
+        //tableView.backgroundColor = .whiteTint
+        tableView.layer.contents =  #imageLiteral(resourceName: "Background").cgImage
         tableView.separatorStyle = .none
-
-        let titleLabel = UILabel(font: .customBold(size: 17.0), color: .darkText)
+        
+        let titleLabel = UILabel(font: .customBold(size: 17.0), color: .white)
         let biometricsTitle = LAContext.biometricType() == .face ? S.FaceIdSpendingLimit.title : S.TouchIdSpendingLimit.title
         titleLabel.text = biometricsTitle
         titleLabel.sizeToFit()
         navigationItem.titleView = titleLabel
 
-        let faqButton = UIButton.buildFaqButton(articleId: ArticleIds.touchIdSpendingLimit)
+       /* let faqButton = UIButton.buildFaqButton(articleId: ArticleIds.touchIdSpendingLimit)
         faqButton.tintColor = .darkText
-        navigationItem.rightBarButtonItems = [UIBarButtonItem.negativePadding, UIBarButtonItem(customView: faqButton)]
+        navigationItem.rightBarButtonItems = [UIBarButtonItem.negativePadding, UIBarButtonItem(customView: faqButton)]*/
 
         body.text = S.TouchIdSpendingLimit.body
 
@@ -66,6 +67,7 @@ class BiometricsSpendingLimitViewController: UITableViewController, Subscriber {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        cell.textLabel?.textColor = .white
         let limit = limits[indexPath.row]
         if limit == 0 {
             cell.textLabel?.text = S.TouchIdSpendingLimit.requirePasscode
@@ -75,7 +77,7 @@ class BiometricsSpendingLimitViewController: UITableViewController, Subscriber {
         }
         if limits[indexPath.row] == selectedLimit {
             let check = UIImageView(image: #imageLiteral(resourceName: "CircleCheck").withRenderingMode(.alwaysTemplate))
-            check.tintColor = C.defaultTintColor
+            check.tintColor = .ecaDarkPurple
             cell.accessoryView = check
         } else {
             cell.accessoryView = nil
@@ -95,7 +97,7 @@ class BiometricsSpendingLimitViewController: UITableViewController, Subscriber {
 
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if let header = self.header { return header }
-        let header = UIView(color: .whiteTint)
+        let header = UIView(color: .transparent)
         header.addSubview(amount)
         header.addSubview(body)
         amount.pinTopLeft(padding: C.padding[2])

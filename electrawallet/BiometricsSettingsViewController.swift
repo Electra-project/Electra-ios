@@ -19,11 +19,11 @@ class BiometricsSettingsViewController: UIViewController, Subscriber {
         super.init(nibName: nil, bundle: nil)
     }
 
-    private let header = RadialGradientView(backgroundColor: .darkPurple)
+    private let header = UIView()// RadialGradientView(backgroundColor: .transparent)
     private let illustration = LAContext.biometricType() == .face ? UIImageView(image: #imageLiteral(resourceName: "FaceId-Large")) : UIImageView(image: #imageLiteral(resourceName: "TouchId-Large"))
-    private let label = UILabel.wrapping(font: .customBody(size: 16.0), color: .darkText)
-    private let switchLabel = UILabel(font: .customBold(size: 14.0), color: .darkText)
-    private let toggle = GradientSwitch()
+    private let label = UILabel.wrapping(font: .customBody(size: 16.0), color: .white)
+    private let switchLabel = UILabel(font: .customBold(size: 14.0), color: .white)
+    private let toggle = UISwitch()//GradientSwitch()
     private let separator = UIView(color: .secondaryShadow)
     private let textView = UnEditableTextView()
     private let walletManager: BTCWalletManager
@@ -62,7 +62,7 @@ class BiometricsSettingsViewController: UIViewController, Subscriber {
         header.constrain([header.heightAnchor.constraint(equalToConstant: C.Sizes.largeHeaderHeight)])
         illustration.constrain([
             illustration.centerXAnchor.constraint(equalTo: header.centerXAnchor),
-            illustration.centerYAnchor.constraint(equalTo: header.centerYAnchor, constant: E.isIPhoneX ? C.padding[4] : C.padding[2]) ])
+            illustration.topAnchor.constraint(equalTo: header.topAnchor, constant: E.isIPhoneX ? C.padding[4] : C.padding[2]) ])
         label.constrain([
             label.leadingAnchor.constraint(equalTo: header.leadingAnchor, constant: C.padding[2]),
             label.topAnchor.constraint(equalTo: header.bottomAnchor, constant: C.padding[2]),
@@ -87,7 +87,10 @@ class BiometricsSettingsViewController: UIViewController, Subscriber {
 
     private func setData() {
         
-        view.backgroundColor = .white
+        //view.backgroundColor = .white
+        header.backgroundColor = .transparent
+        textView.backgroundColor = .transparent
+        view.layer.contents =  #imageLiteral(resourceName: "Background").cgImage
         title = LAContext.biometricType() == .face ? S.FaceIDSettings.title : S.TouchIdSettings.title
         label.text = LAContext.biometricType() == .face ? S.FaceIDSettings.label : S.TouchIdSettings.label
         switchLabel.text = LAContext.biometricType() == .face ? S.FaceIDSettings.switchLabel : S.TouchIdSettings.switchLabel
@@ -97,7 +100,7 @@ class BiometricsSettingsViewController: UIViewController, Subscriber {
         textView.delegate = self
         textView.attributedText = textViewText
         textView.tintColor = .primaryButton
-        addFaqButton()
+        //addFaqButton()
         let hasSetToggleInitialValue = false
         Store.subscribe(self, selector: { $0.isBiometricsEnabled != $1.isBiometricsEnabled }, callback: {
             self.toggle.isOn = $0.isBiometricsEnabled
@@ -134,7 +137,7 @@ class BiometricsSettingsViewController: UIViewController, Subscriber {
         let string = "\(String(format: S.TouchIdSettings.spendingLimit, amount.tokenDescription, amount.fiatDescription))\n\n\(String(format: customizeText, linkText))"
         let attributedString = NSMutableAttributedString(string: string, attributes: [
                 NSAttributedString.Key.font: UIFont.customBody(size: 13.0),
-                NSAttributedString.Key.foregroundColor: UIColor.darkText
+                NSAttributedString.Key.foregroundColor: UIColor.white
             ])
         let linkAttributes = [
                 NSAttributedString.Key.font: UIFont.customMedium(size: 13.0),

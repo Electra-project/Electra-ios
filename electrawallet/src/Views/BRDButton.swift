@@ -156,7 +156,7 @@ class BRDButton: UIControl {
     private func setColors() {
         switch type {
         case .primary:
-            container.backgroundColor = isEnabled ? .primaryButton : UIColor.lightGray
+            container.backgroundColor = isEnabled ? .ecaDarkPurple : UIColor.lightGray
             label.textColor = isEnabled ? .primaryText : UIColor.primaryText.withAlphaComponent(0.75)
             container.layer.borderColor = nil
             container.layer.borderWidth = 0.0
@@ -186,7 +186,7 @@ class BRDButton: UIControl {
             container.backgroundColor = .electraButtonColor
             label.textColor = .white
         case .secondaryTransparent:
-            container.backgroundColor = .transparentButton
+            container.backgroundColor = .transparentWhiteText
             label.textColor = .white
             container.layer.borderColor = nil
             container.layer.borderWidth = 0.0

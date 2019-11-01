@@ -62,7 +62,7 @@ class AccountFooterView: UIView, Subscriber, Trackable {
                        (S.Button.receive, #selector(AccountFooterView.receive))].map { (title, selector) -> UIBarButtonItem in
                         let button = UIButton.rounded(title: title)
                         button.tintColor = .white
-                        button.backgroundColor = currency.colors.1
+                        button.backgroundColor = .ecaDarkPurple
                         button.addTarget(self, action: selector, for: .touchUpInside)
                         return UIBarButtonItem(customView: button)
         }
