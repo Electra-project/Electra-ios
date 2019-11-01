@@ -18,7 +18,7 @@ struct MenuItem {
     
     init(title: String, icon: UIImage? = nil, accessoryText: (() -> String)? = nil, callback: @escaping () -> Void) {
         self.title = title
-        self.icon = icon?.withRenderingMode(.alwaysTemplate)
+        self.icon = icon?.withRenderingMode(.alwaysTemplate).withTint(.white)
         self.accessoryText = accessoryText
         self.callback = callback
     }

@@ -418,6 +418,7 @@ class ModalPresenter: Subscriber, Trackable {
         guard let top = topViewController else { return }
         let menuNav = UINavigationController()
         menuNav.setDarkStyle()
+        menuNav.navigationBar.tintColor = .white
         
         var enableSegwit = MenuItem(title: S.Settings.enableSegwit, callback: {
             let segwitView = SegwitViewController()
@@ -582,8 +583,7 @@ class ModalPresenter: Subscriber, Trackable {
             MenuItem(title: S.MenuButton.security,
                      icon: #imageLiteral(resourceName: "security"),
                      subMenu: securityItems,
-                     rootNav: menuNav,
-                     faqButton: UIButton.buildFaqButton(articleId: ArticleIds.securityCenter)),
+                     rootNav: menuNav),
             
             // User Agreement
             MenuItem(title: S.Settings.userAgreements, icon: #imageLiteral(resourceName: "support")) {

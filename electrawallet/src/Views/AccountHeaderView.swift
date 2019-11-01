@@ -21,7 +21,7 @@ class AccountHeaderView: UIView, Subscriber {
     private let exchangeRateLabel = UILabel(font: .customBody(size: 14.0))
     private let primaryBalance: UpdatingLabel
     private let secondaryBalance: UpdatingLabel
-    private let conversionSymbol = UIImageView(image: #imageLiteral(resourceName: "conversion"))
+    private let conversionSymbol = UIImageView(image: #imageLiteral(resourceName: "conversion").withTint(.white))
     private let currencyTapView = UIView()
     private let syncView: SyncingHeaderView
     private let modeLabel = UILabel(font: .customBody(size: 12.0), color: .transparentWhiteText) // debug info

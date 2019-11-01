@@ -18,4 +18,18 @@ extension Double {
         number.roundingMode = .halfEven
         return number.string(from: NSNumber(value: self)) ?? "0.0"
     }
+    
+    func stringWithSignificantDigit(significantDigit: Int = 2) -> String
+    {
+        if(self >= 1.0)
+        {
+            return asRoundedString(digits: 2)
+        }
+        let number = NumberFormatter()
+        number.usesSignificantDigits = true
+        number.minimumFractionDigits = 2
+        number.maximumSignificantDigits = significantDigit
+        number.roundingMode = .halfEven
+        return number.string(from: NSNumber(value: self)) ?? "0.0"
+    }
 }

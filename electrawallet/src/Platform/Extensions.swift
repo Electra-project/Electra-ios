@@ -546,6 +546,28 @@ extension UIImage {
         
         return scaledImage!
     }
+    
+    func withTint(_ color: UIColor) -> UIImage {
+
+        defer { UIGraphicsEndImageContext() }
+
+        UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
+        guard let context = UIGraphicsGetCurrentContext() else { return self }
+
+        context.scaleBy(x: 1.0, y: -1.0)
+        context.translateBy(x: 0.0, y: -size.height)
+
+        context.setBlendMode(.multiply)
+
+        let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
+        context.clip(to: rect, mask: cgImage!)
+        color.setFill()
+        context.fill(rect)
+
+        guard let newImage = UIGraphicsGetImageFromCurrentImageContext() else { return self }
+
+        return newImage
+    }
 }
 
 extension Dictionary where Key: ExpressibleByStringLiteral, Value: Any {
