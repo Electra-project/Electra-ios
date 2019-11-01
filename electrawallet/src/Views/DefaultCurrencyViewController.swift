@@ -45,7 +45,7 @@ class DefaultCurrencyViewController: UITableViewController, Subscriber, Trackabl
     }
 
     override func viewDidLoad() {
-        tableView.register(SeparatorCell.self, forCellReuseIdentifier: cellIdentifier)
+        tableView.register(ThinSeparatorCell.self, forCellReuseIdentifier: cellIdentifier)
         Store.subscribe(self, selector: { $0.defaultCurrencyCode != $1.defaultCurrencyCode }, callback: {
             self.defaultCurrencyCode = $0.defaultCurrencyCode
         })
@@ -56,24 +56,25 @@ class DefaultCurrencyViewController: UITableViewController, Subscriber, Trackabl
         tableView.sectionHeaderHeight = UITableView.automaticDimension
         tableView.estimatedSectionHeaderHeight = 140.0
         tableView.separatorStyle = .none
-        tableView.backgroundColor = .darkBackground
+        view.layer.contents =  #imageLiteral(resourceName: "Background").cgImage
 
         let titleLabel = UILabel(font: .customBold(size: 17.0), color: .white)
         titleLabel.text = S.Settings.currency
         titleLabel.sizeToFit()
         navigationItem.titleView = titleLabel
-
+        
         let faqButton = UIButton.buildFaqButton(articleId: ArticleIds.displayCurrency, currency: Currencies.btc)
         faqButton.tintColor = .navigationTint
-        navigationItem.rightBarButtonItems = [UIBarButtonItem.negativePadding, UIBarButtonItem(customView: faqButton)]
+        //navigationItem.rightBarButtonItems = [UIBarButtonItem.negativePadding, UIBarButtonItem(customView: faqButton)]
         bitcoinSwitch.tintColor = .navigationTint
     }
 
     private func setExchangeRateLabel() {
         if let currentRate = rates.filter({ $0.code == defaultCurrencyCode }).first {
-            let amount = Amount(amount: UInt256(C.satoshis), currency: Currencies.btc, rate: currentRate)
+            let amount = Amount(amount: UInt256(C.satoshis), currency: Currencies.btc, rate: currentRate, minimumFractionDigits: 0, maximumFractionDigits: Amount.highPrecisionDigits)
             rateLabel.textColor = .white
-            rateLabel.text = "\(amount.tokenDescription) = \(amount.fiatDescription(forLocale: currentRate.locale))"
+            let rate = Double(truncating: amount.fiatValue as NSNumber)
+            rateLabel.text = "\(amount.tokenDescription) = \(rate.stringWithSignificantDigit()) \(currentRate.code)"
         }
     }
 
@@ -93,58 +94,33 @@ class DefaultCurrencyViewController: UITableViewController, Subscriber, Trackabl
         cell.textLabel?.textColor = .white
         if rate.code == defaultCurrencyCode {
             let check = UIImageView(image: #imageLiteral(resourceName: "CircleCheck").withRenderingMode(.alwaysTemplate))
-            check.tintColor = .navigationTint
+            check.tintColor = .ecaDarkPurple
             cell.accessoryView = check
         } else {
             cell.accessoryView = nil
         }
-        cell.contentView.backgroundColor = .darkBackground
-        cell.backgroundColor = .darkBackground
+        cell.contentView.backgroundColor = .transparent
+        cell.backgroundColor = .transparent
         return cell
     }
 
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if let header = self.header { return header }
 
-        let header = UIView(color: .darkBackground)
+        let header = UIView(color: .transparent)
         let rateLabelTitle = UILabel(font: .customBold(size: 14.0), color: .white)
 
         header.addSubview(rateLabelTitle)
         header.addSubview(rateLabel)
-        header.addSubview(bitcoinLabel)
-        header.addSubview(bitcoinSwitch)
 
         rateLabelTitle.constrain([
-            rateLabelTitle.leadingAnchor.constraint(equalTo: header.leadingAnchor, constant: C.padding[2]),
-            rateLabelTitle.topAnchor.constraint(equalTo: header.topAnchor, constant: C.padding[1])])
+            rateLabelTitle.topAnchor.constraint(equalTo: header.topAnchor, constant: C.padding[2]),
+            rateLabelTitle.centerXAnchor.constraint(equalTo: header.centerXAnchor)])
         rateLabel.constrain([
-            rateLabel.leadingAnchor.constraint(equalTo: rateLabelTitle.leadingAnchor),
-            rateLabel.topAnchor.constraint(equalTo: rateLabelTitle.bottomAnchor) ])
+            rateLabel.topAnchor.constraint(equalTo: rateLabelTitle.bottomAnchor, constant: C.padding[0]),
+            rateLabel.bottomAnchor.constraint(equalTo: header.bottomAnchor, constant: -C.padding[2]),
+            rateLabel.centerXAnchor.constraint(equalTo: header.centerXAnchor)])
 
-        bitcoinLabel.constrain([
-            bitcoinLabel.leadingAnchor.constraint(equalTo: rateLabelTitle.leadingAnchor),
-            bitcoinLabel.topAnchor.constraint(equalTo: rateLabel.bottomAnchor, constant: C.padding[2]) ])
-        bitcoinSwitch.constrain([
-            bitcoinSwitch.leadingAnchor.constraint(equalTo: bitcoinLabel.leadingAnchor),
-            bitcoinSwitch.topAnchor.constraint(equalTo: bitcoinLabel.bottomAnchor, constant: C.padding[1]),
-            bitcoinSwitch.bottomAnchor.constraint(equalTo: header.bottomAnchor, constant: -C.padding[2]),
-            bitcoinSwitch.widthAnchor.constraint(equalTo: header.widthAnchor, constant: -C.padding[4]) ])
-
-        if Currencies.btc.state?.maxDigits == 8 {
-            bitcoinSwitch.selectedSegmentIndex = 1
-        } else {
-            bitcoinSwitch.selectedSegmentIndex = 0
-        }
-
-        bitcoinSwitch.valueChanged = strongify(self) { myself in
-            let newIndex = myself.bitcoinSwitch.selectedSegmentIndex
-            let value = (newIndex == 1) ? 8 : 2
-            Store.perform(action: WalletChange(Currencies.btc).setMaxDigits(value))
-            Store.perform(action: WalletChange(Currencies.bch).setMaxDigits(value))
-            myself.saveEvent("maxDigits.set", attributes: ["maxDigits": "\(value)"])
-        }
-
-        bitcoinLabel.text = S.DefaultCurrency.bitcoinLabel
         rateLabelTitle.text = S.DefaultCurrency.rateLabel
 
         self.header = header

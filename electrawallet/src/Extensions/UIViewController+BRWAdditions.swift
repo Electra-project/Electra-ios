@@ -27,7 +27,7 @@ extension UIViewController {
         removeFromParent()
     }
 
-    func addCloseNavigationItem(tintColor: UIColor? = nil, side: CloseButtonSide = .left) {
+    func addCloseNavigationItem(tintColor: UIColor? = .white, side: CloseButtonSide = .left) {
         let close = UIButton.close
         close.tap = { [weak self] in
             self?.dismiss(animated: true, completion: nil)

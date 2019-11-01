@@ -706,6 +706,8 @@
 "Settings.earlyAccess" = "Join Early Access";
 /* Enable segwit. */
 "Settings.EnableSegwit" = "Enable Segwit";
+/* User agreement */
+"Settings.UserAgreements" = "User Agreement";
 /* Are you enjoying bread alert message body */
 "Settings.enjoying" = "Are you enjoying BRD?";
 /* Face ID spending limit label */

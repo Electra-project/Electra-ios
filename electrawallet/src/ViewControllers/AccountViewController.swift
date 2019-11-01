@@ -103,6 +103,8 @@ class AccountViewController: UIViewController, Subscriber, Trackable {
             showJailbreakWarnings(isJailbroken: isJailbroken)
         }
 
+        view.layer.contents =  #imageLiteral(resourceName: "Background").cgImage
+        
         setupNavigationBar()
         addSubviews()
         addConstraints()
@@ -212,9 +214,8 @@ class AccountViewController: UIViewController, Subscriber, Trackable {
         // Store this constraint so it can be easily updated later when showing/hiding the rewards view.
         tableViewTopConstraint = transactionsTableView.view.topAnchor.constraint(equalTo: headerContainer.bottomAnchor)
         
-        transactionsTableView.view.backgroundColor = UIColor.white.withAlphaComponent(0.0)
+        transactionsTableView.view.backgroundColor = .transparent
 
-        view.backgroundColor = UIColor.white.withAlphaComponent(0.0)
         addChildViewController(transactionsTableView, layout: {
             transactionsTableView.view.constrain([
                 tableViewTopConstraint,

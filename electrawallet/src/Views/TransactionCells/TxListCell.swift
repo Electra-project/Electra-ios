@@ -91,8 +91,7 @@ class TxListCell: UITableViewCell {
             timestamp.topAnchor.constraint(equalTo: contentView.topAnchor, constant: C.padding[2]),
             timestamp.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: C.padding[2])])
         descriptionLabel.constrain([
-            descriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -C.padding[2]),
-            descriptionLabel.trailingAnchor.constraint(equalTo: amount.leadingAnchor, constant: -C.padding[2])])
+            descriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -C.padding[2])])
         pendingConstraints = [
             descriptionLabel.centerYAnchor.constraint(equalTo: statusIndicator.centerYAnchor),
             descriptionLabel.leadingAnchor.constraint(equalTo: statusIndicator.trailingAnchor, constant: C.padding[1]),
@@ -113,7 +112,7 @@ class TxListCell: UITableViewCell {
         amount.constrain([
             amount.topAnchor.constraint(equalTo: contentView.topAnchor),
             amount.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            amount.leadingAnchor.constraint(equalTo: descriptionLabel.trailingAnchor, constant: C.padding[6]),
+            amount.leadingAnchor.constraint(equalTo: descriptionLabel.trailingAnchor, constant: C.padding[4]),
             amount.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -C.padding[2])])
     }
     

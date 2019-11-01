@@ -26,6 +26,14 @@ class SyncingIndicator: UIView {
     var progress: CGFloat = 0.0 {
         didSet {
             progressCircle.setProgress(progress)
+            if progress == 1.0
+            {
+                text = ""
+            }
+            else
+            {
+                text = S.SyncingView.syncing
+            }
             updateTextLabel()
         }
     }
@@ -71,7 +79,7 @@ class SyncingIndicator: UIView {
     }
     
     private func setup() {
-        addSubview(progressCircle)
+        //addSubview(progressCircle)
         addSubview(label)
         setupConstraints()
         
@@ -85,15 +93,16 @@ class SyncingIndicator: UIView {
         label.constrain([
             label.leadingAnchor.constraint(equalTo: leadingAnchor),
             label.topAnchor.constraint(equalTo: topAnchor),
-            label.bottomAnchor.constraint(equalTo: bottomAnchor) ])
-        let circlePadding = (SyncingHeaderView.height - circleSize)/2.0
+            label.bottomAnchor.constraint(equalTo: bottomAnchor),
+            label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0.0)])
+       /* let circlePadding = (SyncingHeaderView.height - circleSize)/2.0
         circleWidth = progressCircle.widthAnchor.constraint(equalToConstant: circleSize)
         progressCircle.constrain([
             progressCircle.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0.0),
             progressCircle.leadingAnchor.constraint(equalTo: label.trailingAnchor, constant: C.padding[1]),
             progressCircle.topAnchor.constraint(equalTo: topAnchor, constant: circlePadding),
             progressCircle.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -circlePadding),
-            circleWidth])
+            circleWidth])*/
     }
 
     private func updateTextLabel() {

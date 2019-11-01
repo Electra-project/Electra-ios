@@ -309,6 +309,7 @@ enum S {
         static let resetCurrencies = NSLocalizedString("Settings.resetCurrencies", value: "Reset to Default Currencies", comment: "Reset currencies button")
         static let viewLegacyAddress = NSLocalizedString("Settings.ViewLegacyAddress", value: "View Legacy Receive Address", comment: "")
         static let enableSegwit = NSLocalizedString("Settings.EnableSegwit", value: "Enable Segwit", comment: "")
+        static let userAgreements = NSLocalizedString("Settings.UserAgreements", value: "User Agreement", comment: "")
     }
 
     enum About {
@@ -319,6 +320,9 @@ enum S {
         static let privacy = NSLocalizedString("About.privacy", value:"Privacy Policy", comment: "Privay Policy button label")
         static let walletID = NSLocalizedString("About.walletID", value:"BRD Rewards ID", comment: "About screen wallet ID label")
         static let footer = NSLocalizedString("About.footer", value:"Made by the global BRD team. Version %1$@ Build %2$@", comment: "About screen footer")
+        static let website = NSLocalizedString("About.website", value:"Website", comment: "Website screen blog label")
+        static let telegram = NSLocalizedString("About.telegram", value:"Telegram", comment: "Telegram screen blog label")
+        static let discord = NSLocalizedString("About.discord", value:"Discord", comment: "Discord screen blog label")
     }
 
     enum PushNotifications {

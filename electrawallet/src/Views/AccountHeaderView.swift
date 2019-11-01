@@ -12,7 +12,7 @@ import BRCore
 private let largeFontSize: CGFloat = 28.0
 private let smallFontSize: CGFloat = 14.0
 
-class AccountHeaderView: UIView, GradientDrawable, Subscriber {
+class AccountHeaderView: UIView, Subscriber {
 
     // MARK: - Views
     
@@ -21,7 +21,7 @@ class AccountHeaderView: UIView, GradientDrawable, Subscriber {
     private let exchangeRateLabel = UILabel(font: .customBody(size: 14.0))
     private let primaryBalance: UpdatingLabel
     private let secondaryBalance: UpdatingLabel
-    private let conversionSymbol = UIImageView(image: #imageLiteral(resourceName: "conversion"))
+    private let conversionSymbol = UIImageView(image: #imageLiteral(resourceName: "conversion").withTint(.white))
     private let currencyTapView = UIView()
     private let syncView: SyncingHeaderView
     private let modeLabel = UILabel(font: .customBody(size: 12.0), color: .transparentWhiteText) // debug info
@@ -357,7 +357,6 @@ class AccountHeaderView: UIView, GradientDrawable, Subscriber {
     }
 
     override func draw(_ rect: CGRect) {
-        drawGradient(start: currency.colors.0, end: currency.colors.1, rect)
     }
 
     @objc private func currencySwitchTapped() {
