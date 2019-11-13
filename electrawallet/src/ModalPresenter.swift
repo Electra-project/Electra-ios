@@ -587,7 +587,7 @@ class ModalPresenter: Subscriber, Trackable {
             
             // User Agreement
             MenuItem(title: S.Settings.userAgreements, icon: #imageLiteral(resourceName: "support")) {
-                menuNav.pushViewController(AboutViewController(), animated: true)
+                menuNav.pushViewController(TosViewController(), animated: true)
             },
             
             // About

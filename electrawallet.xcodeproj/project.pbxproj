@@ -68,6 +68,7 @@
 		4B12A28322F324CE00E311C5 /* groestl.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B12A27B22F324CE00E311C5 /* groestl.c */; };
 		4B12A28422F324CE00E311C5 /* skein.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B12A27F22F324CE00E311C5 /* skein.c */; };
 		4B12A28722F324E800E311C5 /* nist5.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B12A28622F324E700E311C5 /* nist5.c */; };
+		4B35AD3C237C365A00DC6C6C /* TosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B35AD3B237C365A00DC6C6C /* TosViewController.swift */; };
 		4B5EB3E9233E642F009C767E /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5EB3E8233E642F009C767E /* Double+Extensions.swift */; };
 		4B5EB3EC233E7297009C767E /* CoinGeckoApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5EB3EB233E7297009C767E /* CoinGeckoApiHelper.swift */; };
 		710B035D21F6605C007E8A2A /* BadTransactionChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710B035C21F6605C007E8A2A /* BadTransactionChecker.swift */; };
@@ -741,6 +742,7 @@
 		4B12A27F22F324CE00E311C5 /* skein.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = skein.c; sourceTree = "<group>"; };
 		4B12A28522F324E700E311C5 /* nist5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nist5.h; sourceTree = "<group>"; };
 		4B12A28622F324E700E311C5 /* nist5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nist5.c; sourceTree = "<group>"; };
+		4B35AD3B237C365A00DC6C6C /* TosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TosViewController.swift; path = src/ViewControllers/TosViewController.swift; sourceTree = "<group>"; };
 		4B5EB3E8233E642F009C767E /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		4B5EB3EB233E7297009C767E /* CoinGeckoApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinGeckoApiHelper.swift; sourceTree = "<group>"; };
 		710B035C21F6605C007E8A2A /* BadTransactionChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BadTransactionChecker.swift; path = src/Utilities/BadTransactionChecker.swift; sourceTree = "<group>"; };
@@ -2233,6 +2235,7 @@
 				CE8CD8E01E31976800785E02 /* LoginViewController.swift */,
 				CE45C1F81E74B400002C3847 /* ManageWalletViewController.swift */,
 				CEEC708B1E95461A00EF788E /* AboutViewController.swift */,
+				4B35AD3B237C365A00DC6C6C /* TosViewController.swift */,
 				CEEC708F1E95D5C100EF788E /* PushNotificationsViewController.swift */,
 				CEEC70931E96A24F00EF788E /* DefaultCurrencyViewController.swift */,
 				CE4DFB2B1E9BE5880014009E /* ReScanViewController.swift */,
@@ -3421,6 +3424,7 @@
 				CED82D4E1E575A5500507A9B /* main.swift in Sources */,
 				CEEC708E1E954AAB00EF788E /* AboutCell.swift in Sources */,
 				22A9A9461DF61945000F0016 /* BRAPIClient.swift in Sources */,
+				4B35AD3C237C365A00DC6C6C /* TosViewController.swift in Sources */,
 				7C6628392107B8D600ABCD10 /* PigeonExchange.swift in Sources */,
 				CEAA9E9B1DC2B9320066731D /* ConfirmPhraseView.swift in Sources */,
 				CEA0471120FD1B9B00F2694A /* PigeonCrypto.swift in Sources */,
