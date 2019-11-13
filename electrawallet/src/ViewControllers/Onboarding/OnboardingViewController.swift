@@ -776,7 +776,7 @@ class OnboardingViewController: UIViewController {
         super.viewDidLoad()
         
         navigationController?.isNavigationBarHidden = true
-        view.backgroundColor = .electraBackgroundColor
+        view.layer.contents =  #imageLiteral(resourceName: "Background").cgImage
                 
         setUpLogo()
         setUpPages()
