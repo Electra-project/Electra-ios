@@ -816,7 +816,7 @@ class ModalPresenter: Subscriber, Trackable {
         paperPhraseNavigationController.setClearNavbar()
         paperPhraseNavigationController.setWhiteStyle()
         paperPhraseNavigationController.modalPresentationStyle = .overFullScreen
-        let start = StartPaperPhraseViewController(eventContext: .none, dismissAction: nil, callback: { [weak self] in
+        let start = StartPaperPhraseViewController(eventContext: .none, skippable: true, dismissAction: nil, callback: { [weak self] in
             guard let `self` = self else { return }
             let verify = VerifyPinViewController(
                 bodyText: S.VerifyPin.continueBody,
@@ -843,6 +843,7 @@ class ModalPresenter: Subscriber, Trackable {
         var writeViewController: WritePaperPhraseViewController?
         writeViewController = WritePaperPhraseViewController(keyMaster: keyStore,
                                                              pin: pin,
+                                                             skippable: true,
                                                              eventContext: .none,
                                                              dismissAction: nil,
                                                              callback: {

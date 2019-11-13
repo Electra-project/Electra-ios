@@ -130,6 +130,9 @@ class StartFlowPresenter: Subscriber, Trackable {
         
         navigationController = ModalNavigationController(rootViewController: onboardingScreen)
         navigationController?.delegate = navigationControllerDelegate
+
+        // Onboarding steps are mandatory
+        navigationController?.modalPresentationStyle = .fullScreen
         
         if let onboardingFlow = navigationController {            
             onboardingFlow.setNavigationBarHidden(true, animated: false)
@@ -268,6 +271,7 @@ class StartFlowPresenter: Subscriber, Trackable {
         }
         
         let paperPhraseViewController = StartPaperPhraseViewController(eventContext: eventContext,
+                                                                       skippable: false,
                                                                        dismissAction: HideStartFlow(),
                                                                        callback: startPhraseCallback)
         
@@ -284,6 +288,7 @@ class StartFlowPresenter: Subscriber, Trackable {
     private func pushWritePaperPhraseViewController(pin: String, eventContext: EventContext = .none) {
         let writeViewController = WritePaperPhraseViewController(keyMaster: keyMaster,
                                                                  pin: pin,
+                                                                 skippable: false,
                                                                  eventContext: eventContext,
                                                                  dismissAction: HideStartFlow(),
                                                                  callback: { [weak self] in

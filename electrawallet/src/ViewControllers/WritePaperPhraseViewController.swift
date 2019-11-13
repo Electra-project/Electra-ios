@@ -29,6 +29,7 @@ class WritePaperPhraseViewController: UIViewController {
     private var previousWidth: NSLayoutConstraint?
     private var eventContext: EventContext
     private var dismissAction: Action?
+    private var isSkippable: Bool
 
     private var phraseOffscreenOffset: CGFloat {
         return view.bounds.width/2.0 + PhraseView.defaultSize.width/2.0
@@ -43,9 +44,10 @@ class WritePaperPhraseViewController: UIViewController {
 
     var lastWordSeen: (() -> Void)?
     
-    init(keyMaster: KeyMaster, pin: String, eventContext: EventContext, dismissAction: Action?, callback: @escaping () -> Void) {
+    init(keyMaster: KeyMaster, pin: String, skippable: Bool, eventContext: EventContext, dismissAction: Action?, callback: @escaping () -> Void) {
         self.keyMaster = keyMaster
         self.pin = pin
+        self.isSkippable = skippable
         self.eventContext = eventContext
         self.dismissAction = dismissAction
         self.callback = callback
@@ -86,7 +88,14 @@ class WritePaperPhraseViewController: UIViewController {
                 self?.dismiss(animated: true, completion: nil)
         }
 
-        setUpCloseButton()
+        if self.isSkippable
+        {
+            setUpCloseButton()
+        }
+        else
+        {
+            navigationItem.hidesBackButton = true
+        }
         //setUpFAQButton()
     }
 

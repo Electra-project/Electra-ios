@@ -12,10 +12,11 @@ typealias StartPaperPhraseDismissedCallback = (() -> Void)
 
 class StartPaperPhraseViewController: UIViewController {
     
-    init(eventContext: EventContext, dismissAction: Action?, callback: @escaping () -> Void) {
+    init(eventContext: EventContext, skippable: Bool, dismissAction: Action?, callback: @escaping () -> Void) {
         self.writePaperKeyCallback = callback
         self.eventContext = eventContext
         self.dismissAction = dismissAction
+        self.isSkippable = skippable
         let buttonTitle = UserDefaults.walletRequiresBackup ? S.StartPaperPhrase.buttonTitle : S.StartPaperPhrase.againButtonTitle
         writePaperKeyButton = BRDButton(title: buttonTitle, type: .primary)
         super.init(nibName: nil, bundle: nil)
@@ -29,6 +30,7 @@ class StartPaperPhraseViewController: UIViewController {
     private let writePaperKeyCallback: () -> Void
     private var eventContext: EventContext = .none
     private var dismissAction: Action?
+    private var isSkippable: Bool
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -53,7 +55,14 @@ class StartPaperPhraseViewController: UIViewController {
             footer.text = String(format: S.StartPaperPhrase.date, df.string(from: writePaperPhraseDate))
         }
 
-        setUpCloseButton()
+        if self.isSkippable
+        {
+            setUpCloseButton()
+        }
+        else
+        {
+            navigationItem.hidesBackButton = true
+        }
         //setUpFAQButton()
     }
 
