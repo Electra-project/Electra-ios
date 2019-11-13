@@ -89,6 +89,15 @@ class StartFlowPresenter: Subscriber, Trackable {
         navigationController?.pushViewController(recoverIntro, animated: true)
     }
 
+    private func presentTOSAgreement(nextStep: @escaping () -> Void)
+    {
+        let tosAgremment = TosViewController(didTapNext: nextStep)
+        navigationController?.setClearNavbar()
+        navigationController?.setNavigationBarHidden(false, animated: false)
+        navigationController?.pushViewController(tosAgremment, animated: true)
+        
+    }
+    
     // Displays the onboarding screen (app landing page) that allows the user to either create
     // a new wallet or restore an existing wallet. 
     private func presentOnboardingFlow() {
@@ -102,9 +111,15 @@ class StartFlowPresenter: Subscriber, Trackable {
             
             switch action {
             case .restoreWallet:
-                self.enterRecoverWalletFlow()
+                //self.enterRecoverWalletFlow()
+                self.presentTOSAgreement {
+                    self.enterRecoverWalletFlow()
+                }
             case .createWallet:
-                self.enterCreateWalletFlow(eventContext: .onboarding)
+                //self.enterCreateWalletFlow(eventContext: .onboarding)
+                self.presentTOSAgreement {
+                    self.enterOnboardingCreateWalletFlow()
+                }
             case .createWalletBuyCoin:
                 // This will be checked in dismissStartFlow(), which is called after the PIN
                 // and paper key flows are finished.
@@ -211,6 +226,10 @@ class StartFlowPresenter: Subscriber, Trackable {
         enterCreateWalletFlow(eventContext: .none)
     }
     
+    private func enterOnboardingCreateWalletFlow() {
+        enterCreateWalletFlow(eventContext: .onboarding)
+    }
+    
     private func enterCreateWalletFlow(eventContext: EventContext) {
         let pinCreationViewController = UpdatePinViewController(keyMaster: keyMaster,
                                                                 type: .creationNoPhrase,
@@ -223,7 +242,7 @@ class StartFlowPresenter: Subscriber, Trackable {
             autoreleasepool {
                 guard self?.keyMaster.setRandomSeedPhrase() != nil else { self?.handleWalletCreationError(); return }
                 //TODO:BCH multi-currency support
-                UserDefaults.selectedCurrencyCode = nil // to land on home screen after new wallet creation
+                // UserDefaults.selectedCurrencyCode = nil // to land on home screen after new wallet creation
                 Store.perform(action: WalletChange(Currencies.btc).setWalletCreationDate(Date()))
                 DispatchQueue.main.async {
                     self?.pushStartPaperPhraseCreationViewController(pin: pin, eventContext: context)

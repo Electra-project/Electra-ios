@@ -709,7 +709,9 @@ class OnboardingViewController: UIViewController {
     private func topButtonTapped() {
         if self.pageIndex == 0 {
             // 'Create new wallet'
-            self.animateToNextPage()
+            /*self.animateToNextPage()
+            logEvent(.getStartedButton, screen: .landingPage)*/
+            exitWith(action: .createWallet)
             logEvent(.getStartedButton, screen: .landingPage)
         } else if self.pageIndex == self.lastPageIndex {
             // 'Buy some coin'

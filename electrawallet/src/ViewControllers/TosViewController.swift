@@ -11,6 +11,16 @@ import SafariServices
 
 class TosViewController: UIViewController, UITextViewDelegate {
 
+    init(didTapNext: @escaping () -> Void) {
+        self.didTapNext = didTapNext
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    private var didTapNext: (() -> Void)? = nil
     private let titleLabel = UILabel(font: .customBold(size: 17.0), color: .white)
     private let scrollView = UIScrollView()
     private let text = UILabel()
@@ -31,7 +41,7 @@ class TosViewController: UIViewController, UITextViewDelegate {
 
     private func addConstraints() {
         scrollView.constrain([
-            scrollView.topAnchor.constraint(equalTo: view.topAnchor, constant: C.padding[3]),
+            scrollView.topAnchor.constraint(equalTo: view.topAnchor, constant: C.padding[3] + (didTapNext != nil ? 44 : 0)),
             scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -C.padding[2]),
             scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: C.padding[2]),
             scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -C.padding[2])
@@ -58,6 +68,7 @@ class TosViewController: UIViewController, UITextViewDelegate {
     private func setData() {
         titleLabel.text = S.TosView.title
         view.layer.contents =  #imageLiteral(resourceName: "Background").cgImage
+        ackButton.tap = didTapNext
         ackButton.isHidden = true
         scrollView.backgroundColor = .transparent
         text.backgroundColor = .transparent
@@ -67,13 +78,21 @@ class TosViewController: UIViewController, UITextViewDelegate {
         text.textAlignment = .center
         text.text = S.TosView.agreement
         text.sizeToFit()
-        scrollView.delegate = self
-        
         
     }
     
+    override func viewDidLayoutSubviews() {
+        self.scrollView.delegate = self
+    }
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        // Will be needed for the TOS agreement in the onboarding sequences
-        // ackButton.isHidden = scrollView.contentOffset.y + scrollView.bounds.height < scrollView.contentSize.height
+        if (self.didTapNext != nil)
+        {
+            ackButton.isHidden = scrollView.contentOffset.y + scrollView.bounds.height < scrollView.contentSize.height
+        }
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
