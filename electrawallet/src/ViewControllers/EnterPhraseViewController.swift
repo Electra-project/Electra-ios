@@ -106,7 +106,7 @@ class EnterPhraseViewController: UIViewController, UIScrollViewDelegate, Trackab
     }
 
     private func setInitialData() {
-        view.backgroundColor = .darkBackground
+        view.layer.contents =  #imageLiteral(resourceName: "Background").cgImage
         errorLabel.text = S.RecoverWallet.invalid
         errorLabel.isHidden = true
         errorLabel.textAlignment = .center
@@ -115,6 +115,7 @@ class EnterPhraseViewController: UIViewController, UIScrollViewDelegate, Trackab
         }
         instruction.text = S.RecoverWallet.instruction
         faq.tintColor = .white
+        faq.isHidden = true
         switch reason {
         case .setSeed:
             saveEvent("enterPhrase.setSeed")

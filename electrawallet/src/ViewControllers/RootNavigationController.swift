@@ -53,7 +53,7 @@ class RootNavigationController: UINavigationController {
     override func viewDidLoad() {
         setDarkStyle()
         
-        view.backgroundColor = .navigationBackground
+        view.layer.contents =  #imageLiteral(resourceName: "Background").cgImage
         
         // The temp views are not required when we're presenting the onboarding startup flow.
         if !Store.state.shouldShowOnboarding {

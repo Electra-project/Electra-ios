@@ -32,7 +32,8 @@ extension UIButton {
         let button = UIButton(type: .system)
         button.setTitle(title, for: .normal)
         button.titleLabel?.font = UIFont.customMedium(size: 16.0)
-        button.backgroundColor = .red
+        button.backgroundColor = .ecaDarkPurple
+        button.tintColor = .white
         button.layer.cornerRadius = 5
         button.layer.masksToBounds = true
         return button

@@ -74,8 +74,8 @@ class AboutViewController: UIViewController {
         logo.tintColor = .darkBackground
         titleLabel.text = S.About.title
         privacy.setTitle(S.About.privacy, for: .normal)
-        privacy.titleLabel?.font = UIFont.customBody(size: 13.0)
-        privacy.tintColor = .primaryButton
+        privacy.titleLabel?.font = UIFont.customBold(size: 13.0)
+        privacy.tintColor = .white
         footer.textAlignment = .center
         if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String, let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String {
             footer.text = String(format: S.About.footer, version, build)

@@ -284,7 +284,7 @@ extension UIColor {
     }
     
     static var navigationTint: UIColor {
-        return UIColor.fromHex("29ABE2")
+        return .white
     }
     
     static var navigationBackground: UIColor {
