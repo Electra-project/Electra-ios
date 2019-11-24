@@ -152,7 +152,7 @@ class ModalPresenter: Subscriber, Trackable {
         }
         
         // Push Notifications Permission Request
-        Store.subscribe(self, name: .registerForPushNotificationToken) { [weak self]  _ in
+        /*Store.subscribe(self, name: .registerForPushNotificationToken) { [weak self]  _ in
             guard let top = self?.topViewController else { return }
             NotificationAuthorizer().requestAuthorization(fromViewController: top, completion: { granted in
                 DispatchQueue.main.async {
@@ -164,7 +164,7 @@ class ModalPresenter: Subscriber, Trackable {
                     }
                 }
             })
-        }
+        }*/
         
         Store.subscribe(self, name: .openPlatformUrl("")) { [unowned self] in
             guard let trigger = $0 else { return }
