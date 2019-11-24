@@ -41,7 +41,7 @@ class TosViewController: UIViewController, UITextViewDelegate {
 
     private func addConstraints() {
         scrollView.constrain([
-            scrollView.topAnchor.constraint(equalTo: view.topAnchor, constant: C.padding[3] + (didTapNext != nil ? 44 : 0)),
+            scrollView.topAnchor.constraint(equalTo: view.topAnchor, constant: (E.isIPhoneX ? C.padding[5] : C.padding[3]) + (didTapNext != nil ? 44 : 0)),
             scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -C.padding[2]),
             scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: C.padding[2]),
             scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -C.padding[2])

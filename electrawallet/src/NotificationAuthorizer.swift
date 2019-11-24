@@ -52,6 +52,8 @@ struct NotificationAuthorizer: Trackable {
     }
     
     func requestAuthorization(fromViewController viewController: UIViewController, completion: @escaping AuthorizationHandler) {
+         completion(false)
+         return
         UNUserNotificationCenter.current().getNotificationSettings { settings in
             DispatchQueue.main.async {
                 switch settings.authorizationStatus {
@@ -154,7 +156,10 @@ struct NotificationAuthorizer: Trackable {
     }
     
     private func showOptInAlert(fromViewController viewController: UIViewController, completion: @escaping OptInResponseCallback) {
-        let alert = UIAlertController(title: S.PushNotifications.title,
+        completion(.denied)
+        return
+        
+       /* let alert = UIAlertController(title: S.PushNotifications.title,
                                       message: S.PushNotifications.body,
                                       preferredStyle: .alert)
         
@@ -187,7 +192,7 @@ struct NotificationAuthorizer: Trackable {
         alert.addAction(enableAction)
         alert.addAction(deferAction)
         
-        viewController.present(alert, animated: true, completion: nil)
+        viewController.present(alert, animated: true, completion: nil)*/
     }
     
     private func showAlertForInitialAuthorization(fromViewController viewController: UIViewController,

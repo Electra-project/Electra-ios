@@ -57,16 +57,16 @@ extension UserDefaults {
     // Add any keys here that you want to be able to reset without having
     // to reset the simulator settings.
     static let resettableBooleans: [ResettableBooleanSetting] = [
-        [hasPromptedForEmailKey: false],
+        [hasPromptedForEmailKey: true],
         [hasSubscribedToEmailUpdatesKey: false],
         [hasPromptedBiometricsKey: false],
         [isBiometricsEnabledKey: false],
-        [hasPromptedShareDataKey: false],
+        [hasPromptedShareDataKey: true],
         [hasOptedInSegwitKey: false],
         [debugShouldAutoEnterPinKey: false],
         [debugShouldSuppressPaperKeyPromptKey: false],
         [debugShouldShowPaperKeyPreviewKey: false],
-        [debugSuppressAppRatingPromptKey: false],
+        [debugSuppressAppRatingPromptKey: true],
         [debugShowAppRatingPromptOnEnterWalletKey: false],
         [shouldHideBRDCellHighlightKey: false],
         [shouldHideBRDRewardsAnimationKey: false],

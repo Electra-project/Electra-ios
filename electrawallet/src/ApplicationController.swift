@@ -250,7 +250,7 @@ class ApplicationController: Subscriber, Trackable {
             didInitWalletManager()
         }
 
-        appRatingManager.start()
+        //appRatingManager.start()
         
         // Set up the animation frames early during the startup process so that they're
         // ready to roll by the time the home screen is displayed.
@@ -351,8 +351,8 @@ class ApplicationController: Subscriber, Trackable {
             }
         }
         
-        initTokenWallets()
-        addTokenListChangeListener()
+        //initTokenWallets()
+        //addTokenListChangeListener()
         Store.perform(action: PinLength.Set(keyStore.pinLength))
         rootViewController.showLoginIfNeeded()
         
@@ -720,7 +720,7 @@ class ApplicationController: Subscriber, Trackable {
                     if !Store.state.isPushNotificationsEnabled {
                         self.saveEvent("push.enabledSettings")
                     }
-                    UIApplication.shared.registerForRemoteNotifications()
+                    //UIApplication.shared.registerForRemoteNotifications()
                 } else {
                     if Store.state.isPushNotificationsEnabled, let pushToken = UserDefaults.pushToken {
                         self.saveEvent("push.disabledSettings")
