@@ -358,7 +358,14 @@ class ApplicationController: Subscriber, Trackable {
         
         if let homeScreen = rootViewController.viewControllers.first as? HomeScreenViewController {
             // TODO: why is this needed...
+        // CaribouECA: If the original dev run into this file, it is needed because "didCreateOrRecoverWallet" event is run async and walletmanagers is not yet init when needed in some sequences. e.g. end of recover wallet onboarding sequence.
             homeScreen.reload()
+            
+            // Go to the Electra main screen instead
+            if let ecaScreen = createECAHomeScreen(navigationController: rootViewController)
+            {
+                    rootViewController.pushViewController(ecaScreen, animated: true)
+            }
         }
         
         hasPerformedWalletDependentInitialization = true
