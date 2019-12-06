@@ -1,9 +1,9 @@
 /* App name */
-"About.appName.android" = "ブレッド";
+"About.appName.android" = "エレクトラ";
 /* About screen blog label */
 "About.blog" = "ブログ";
 /* About screen footer */
-"About.footer" = "グローバルブレッドチームによって開発されました。バージョン %1$@ビルド%2$@";
+"About.footer" = "グローバルエレクトラチームによって開発されました。バージョン %1$@ビルド%2$@";
 /* Privay Policy button label */
 "About.privacy" = "プライバシーポリシー";
 /* About screen reddit label */
@@ -29,7 +29,7 @@
 /* Loading Wallet Message */
 "Account.loadingMessage" = "ウォレット読み込み中";
 /* Default wallet name */
-"AccountHeader.defaultWalletName" = "マイブレッド";
+"AccountHeader.defaultWalletName" = "マイエレクトラ";
 /* Third party keyboard warning */
 "Alert.customKeyboard.android" = "現在、サードパーティーのキーボードを使用しているようです。これを使うと入力した内容が記録され、ペーパー・キーが盗まれる可能性があります。追加の保護措置としてAndroidのデフォルトキーボードに切り替えてください。";
 /* Error alert title */
@@ -37,7 +37,7 @@
 /* Keystore error */
 "Alert.keystore.generic.android" = "Android OSのKeystoreに問題があります。support@breadwallet.com にお問い合わせください。";
 /* KeyStore error, keys are invalidated */
-"Alert.keystore.invalidated.android" = "お使いのAndroidロック画面が無効にされたため、暗号化されたブレッドのデータはつい最近無効になりました。";
+"Alert.keystore.invalidated.android" = "お使いのAndroidロック画面が無効にされたため、暗号化されたエレクトラのデータはつい最近無効になりました。";
 /* Warn user key store data has been invalidate because the user changed their security settings. The user must uninstall. */
 "Alert.keystore.invalidated.uninstall.android" = "画面ロック設定が変更されたため（パスワードが無効になった、指紋が変更されたなど）、進めることができません。セキュリティ上の理由から、Androidはキーストアを永久にロックしました。したがって、BRDアプリのデータをアンインストールして消去する必要があります。\n\n心配はいりません、あなたの資金は今でも安全です！アプリを再インストールし、ペーパーキーを使用してウォレットを復元してください。";
 /* Warn user key store data has been invalidate because the user changed their security settings. The user must wipe their app data. */
@@ -239,11 +239,11 @@
 /* You can customize your Face ID Spending Limit from the [menu] */
 "FaceIDSettings.customizeText" = "%1$@からFace ID使用限度額をカスタマイズすることができます。";
 /* Face Id screen label */
-"FaceIDSettings.label" = "自分の顔を使って、ブレッドのロックを解除して、設定された使用限度額までお金を送金しましょう。";
+"FaceIDSettings.label" = "自分の顔を使って、エレクトラのロックを解除して、設定された使用限度額までお金を送金しましょう。";
 /* Title of the screen for setting the Face ID Spending Limit */
 "FaceIDSettings.linkText" = "Face ID使用限度額画面";
 /* Setting to turn on Face ID for BRD */
-"FaceIDSettings.switchLabel" = "ブレッド利用時にFace IDを有効にする";
+"FaceIDSettings.switchLabel" = "エレクトラ利用時にFace IDを有効にする";
 /* Face ID settings view title */
 "FaceIDSettings.title" = "Face ID";
 /* Instructions on how to turn on face id on the iPhone. Please ensure the name of the menu in this string matches the wording Apple uses in the iPhone menu. */
@@ -307,7 +307,7 @@
 /* password textfield placeholder */
 "Import.passwordPlaceholder" = "パスワード";
 /* Caption for graphics */
-"Import.rightCaption" = "あなたの\nブレッドの\nウォレット";
+"Import.rightCaption" = "あなたの\nエレクトラの\nウォレット";
 /* Scan Private key button label */
 "Import.scan" = "秘密鍵をスキャン";
 /* Import wallet success alert title */
@@ -327,9 +327,9 @@
 /* Ignore jailbreak warning button */
 "JailbreakWarnings.ignore" = "無視する";
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithBalance" = "端末がセキュリティの危険にさらされている可能性があります\n 「脱獄」アプリはブレッドのキーチェーンデータにアクセスし、あなたのビットコインを盗む恐れがあります!  直ちにこのウォレットを完全削除して、安全な端末で復元して下さい。";
+"JailbreakWarnings.messageWithBalance" = "端末がセキュリティの危険にさらされている可能性があります\n 「脱獄」アプリはエレクトラのキーチェーンデータにアクセスし、あなたのビットコインを盗む恐れがあります!  直ちにこのウォレットを完全削除して、安全な端末で復元して下さい。";
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithoutBalance" = "端末がセキュリティの危険にさらされている可能性があります\n「脱獄」アプリはブレッドのキーチェーンデータにアクセスし、あなたのビットコインを盗む恐れがあります!  ブレッドは必ず脱獄端末以外で利用してください。";
+"JailbreakWarnings.messageWithoutBalance" = "端末がセキュリティの危険にさらされている可能性があります\n「脱獄」アプリはエレクトラのキーチェーンデータにアクセスし、あなたのビットコインを盗む恐れがあります!  エレクトラは必ず脱獄端末以外で利用してください。";
 /* Jailbreak warning title */
 "JailbreakWarnings.title" = "警告";
 /* Wipe wallet button */
@@ -351,7 +351,7 @@
 /* Location services disabled error */
 "LocationPlugin.disabled" = "位置情報サービスが無効化されています。";
 /* No permissions for location services */
-"LocationPlugin.notAuthorized" = "ブレッドは位置情報サービスへのアクセスが許可されていません。";
+"LocationPlugin.notAuthorized" = "エレクトラは位置情報サービスへのアクセスが許可されていません。";
 /* Wallet creation date prefix */
 "ManageWallet.creationDatePrefix" = "あなたは%1$@にご自身のウォレットを作成しました";
 /* Manage wallet description text */
@@ -417,7 +417,7 @@
 /* Onboarding screen Page 1 title */
 "OnboardingPageOne.title" = "新しいグローバルウォレットにようこそ！";
 /* Onboarding screen Page 3 subtitle */
-"OnboardingPageThree.subtitle" = "BRDで容易に安全に投資して多様化しましょう。";
+"OnboardingPageThree.subtitle" = "Electraで容易に安全に投資して多様化しましょう。";
 /* Onboarding screen Page 3 title */
 "OnboardingPageThree.title" = "ビットコイン,トークン,その他のデジタル通貨を購入・取引しましょう。";
 /* Onboarding screen Page 2 subtitle */
@@ -493,7 +493,7 @@
 /* Button on fingerprint prompt so the user can enter their PIN instead */
 "Prompts.TouchId.usePin.android" = "PIN";
 /* Upgrade PIN prompt body. */
-"Prompts.UpgradePin.body" = "ブレッドのPINコードは6桁にアップグレードされました。こちらをタップして更新してください。";
+"Prompts.UpgradePin.body" = "エレクトラのPINコードは6桁にアップグレードされました。こちらをタップして更新してください。";
 /* Upgrade PIN prompt title. */
 "Prompts.UpgradePin.title" = "PINコードを更新する";
 /* Notifications will be added later but users can set their preferences now, which is why we specify "in the future". */
@@ -531,7 +531,7 @@
 /* Enter paper key instruction */
 "RecoverWallet.instruction" = "復元フレーズを入力してください";
 /* Recover wallet intro */
-"RecoverWallet.intro" = "復元フレーズを使用し、あなたのブレッドを復元する。";
+"RecoverWallet.intro" = "復元フレーズを使用し、あなたのエレクトラを復元する。";
 /* Invalid paper key message */
 "RecoverWallet.invalid" = "あなたが入力した復元フレーズは無効です。それぞれの単語を再確認の上、もう一度お試しください。";
 /* Previous button accessibility label */
@@ -559,7 +559,7 @@
 /* extimated time */
 "ReScan.body1" = "20〜45分";
 /* Syncing explanation */
-"ReScan.body2" = "ビットコインネットワークでトランザクションが完了したと表示されているが、BRD上では完了と表示されない場合。";
+"ReScan.body2" = "ビットコインネットワークでトランザクションが完了したと表示されているが、Electra上では完了と表示されない場合。";
 /* Syncing explanation */
 "ReScan.body3" = "送金しているが、拒否され続けている場合。";
 /* Start Sync button label */
@@ -597,11 +597,11 @@
 /* Paper Key button title */
 "SecurityCenter.paperKeyTitle" = "復元フレーズ";
 /* PIN button description */
-"SecurityCenter.pinDescription" = "アクセス権限のないユーザーからあなたのブレッドを守ります。";
+"SecurityCenter.pinDescription" = "アクセス権限のないユーザーからあなたのエレクトラを守ります。";
 /* PIN button title */
 "SecurityCenter.pinTitle" = "6桁のPINコード";
 /* Touch ID button description */
-"SecurityCenter.touchIdDescription" = "BRDロック解除の他、設定した限度額までの送金も指紋認証で出来ます。";
+"SecurityCenter.touchIdDescription" = "ECAロック解除の他、設定した限度額までの送金も指紋認証で出来ます。";
 /* Touch ID button title */
 "SecurityCenter.touchIdTitle" = "Touch ID";
 /* Security center fingerprint authentication button */
@@ -623,13 +623,13 @@
 /* Balance: $4.00 */
 "Send.balance" = "残高: %1$@";
 /* Instructions how to allow the camera access for the app */
-"Send.cameraUnavailabeMessage.android" = "「設定」 > 「アプリ」 > 「ブレッド」 > 「許可」でカメラへのアクセスを許可してください";
+"Send.cameraUnavailabeMessage.android" = "「設定」 > 「アプリ」 > 「エレクトラ」 > 「許可」でカメラへのアクセスを許可してください";
 /* Permission required to access camera */
-"Send.cameraUnavailabeTitle.android" = "ブレッドはカメラへのアクセスを許可されていません";
+"Send.cameraUnavailabeTitle.android" = "エレクトラはカメラへのアクセスを許可されていません";
 /* Camera not allowed message */
 "Send.cameraunavailableMessage" = "設定画面へ移動し、カメラへのアクセス許可をしてください。";
 /* Camera not allowed alert title */
-"Send.cameraUnavailableTitle" = "ブレッドはカメラへのアクセスが許可されていません";
+"Send.cameraUnavailableTitle" = "エレクトラはカメラへのアクセスが許可されていません";
 /* Warning when sending to self. */
 "Send.containsAddress" = "送金先がご自身のアドレスになっています。自分宛てには送金できません。";
 /* Could not create transaction alert title */
@@ -709,7 +709,7 @@
 /* Enable segwit. */
 "Settings.EnableSegwit" = "Segwitを有効にする";
 /* Are you enjoying bread alert message body */
-"Settings.enjoying" = "ブレッドをお楽しみいただいていますか?";
+"Settings.enjoying" = "エレクトラをお楽しみいただいていますか?";
 /* Face ID spending limit label */
 "Settings.faceIdLimit" = "Face ID使用限度額";
 /* Redeem the funds stored on this private key. */
@@ -741,7 +741,7 @@
 /* View legacy address (old format). */
 "Settings.ViewLegacyAddress" = "受取用レガシーアドレスを表示";
 /* Receive Bitcoin instructions */
-"Settings.ViewLegacyAddressReceiveDescription" = "このアドレスにはBitcoin（BTC）だけを送信してください。このアドレスに送信された他の資産は,いかなるものも永久に失われます。";
+"Settings.ViewLegacyAddressReceiveDescription" = "このアドレスにはElectra（ECA）だけを送信してください。このアドレスに送信された他の資産は,いかなるものも永久に失われます。";
 /* Receive Bitcoin */
 "Settings.ViewLegacyAddressReceiveTitle" = "Bitcoinを受け取りましょう";
 /* Wallet Settings section header */
@@ -749,7 +749,7 @@
 /* Unlink/delete your wallet from the current device. */
 "Settings.wipe" = "この端末から削除する";
 /* Share data view body */
-"ShareData.body" = "匿名データをシェアして、ブレッドの改善にご協力ください。これにはいかなる財務情報も含まれません。私たちはあなたの財務プライバシーを尊重しています。";
+"ShareData.body" = "匿名データをシェアして、エレクトラの改善にご協力ください。これにはいかなる財務情報も含まれません。私たちはあなたの財務プライバシーを尊重しています。";
 /* Share data header */
 "ShareData.header" = "データを共有しますか?";
 /* Share data switch label. */
@@ -757,7 +757,7 @@
 /* button label */
 "StartPaperPhrase.againButtonTitle" = "復元フレーズをもう一度書き留めてください";
 /* Paper key explanation text. */
-"StartPaperPhrase.body" = "復元フレーズは、スマートフォンを紛失したり、盗まれたり、壊れたり、アップグレードした場合に、ご自身のブレッドを元に戻せる唯一の方法です。\n\n単語の一覧を表示しますので、紙に書き留めて安全に保管してください。";
+"StartPaperPhrase.body" = "復元フレーズは、スマートフォンを紛失したり、盗まれたり、壊れたり、アップグレードした場合に、ご自身のエレクトラを元に戻せる唯一の方法です。\n\n単語の一覧を表示しますので、紙に書き留めて安全に保管してください。";
 /* button label */
 "StartPaperPhrase.buttonTitle" = "復元フレーズを書き留めてください";
 /* Argument is date */
@@ -809,13 +809,13 @@
 /* Fingerprint Is Not Setup */
 "TouchIdSettings.disabledWarning.title.android" = "指紋認証が有効ではありません";
 /* Touch Id screen label */
-"TouchIdSettings.label" = "設定された限度額以下の送金を行う場合には、指紋認証でご自身のブレッドのロックを解除できます。";
+"TouchIdSettings.label" = "設定された限度額以下の送金を行う場合には、指紋認証でご自身のエレクトラのロックを解除できます。";
 /* Link Text (see TouchIdSettings.customizeText) */
 "TouchIdSettings.linkText" = "Touch ID利用限度額画面";
 /* Spending Limit: b100,000 ($100) */
 "TouchIdSettings.spendingLimit" = "利用限度: %1$@ (%2$@)";
 /* Touch id switch label. */
-"TouchIdSettings.switchLabel" = "ブレッドでTouch IDの有効化";
+"TouchIdSettings.switchLabel" = "エレクトラでTouch IDの有効化";
 /* Enable fingerprint for this wallet called Bread */
 "TouchIdSettings.switchLabel.android" = "指紋認証を有効にする";
 /* Touch ID settings view title */
@@ -978,9 +978,9 @@ eg. 182930 (45061 confirmations) */
 /* Instruction to touch the sensor for fingerprint authentication */
 "UnlockScreen.touchIdInstructions.android" = "タッチセンサー";
 /* TouchID prompt text */
-"UnlockScreen.touchIdPrompt" = "ブレッドのロックを解除してください。";
+"UnlockScreen.touchIdPrompt" = "エレクトラのロックを解除してください。";
 /* Device authentication body */
-"UnlockScreen.touchIdPrompt.android" = "続行するためAndroid機器のロックを解除 してください";
+"UnlockScreen.touchIdPrompt.android" = "続行するためiOS機器のロックを解除 してください";
 /* Unlock with TouchID accessibility label */
 "UnlockScreen.touchIdText" = "Touch IDでロックを解除する";
 /* Device authentication title */
@@ -988,7 +988,7 @@ eg. 182930 (45061 confirmations) */
 /* Update PIN caption text */
 "UpdatePin.caption" = "このPINコードは覚えておいてください。忘れた場合、ご自身のビットコインへアクセスできなくなります。";
 /* PIN creation info. */
-"UpdatePin.createInstruction" = "あなたのPINコードはご自身のブレッドのロックを解除したり、送金する時に利用します。";
+"UpdatePin.createInstruction" = "あなたのPINコードはご自身のエレクトラのロックを解除したり、送金する時に利用します。";
 /* Update PIN title */
 "UpdatePin.createTitle" = "PINコードの設定";
 /* Update PIN title */
@@ -1022,7 +1022,7 @@ eg. 182930 (45061 confirmations) */
 /* Authorize transaction with touch id message */
 "VerifyPin.touchIdMessage" = "このトランザクションを認証する";
 /* 'No wallet' warning for watch app */
-"Watch.noWalletWarning" = "BRDのiPhoneアプリを開き、ウォレットをセットアップする";
+"Watch.noWalletWarning" = "ElectraのiPhoneアプリを開き、ウォレットをセットアップする";
 /* Dismiss button label */
 "Webview.dismiss" = "解除";
 /* Webview loading error message */

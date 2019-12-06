@@ -1,9 +1,9 @@
 /* App name */
-"About.appName.android" = "BRD";
+"About.appName.android" = "Electra iOS";
 /* About screen blog label */
 "About.blog" = "블로그";
 /* About screen footer */
-"About.footer" = "글로벌 BRD 팀 제작. 버전 %1$@ 빌드 %2$@";
+"About.footer" = "글로벌 Electra 팀 제작. 버전 %1$@ 빌드 %2$@";
 /* Privay Policy button label */
 "About.privacy" = "개인정보 보호정책";
 /* About screen reddit label */
@@ -29,7 +29,7 @@
 /* Loading Wallet Message */
 "Account.loadingMessage" = "지갑 로딩";
 /* Default wallet name */
-"AccountHeader.defaultWalletName" = "나의 BRD";
+"AccountHeader.defaultWalletName" = "나의 Electra";
 /* Third party keyboard warning */
 "Alert.customKeyboard.android" = "제3자가 제공한 키보드를 사용하고 계신 것 같습니다, 귀하의 입력을 기록하고 귀하의 페이퍼 키가 도난 당할 수 있습니다. 추가적인 보호를 위해 기본 안드로이드 키보드로 전환해 주세요.";
 /* Error alert title */
@@ -213,7 +213,7 @@
 /* Retry Identity verification button */
 "Crowdsale.retry" = "다시 시도하기";
 /* Bitcoin denomination picker label */
-"DefaultCurrency.bitcoinLabel" = "Bitcoin Display Unit";
+"DefaultCurrency.bitcoinLabel" = "Electra Display Unit";
 /* Exchange rate label */
 "DefaultCurrency.rateLabel" = "환율";
 /* The wallet is disabled. */
@@ -307,7 +307,7 @@
 /* password textfield placeholder */
 "Import.passwordPlaceholder" = "비밀번호";
 /* Caption for graphics */
-"Import.rightCaption" = "귀하의 BRD 지갑";
+"Import.rightCaption" = "귀하의 Electra 지갑";
 /* Scan Private key button label */
 "Import.scan" = "개인 열쇠 스캔";
 /* Import wallet success alert title */
@@ -327,9 +327,9 @@
 /* Ignore jailbreak warning button */
 "JailbreakWarnings.ignore" = "무시";
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithBalance" = "장치 보안 취약\n모든 'jailbreak' 앱이 BRD의 키체인 데이터에 접속하여 귀하의 비트코인을 훔칠 수 있습니다! 이 지갑을 바로 지우시고 안전한 장치에서 복구하세요.";
+"JailbreakWarnings.messageWithBalance" = "장치 보안 취약\n모든 'jailbreak' 앱이 Electra의 키체인 데이터에 접속하여 귀하의 비트코인을 훔칠 수 있습니다! 이 지갑을 바로 지우시고 안전한 장치에서 복구하세요.";
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithoutBalance" = "장치 보안 취약\n모든 'jailbreak' 앱이 BRD의 키체인 데이터에 접속하여 귀하의 비트코인을 훔칠 수 있습니다! BRD를 비-jailbroken 장치에서만 사용해 주세요.";
+"JailbreakWarnings.messageWithoutBalance" = "장치 보안 취약\n모든 'jailbreak' 앱이 Electra의 키체인 데이터에 접속하여 귀하의 비트코인을 훔칠 수 있습니다! Electra를 비-jailbroken 장치에서만 사용해 주세요.";
 /* Jailbreak warning title */
 "JailbreakWarnings.title" = "경고";
 /* Wipe wallet button */
@@ -417,7 +417,7 @@
 /* Onboarding screen Page 1 title */
 "OnboardingPageOne.title" = "새로운 글로벌 월렛에 오신 것을 환영합니다!";
 /* Onboarding screen Page 3 subtitle */
-"OnboardingPageThree.subtitle" = "BRD와 함께 쉽고 안전하게 투자하고 다양하게 분산시키세요.";
+"OnboardingPageThree.subtitle" = "Electra와 함께 쉽고 안전하게 투자하고 다양하게 분산시키세요.";
 /* Onboarding screen Page 3 title */
 "OnboardingPageThree.title" = "비트코인, 토큰, 그리고 그 외 다른 가상 화폐들을 구매하고 거래하세요.";
 /* Onboarding screen Page 2 subtitle */
@@ -741,7 +741,7 @@
 /* View legacy address (old format). */
 "Settings.ViewLegacyAddress" = "유산 수령 주소 보기";
 /* Receive Bitcoin instructions */
-"Settings.ViewLegacyAddressReceiveDescription" = "이 주소에는 Bitcoin(BTC)만 보낼 수 있습니다. 이 주소로 다른 자산을 보낼 경우 모두 영구 소실됩니다.";
+"Settings.ViewLegacyAddressReceiveDescription" = "이 주소에는 Electra(ECA)만 보낼 수 있습니다. 이 주소로 다른 자산을 보낼 경우 모두 영구 소실됩니다.";
 /* Receive Bitcoin */
 "Settings.ViewLegacyAddressReceiveTitle" = "Bitcoin 수령";
 /* Wallet Settings section header */
@@ -978,7 +978,7 @@ eg. 182930 (45061 confirmations) */
 /* Instruction to touch the sensor for fingerprint authentication */
 "UnlockScreen.touchIdInstructions.android" = "터치 센서";
 /* TouchID prompt text */
-"UnlockScreen.touchIdPrompt" = "BRD의 잠금을 해제하세요.";
+"UnlockScreen.touchIdPrompt" = "Electra의 잠금을 해제하세요.";
 /* Device authentication body */
 "UnlockScreen.touchIdPrompt.android" = "계속하시려면 귀하의 안드로이드 장치 잠금을 해제해 주세요.";
 /* Unlock with TouchID accessibility label */
@@ -988,7 +988,7 @@ eg. 182930 (45061 confirmations) */
 /* Update PIN caption text */
 "UpdatePin.caption" = "이 PIN 코드를 기억하세요. PIN 코드를 잊어버리면 자신의 비트코인을 사용할 수 없게 됩니다.";
 /* PIN creation info. */
-"UpdatePin.createInstruction" = "귀하의 PIN 코드는 BRD의 잠금을 해제하고 돈을 송금하는 데 사용됩니다.";
+"UpdatePin.createInstruction" = "귀하의 PIN 코드는 ECA의 잠금을 해제하고 돈을 송금하는 데 사용됩니다.";
 /* Update PIN title */
 "UpdatePin.createTitle" = "PIN 설정";
 /* Update PIN title */
@@ -1022,7 +1022,7 @@ eg. 182930 (45061 confirmations) */
 /* Authorize transaction with touch id message */
 "VerifyPin.touchIdMessage" = "이 거래 승인";
 /* 'No wallet' warning for watch app */
-"Watch.noWalletWarning" = "귀하의 월렛을 설정하려면 BRD 앱을 열어 주세요.";
+"Watch.noWalletWarning" = "귀하의 월렛을 설정하려면 Electra 앱을 열어 주세요.";
 /* Dismiss button label */
 "Webview.dismiss" = "무시";
 /* Webview loading error message */

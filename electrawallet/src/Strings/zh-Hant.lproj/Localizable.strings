@@ -1,9 +1,9 @@
 /* App name */
-"About.appName.android" = "BRD";
+"About.appName.android" = "Electra iOS";
 /* About screen blog label */
 "About.blog" = "部落格";
 /* About screen footer */
-"About.footer" = "由全球 BRD 團隊製作。版本 %1$@構建%2$@";
+"About.footer" = "由全球 Electra 團隊製作。版本 %1$@構建%2$@";
 /* Privay Policy button label */
 "About.privacy" = "隱私政策";
 /* About screen reddit label */
@@ -29,7 +29,7 @@
 /* Loading Wallet Message */
 "Account.loadingMessage" = "正在載入電子錢包";
 /* Default wallet name */
-"AccountHeader.defaultWalletName" = "我的 BRD";
+"AccountHeader.defaultWalletName" = "我的 Electra";
 /* Third party keyboard warning */
 "Alert.customKeyboard.android" = "您似乎在使用第三方鍵盤，這可能會記錄您按下的鍵並竊取您的「紙鑰」。請切換至預設的 Android 鍵盤以獲得額外的保護。";
 /* Error alert title */
@@ -239,11 +239,11 @@
 /* You can customize your Face ID Spending Limit from the [menu] */
 "FaceIDSettings.customizeText" = "您可由 %1$@ 自訂 Face ID 消費上限。";
 /* Face Id screen label */
-"FaceIDSettings.label" = "刷臉解鎖您的 BRD 並在設定的限制內撥款。";
+"FaceIDSettings.label" = "刷臉解鎖您的 Electra 並在設定的限制內撥款。";
 /* Title of the screen for setting the Face ID Spending Limit */
 "FaceIDSettings.linkText" = "Face ID 消費上限畫面";
 /* Setting to turn on Face ID for BRD */
-"FaceIDSettings.switchLabel" = "開放 BRD 使用 Face ID";
+"FaceIDSettings.switchLabel" = "開放 Electra 使用 Face ID";
 /* Face ID settings view title */
 "FaceIDSettings.title" = "Face ID";
 /* Instructions on how to turn on face id on the iPhone. Please ensure the name of the menu in this string matches the wording Apple uses in the iPhone menu. */
@@ -301,13 +301,13 @@
 /* Caption for graphics */
 "Import.leftCaption" = "私密金鑰";
 /* Import wallet intro screen message */
-"Import.message" = "私密金鑰通常以 QR 碼形式印在紙上，作為離線儲存資金使用。利用單一交易兌換私密金鑰下所控制的所有資金匯入您的 BRD。";
+"Import.message" = "私密金鑰通常以 QR 碼形式印在紙上，作為離線儲存資金使用。利用單一交易兌換私密金鑰下所控制的所有資金匯入您的 Electra。";
 /* Enter password alert view title */
 "Import.password" = "此私密金鑰受密碼保護。";
 /* password textfield placeholder */
 "Import.passwordPlaceholder" = "密碼";
 /* Caption for graphics */
-"Import.rightCaption" = "您的 BRD 錢包";
+"Import.rightCaption" = "您的 Electra 錢包";
 /* Scan Private key button label */
 "Import.scan" = "掃描私密金鑰";
 /* Import wallet success alert title */
@@ -417,7 +417,7 @@
 /* Onboarding screen Page 1 title */
 "OnboardingPageOne.title" = "歡迎來到您全新的全球錢包！";
 /* Onboarding screen Page 3 subtitle */
-"OnboardingPageThree.subtitle" = "使用 BRD 進行多元分散投資,既輕鬆又安全。";
+"OnboardingPageThree.subtitle" = "使用 Electra 進行多元分散投資,既輕鬆又安全。";
 /* Onboarding screen Page 3 title */
 "OnboardingPageThree.title" = "購買及交易比特幣,代幣及其他數位貨幣。";
 /* Onboarding screen Page 2 subtitle */
@@ -493,7 +493,7 @@
 /* Button on fingerprint prompt so the user can enter their PIN instead */
 "Prompts.TouchId.usePin.android" = "密碼";
 /* Upgrade PIN prompt body. */
-"Prompts.UpgradePin.body" = "BRD 已經升級至 6 位數 PIN 碼。請點這裡升級。";
+"Prompts.UpgradePin.body" = "Electra 已經升級至 6 位數 PIN 碼。請點這裡升級。";
 /* Upgrade PIN prompt title. */
 "Prompts.UpgradePin.title" = "升級 PIN 碼";
 /* Notifications will be added later but users can set their preferences now, which is why we specify "in the future". */
@@ -531,7 +531,7 @@
 /* Enter paper key instruction */
 "RecoverWallet.instruction" = "輸入紙本金鑰";
 /* Recover wallet intro */
-"RecoverWallet.intro" = "以您的紙本金鑰復原您的 BRD";
+"RecoverWallet.intro" = "以您的紙本金鑰復原您的 Electra";
 /* Invalid paper key message */
 "RecoverWallet.invalid" = "紙本金鑰";
 /* Previous button accessibility label */
@@ -559,7 +559,7 @@
 /* extimated time */
 "ReScan.body1" = "20-45 分鐘";
 /* Syncing explanation */
-"ReScan.body2" = "如果交易在比特幣網上已經顯示為完成，但沒有出現在您的 BRD 上。";
+"ReScan.body2" = "如果交易在比特幣網上已經顯示為完成，但沒有出現在您的 Electra 上。";
 /* Syncing explanation */
 "ReScan.body3" = "你不斷收到「交易被拒」的錯誤。";
 /* Start Sync button label */
@@ -597,11 +597,11 @@
 /* Paper Key button title */
 "SecurityCenter.paperKeyTitle" = "紙本金鑰";
 /* PIN button description */
-"SecurityCenter.pinDescription" = "保護您的 BRD，防範未經授權的使用者。";
+"SecurityCenter.pinDescription" = "保護您的 ECA，防範未經授權的使用者。";
 /* PIN button title */
 "SecurityCenter.pinTitle" = "6 位數 PIN 碼";
 /* Touch ID button description */
-"SecurityCenter.touchIdDescription" = "輕鬆解鎖您的 BRD，並在設定好的限額內寄送款項。";
+"SecurityCenter.touchIdDescription" = "輕鬆解鎖您的 ECA，並在設定好的限額內寄送款項。";
 /* Touch ID button title */
 "SecurityCenter.touchIdTitle" = "Touch ID";
 /* Security center fingerprint authentication button */
@@ -629,7 +629,7 @@
 /* Camera not allowed message */
 "Send.cameraunavailableMessage" = "請至「設定」允許存取相機。";
 /* Camera not allowed alert title */
-"Send.cameraUnavailableTitle" = "BRD 未獲得存取相機的權限";
+"Send.cameraUnavailableTitle" = "Electra 未獲得存取相機的權限";
 /* Warning when sending to self. */
 "Send.containsAddress" = "目的地為您自己的地址。您不能寄送給自己。";
 /* Could not create transaction alert title */
@@ -741,7 +741,7 @@
 /* View legacy address (old format). */
 "Settings.ViewLegacyAddress" = "查看舊版接收位址";
 /* Receive Bitcoin instructions */
-"Settings.ViewLegacyAddressReceiveDescription" = "請只發送比特幣（BTC）至此位址。任何發送到此位址的資產將永久遺失。";
+"Settings.ViewLegacyAddressReceiveDescription" = "請只發送比特幣（ECA）至此位址。任何發送到此位址的資產將永久遺失。";
 /* Receive Bitcoin */
 "Settings.ViewLegacyAddressReceiveTitle" = "接收比特幣";
 /* Wallet Settings section header */
@@ -757,7 +757,7 @@
 /* button label */
 "StartPaperPhrase.againButtonTitle" = "再寫一次紙本金鑰";
 /* Paper key explanation text. */
-"StartPaperPhrase.body" = "您的手機遺失、損壞或升級時，紙本金鑰是復原\n BRD 唯一的方式。\n\n我們會向您出示一個字串，請寫在紙上並妥善保管。";
+"StartPaperPhrase.body" = "您的手機遺失、損壞或升級時，紙本金鑰是復原\n Electra 唯一的方式。\n\n我們會向您出示一個字串，請寫在紙上並妥善保管。";
 /* button label */
 "StartPaperPhrase.buttonTitle" = "寫下紙本金鑰";
 /* Argument is date */
@@ -809,13 +809,13 @@
 /* Fingerprint Is Not Setup */
 "TouchIdSettings.disabledWarning.title.android" = "指紋驗證並未啟用";
 /* Touch Id screen label */
-"TouchIdSettings.label" = "以您的指紋解鎖 BRD，並在設定好的限額內寄送款項。";
+"TouchIdSettings.label" = "以您的指紋解鎖 Electra，並在設定好的限額內寄送款項。";
 /* Link Text (see TouchIdSettings.customizeText) */
 "TouchIdSettings.linkText" = "Touch ID 支出限額畫面";
 /* Spending Limit: b100,000 ($100) */
 "TouchIdSettings.spendingLimit" = "花費上限：%1$@（%2$@）";
 /* Touch id switch label. */
-"TouchIdSettings.switchLabel" = "為 BRD 啟用 Touch ID";
+"TouchIdSettings.switchLabel" = "為 Electra 啟用 Touch ID";
 /* Enable fingerprint for this wallet called Bread */
 "TouchIdSettings.switchLabel.android" = "指紋驗證";
 /* Touch ID settings view title */
@@ -978,9 +978,9 @@ eg. 182930 (45061 confirmations) */
 /* Instruction to touch the sensor for fingerprint authentication */
 "UnlockScreen.touchIdInstructions.android" = "觸控感測器";
 /* TouchID prompt text */
-"UnlockScreen.touchIdPrompt" = "解鎖您的 BRD。";
+"UnlockScreen.touchIdPrompt" = "解鎖您的 Electra。";
 /* Device authentication body */
-"UnlockScreen.touchIdPrompt.android" = "請解除鎖定您的 Android 裝置來繼續。";
+"UnlockScreen.touchIdPrompt.android" = "請解除鎖定您的 iOS 裝置來繼續。";
 /* Unlock with TouchID accessibility label */
 "UnlockScreen.touchIdText" = "以 TouchID 解鎖";
 /* Device authentication title */
@@ -988,7 +988,7 @@ eg. 182930 (45061 confirmations) */
 /* Update PIN caption text */
 "UpdatePin.caption" = "請記住此 PIN 碼。如果忘記，會無法存取您的比特幣。";
 /* PIN creation info. */
-"UpdatePin.createInstruction" = "您的 PIN 碼會用於解鎖 BRD 及送出款項。";
+"UpdatePin.createInstruction" = "您的 PIN 碼會用於解鎖 ECA 及送出款項。";
 /* Update PIN title */
 "UpdatePin.createTitle" = "設定 PIN 碼";
 /* Update PIN title */
@@ -1022,7 +1022,7 @@ eg. 182930 (45061 confirmations) */
 /* Authorize transaction with touch id message */
 "VerifyPin.touchIdMessage" = "授權此交易";
 /* 'No wallet' warning for watch app */
-"Watch.noWalletWarning" = "開啟 BRDiPhone 應用程式以設定您的錢包。";
+"Watch.noWalletWarning" = "開啟 Electra-iOS 應用程式以設定您的錢包。";
 /* Dismiss button label */
 "Webview.dismiss" = "駁回";
 /* Webview loading error message */

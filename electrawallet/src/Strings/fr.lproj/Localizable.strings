@@ -1,9 +1,9 @@
 /* App name */
-"About.appName.android" = "BRD";
+"About.appName.android" = "Electra iOS";
 /* About screen blog label */
 "About.blog" = "Blog";
 /* About screen footer */
-"About.footer" = "Fait par l'équipe BRD monde. Version %1$@ Build %2$@";
+"About.footer" = "Fait par l'équipe Electra monde. Version %1$@ Build %2$@";
 /* Privay Policy button label */
 "About.privacy" = "Politique de confidentialité";
 /* About screen reddit label */
@@ -29,7 +29,7 @@
 /* Loading Wallet Message */
 "Account.loadingMessage" = "Chargement du portefeuille";
 /* Default wallet name */
-"AccountHeader.defaultWalletName" = "Mon BRD";
+"AccountHeader.defaultWalletName" = "Mon Electra";
 /* Third party keyboard warning */
 "Alert.customKeyboard.android" = "Il semble que vous utilisez un clavier tiers. Ce dernier peut enregistrer ce que vous tapez et voler votre portefeuille papier. Veuillez basculer vers le clavier Android par défaut pour plus de sécurité.";
 /* Error alert title */
@@ -123,7 +123,7 @@
 /* Approve button label */
 "BitID.approve" = "Approuver";
 /* <sitename> is requesting authentication using your bitcoin wallet */
-"BitID.authenticationRequest" = "%1$@ requiert l'authentification en utilisant votre portefeuille bitcoin";
+"BitID.authenticationRequest" = "%1$@ requiert l'authentification en utilisant votre portefeuille Electra";
 /* Deny button label */
 "BitID.deny" = "Refuser";
 /* BitID error alert title */
@@ -211,7 +211,7 @@
 /* Retry Identity verification button */
 "Crowdsale.retry" = "Réessayer";
 /* Bitcoin denomination picker label */
-"DefaultCurrency.bitcoinLabel" = "Unité d'affichage Bitcoin";
+"DefaultCurrency.bitcoinLabel" = "Unité d'affichage Electra";
 /* Exchange rate label */
 "DefaultCurrency.rateLabel" = "Taux de change";
 /* The wallet is disabled. */
@@ -237,11 +237,11 @@
 /* You can customize your Face ID Spending Limit from the [menu] */
 "FaceIDSettings.customizeText" = "Vous pouvez personnaliser votre limite de dépense Face ID à partir de %1$@.";
 /* Face Id screen label */
-"FaceIDSettings.label" = "Utilisez votre visage pour déverrouiller votre BRD et envoyer de l'argent jusqu'à une limite définie.";
+"FaceIDSettings.label" = "Utilisez votre visage pour déverrouiller votre Electra et envoyer de l'argent jusqu'à une limite définie.";
 /* Title of the screen for setting the Face ID Spending Limit */
 "FaceIDSettings.linkText" = "Réglage des limites de dépenses Face ID";
 /* Setting to turn on Face ID for BRD */
-"FaceIDSettings.switchLabel" = "Activer Face ID pour BRD";
+"FaceIDSettings.switchLabel" = "Activer Face ID pour Electra";
 /* Face ID settings view title */
 "FaceIDSettings.title" = "Face ID";
 /* Instructions on how to turn on face id on the iPhone. Please ensure the name of the menu in this string matches the wording Apple uses in the iPhone menu. */
@@ -281,7 +281,7 @@
 /* Checking private key balance progress view text */
 "Import.checking" = "Vérification du solde des clés privées...";
 /* Sweep private key confirmation message */
-"Import.confirm" = "Envoyer %1$@ de cette clé privée dans votre portefeuille ? Le réseau bitcoin recevra des frais de %2$@.";
+"Import.confirm" = "Envoyer %1$@ de cette clé privée dans votre portefeuille ? Le réseau Electra recevra des frais de %2$@.";
 /* Duplicate key error message */
 "Import.Error.duplicate" = "Cette clé privée est déjà dans votre portefeuille.";
 /* empty private key error message */
@@ -299,13 +299,13 @@
 /* Caption for graphics */
 "Import.leftCaption" = "Portefeuille à importer";
 /* Import wallet intro screen message */
-"Import.message" = "Importer un portefeuille signifie le transfert de tout son contenu dans votre portfeuille BRD en une seule transaction.\n";
+"Import.message" = "Importer un portefeuille signifie le transfert de tout son contenu dans votre portfeuille Electra en une seule transaction.\n";
 /* Enter password alert view title */
 "Import.password" = "Cette clé privée est protégée par mot de passe.";
 /* password textfield placeholder */
 "Import.passwordPlaceholder" = "mot de passe";
 /* Caption for graphics */
-"Import.rightCaption" = "Votre portefeuille BRD";
+"Import.rightCaption" = "Votre portefeuille Electra";
 /* Scan Private key button label */
 "Import.scan" = "Scanner la clé privée";
 /* Import wallet success alert title */
@@ -325,9 +325,9 @@
 /* Ignore jailbreak warning button */
 "JailbreakWarnings.ignore" = "Ignorer";
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithBalance" = "SÉCURITÉ DU DISPOSITIF COMPROMISE\nToute application « évasive » peut accéder aux données du porte-clé de BRD et voler vos bitcoins ! Détruisez ce portefeuille immédiatement et restaurez-le sur un appareil sécurisé.";
+"JailbreakWarnings.messageWithBalance" = "SÉCURITÉ DU DISPOSITIF COMPROMISE\nToute application « évasive » peut accéder aux données du porte-clé de Electra et voler vos Electras ! Détruisez ce portefeuille immédiatement et restaurez-le sur un appareil sécurisé.";
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithoutBalance" = "SÉCURITÉ DU DISPOSITIF COMPROMISE\nToute application « évasive » peut accéder aux données du porte-clé de BRD et voler vos bitcoins. N'utilisez BRD que sur un appareil non évasif.";
+"JailbreakWarnings.messageWithoutBalance" = "SÉCURITÉ DU DISPOSITIF COMPROMISE\nToute application « évasive » peut accéder aux données du porte-clé de Electra et voler vos Electras. N'utilisez Electra que sur un appareil non évasif.";
 /* Jailbreak warning title */
 "JailbreakWarnings.title" = "AVERTISSEMENT";
 /* Wipe wallet button */
@@ -397,7 +397,7 @@
 /* Node status label */
 "NodeSelector.statusLabel" = "Statut de connexion du nœud";
 /* Node Selector view title */
-"NodeSelector.title" = "Nœuds Bitcoin";
+"NodeSelector.title" = "Nœuds Electra";
 /* Onboarding screen 'I'll browse first' button */
 "Onboarding.browseFirst" = "Je vais d'abord explorer le site";
 /* Onboarding screen 'Buy some coin' button */
@@ -415,9 +415,9 @@
 /* Onboarding screen Page 1 title */
 "OnboardingPageOne.title" = "Bienvenue dans votre nouveau portefeuille international !";
 /* Onboarding screen Page 3 subtitle */
-"OnboardingPageThree.subtitle" = "Investissez et diversifiez facilement et en toute sécurité avec BRD.";
+"OnboardingPageThree.subtitle" = "Investissez et diversifiez facilement et en toute sécurité avec Electra.";
 /* Onboarding screen Page 3 title */
-"OnboardingPageThree.title" = "Achetez et vendez des bitcoins, des tokens, et d'autres monnaies électroniques.";
+"OnboardingPageThree.title" = "Achetez et vendez des Electras, des tokens, et d'autres monnaies électroniques.";
 /* Onboarding screen Page 2 subtitle */
 "OnboardingPageTwo.subtitle" = "Nous avons sous protection des actifs valant plus de 6 millions de dollars US.";
 /* Onboarding screen Page 2 title */
@@ -437,7 +437,7 @@
 /* Payment too small alert title */
 "PaymentProtocol.Errors.smallOutputError" = "Impossible de faire un paiement";
 /* Amount too small error message */
-"PaymentProtocol.Errors.smallPayment" = "Les paiements par Bitcoin ne peuvent être inférieurs à %1$@.";
+"PaymentProtocol.Errors.smallPayment" = "Les paiements par Electra ne peuvent être inférieurs à %1$@.";
 /* Output too small error message. */
 "PaymentProtocol.Errors.smallTransaction" = "Les résultats des transactions de Bitcoin ne peuvent pas être inférieurs à %1$@.";
 /* Unsupported signature type payment protocol error message */
@@ -491,7 +491,7 @@
 /* Button on fingerprint prompt so the user can enter their PIN instead */
 "Prompts.TouchId.usePin.android" = "PIN";
 /* Upgrade PIN prompt body. */
-"Prompts.UpgradePin.body" = "BRD a été mis à jour pour utiliser un code PIN à six chiffres. Appuyez ici pour mettre à niveau.";
+"Prompts.UpgradePin.body" = "Electra a été mis à jour pour utiliser un code PIN à six chiffres. Appuyez ici pour mettre à niveau.";
 /* Upgrade PIN prompt title. */
 "Prompts.UpgradePin.title" = "Mettre à jour le code PIN";
 /* Notifications will be added later but users can set their preferences now, which is why we specify "in the future". */
@@ -529,7 +529,7 @@
 /* Enter paper key instruction */
 "RecoverWallet.instruction" = "Entrez la clé papier";
 /* Recover wallet intro */
-"RecoverWallet.intro" = "Récupérez votre BRD avec votre clé papier.";
+"RecoverWallet.intro" = "Récupérez votre Electra avec votre clé papier.";
 /* Invalid paper key message */
 "RecoverWallet.invalid" = "La clé papier saisie n'est pas valide. Revérifiez chaque mot et réessayez.";
 /* Previous button accessibility label */
@@ -557,7 +557,7 @@
 /* extimated time */
 "ReScan.body1" = "20-45 minutes";
 /* Syncing explanation */
-"ReScan.body2" = "Si une transaction apparaît comme achevée sur le réseau de bitcoin mais pas dans votre BRD.";
+"ReScan.body2" = "Si une transaction apparaît comme achevée sur le réseau Electra mais pas dans votre portefeuil.";
 /* Syncing explanation */
 "ReScan.body3" = "Vous recevez de manière répétée un message d'erreur vous informant du rejet de votre transaction.";
 /* Start Sync button label */
@@ -595,11 +595,11 @@
 /* Paper Key button title */
 "SecurityCenter.paperKeyTitle" = "Clé papier";
 /* PIN button description */
-"SecurityCenter.pinDescription" = "Protège vos BRD contre les utilisateurs non autorisés.";
+"SecurityCenter.pinDescription" = "Protège vos ECA contre les utilisateurs non autorisés.";
 /* PIN button title */
 "SecurityCenter.pinTitle" = "PIN à six chiffres";
 /* Touch ID button description */
-"SecurityCenter.touchIdDescription" = "Débloquez convenablement vos BRD et envoyez de l'argent jusqu'à une limite définie.";
+"SecurityCenter.touchIdDescription" = "Débloquez convenablement vos ECA et envoyez de l'argent jusqu'à une limite définie.";
 /* Touch ID button title */
 "SecurityCenter.touchIdTitle" = "Touch ID";
 /* Security center fingerprint authentication button */
@@ -627,7 +627,7 @@
 /* Camera not allowed message */
 "Send.cameraunavailableMessage" = "Allez dans Paramètres pour autoriser l'accès à la caméra.";
 /* Camera not allowed alert title */
-"Send.cameraUnavailableTitle" = "BRD n'est pas autorisé à accéder à la caméra";
+"Send.cameraUnavailableTitle" = "Electra n'est pas autorisé à accéder à la caméra";
 /* Warning when sending to self. */
 "Send.containsAddress" = "La destination est votre propre adresse. Vous ne pouvez pas envoyer à vous même.";
 /* Could not create transaction alert title */
@@ -685,7 +685,7 @@
 /* Send money to label */
 "Send.toLabel" = "A";
 /* Adress already used alert message - first part */
-"Send.UsedAddress.firstLine" = "Les adresses Bitcoin sont destinées à une utilisation unique.";
+"Send.UsedAddress.firstLine" = "Les adresses Electra sont destinées à une utilisation unique.";
 /* Adress already used alert message - second part */
 "Send.UsedAddress.secondLIne" = "La réutilisation réduit la confidentialité pour vous et le destinataire et peut entraîner une perte si le destinataire ne contrôle pas directement l'adresse.";
 /* Adress already used alert title */
@@ -739,7 +739,7 @@
 /* View legacy address (old format). */
 "Settings.ViewLegacyAddress" = "Voir l'adresse de réception du patrimoine";
 /* Receive Bitcoin instructions */
-"Settings.ViewLegacyAddressReceiveDescription" = "N'envoyez de bitcoins (BTC) qu'à cette adresse. Tout autre actif envoyé à cette adresse sera définitivement perdu.";
+"Settings.ViewLegacyAddressReceiveDescription" = "N'envoyez de Electras (ECA) qu'à cette adresse. Tout autre actif envoyé à cette adresse sera définitivement perdu.";
 /* Receive Bitcoin */
 "Settings.ViewLegacyAddressReceiveTitle" = "Recevoir des bitcoins";
 /* Wallet Settings section header */
@@ -755,7 +755,7 @@
 /* button label */
 "StartPaperPhrase.againButtonTitle" = "Enregistrez la clé papier à nouveau";
 /* Paper key explanation text. */
-"StartPaperPhrase.body" = "Votre clé papier est la seule façon de restaurer votre BRD si votre téléphone est perdu, volé, cassé ou mis à niveau.\n\nNous allons vous montrer une liste de mots à écrire sur un morceau de papier et à garder en sécurité.";
+"StartPaperPhrase.body" = "Votre clé papier est la seule façon de restaurer votre Electra si votre téléphone est perdu, volé, cassé ou mis à niveau.\n\nNous allons vous montrer une liste de mots à écrire sur un morceau de papier et à garder en sécurité.";
 /* button label */
 "StartPaperPhrase.buttonTitle" = "Écrire la clé papier";
 /* Argument is date */
@@ -807,13 +807,13 @@
 /* Fingerprint Is Not Setup */
 "TouchIdSettings.disabledWarning.title.android" = "L'identification par empreinte digitale n'est pas activée";
 /* Touch Id screen label */
-"TouchIdSettings.label" = "Utilisez votre empreinte digitale pour débloquer votre BRD et envoyer de l'argent jusqu'à une limite définie.";
+"TouchIdSettings.label" = "Utilisez votre empreinte digitale pour débloquer votre Electra et envoyer de l'argent jusqu'à une limite définie.";
 /* Link Text (see TouchIdSettings.customizeText) */
 "TouchIdSettings.linkText" = "Écran de plafond de dépenses Touch ID";
 /* Spending Limit: b100,000 ($100) */
 "TouchIdSettings.spendingLimit" = "Limite de dépenses : %1$@ (%2$@)";
 /* Touch id switch label. */
-"TouchIdSettings.switchLabel" = "Activer Touch ID pour BRD";
+"TouchIdSettings.switchLabel" = "Activer Touch ID pour Electra";
 /* Enable fingerprint for this wallet called Bread */
 "TouchIdSettings.switchLabel.android" = "Activer l'identification par empreinte digitale";
 /* Touch ID settings view title */
@@ -976,9 +976,9 @@ eg. 182930 (45061 confirmations) */
 /* Instruction to touch the sensor for fingerprint authentication */
 "UnlockScreen.touchIdInstructions.android" = "Appuyez sur le capteur";
 /* TouchID prompt text */
-"UnlockScreen.touchIdPrompt" = "Déverrouillez votre BRD.";
+"UnlockScreen.touchIdPrompt" = "Déverrouillez votre Electra.";
 /* Device authentication body */
-"UnlockScreen.touchIdPrompt.android" = "Veuillez déverrouiller votre appareil Android pour continuer.";
+"UnlockScreen.touchIdPrompt.android" = "Veuillez déverrouiller votre appareil iOS pour continuer.";
 /* Unlock with TouchID accessibility label */
 "UnlockScreen.touchIdText" = "Déverrouiller avec TouchID";
 /* Device authentication title */
@@ -986,7 +986,7 @@ eg. 182930 (45061 confirmations) */
 /* Update PIN caption text */
 "UpdatePin.caption" = "Souvenez-vous de ce code PIN. Si vous l'oubliez, vous ne pourrez pas accéder à votre bitcoin.";
 /* PIN creation info. */
-"UpdatePin.createInstruction" = "Votre PIN sera utilisé pour débloquer votre BRD et envoyer de l'argent.";
+"UpdatePin.createInstruction" = "Votre PIN sera utilisé pour débloquer votre ECA et envoyer de l'argent.";
 /* Update PIN title */
 "UpdatePin.createTitle" = "Définir PIN";
 /* Update PIN title */
@@ -1020,7 +1020,7 @@ eg. 182930 (45061 confirmations) */
 /* Authorize transaction with touch id message */
 "VerifyPin.touchIdMessage" = "Autoriser cette transaction";
 /* 'No wallet' warning for watch app */
-"Watch.noWalletWarning" = "Ouvrez l'application BRD de l'iPhone pour configurer votre portefeuille.";
+"Watch.noWalletWarning" = "Ouvrez l'application Electra de l'iPhone pour configurer votre portefeuille.";
 /* Dismiss button label */
 "Webview.dismiss" = "Ignorer";
 /* Webview loading error message */
@@ -1042,7 +1042,7 @@ eg. 182930 (45061 confirmations) */
 /* Enter phrase to wipe wallet instruction. (Important to explain it is the CURRENT [this wallet's] paper key that needs to be entered). */
 "WipeWallet.instruction" = "Pour commencer un nouveau portefeuille ou rétablir un portefeuille existant, vous devez d'abord supprimer le portefeuille actuellement installé. Pour continuer, saisissez la Clé Papier du portefeuille actuel.";
 /* Instructions for unlinking the wallet */
-"WipeWallet.startMessage" = "Démarrer ou récupérer un autre portefeuille vous permet d'accéder et de gérer un portefeuille BRD différent sur cet appareil.";
+"WipeWallet.startMessage" = "Démarrer ou récupérer un autre portefeuille vous permet d'accéder et de gérer un portefeuille Electra différent sur cet appareil.";
 /* Start wipe wallet view warning */
 "WipeWallet.startWarning" = "Vous ne pourrez plus accéder à votre portefeuille courant depuis cet appareil. Si vous souhaitez le récupérer plus tard, vous devrais réentrer la clé papier.";
 /* Unlink this wallet from this device. */
