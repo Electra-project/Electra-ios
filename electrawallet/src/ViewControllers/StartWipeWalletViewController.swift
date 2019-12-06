@@ -16,7 +16,7 @@ class StartWipeWalletViewController: UIViewController {
     }
 
     private let didTapNext: () -> Void
-    private let header = RadialGradientView(backgroundColor: .blue, offset: 64.0)
+    private let header = UIView()//RadialGradientView(backgroundColor: .blue, offset: 64.0)
     private let illustration = UIImageView(image: #imageLiteral(resourceName: "RestoreIllustration"))
     private let message = UILabel.wrapping(font: .customBody(size: 16.0), color: .white)
     private let warning = UILabel.wrapping(font: .customBody(size: 16.0), color: .white)
@@ -61,7 +61,8 @@ class StartWipeWalletViewController: UIViewController {
     }
 
     private func setInitialData() {
-        view.backgroundColor = .darkBackground
+        view.layer.contents =  #imageLiteral(resourceName: "Background").cgImage
+        header.backgroundColor = .transparent
         illustration.contentMode = .scaleAspectFill
         message.text = S.WipeWallet.startMessage
         warning.text = S.WipeWallet.startWarning
