@@ -1,9 +1,9 @@
 /* App name */
-"About.appName.android" = "BRD";
+"About.appName.android" = "Electra iOS";
 /* About screen blog label */
 "About.blog" = "Блог";
 /* About screen footer */
-"About.footer" = "Создано международной командой BRD. Версия %1$@ Сборка %2$@";
+"About.footer" = "Создано международной командой Electra. Версия %1$@ Сборка %2$@";
 /* Privay Policy button label */
 "About.privacy" = "Политика конфиденциальности";
 /* About screen reddit label */
@@ -29,7 +29,7 @@
 /* Loading Wallet Message */
 "Account.loadingMessage" = "Загружаем кошелек";
 /* Default wallet name */
-"AccountHeader.defaultWalletName" = "Мой BRD";
+"AccountHeader.defaultWalletName" = "Мой Electra";
 /* Third party keyboard warning */
 "Alert.customKeyboard.android" = "Похоже, что вы пользуетесь клавиатурой третьей стороны, которая может записывать последовательность нажимаемых клавиш и похитить ваш Бумажный ключ. Переключитесь на клавиатуру Android по умолчанию для дополнительной защиты.";
 /* Error alert title */
@@ -237,11 +237,11 @@
 /* You can customize your Face ID Spending Limit from the [menu] */
 "FaceIDSettings.customizeText" = "Вы можете индивидуально настроить ваш лимит расходов Face ID от %1$@.";
 /* Face Id screen label */
-"FaceIDSettings.label" = "Используйте ваше лицо, чтобы разблокировать ваш BRD и отправить деньги в соответствии с установленным лимитом.";
+"FaceIDSettings.label" = "Используйте ваше лицо, чтобы разблокировать ваш Electra и отправить деньги в соответствии с установленным лимитом.";
 /* Title of the screen for setting the Face ID Spending Limit */
 "FaceIDSettings.linkText" = "Меню лимита расходов Face ID";
 /* Setting to turn on Face ID for BRD */
-"FaceIDSettings.switchLabel" = "Включить Face ID для BRD";
+"FaceIDSettings.switchLabel" = "Включить Face ID для Electra";
 /* Face ID settings view title */
 "FaceIDSettings.title" = "Face ID";
 /* Instructions on how to turn on face id on the iPhone. Please ensure the name of the menu in this string matches the wording Apple uses in the iPhone menu. */
@@ -299,13 +299,13 @@
 /* Caption for graphics */
 "Import.leftCaption" = "Секретный ключ";
 /* Import wallet intro screen message */
-"Import.message" = "Секретные ключи часто печатаются на бумаге в виде QR-кода и используются для хранения средств в автономном режиме. Восстановите секретный ключ, чтобы перенести все деньги, которые он контролирует, в BRD с помощью одной транзакции.";
+"Import.message" = "Секретные ключи часто печатаются на бумаге в виде QR-кода и используются для хранения средств в автономном режиме. Восстановите секретный ключ, чтобы перенести все деньги, которые он контролирует, в Electra с помощью одной транзакции.";
 /* Enter password alert view title */
 "Import.password" = "Этот персональный ключ защищен паролем.";
 /* password textfield placeholder */
 "Import.passwordPlaceholder" = "пароль";
 /* Caption for graphics */
-"Import.rightCaption" = "Ваш кошелек BRD";
+"Import.rightCaption" = "Ваш кошелек Electra";
 /* Scan Private key button label */
 "Import.scan" = "Сканировать персональный ключ";
 /* Import wallet success alert title */
@@ -415,7 +415,7 @@
 /* Onboarding screen Page 1 title */
 "OnboardingPageOne.title" = "Добро пожаловать в ваш новый глобальный кошелек!";
 /* Onboarding screen Page 3 subtitle */
-"OnboardingPageThree.subtitle" = "Инвестируйте и диверсифицируйте c BRD, просто и безопасно.";
+"OnboardingPageThree.subtitle" = "Инвестируйте и диверсифицируйте c Electra, просто и безопасно.";
 /* Onboarding screen Page 3 title */
 "OnboardingPageThree.title" = "Покупайте и торгуйте биткойном, токенами и прочими цифровыми валютами.";
 /* Onboarding screen Page 2 subtitle */
@@ -491,7 +491,7 @@
 /* Button on fingerprint prompt so the user can enter their PIN instead */
 "Prompts.TouchId.usePin.android" = "PIN-код";
 /* Upgrade PIN prompt body. */
-"Prompts.UpgradePin.body" = "BRD обновил свой интерфейс до использования 6-цифрового PIN-кода. Коснитесь здесь для обновления.";
+"Prompts.UpgradePin.body" = "Electra обновил свой интерфейс до использования 6-цифрового PIN-кода. Коснитесь здесь для обновления.";
 /* Upgrade PIN prompt title. */
 "Prompts.UpgradePin.title" = "Обновить PIN-код";
 /* Notifications will be added later but users can set their preferences now, which is why we specify "in the future". */
@@ -529,7 +529,7 @@
 /* Enter paper key instruction */
 "RecoverWallet.instruction" = "Введите бумажный ключ";
 /* Recover wallet intro */
-"RecoverWallet.intro" = "Восстановите Ваш BRD-кошелек с помощью бумажного ключа.";
+"RecoverWallet.intro" = "Восстановите Ваш Electra-кошелек с помощью бумажного ключа.";
 /* Invalid paper key message */
 "RecoverWallet.invalid" = "Введенный вами бумажный ключ недействителен. Пожалуйста, внимательно перепроверьте каждое слово и повторите попытку.";
 /* Previous button accessibility label */
@@ -557,7 +557,7 @@
 /* extimated time */
 "ReScan.body1" = "20-45 минут";
 /* Syncing explanation */
-"ReScan.body2" = "Если транзакция описывается как \"выполненная\" в биткойн-сети, но не в вашем BRD-кошельке.";
+"ReScan.body2" = "Если транзакция описывается как \"выполненная\" в биткойн-сети, но не в вашем Electra-кошельке.";
 /* Syncing explanation */
 "ReScan.body3" = "Вы несколько раз получили ошибку о том, что транзакция отвергнута.";
 /* Start Sync button label */
@@ -595,11 +595,11 @@
 /* Paper Key button title */
 "SecurityCenter.paperKeyTitle" = "Бумажный ключ";
 /* PIN button description */
-"SecurityCenter.pinDescription" = "Защищает ваш BRD от несанкционированных пользователей.";
+"SecurityCenter.pinDescription" = "Защищает ваш ECA от несанкционированных пользователей.";
 /* PIN button title */
 "SecurityCenter.pinTitle" = "6-цифровой PIN-код";
 /* Touch ID button description */
-"SecurityCenter.touchIdDescription" = "Легко и просто разблокируйте ваш BRD-кошелек и отправляйте суммы, не превышающие ваш лимит на расходы.";
+"SecurityCenter.touchIdDescription" = "Легко и просто разблокируйте ваш ECA-кошелек и отправляйте суммы, не превышающие ваш лимит на расходы.";
 /* Touch ID button title */
 "SecurityCenter.touchIdTitle" = "Touch ID";
 /* Security center fingerprint authentication button */
@@ -627,7 +627,7 @@
 /* Camera not allowed message */
 "Send.cameraunavailableMessage" = "Перейдите в \"Настройки\", чтобы разрешить доступ к камере.";
 /* Camera not allowed alert title */
-"Send.cameraUnavailableTitle" = "BRD не имеет разрешения на доступ к камере";
+"Send.cameraUnavailableTitle" = "Electra не имеет разрешения на доступ к камере";
 /* Warning when sending to self. */
 "Send.containsAddress" = "Место назначения является вашим собственным адресом. Вы не можете отправить деньги самому себе.";
 /* Could not create transaction alert title */
@@ -739,7 +739,7 @@
 /* View legacy address (old format). */
 "Settings.ViewLegacyAddress" = "Просмотреть унаследованный адрес";
 /* Receive Bitcoin instructions */
-"Settings.ViewLegacyAddressReceiveDescription" = "Отправляйте на этот адрес только биткоин (BTC). Любые другие активы, отправленные на этот адрес, будут безвозвратно потеряны.";
+"Settings.ViewLegacyAddressReceiveDescription" = "Отправляйте на этот адрес только Electra (ECA). Любые другие активы, отправленные на этот адрес, будут безвозвратно потеряны.";
 /* Receive Bitcoin */
 "Settings.ViewLegacyAddressReceiveTitle" = "Получить биткоин";
 /* Wallet Settings section header */
@@ -755,7 +755,7 @@
 /* button label */
 "StartPaperPhrase.againButtonTitle" = "Выписать бумажный ключ снова";
 /* Paper key explanation text. */
-"StartPaperPhrase.body" = "Бумажный ключ – это единственный способ восстановить ваш BRD-кошелек в случае потери, кражи, поломки или замены вашего телефона.\n\nМы покажем вам список слов, которые необходимо записать на листе бумаги и хранить в надежном месте.";
+"StartPaperPhrase.body" = "Бумажный ключ – это единственный способ восстановить ваш Electra-кошелек в случае потери, кражи, поломки или замены вашего телефона.\n\nМы покажем вам список слов, которые необходимо записать на листе бумаги и хранить в надежном месте.";
 /* button label */
 "StartPaperPhrase.buttonTitle" = "Выписать бумажный ключ";
 /* Argument is date */
@@ -807,13 +807,13 @@
 /* Fingerprint Is Not Setup */
 "TouchIdSettings.disabledWarning.title.android" = "Аутентификация по отпечаткам пальцев не включена";
 /* Touch Id screen label */
-"TouchIdSettings.label" = "Используйте отпечатки ваших пальцев для разблокирования BRD-кошелька и отправки сумм, не превышающих ваш лимит на расходы.";
+"TouchIdSettings.label" = "Используйте отпечатки ваших пальцев для разблокирования Electra-кошелька и отправки сумм, не превышающих ваш лимит на расходы.";
 /* Link Text (see TouchIdSettings.customizeText) */
 "TouchIdSettings.linkText" = "Экран лимита расходов Touch ID";
 /* Spending Limit: b100,000 ($100) */
 "TouchIdSettings.spendingLimit" = "Лимит на расходы: %1$@ (%2$@)";
 /* Touch id switch label. */
-"TouchIdSettings.switchLabel" = "Активировать функцию Touch ID для BRD";
+"TouchIdSettings.switchLabel" = "Активировать функцию Touch ID для Electra";
 /* Enable fingerprint for this wallet called Bread */
 "TouchIdSettings.switchLabel.android" = "Включить аутентификацию по отпечаткам пальцев";
 /* Touch ID settings view title */
@@ -976,9 +976,9 @@ eg. 182930 (45061 confirmations) */
 /* Instruction to touch the sensor for fingerprint authentication */
 "UnlockScreen.touchIdInstructions.android" = "Датчик касания";
 /* TouchID prompt text */
-"UnlockScreen.touchIdPrompt" = "Разблокируйте ваш BRD-кошелек.";
+"UnlockScreen.touchIdPrompt" = "Разблокируйте ваш Electra-кошелек.";
 /* Device authentication body */
-"UnlockScreen.touchIdPrompt.android" = "Разблокируйте ваше устройство Android, чтобы продолжить.";
+"UnlockScreen.touchIdPrompt.android" = "Разблокируйте ваше устройство iOS, чтобы продолжить.";
 /* Unlock with TouchID accessibility label */
 "UnlockScreen.touchIdText" = "Разблокировать с помощью TouchID";
 /* Device authentication title */
@@ -986,7 +986,7 @@ eg. 182930 (45061 confirmations) */
 /* Update PIN caption text */
 "UpdatePin.caption" = "Запомните этот PIN-код. Если вы его забудете, что не сможете получить доступ к вашим биткойнам.";
 /* PIN creation info. */
-"UpdatePin.createInstruction" = "Ваш PIN-код будет использоваться для разблокировки кошелька BRD и отправки денег.";
+"UpdatePin.createInstruction" = "Ваш PIN-код будет использоваться для разблокировки кошелька ECA и отправки денег.";
 /* Update PIN title */
 "UpdatePin.createTitle" = "Задайте PIN-код";
 /* Update PIN title */
@@ -1020,7 +1020,7 @@ eg. 182930 (45061 confirmations) */
 /* Authorize transaction with touch id message */
 "VerifyPin.touchIdMessage" = "Разрешить эту транзакцию";
 /* 'No wallet' warning for watch app */
-"Watch.noWalletWarning" = "Запустите BRD-приложение для iPhone, чтобы настроить ваш кошелек.";
+"Watch.noWalletWarning" = "Запустите Electra-приложение для iPhone, чтобы настроить ваш кошелек.";
 /* Dismiss button label */
 "Webview.dismiss" = "Отклонить";
 /* Webview loading error message */

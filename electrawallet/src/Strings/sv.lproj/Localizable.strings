@@ -1,9 +1,9 @@
 /* App name */
-"About.appName.android" = "BRD";
+"About.appName.android" = "Electra iOS";
 /* About screen blog label */
 "About.blog" = "Blogg";
 /* About screen footer */
-"About.footer" = "Skapad av det lokala teamet för BRD. Version %1$@ Build %2$@";
+"About.footer" = "Skapad av det lokala teamet för Electra. Version %1$@ Build %2$@";
 /* Privay Policy button label */
 "About.privacy" = "Sekretesspolicy";
 /* About screen reddit label */
@@ -29,7 +29,7 @@
 /* Loading Wallet Message */
 "Account.loadingMessage" = "Laddar plånbok";
 /* Default wallet name */
-"AccountHeader.defaultWalletName" = "Mitt BRD";
+"AccountHeader.defaultWalletName" = "Mitt Electra";
 /* Third party keyboard warning */
 "Alert.customKeyboard.android" = "Det verkar som att du använder ett tangentbord från tredje part, vilket kan registrera det du skriver och stjäla din kryptonyckel. Byt till Androids standardtangentbord för extra säkerhet.";
 /* Error alert title */
@@ -125,7 +125,7 @@
 /* Approve button label */
 "BitID.approve" = "Godkänn";
 /* <sitename> is requesting authentication using your bitcoin wallet */
-"BitID.authenticationRequest" = "%1$@ begär autentisering med hjälp av din bitcoin-plånbok";
+"BitID.authenticationRequest" = "%1$@ begär autentisering med hjälp av din Electra-plånbok";
 /* Deny button label */
 "BitID.deny" = "Avslå";
 /* BitID error alert title */
@@ -213,7 +213,7 @@
 /* Retry Identity verification button */
 "Crowdsale.retry" = "Försök igen";
 /* Bitcoin denomination picker label */
-"DefaultCurrency.bitcoinLabel" = "Bitcoin visningsenhet";
+"DefaultCurrency.bitcoinLabel" = "Electra visningsenhet";
 /* Exchange rate label */
 "DefaultCurrency.rateLabel" = "Växelkurs";
 /* The wallet is disabled. */
@@ -239,11 +239,11 @@
 /* You can customize your Face ID Spending Limit from the [menu] */
 "FaceIDSettings.customizeText" = "Du kan anpassa din utgiftsgräns för Face ID från %1$@.";
 /* Face Id screen label */
-"FaceIDSettings.label" = "Använd ditt ansikte för att låsa upp din BRD och skicka pengar upp till en satt gräns.";
+"FaceIDSettings.label" = "Använd ditt ansikte för att låsa upp din Electra och skicka pengar upp till en satt gräns.";
 /* Title of the screen for setting the Face ID Spending Limit */
 "FaceIDSettings.linkText" = "Sida för utgiftsgräns för Face ID";
 /* Setting to turn on Face ID for BRD */
-"FaceIDSettings.switchLabel" = "Aktivera Face ID för BRD";
+"FaceIDSettings.switchLabel" = "Aktivera Face ID för Electra";
 /* Face ID settings view title */
 "FaceIDSettings.title" = "Face ID";
 /* Instructions on how to turn on face id on the iPhone. Please ensure the name of the menu in this string matches the wording Apple uses in the iPhone menu. */
@@ -283,7 +283,7 @@
 /* Checking private key balance progress view text */
 "Import.checking" = "Kontrollerar privat nyckelsaldo...";
 /* Sweep private key confirmation message */
-"Import.confirm" = "Skicka %1$@ från denna privata nyckel till din plånbok? Bitcoins nätverk tar en avgift på %2$@.";
+"Import.confirm" = "Skicka %1$@ från denna privata nyckel till din plånbok? Electra nätverk tar en avgift på %2$@.";
 /* Duplicate key error message */
 "Import.Error.duplicate" = "Denna privata nyckel finns redan i din plånbok.";
 /* empty private key error message */
@@ -301,13 +301,13 @@
 /* Caption for graphics */
 "Import.leftCaption" = "Privat Nyckel";
 /* Import wallet intro screen message */
-"Import.message" = "Privata nycklar trycks ofta på papper som en QR-kod och används för att lagra tillgångar offline. Du löser in en privat nyckel för att överföra alla pengar den kontrollerar in i din BRD med en enda transaktion.";
+"Import.message" = "Privata nycklar trycks ofta på papper som en QR-kod och används för att lagra tillgångar offline. Du löser in en privat nyckel för att överföra alla pengar den kontrollerar in i din Electra med en enda transaktion.";
 /* Enter password alert view title */
 "Import.password" = "Denna privata nyckel är lösenordsskyddad.";
 /* password textfield placeholder */
 "Import.passwordPlaceholder" = "lösenord";
 /* Caption for graphics */
-"Import.rightCaption" = "Din BRD-plånbok";
+"Import.rightCaption" = "Din Electra-plånbok";
 /* Scan Private key button label */
 "Import.scan" = "Läs av privat nyckel";
 /* Import wallet success alert title */
@@ -327,9 +327,9 @@
 /* Ignore jailbreak warning button */
 "JailbreakWarnings.ignore" = "Ignorera";
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithBalance" = "ENHETENS SÄKERHET ÄR ÄVENTYRAD\nEn \"intrångs\"-app kan få tillgång till BRDs nyckeldata och stjäla dina bitcoin! Töm denna plånbok direkt och återställ den på en säker enhet.";
+"JailbreakWarnings.messageWithBalance" = "ENHETENS SÄKERHET ÄR ÄVENTYRAD\nEn \"intrångs\"-app kan få tillgång till Electras nyckeldata och stjäla dina Electra! Töm denna plånbok direkt och återställ den på en säker enhet.";
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithoutBalance" = "ENHETENS SÄKERHET ÄR ÄVENTYRAD\nEn \"intrångs\"-app kan få tillgång till BRDs nyckeldata och stjäla dina bitcoin! Använd BRD endast på en säker enhet.";
+"JailbreakWarnings.messageWithoutBalance" = "ENHETENS SÄKERHET ÄR ÄVENTYRAD\nEn \"intrångs\"-app kan få tillgång till Electras nyckeldata och stjäla dina Electra! Använd Electra endast på en säker enhet.";
 /* Jailbreak warning title */
 "JailbreakWarnings.title" = "VARNING";
 /* Wipe wallet button */
@@ -399,7 +399,7 @@
 /* Node status label */
 "NodeSelector.statusLabel" = "Nodens anslutningsstatus";
 /* Node Selector view title */
-"NodeSelector.title" = "Bitcoin-noder";
+"NodeSelector.title" = "Electra-noder";
 /* Onboarding screen 'I'll browse first' button */
 "Onboarding.browseFirst" = "Jag ska titta runt först";
 /* Onboarding screen 'Buy some coin' button */
@@ -417,9 +417,9 @@
 /* Onboarding screen Page 1 title */
 "OnboardingPageOne.title" = "Välkommen till din nya globala plånbok!";
 /* Onboarding screen Page 3 subtitle */
-"OnboardingPageThree.subtitle" = "Investera och bredda dig med BRD, lätt och tryggt.";
+"OnboardingPageThree.subtitle" = "Investera och bredda dig med Electra, lätt och tryggt.";
 /* Onboarding screen Page 3 title */
-"OnboardingPageThree.title" = "Köp och handla med bitcoin, jetonger och andra digitala valutor.";
+"OnboardingPageThree.title" = "Köp och handla med Electra, jetonger och andra digitala valutor.";
 /* Onboarding screen Page 2 subtitle */
 "OnboardingPageTwo.subtitle" = "Vi har skyddade tillgångar värda över 6 miljarder  USD.";
 /* Onboarding screen Page 2 title */
@@ -439,7 +439,7 @@
 /* Payment too small alert title */
 "PaymentProtocol.Errors.smallOutputError" = "Kunde inte göra utbetalning";
 /* Amount too small error message */
-"PaymentProtocol.Errors.smallPayment" = "Utbetalning av Bitcoin får inte vara lägre än %1$@.";
+"PaymentProtocol.Errors.smallPayment" = "Utbetalning av Electra får inte vara lägre än %1$@.";
 /* Output too small error message. */
 "PaymentProtocol.Errors.smallTransaction" = "Utbetalningstransaktioner av Bitcoin får inte vara lägre än %1$@.";
 /* Unsupported signature type payment protocol error message */
@@ -493,7 +493,7 @@
 /* Button on fingerprint prompt so the user can enter their PIN instead */
 "Prompts.TouchId.usePin.android" = "PIN-kod";
 /* Upgrade PIN prompt body. */
-"Prompts.UpgradePin.body" = "BRD har uppgraderat till att använda 6-siffrig PIN-kod. Klicka här för att uppgradera.";
+"Prompts.UpgradePin.body" = "Electra har uppgraderat till att använda 6-siffrig PIN-kod. Klicka här för att uppgradera.";
 /* Upgrade PIN prompt title. */
 "Prompts.UpgradePin.title" = "Uppgradera PIN-kod";
 /* Notifications will be added later but users can set their preferences now, which is why we specify "in the future". */
@@ -531,7 +531,7 @@
 /* Enter paper key instruction */
 "RecoverWallet.instruction" = "Ange ordnyckel";
 /* Recover wallet intro */
-"RecoverWallet.intro" = "Återställ BRD med din ordnyckel.";
+"RecoverWallet.intro" = "Återställ Electra med din ordnyckel.";
 /* Invalid paper key message */
 "RecoverWallet.invalid" = "Den ordnyckel du angav är ogiltig. Dubbelkolla varje ord och försök igen.";
 /* Previous button accessibility label */
@@ -559,7 +559,7 @@
 /* extimated time */
 "ReScan.body1" = "20-45 minuter";
 /* Syncing explanation */
-"ReScan.body2" = "Om en transaktion visar sig som klar i bitcoins nätverk men inte i BRD.";
+"ReScan.body2" = "Om en transaktion visar sig som klar i Electras nätverk men inte i Electra.";
 /* Syncing explanation */
 "ReScan.body3" = "Du får gång på gång ett meddelande som säger att din transaktion avvisades.";
 /* Start Sync button label */
@@ -597,11 +597,11 @@
 /* Paper Key button title */
 "SecurityCenter.paperKeyTitle" = "Ordnyckel";
 /* PIN button description */
-"SecurityCenter.pinDescription" = "Skyddar ditt BRD från obehöriga användare.";
+"SecurityCenter.pinDescription" = "Skyddar ditt ECA från obehöriga användare.";
 /* PIN button title */
 "SecurityCenter.pinTitle" = "6-siffrig PIN-kod";
 /* Touch ID button description */
-"SecurityCenter.touchIdDescription" = "Lås enkelt upp ditt BRD och skicka pengar upp till en inställd gräns.";
+"SecurityCenter.touchIdDescription" = "Lås enkelt upp ditt ECA och skicka pengar upp till en inställd gräns.";
 /* Touch ID button title */
 "SecurityCenter.touchIdTitle" = "Touch ID";
 /* Security center fingerprint authentication button */
@@ -629,7 +629,7 @@
 /* Camera not allowed message */
 "Send.cameraunavailableMessage" = "Gå till Inställningar för att ge tillgång till kameran.";
 /* Camera not allowed alert title */
-"Send.cameraUnavailableTitle" = "BRD har inte tillgång till kameran";
+"Send.cameraUnavailableTitle" = "Electra har inte tillgång till kameran";
 /* Warning when sending to self. */
 "Send.containsAddress" = "Destinationen är din egen adress. Du kan inte skicka till dig själv.";
 /* Could not create transaction alert title */
@@ -687,7 +687,7 @@
 /* Send money to label */
 "Send.toLabel" = "Till";
 /* Adress already used alert message - first part */
-"Send.UsedAddress.firstLine" = "Bitcoin-adresser är avsedda för engångsanvändning.";
+"Send.UsedAddress.firstLine" = "Electra-adresser är avsedda för engångsanvändning.";
 /* Adress already used alert message - second part */
 "Send.UsedAddress.secondLIne" = "Återanvändning minskar sekretessen både för dig och mottagaren och kan sluta i förlust om mottagaren inte direkt kontrollerar adressen.";
 /* Adress already used alert title */
@@ -741,7 +741,7 @@
 /* View legacy address (old format). */
 "Settings.ViewLegacyAddress" = "Visa mottagaradress i gamla formatet";
 /* Receive Bitcoin instructions */
-"Settings.ViewLegacyAddressReceiveDescription" = "Skicka endast bitcoin (BTC) till denna adress. Alla andra tillgångar som skickas till denna adress går förlorade permanent.";
+"Settings.ViewLegacyAddressReceiveDescription" = "Skicka endast Electra (ECA) till denna adress. Alla andra tillgångar som skickas till denna adress går förlorade permanent.";
 /* Receive Bitcoin */
 "Settings.ViewLegacyAddressReceiveTitle" = "Erhåll bitcoin";
 /* Wallet Settings section header */
@@ -757,7 +757,7 @@
 /* button label */
 "StartPaperPhrase.againButtonTitle" = "Skriv ner ordnyckel på nytt";
 /* Paper key explanation text. */
-"StartPaperPhrase.body" = "Din ordnyckel  är enda sättet att återställ BRD om du förlorat din telefon, blivit bestulen på den eller har uppgraderat den.\n\nVi visar dig en lista över ord som du kan skriva ner på ett papper och gömma undan.";
+"StartPaperPhrase.body" = "Din ordnyckel  är enda sättet att återställ Electra om du förlorat din telefon, blivit bestulen på den eller har uppgraderat den.\n\nVi visar dig en lista över ord som du kan skriva ner på ett papper och gömma undan.";
 /* button label */
 "StartPaperPhrase.buttonTitle" = "Skriv ner ordnyckel";
 /* Argument is date */
@@ -809,13 +809,13 @@
 /* Fingerprint Is Not Setup */
 "TouchIdSettings.disabledWarning.title.android" = "Fingeravtrycksautentisering har inte aktiverats";
 /* Touch Id screen label */
-"TouchIdSettings.label" = "Använd ditt fingeravtryck för att låsa upp BRD och skicka pengar upp till en inställd gräns.";
+"TouchIdSettings.label" = "Använd ditt fingeravtryck för att låsa upp Electra och skicka pengar upp till en inställd gräns.";
 /* Link Text (see TouchIdSettings.customizeText) */
 "TouchIdSettings.linkText" = "Sida för utgiftsgräns i Touch ID";
 /* Spending Limit: b100,000 ($100) */
 "TouchIdSettings.spendingLimit" = "Utnyttjandegräns: %1$@ (%2$@)";
 /* Touch id switch label. */
-"TouchIdSettings.switchLabel" = "Aktivera Touch ID för BRD";
+"TouchIdSettings.switchLabel" = "Aktivera Touch ID för Electra";
 /* Enable fingerprint for this wallet called Bread */
 "TouchIdSettings.switchLabel.android" = "Aktivera fingeravtrycksautentisering";
 /* Touch ID settings view title */
@@ -978,9 +978,9 @@ eg. 182930 (45061 confirmations) */
 /* Instruction to touch the sensor for fingerprint authentication */
 "UnlockScreen.touchIdInstructions.android" = "Touchsensor";
 /* TouchID prompt text */
-"UnlockScreen.touchIdPrompt" = "Lås upp BRD.";
+"UnlockScreen.touchIdPrompt" = "Lås upp Electra.";
 /* Device authentication body */
-"UnlockScreen.touchIdPrompt.android" = "Lås upp din Android-enhet för att fortsätta.";
+"UnlockScreen.touchIdPrompt.android" = "Lås upp din iOS-enhet för att fortsätta.";
 /* Unlock with TouchID accessibility label */
 "UnlockScreen.touchIdText" = "Lås upp med TouchID";
 /* Device authentication title */
@@ -988,7 +988,7 @@ eg. 182930 (45061 confirmations) */
 /* Update PIN caption text */
 "UpdatePin.caption" = "Kom ihåg PIN-koden. Om du glömmer den, kommer du inte åt dina bitcoin.";
 /* PIN creation info. */
-"UpdatePin.createInstruction" = "Din PIN-kod används för att låsa upp ditt BRD och skicka pengar";
+"UpdatePin.createInstruction" = "Din PIN-kod används för att låsa upp ditt ECA och skicka pengar";
 /* Update PIN title */
 "UpdatePin.createTitle" = "Ställ in PIN-kod";
 /* Update PIN title */
@@ -1022,7 +1022,7 @@ eg. 182930 (45061 confirmations) */
 /* Authorize transaction with touch id message */
 "VerifyPin.touchIdMessage" = "Godkänn denna transaktion";
 /* 'No wallet' warning for watch app */
-"Watch.noWalletWarning" = "Öppna iPhone-appen BRD för att ställa in din plånbok.";
+"Watch.noWalletWarning" = "Öppna iPhone-appen Electra för att ställa in din plånbok.";
 /* Dismiss button label */
 "Webview.dismiss" = "Avfärda";
 /* Webview loading error message */

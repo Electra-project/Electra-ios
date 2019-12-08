@@ -547,7 +547,7 @@ class ModalPresenter: Subscriber, Trackable {
                 start.navigationItem.title = S.WipeWallet.title
                 let faqButton = UIButton.buildFaqButton(articleId: ArticleIds.wipeWallet)
                 faqButton.tintColor = .white
-                start.navigationItem.rightBarButtonItems = [UIBarButtonItem.negativePadding, UIBarButtonItem(customView: faqButton)]
+                start.navigationItem.rightBarButtonItems = [UIBarButtonItem.negativePadding/*, UIBarButtonItem(customView: faqButton)*/]
                 nc.viewControllers = [start]
                 menuNav.dismiss(animated: true) {
                     self.topViewController?.present(nc, animated: true, completion: nil)

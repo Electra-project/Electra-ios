@@ -1,9 +1,9 @@
 /* App name */
-"About.appName.android" = "BRD";
+"About.appName.android" = "Electra iOS";
 /* About screen blog label */
 "About.blog" = "Blog";
 /* About screen footer */
-"About.footer" = "Lavet af det globale BRD hold. Version %1$@. Build %2$@";
+"About.footer" = "Lavet af det globale Electra hold. Version %1$@. Build %2$@";
 /* Privay Policy button label */
 "About.privacy" = "Privatlivspolitik";
 /* About screen reddit label */
@@ -29,7 +29,7 @@
 /* Loading Wallet Message */
 "Account.loadingMessage" = "Indlæser pung";
 /* Default wallet name */
-"AccountHeader.defaultWalletName" = "Mit BRD";
+"AccountHeader.defaultWalletName" = "Mit Electra";
 /* Third party keyboard warning */
 "Alert.customKeyboard.android" = "Det ser ud til at du bruger et tastatur fra en tredjepart, som kan optage det du skriver og stjæle din Paper Key. Skift til standard Android-tastaturet for ekstra beskyttelse.";
 /* Error alert title */
@@ -125,7 +125,7 @@
 /* Approve button label */
 "BitID.approve" = "Godkend";
 /* <sitename> is requesting authentication using your bitcoin wallet */
-"BitID.authenticationRequest" = "%1$@ anmoder om godkendelse ved hjælp af din bitcoin-wallet";
+"BitID.authenticationRequest" = "%1$@ anmoder om godkendelse ved hjælp af din Electra-wallet";
 /* Deny button label */
 "BitID.deny" = "Afvis";
 /* BitID error alert title */
@@ -213,7 +213,7 @@
 /* Retry Identity verification button */
 "Crowdsale.retry" = "Prøv igen";
 /* Bitcoin denomination picker label */
-"DefaultCurrency.bitcoinLabel" = "Bitcoin visningsenhed";
+"DefaultCurrency.bitcoinLabel" = "Electra visningsenhed";
 /* Exchange rate label */
 "DefaultCurrency.rateLabel" = "Valutakurs";
 /* The wallet is disabled. */
@@ -239,11 +239,11 @@
 /* You can customize your Face ID Spending Limit from the [menu] */
 "FaceIDSettings.customizeText" = "Du kan tilpasse din Face ID betalingsgrænse fra %1$@.";
 /* Face Id screen label */
-"FaceIDSettings.label" = "Brug dit ansigt til at låse din BRD op, og send penge op til en fastsat grænse.";
+"FaceIDSettings.label" = "Brug dit ansigt til at låse din Electra op, og send penge op til en fastsat grænse.";
 /* Title of the screen for setting the Face ID Spending Limit */
 "FaceIDSettings.linkText" = "Face ID betalingsgrænse-skærm";
 /* Setting to turn on Face ID for BRD */
-"FaceIDSettings.switchLabel" = "Aktiver Face ID for BRD";
+"FaceIDSettings.switchLabel" = "Aktiver Face ID for Electra";
 /* Face ID settings view title */
 "FaceIDSettings.title" = "Face ID";
 /* Instructions on how to turn on face id on the iPhone. Please ensure the name of the menu in this string matches the wording Apple uses in the iPhone menu. */
@@ -283,7 +283,7 @@
 /* Checking private key balance progress view text */
 "Import.checking" = "Tjekker beløb på privat nøgle...";
 /* Sweep private key confirmation message */
-"Import.confirm" = "Send %1$@ fra denne private nøgle til din pung? Bitcoin netværket vil modtage et gebyr på %2$@.";
+"Import.confirm" = "Send %1$@ fra denne private nøgle til din pung? Electra netværket vil modtage et gebyr på %2$@.";
 /* Duplicate key error message */
 "Import.Error.duplicate" = "Denne private nøgle findes allerede i din pung.";
 /* empty private key error message */
@@ -301,13 +301,13 @@
 /* Caption for graphics */
 "Import.leftCaption" = "Privat nøgle";
 /* Import wallet intro screen message */
-"Import.message" = "Private nøgler printes ofte på papir som en QR-kode og bruges til at opbevare midler offline. Indløs en privat nøgle for at overføre alle pengene den indeholder til din BRD, med en enkelt transaktion.";
+"Import.message" = "Private nøgler printes ofte på papir som en QR-kode og bruges til at opbevare midler offline. Indløs en privat nøgle for at overføre alle pengene den indeholder til din Electra, med en enkelt transaktion.";
 /* Enter password alert view title */
 "Import.password" = "Denne private nøgle er beskyttet med et kodeord.";
 /* password textfield placeholder */
 "Import.passwordPlaceholder" = "adgangskode";
 /* Caption for graphics */
-"Import.rightCaption" = "Din BRD pung";
+"Import.rightCaption" = "Din Electra pung";
 /* Scan Private key button label */
 "Import.scan" = "Scan privat nøgle";
 /* Import wallet success alert title */
@@ -327,9 +327,9 @@
 /* Ignore jailbreak warning button */
 "JailbreakWarnings.ignore" = "Ignorer";
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithBalance" = "ENHEDENS SIKKERHED ER KOMPROMITTERET\n Enhver 'jailbreak' app kan få adgang til BRDs nøgledata og stjæle dine bitcoin! Ryd straks denne pung og gendan på en sikker enhed.";
+"JailbreakWarnings.messageWithBalance" = "ENHEDENS SIKKERHED ER KOMPROMITTERET\n Enhver 'jailbreak' app kan få adgang til Electras nøgledata og stjæle dine Electra! Ryd straks denne pung og gendan på en sikker enhed.";
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithoutBalance" = "ENHEDENS SIKKERHED ER KOMPROMITTERET\n Enhver 'jailbreak' app kan få adgang til BRDs nøgledata og stjæle dine bitcoin. Brug kun BRD på en ikke jailbreaket enhed.";
+"JailbreakWarnings.messageWithoutBalance" = "ENHEDENS SIKKERHED ER KOMPROMITTERET\n Enhver 'jailbreak' app kan få adgang til Electras nøgledata og stjæle dine Electra. Brug kun Electra på en ikke jailbreaket enhed.";
 /* Jailbreak warning title */
 "JailbreakWarnings.title" = "ADVARSEL";
 /* Wipe wallet button */
@@ -399,7 +399,7 @@
 /* Node status label */
 "NodeSelector.statusLabel" = "Node forbindelsesstatus";
 /* Node Selector view title */
-"NodeSelector.title" = "Bitcoin-nodes";
+"NodeSelector.title" = "Electra-nodes";
 /* Onboarding screen 'I'll browse first' button */
 "Onboarding.browseFirst" = "Jeg kigger først";
 /* Onboarding screen 'Buy some coin' button */
@@ -417,9 +417,9 @@
 /* Onboarding screen Page 1 title */
 "OnboardingPageOne.title" = "Velkommen til din nye globale tegnebog!";
 /* Onboarding screen Page 3 subtitle */
-"OnboardingPageThree.subtitle" = "Invester og diversificer med BRD, nemt og sikkert.";
+"OnboardingPageThree.subtitle" = "Invester og diversificer med Electra, nemt og sikkert.";
 /* Onboarding screen Page 3 title */
-"OnboardingPageThree.title" = "Køb og sælg bitcoin, tokens og andre digitale valutaer.";
+"OnboardingPageThree.title" = "Køb og sælg Electra, tokens og andre digitale valutaer.";
 /* Onboarding screen Page 2 subtitle */
 "OnboardingPageTwo.subtitle" = "Vi har aktiver til en værdi af mere end 6 milliarder dollars under vores beskyttelse.";
 /* Onboarding screen Page 2 title */
@@ -439,7 +439,7 @@
 /* Payment too small alert title */
 "PaymentProtocol.Errors.smallOutputError" = "Kunne ikke foretage betaling";
 /* Amount too small error message */
-"PaymentProtocol.Errors.smallPayment" = "Bitcoin betalinger kan ikke være mindre end %1$@.";
+"PaymentProtocol.Errors.smallPayment" = "Electra betalinger kan ikke være mindre end %1$@.";
 /* Output too small error message. */
 "PaymentProtocol.Errors.smallTransaction" = "Bitcoin transaktionsoutput kan ikke være mindre end %1$@.";
 /* Unsupported signature type payment protocol error message */
@@ -493,7 +493,7 @@
 /* Button on fingerprint prompt so the user can enter their PIN instead */
 "Prompts.TouchId.usePin.android" = "PIN";
 /* Upgrade PIN prompt body. */
-"Prompts.UpgradePin.body" = "BRD er blevet opgraderet til at bruge en 6-cifret PIN. Tryk her for at opgradere.";
+"Prompts.UpgradePin.body" = "Electra er blevet opgraderet til at bruge en 6-cifret PIN. Tryk her for at opgradere.";
 /* Upgrade PIN prompt title. */
 "Prompts.UpgradePin.title" = "Opgader PIN";
 /* Notifications will be added later but users can set their preferences now, which is why we specify "in the future". */
@@ -531,7 +531,7 @@
 /* Enter paper key instruction */
 "RecoverWallet.instruction" = "Indtast paper key";
 /* Recover wallet intro */
-"RecoverWallet.intro" = "Gendan dit BRD med din paper key.";
+"RecoverWallet.intro" = "Gendan dit Electra med din paper key.";
 /* Invalid paper key message */
 "RecoverWallet.invalid" = "Den paper key du indtastede er ugyldig. Dobbelttjek hvert ord og prøv igen.";
 /* Previous button accessibility label */
@@ -559,7 +559,7 @@
 /* extimated time */
 "ReScan.body1" = "20-45 minutter";
 /* Syncing explanation */
-"ReScan.body2" = "Hvis en transaktion vises som gennemført i bitcoin netværket, men ikke i dit BRD.";
+"ReScan.body2" = "Hvis en transaktion vises som gennemført i bitcoin netværket, men ikke i dit Electra.";
 /* Syncing explanation */
 "ReScan.body3" = "Du modtager gentagne gange en fejlmeddelelse om at din transaktion er blevet afvist.";
 /* Start Sync button label */
@@ -597,7 +597,7 @@
 /* Paper Key button title */
 "SecurityCenter.paperKeyTitle" = "Paper key";
 /* PIN button description */
-"SecurityCenter.pinDescription" = "Beskytter dit BRD mod uberettigede brugere.";
+"SecurityCenter.pinDescription" = "Beskytter dit ECA mod uberettigede brugere.";
 /* PIN button title */
 "SecurityCenter.pinTitle" = "6-cifret PIN";
 /* Touch ID button description */
@@ -629,7 +629,7 @@
 /* Camera not allowed message */
 "Send.cameraunavailableMessage" = "Gå til Indstillinger og giv adgang til kamera.";
 /* Camera not allowed alert title */
-"Send.cameraUnavailableTitle" = "BRD har ikke adgang til kameraet";
+"Send.cameraUnavailableTitle" = "Electra har ikke adgang til kameraet";
 /* Warning when sending to self. */
 "Send.containsAddress" = "Destinationen er din egen adresse. Du kan ikke sende til dig selv.";
 /* Could not create transaction alert title */
@@ -687,7 +687,7 @@
 /* Send money to label */
 "Send.toLabel" = "Til";
 /* Adress already used alert message - first part */
-"Send.UsedAddress.firstLine" = "Bitcoin adresser er kun beregnet til en enkelt anvendelse.";
+"Send.UsedAddress.firstLine" = "Electra adresser er kun beregnet til en enkelt anvendelse.";
 /* Adress already used alert message - second part */
 "Send.UsedAddress.secondLIne" = "Genbrug reducerer privatliv for både dig og modtageren og kan resultere i tab, hvis modtageren ikke har direkte kontrol over adressen.";
 /* Adress already used alert title */
@@ -741,7 +741,7 @@
 /* View legacy address (old format). */
 "Settings.ViewLegacyAddress" = "Vis Legacy Modtagelsesadresse";
 /* Receive Bitcoin instructions */
-"Settings.ViewLegacyAddressReceiveDescription" = "Send kun Bitcoin (BTC) til denne adresse. Ethvert andet aktiv, der sendes til denne adresse, vil gå tabt permanent.";
+"Settings.ViewLegacyAddressReceiveDescription" = "Send kun Electra (ECA) til denne adresse. Ethvert andet aktiv, der sendes til denne adresse, vil gå tabt permanent.";
 /* Receive Bitcoin */
 "Settings.ViewLegacyAddressReceiveTitle" = "Modtag Bitcoin";
 /* Wallet Settings section header */
@@ -757,7 +757,7 @@
 /* button label */
 "StartPaperPhrase.againButtonTitle" = "Skriv paper key ned igen";
 /* Paper key explanation text. */
-"StartPaperPhrase.body" = "Din paper key er den eneste måde at gendanne dit BRD på, hvis din telefon mistes, stjæles, går i stykker eller opgraderes.\n\nVi viser dig en liste over word du skal skrive ned på et papir, og holde sikkert.";
+"StartPaperPhrase.body" = "Din paper key er den eneste måde at gendanne dit Electra på, hvis din telefon mistes, stjæles, går i stykker eller opgraderes.\n\nVi viser dig en liste over word du skal skrive ned på et papir, og holde sikkert.";
 /* button label */
 "StartPaperPhrase.buttonTitle" = "Skriv paper key ned";
 /* Argument is date */
@@ -809,13 +809,13 @@
 /* Fingerprint Is Not Setup */
 "TouchIdSettings.disabledWarning.title.android" = "Autentificering via fingeraftryk ikke aktiveret";
 /* Touch Id screen label */
-"TouchIdSettings.label" = "Brug dit fingeraftryk til at låse op for dit BRD og sende penge op til en vis grænse.";
+"TouchIdSettings.label" = "Brug dit fingeraftryk til at låse op for dit Electra og sende penge op til en vis grænse.";
 /* Link Text (see TouchIdSettings.customizeText) */
 "TouchIdSettings.linkText" = "Touch ID forbrugsgrænseside";
 /* Spending Limit: b100,000 ($100) */
 "TouchIdSettings.spendingLimit" = "Brugsgrænse: %1$@ (%2$@)";
 /* Touch id switch label. */
-"TouchIdSettings.switchLabel" = "Aktiver Touch ID til BRD";
+"TouchIdSettings.switchLabel" = "Aktiver Touch ID til Electra";
 /* Enable fingerprint for this wallet called Bread */
 "TouchIdSettings.switchLabel.android" = "Aktiver autentificering via fingeraftryk";
 /* Touch ID settings view title */
@@ -978,9 +978,9 @@ eg. 182930 (45061 confirmations) */
 /* Instruction to touch the sensor for fingerprint authentication */
 "UnlockScreen.touchIdInstructions.android" = "Touch sensor";
 /* TouchID prompt text */
-"UnlockScreen.touchIdPrompt" = "Lås op for dit BRD.";
+"UnlockScreen.touchIdPrompt" = "Lås op for dit Electra.";
 /* Device authentication body */
-"UnlockScreen.touchIdPrompt.android" = "Lås op for din Android enhed for at fortsætte";
+"UnlockScreen.touchIdPrompt.android" = "Lås op for din iOS enhed for at fortsætte";
 /* Unlock with TouchID accessibility label */
 "UnlockScreen.touchIdText" = "Lås op med Touch ID";
 /* Device authentication title */
@@ -988,7 +988,7 @@ eg. 182930 (45061 confirmations) */
 /* Update PIN caption text */
 "UpdatePin.caption" = "Husk denne PIN. Hvis du glemmer den, vil du ikke kunne få adgang til dine bitcoin.";
 /* PIN creation info. */
-"UpdatePin.createInstruction" = "Din PIN bliver brugt til at låse op for dit BRD og sende penge.";
+"UpdatePin.createInstruction" = "Din PIN bliver brugt til at låse op for dit ECA og sende penge.";
 /* Update PIN title */
 "UpdatePin.createTitle" = "Indstil PIN";
 /* Update PIN title */
@@ -1022,7 +1022,7 @@ eg. 182930 (45061 confirmations) */
 /* Authorize transaction with touch id message */
 "VerifyPin.touchIdMessage" = "Godkend denne transaktion";
 /* 'No wallet' warning for watch app */
-"Watch.noWalletWarning" = "Åben BRD iPhone appen for at konfigurere din pung.";
+"Watch.noWalletWarning" = "Åben Electra iPhone appen for at konfigurere din pung.";
 /* Dismiss button label */
 "Webview.dismiss" = "Afvis";
 /* Webview loading error message */

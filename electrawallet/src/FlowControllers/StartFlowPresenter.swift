@@ -215,13 +215,14 @@ class StartFlowPresenter: Subscriber, Trackable {
             navigationController?.dismiss(animated: true) { [unowned self] in
                 self.navigationController = nil
             }
-            if let createECAScreen = self.createECAScreen {
+            // Conflicting whith recover bug fix.
+            /*if let createECAScreen = self.createECAScreen {
                 let ecaScreen = createECAScreen(self.rootViewController)
                 if let screen = ecaScreen
                 {
                     self.rootViewController.pushViewController(screen, animated: false)
                 }
-            }
+            }*/
         }
     }
     
