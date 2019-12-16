@@ -413,7 +413,7 @@
 /* Onboarding screen Page 4 title */
 "OnboardingPageFour.title" = "Commencez à investir dès aujourd'hui avec seulement 50 $ !";
 /* Onboarding screen Page 1 title */
-"OnboardingPageOne.title" = "Bienvenue dans votre nouveau portefeuille international !";
+"OnboardingPageOne.title" = "Bienvenue dans votre nouveau wallet Electra!";
 /* Onboarding screen Page 3 subtitle */
 "OnboardingPageThree.subtitle" = "Investissez et diversifiez facilement et en toute sécurité avec Electra.";
 /* Onboarding screen Page 3 title */
@@ -841,9 +841,9 @@
 /* eg. Ending balance: $50.00 */
 "Transaction.ending" = "Solde final : %1$@";
 /* Exchange rate on date header */
-"Transaction.exchangeOnDayReceived" = "Taux de change au moment de la réception :";
+"Transaction.exchangeOnDayReceived" = "Taux de change à la réception:";
 /* Exchange rate on date header */
-"Transaction.exchangeOnDaySent" = "Taux de change au moment de l'envoi :";
+"Transaction.exchangeOnDaySent" = "Taux de change à l\'envoi:";
 /* Transaction failed status text */
 "Transaction.failed" = "Échec";
 /* (b600 fee) */
@@ -883,7 +883,7 @@
 /* "(it was worth) $100 when sent, (and it is worth) $200 now" */
 "TransactionDetails.amountWhenSent" = "%1$@ au moment de l'envoi, %2$@ à présent";
 /* Block height label */
-"TransactionDetails.blockHeightLabel" = "Confirmé en bloc";
+"TransactionDetails.blockHeightLabel" = "Confirmé au bloc";
 /* Memo section header */
 "TransactionDetails.commentsHeader" = "Mémo";
 /* Memo field placeholder */
