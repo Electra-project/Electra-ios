@@ -165,7 +165,7 @@
 /* Click this button to sell an asset */
 "Button.sell" = "Vendre";
 /* send button */
-"Button.send" = "envoyer";
+"Button.send" = "Envoyer";
 /* Settings button label */
 "Button.settings" = "Paramètres";
 /* Settings button label */
@@ -173,7 +173,7 @@
 /* Button label to uninstall the app. */
 "Button.uninstall.android" = "Désinstallez";
 /* Button label to wipe the user's application data. */
-"Button.wipe.android" = "Effacez";
+"Button.wipe.android" = "Effacer";
 /* Yes button */
 "Button.yes" = "Oui";
 /* Camera plugin instruction */
@@ -413,7 +413,7 @@
 /* Onboarding screen Page 4 title */
 "OnboardingPageFour.title" = "Commencez à investir dès aujourd'hui avec seulement 50 $ !";
 /* Onboarding screen Page 1 title */
-"OnboardingPageOne.title" = "Bienvenue dans votre nouveau portefeuille international !";
+"OnboardingPageOne.title" = "Bienvenue dans votre nouveau wallet Electra!";
 /* Onboarding screen Page 3 subtitle */
 "OnboardingPageThree.subtitle" = "Investissez et diversifiez facilement et en toute sécurité avec Electra.";
 /* Onboarding screen Page 3 title */
@@ -777,7 +777,7 @@
 /* "eg. Synced through <Jan 12, 2015> */
 "SyncingView.syncedThrough" = "Synchronisé jusqu'à %1$@";
 /* Syncing view syncing state header text */
-"SyncingView.syncing" = "Synchronisation";
+"SyncingView.syncing" = " ";
 /* 6 d (6 days) */
 "TimeSince.days" = "%1$@ j";
 /* 6 h (6 hours) */
@@ -841,9 +841,9 @@
 /* eg. Ending balance: $50.00 */
 "Transaction.ending" = "Solde final : %1$@";
 /* Exchange rate on date header */
-"Transaction.exchangeOnDayReceived" = "Taux de change au moment de la réception :";
+"Transaction.exchangeOnDayReceived" = "Taux de change à la réception:";
 /* Exchange rate on date header */
-"Transaction.exchangeOnDaySent" = "Taux de change au moment de l'envoi :";
+"Transaction.exchangeOnDaySent" = "Taux de change à l\'envoi:";
 /* Transaction failed status text */
 "Transaction.failed" = "Échec";
 /* (b600 fee) */
@@ -883,7 +883,7 @@
 /* "(it was worth) $100 when sent, (and it is worth) $200 now" */
 "TransactionDetails.amountWhenSent" = "%1$@ au moment de l'envoi, %2$@ à présent";
 /* Block height label */
-"TransactionDetails.blockHeightLabel" = "Confirmé en bloc";
+"TransactionDetails.blockHeightLabel" = "Confirmé au bloc";
 /* Memo section header */
 "TransactionDetails.commentsHeader" = "Mémo";
 /* Memo field placeholder */

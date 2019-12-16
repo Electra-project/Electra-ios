@@ -413,7 +413,7 @@
 /* Onboarding screen Page 4 title */
 "OnboardingPageFour.title" = "Начинайте инвестировать уже сегодня всего с 50 долларами США!";
 /* Onboarding screen Page 1 title */
-"OnboardingPageOne.title" = "Добро пожаловать в ваш новый глобальный кошелек!";
+"OnboardingPageOne.title" = "Добро пожаловать в ваш новый мобильный кошелек Electra!";
 /* Onboarding screen Page 3 subtitle */
 "OnboardingPageThree.subtitle" = "Инвестируйте и диверсифицируйте c Electra, просто и безопасно.";
 /* Onboarding screen Page 3 title */
@@ -777,7 +777,7 @@
 /* "eg. Synced through <Jan 12, 2015> */
 "SyncingView.syncedThrough" = "Синхронизированно до %1$@";
 /* Syncing view syncing state header text */
-"SyncingView.syncing" = "Синхронизация";
+"SyncingView.syncing" = " ";
 /* 6 d (6 days) */
 "TimeSince.days" = "%1$@ д";
 /* 6 h (6 hours) */

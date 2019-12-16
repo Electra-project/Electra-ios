@@ -413,7 +413,7 @@
 /* Onboarding screen Page 4 title */
 "OnboardingPageFour.title" = "¡Comienza a invertir hoy mismo desde solo 50 $!";
 /* Onboarding screen Page 1 title */
-"OnboardingPageOne.title" = "¡Bienvenido a tu nuevo monedero global!";
+"OnboardingPageOne.title" = "¡Bienvenido a tu nuevo monedero Electra!";
 /* Onboarding screen Page 3 subtitle */
 "OnboardingPageThree.subtitle" = "Invierte y diversifica con Electra de forma segura y sencilla.";
 /* Onboarding screen Page 3 title */
@@ -777,7 +777,7 @@
 /* "eg. Synced through <Jan 12, 2015> */
 "SyncingView.syncedThrough" = "Sincronizado desde %1$@";
 /* Syncing view syncing state header text */
-"SyncingView.syncing" = "Sincronizando";
+"SyncingView.syncing" = " ";
 /* 6 d (6 days) */
 "TimeSince.days" = "%1$@ d";
 /* 6 h (6 hours) */

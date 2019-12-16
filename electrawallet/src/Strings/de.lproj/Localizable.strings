@@ -413,7 +413,7 @@
 /* Onboarding screen Page 4 title */
 "OnboardingPageFour.title" = "Beginnen Sie noch heute mit einer Einlage von nur US$ 50!";
 /* Onboarding screen Page 1 title */
-"OnboardingPageOne.title" = "Herzlich willkommen bei Ihrer neuen globalen Wallet!";
+"OnboardingPageOne.title" = "Willkommen in Ihrer neuen Electra-Wallet!";
 /* Onboarding screen Page 3 subtitle */
 "OnboardingPageThree.subtitle" = "Einfach und sicher - Mit Electra investieren und Investitionen diversifizieren";
 /* Onboarding screen Page 3 title */
@@ -777,7 +777,7 @@
 /* "eg. Synced through <Jan 12, 2015> */
 "SyncingView.syncedThrough" = "Synchronisiert am %1$@";
 /* Syncing view syncing state header text */
-"SyncingView.syncing" = "Synchronisiert";
+"SyncingView.syncing" = " ";
 /* 6 d (6 days) */
 "TimeSince.days" = "%1$@ d";
 /* 6 h (6 hours) */

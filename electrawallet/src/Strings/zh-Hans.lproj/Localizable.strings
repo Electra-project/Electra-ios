@@ -415,7 +415,7 @@
 /* Onboarding screen Page 4 title */
 "OnboardingPageFour.title" = "今天就开始投资吧,只需 50 美元！";
 /* Onboarding screen Page 1 title */
-"OnboardingPageOne.title" = "欢迎来到你新的世界钱包！";
+"OnboardingPageOne.title" = "欢迎来到新的Electra钱包！";
 /* Onboarding screen Page 3 subtitle */
 "OnboardingPageThree.subtitle" = "轻松又安全地与 Electra 进行投资和多样化";
 /* Onboarding screen Page 3 title */
@@ -779,7 +779,7 @@
 /* "eg. Synced through <Jan 12, 2015> */
 "SyncingView.syncedThrough" = "从 %1$@ 同步";
 /* Syncing view syncing state header text */
-"SyncingView.syncing" = "同步中";
+"SyncingView.syncing" = " ";
 /* 6 d (6 days) */
 "TimeSince.days" = "%1$@ 天";
 /* 6 h (6 hours) */

@@ -415,7 +415,7 @@
 /* Onboarding screen Page 4 title */
 "OnboardingPageFour.title" = "Begynd at investere i dag for så lidt som 50 dollars!";
 /* Onboarding screen Page 1 title */
-"OnboardingPageOne.title" = "Velkommen til din nye globale tegnebog!";
+"OnboardingPageOne.title" = "Velkommen til din nye Electra tegnebog!";
 /* Onboarding screen Page 3 subtitle */
 "OnboardingPageThree.subtitle" = "Invester og diversificer med Electra, nemt og sikkert.";
 /* Onboarding screen Page 3 title */
@@ -779,7 +779,7 @@
 /* "eg. Synced through <Jan 12, 2015> */
 "SyncingView.syncedThrough" = "Synkroniseret via %1$@";
 /* Syncing view syncing state header text */
-"SyncingView.syncing" = "Synkroniserer";
+"SyncingView.syncing" = " ";
 /* 6 d (6 days) */
 "TimeSince.days" = "%1$@ d";
 /* 6 h (6 hours) */

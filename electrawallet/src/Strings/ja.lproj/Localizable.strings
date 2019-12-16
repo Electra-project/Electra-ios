@@ -415,7 +415,7 @@
 /* Onboarding screen Page 4 title */
 "OnboardingPageFour.title" = "最低50ドルから,今すぐ投資を始めましょう！";
 /* Onboarding screen Page 1 title */
-"OnboardingPageOne.title" = "新しいグローバルウォレットにようこそ！";
+"OnboardingPageOne.title" = "新しいElectraウォレットにようこそ！";
 /* Onboarding screen Page 3 subtitle */
 "OnboardingPageThree.subtitle" = "Electraで容易に安全に投資して多様化しましょう。";
 /* Onboarding screen Page 3 title */
@@ -779,7 +779,7 @@
 /* "eg. Synced through <Jan 12, 2015> */
 "SyncingView.syncedThrough" = "%1$@まで同期完了";
 /* Syncing view syncing state header text */
-"SyncingView.syncing" = "同期中";
+"SyncingView.syncing" = " ";
 /* 6 d (6 days) */
 "TimeSince.days" = "%1$@日";
 /* 6 h (6 hours) */
