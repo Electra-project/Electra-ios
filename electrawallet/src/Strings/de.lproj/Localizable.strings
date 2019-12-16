@@ -35,7 +35,7 @@
 /* Error alert title */
 "Alert.error" = "Fehler";
 /* Keystore error */
-"Alert.keystore.generic.android" = "Es liegt ein Problem mit dem KeyStore Ihres Android-Betriebssystems vor, bitte wenden Sie sich an support@breadwallet.com";
+"Alert.keystore.generic.android" = "Es liegt ein Problem mit dem KeyStore Ihres Android-Betriebssystems vor, bitte wenden Sie sich an support@electraproject.org";
 /* KeyStore error, keys are invalidated */
 "Alert.keystore.invalidated.android" = "Ihre mit Electra verschlüsselten Daten wurden vor Kurzem für ungültig erklärt, da Ihre Android-Bildschirmsperre deaktiviert war.";
 /* Warn user key store data has been invalidate because the user changed their security settings. The user must uninstall. */
@@ -755,7 +755,7 @@
 /* button label */
 "StartPaperPhrase.againButtonTitle" = "Offlineschlüssel erneut notieren";
 /* Paper key explanation text. */
-"StartPaperPhrase.body" = "Dein Offlineschlüssel ist die einzige Möglichkeit, dein Electra wiederherzustellen, falls du dein Smartphone verlierst, austauscht, es gestohlen wird oder kaputtgeht.\n\nHierfür zeigen wir dir eine Liste von Wörtern an, damit du sie dir auf ein Stück Papier notieren kannst, das es sicher aufzubewahren gilt.";
+"StartPaperPhrase.body" = "Dein Offlineschlüssel ist die einzige Möglichkeit deine Electra wiederherzustellen, falls du dein Smartphone verlierst, austauschst, es gestohlen wird oder es kaputt geht. Hierfür zeigen wir dir eine Liste von Wörtern an, damit du sie dir auf ein Stück Papier notieren kannst, so dass sie sicher aufbewahrt sind.";
 /* button label */
 "StartPaperPhrase.buttonTitle" = "Offlineschlüssel notieren";
 /* Argument is date */

@@ -15,7 +15,7 @@
 /* About screen twitter label */
 "About.twitter" = "Twitter";
 /* About screen wallet ID label */
-"About.walletID" = "Belönings-ID för BRD";
+"About.walletID" = "Belönings-ID för Electra";
 /* Close modal button accessibility label */
 "AccessibilityLabels.close" = "Stäng";
 /* Support center accessibiliy label */
@@ -35,13 +35,13 @@
 /* Error alert title */
 "Alert.error" = "Fel";
 /* Keystore error */
-"Alert.keystore.generic.android" = "Det har uppstått ett problem med KeyStore till Android OS. Kontakta support@breadwallet.com";
+"Alert.keystore.generic.android" = "Det har uppstått ett problem med KeyStore till Android OS. Kontakta support@electraproject.org";
 /* KeyStore error, keys are invalidated */
-"Alert.keystore.invalidated.android" = "Dina krypterade BRD-uppgifter har nyligen ogiltigförklarats på grund av att Androids skärmlås inaktiverades.";
+"Alert.keystore.invalidated.android" = "Dina krypterade Electra-uppgifter har nyligen ogiltigförklarats på grund av att Androids skärmlås inaktiverades.";
 /* Warn user key store data has been invalidate because the user changed their security settings. The user must uninstall. */
-"Alert.keystore.invalidated.uninstall.android" = "Vi kan inte fortsätta eftersom dina skärmslåsinställningar har ändrats (t.ex. lösenordet inaktiverades, fingeravtryck ändrades). Av säkerhetsskäl har Android låst din nyckelförvaring. Därför måste dina BRD-appdata tas bort genom att avinstallera appen.\n\nOroa dig inte, dina pengar är fortfarande säkra! Installera om appen och återställ din plånbok med din pappersnyckel.";
+"Alert.keystore.invalidated.uninstall.android" = "Vi kan inte fortsätta eftersom dina skärmslåsinställningar har ändrats (t.ex. lösenordet inaktiverades, fingeravtryck ändrades). Av säkerhetsskäl har Android låst din nyckelförvaring. Därför måste dina Electra-appdata tas bort genom att avinstallera appen.\n\nOroa dig inte, dina pengar är fortfarande säkra! Installera om appen och återställ din plånbok med din pappersnyckel.";
 /* Warn user key store data has been invalidate because the user changed their security settings. The user must wipe their app data. */
-"Alert.keystore.invalidated.wipe.android" = "Vi kan inte fortsätta eftersom dina skärmslåsinställningar har ändrats (t.ex. lösenordet inaktiverades, fingeravtryck ändrades). Av säkerhetsskäl har Android låst din nyckelförvaring. Därför måste dina BRD-appdata tas bort.\n\nOroa dig inte, dina pengar är fortfarande säkra! Återställ din plånbok med pappersnyckeln.";
+"Alert.keystore.invalidated.wipe.android" = "Vi kan inte fortsätta eftersom dina skärmslåsinställningar har ändrats (t.ex. lösenordet inaktiverades, fingeravtryck ändrades). Av säkerhetsskäl har Android låst din nyckelförvaring. Därför måste dina Electra-appdata tas bort.\n\nOroa dig inte, dina pengar är fortfarande säkra! Återställ din plånbok med pappersnyckeln.";
 /* Keystore error title */
 "Alert.keystore.title.android" = "KeyStore-fel för Android";
 /* No internet alert message */
@@ -71,19 +71,19 @@
 /* Fingerprint was recognized by the scanner */
 "Alerts.touchIdSucceeded.android" = "Fingeravtryck bekräftat";
 /* Tell the user where they can enable permissions to access device storage. */
-"Android.allowFileSystemAccess" = "Vi ber dig att medge lagringstillåtelse i dina enhetsinställningar: \"Inställningar\" > \"Appar\" > \"BRD\" > \"Tillåtelser\".";
+"Android.allowFileSystemAccess" = "Vi ber dig att medge lagringstillåtelse i dina enhetsinställningar: \"Inställningar\" > \"Appar\" > \"Electra\" > \"Tillåtelser\".";
 /* The "home" screen is the name of the top level menu for the app. */
 "Android.BCH.welcome.message" = "Valfri BCH i din plånbok kan nås via hemskärmen.";
 /* Warning about using apps that can alter the screen */
-"Android.screenAlteringMessage" = "BRD fungerar inte korrekt om inte skärmskiftande appar (såsom Twilight) är inaktiverade.";
+"Android.screenAlteringMessage" = "Electra fungerar inte korrekt om inte skärmskiftande appar (såsom Twilight) är inaktiverade.";
 /* An app that alters the screen ("screen-altering app") has been detected. */
 "Android.screenAlteringTitle" = "Skärmskiftande app upptäckt";
 /* Body for an announcement promoting Coinify. */
-"Announcement.coinifyPromoBody" = "Köp Bitcoin till ett värde av 100 € senast den 31 mars 2019 och få ett presentkort på 20 € hos Amazon.de ⃰";
+"Announcement.coinifyPromoBody" = "Köp Electra till ett värde av 100 € senast den 31 mars 2019 och få ett presentkort på 20 € hos Amazon.de ⃰";
 /* Button title for an announcement promoting Coinify. */
 "Announcement.coinifyPromoActionTitle" = "Få ditt presentkort";
 /* Body for an announcement promoting Coinify. */
-"Announcement.coinifyPromoBody" = "Köp Bitcoin till ett värde av €100 före den 15 april 2019 och få ett €20 Amazon.de presentkort ⃰";
+"Announcement.coinifyPromoBody" = "Köp Electra till ett värde av €100 före den 15 april 2019 och få ett €20 Amazon.de presentkort ⃰";
 /* Footnote text for an announcement promoting Coinify. */
 "Announcement.coinifyPromoFootnote" = "⃰ Begränsning, ett presentkort per kund. Tillgängligt endast i Österrike, Tyskland, Luxemburg och Nederländerna.";
 /* Title for an announcement promoting Coinify. */
@@ -229,7 +229,7 @@
 /* Email unavailable alert title */
 "ErrorMessages.emailUnavailableTitle" = "E-posten är inte tillgänglig";
 /* Message that gets shown when we've detected the user has encountered the looping lock-screen bug. (preserve [ ] characters) */
-"ErrorMessages.loopingLockScreen.android" = "BRD kan inte verifieras på grund av en bugg i din version av Android. [Klicka här för mer information.]";
+"ErrorMessages.loopingLockScreen.android" = "Electra kan inte verifieras på grund av en bugg i din version av Android. [Klicka här för mer information.]";
 /* Messaging unavailable alert title */
 "ErrorMessages.messagingUnavailableMessage" = "Denna enhet är inte konfigurerad för att skicka meddelanden.";
 /* Messaging unavailable alert title */
@@ -242,7 +242,7 @@
 "FaceIDSettings.label" = "Använd ditt ansikte för att låsa upp din Electra och skicka pengar upp till en satt gräns.";
 /* Title of the screen for setting the Face ID Spending Limit */
 "FaceIDSettings.linkText" = "Sida för utgiftsgräns för Face ID";
-/* Setting to turn on Face ID for BRD */
+/* Setting to turn on Face ID for Electra */
 "FaceIDSettings.switchLabel" = "Aktivera Face ID för Electra";
 /* Face ID settings view title */
 "FaceIDSettings.title" = "Face ID";
@@ -351,7 +351,7 @@
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Platstjänster är inaktiverade.";
 /* No permissions for location services */
-"LocationPlugin.notAuthorized" = "BRD har inte rätt att utnyttja platstjänster";
+"LocationPlugin.notAuthorized" = "Electra har inte rätt att utnyttja platstjänster";
 /* Wallet creation date prefix */
 "ManageWallet.creationDatePrefix" = "Du skapade din plånbok på %1$@";
 /* Manage wallet description text */
@@ -423,7 +423,7 @@
 /* Onboarding screen Page 2 subtitle */
 "OnboardingPageTwo.subtitle" = "Vi har skyddade tillgångar värda över 6 miljarder  USD.";
 /* Onboarding screen Page 2 title */
-"OnboardingPageTwo.title" = "Anslut dig till de 1,5 miljoner människor världen runt som litar på BRD.";
+"OnboardingPageTwo.title" = "Anslut dig till de 1,5 miljoner människor världen runt som litar på Electra.";
 /* Eg. Send 1.0Eth to purchase CCC */
 "PaymentConfirmation.amountText" = "Skicka %1$@ för att köpa %2$@";
 /* Payment confirmation view title */
@@ -441,7 +441,7 @@
 /* Amount too small error message */
 "PaymentProtocol.Errors.smallPayment" = "Utbetalning av Electra får inte vara lägre än %1$@.";
 /* Output too small error message. */
-"PaymentProtocol.Errors.smallTransaction" = "Utbetalningstransaktioner av Bitcoin får inte vara lägre än %1$@.";
+"PaymentProtocol.Errors.smallTransaction" = "Utbetalningstransaktioner av Electra får inte vara lägre än %1$@.";
 /* Unsupported signature type payment protocol error message */
 "PaymentProtocol.Errors.unsupportedSignatureType" = "signaturtypen saknar stöd";
 /* Untrusted certificate payment protocol error message */
@@ -479,7 +479,7 @@
 /* Transaction rejected prompt title */
 "Prompts.RecommendRescan.title" = "Transaktionen avslogs";
 /* Share data prompt body */
-"Prompts.ShareData.body" = "Hjälp till att förbättra BRD genom att dela dina anonyma data med oss";
+"Prompts.ShareData.body" = "Hjälp till att förbättra Electra genom att dela dina anonyma data med oss";
 /* Share data prompt title */
 "Prompts.ShareData.title" = "Dela anonyma data";
 /* Enable touch ID prompt body */
@@ -497,7 +497,7 @@
 /* Upgrade PIN prompt title. */
 "Prompts.UpgradePin.title" = "Uppgradera PIN-kod";
 /* Notifications will be added later but users can set their preferences now, which is why we specify "in the future". */
-"PushNotifications.body" = "Slå på aviseringar för att få särskilda meddelanden från BRD i framtiden.";
+"PushNotifications.body" = "Slå på aviseringar för att få särskilda meddelanden från Electra i framtiden.";
 /* Push notifications are disabled alert title" */
 "PushNotifications.disabled" = "Meddelanden avaktiverade";
 /* Push notifications settings instructions */
@@ -575,7 +575,7 @@
 /* Rewards view expanded body. */
 "RewardsView.expandedBody" = "Se hur du kan spara in på handelsavgifter och frigöra framtida belöningar.";
 /* Rewards view expanded title. */
-"RewardsView.expandedTitle" = "Introduktion av BRD Rewards.";
+"RewardsView.expandedTitle" = "Introduktion av Electra Rewards.";
 /* Rewards view title */
 "RewardsView.normalTitle" = "Belöningar";
 /* Scan bitcoin address camera flash toggle */
@@ -593,7 +593,7 @@
 /* Face ID button title */
 "SecurityCenter.faceIdTitle" = "Face ID";
 /* Paper Key button description */
-"SecurityCenter.paperKeyDescription" = "Det enda sättet att komma åt dina bitcoin om du förlorar eller uppgraderar din telefon.";
+"SecurityCenter.paperKeyDescription" = "Det enda sättet att komma åt dina Electra om du förlorar eller uppgraderar din telefon.";
 /* Paper Key button title */
 "SecurityCenter.paperKeyTitle" = "Ordnyckel";
 /* PIN button description */
@@ -609,9 +609,9 @@
 /* Segwit enabled confirmation title */
 "Segwit.ConfirmationConfirmationTitle" = "Du aktiverade Segwit!";
 /* Segwit enabled confirmation description */
-"Segwit.ConfirmationInstructionsDescription" = "Tack för att du hjälper bitcoin framåt. ";
+"Segwit.ConfirmationInstructionsDescription" = "Tack för att du hjälper Electra framåt. ";
 /* Segwit instructions */
-"Segwit.ConfirmationInstructionsInstructions" = "Segwit-support är fortfarande på betastadiet. \nNär Segwit väl har aktiverats är det inte möjligt att avaktivera det. Du kan hitta den gamla adressen under Inställningar. \nVissa tredjepartstjänster, inklusive kryptohandel, kanske inte är tillgängliga för användare som har aktiverat Segwit. I nödfall har du möjlighet att skapa en gammal adress i Preferenser > Bitcoininställningar. \nSegwit kommer automatiskt att vara aktiverat för alla användare i en framtida uppdatering. ";
+"Segwit.ConfirmationInstructionsInstructions" = "Segwit-support är fortfarande på betastadiet. \nNär Segwit väl har aktiverats är det inte möjligt att avaktivera det. Du kan hitta den gamla adressen under Inställningar. \nVissa tredjepartstjänster, inklusive kryptohandel, kanske inte är tillgängliga för användare som har aktiverat Segwit. I nödfall har du möjlighet att skapa en gammal adress i Preferenser > Electra inställningar. \nSegwit kommer automatiskt att vara aktiverat för alla användare i en framtida uppdatering. ";
 /* Segwit extra confirmation title. */
 "Segwit.ConfirmChoiceLayout" = "En aktivering av Segwit är oåterkallelig. Är du säker på att du vill fortsätta?";
 /* Segwit enableButton */
@@ -623,9 +623,9 @@
 /* Balance: $4.00 */
 "Send.balance" = "Saldo: %1$@";
 /* Instructions how to allow the camera access for the app */
-"Send.cameraUnavailabeMessage.android" = "Tillåt kameraåtkomst under Inställningar > Appar > BRD > Behörigheter";
+"Send.cameraUnavailabeMessage.android" = "Tillåt kameraåtkomst under Inställningar > Appar > Electra > Behörigheter";
 /* Permission required to access camera */
-"Send.cameraUnavailabeTitle.android" = "BRD har inte åtkomst till kameran";
+"Send.cameraUnavailabeTitle.android" = "Electra har inte åtkomst till kameran";
 /* Camera not allowed message */
 "Send.cameraunavailableMessage" = "Gå till Inställningar för att ge tillgång till kameran.";
 /* Camera not allowed alert title */
@@ -709,7 +709,7 @@
 /* Enable segwit. */
 "Settings.EnableSegwit" = "Aktivera Segwit";
 /* Are you enjoying bread alert message body */
-"Settings.enjoying" = "Gillar du BRD?";
+"Settings.enjoying" = "Gillar du Electra?";
 /* Face ID spending limit label */
 "Settings.faceIdLimit" = "Utgiftsgräns för Face ID";
 /* Redeem the funds stored on this private key. */
@@ -743,13 +743,13 @@
 /* Receive Bitcoin instructions */
 "Settings.ViewLegacyAddressReceiveDescription" = "Skicka endast Electra (ECA) till denna adress. Alla andra tillgångar som skickas till denna adress går förlorade permanent.";
 /* Receive Bitcoin */
-"Settings.ViewLegacyAddressReceiveTitle" = "Erhåll bitcoin";
+"Settings.ViewLegacyAddressReceiveTitle" = "Erhåll Electra";
 /* Wallet Settings section header */
 "Settings.wallet" = "Plånbok";
 /* Unlink/delete your wallet from the current device. */
 "Settings.wipe" = "Ta Bort Länken Från Denna Enhet";
 /* Share data view body */
-"ShareData.body" = "Hjälp till att förbättra BRD genom att dela dina anonyma uppgifter med oss. Detta inbegriper inga ekonomiska uppgifter. Vi respekterar din ekonomiska sekretess.";
+"ShareData.body" = "Hjälp till att förbättra Electra genom att dela dina anonyma uppgifter med oss. Detta inbegriper inga ekonomiska uppgifter. Vi respekterar din ekonomiska sekretess.";
 /* Share data header */
 "ShareData.header" = "Dela uppgifter?";
 /* Share data switch label. */
@@ -765,7 +765,7 @@
 /* button label */
 "StartViewController.createButton" = "Skapa ny plånbok";
 /* Start view message */
-"StartViewController.message" = "Det säkraste och tryggaste sättet att använda bitcoin.";
+"StartViewController.message" = "Det säkraste och tryggaste sättet att använda Electra.";
 /* Recover your wallet from a backup */
 "StartViewController.recoverButton" = "Återställ plånbok";
 /* Syncing view connectiong state header text */
@@ -866,7 +866,7 @@
 "Transaction.sentTo" = "skickat till %1$@";
 /* eg. Starting balance: $50.00 */
 "Transaction.starting" = "Ingående saldo: %1$@";
-/* e.g. "[The money you paid was a] Fee for token transfer: BRD" (BRD is the token that was transfered) */
+/* e.g. "[The money you paid was a] Fee for token transfer: Electra" (Electra is the token that was transfered) */
 "Transaction.tokenTransfer" = "Avgift för token-överföring: %1$@";
 /* Waiting to be confirmed string */
 "Transaction.waiting" = "Väntar på bekräftelse. Vissa handlare kräver bekräftelse för att slutföra en transaktion. Uppskattad tid: 1-2 timmar.";
@@ -960,7 +960,7 @@ eg. 182930 (45061 confirmations) */
 /* Tx detail field header */
 "TransactionDetails.totalHeader" = "Totalt";
 /* Transaction ID header */
-"TransactionDetails.txHashHeader" = "Bitcoin transaktions-ID";
+"TransactionDetails.txHashHeader" = "Electra transaktions-ID";
 /* (this transaction was) Received at this address: */
 "TransactionDirection.address" = "Togs emot på den här adressen";
 /* (this transaction was) Sent to this address: */
@@ -986,7 +986,7 @@ eg. 182930 (45061 confirmations) */
 /* Device authentication title */
 "UnlockScreen.touchIdTitle.android" = "Autentisering krävs";
 /* Update PIN caption text */
-"UpdatePin.caption" = "Kom ihåg PIN-koden. Om du glömmer den, kommer du inte åt dina bitcoin.";
+"UpdatePin.caption" = "Kom ihåg PIN-koden. Om du glömmer den, kommer du inte åt dina Electra.";
 /* PIN creation info. */
 "UpdatePin.createInstruction" = "Din PIN-kod används för att låsa upp ditt ECA och skicka pengar";
 /* Update PIN title */
@@ -1030,9 +1030,9 @@ eg. 182930 (45061 confirmations) */
 /* Updating webview message */
 "Webview.updating" = "Uppdaterar...";
 /* Welcome screen text. (?) will be replaced with the help icon users should look for. */
-"Welcome.body" = "BRDplånboken har bytt namn till BRD, med ett splitter nytt utseende och några nya funktioner.\n\nOm du behöver hjälp, leta efter (?)-tecknet i det övre högra hörnet på de flesta skärmar.";
+"Welcome.body" = "Electraplånboken har bytt namn till Electra, med ett splitter nytt utseende och några nya funktioner.\n\nOm du behöver hjälp, leta efter (?)-tecknet i det övre högra hörnet på de flesta skärmar.";
 /* Top title of welcome screen */
-"Welcome.title" = "Välkommen till BRD!";
+"Welcome.title" = "Välkommen till Electra!";
 /* Wipe wallet alert message */
 "WipeWallet.alertMessage" = "Är du säker på att du vill ta bort den här plånboken.";
 /* Wipe wallet alert title */
@@ -1046,7 +1046,7 @@ eg. 182930 (45061 confirmations) */
 /* Instructions for unlinking the wallet */
 "WipeWallet.startMessage" = "Ta bort länken till din plånbok för att ta bort den från denna enhet. När länken till denna plånbok är borttagen kan du skapa en ny plånbok eller återställa en annan plånbok på denna enhet.";
 /* Start wipe wallet view warning */
-"WipeWallet.startWarning" = "Du kommer inte längre att kunna komma åt din aktuella BRDplånbok från denna enhet. Saldot kommer att kvarstå på frasen.";
+"WipeWallet.startWarning" = "Du kommer inte längre att kunna komma åt din aktuella Electraplånbok från denna enhet. Saldot kommer att kvarstå på frasen.";
 /* Unlink this wallet from this device. */
 "WipeWallet.title" = "Ta Bort Länken Till Plånboken";
 /* Wipe wallet button title */

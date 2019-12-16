@@ -242,7 +242,7 @@
 "FaceIDSettings.label" = "Use your face to unlock your Electra and send money up to a set limit.";
 /* Title of the screen for setting the Face ID Spending Limit */
 "FaceIDSettings.linkText" = "Face ID Spending Limit Screen";
-/* Setting to turn on Face ID for BRD */
+/* Setting to turn on Face ID for Electra */
 "FaceIDSettings.switchLabel" = "Enable Face ID for Electra";
 /* Face ID settings view title */
 "FaceIDSettings.title" = "Face ID";
@@ -351,7 +351,7 @@
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Location services are disabled.";
 /* No permissions for location services */
-"LocationPlugin.notAuthorized" = "BRD does not have permission to access location services.";
+"LocationPlugin.notAuthorized" = "Electra does not have permission to access location services.";
 /* Wallet creation date prefix */
 "ManageWallet.creationDatePrefix" = "You created your wallet on %1$@";
 /* Manage wallet description text */
@@ -441,7 +441,7 @@
 /* Amount too small error message */
 "PaymentProtocol.Errors.smallPayment" = "Electra payments can't be less than %1$@.";
 /* Output too small error message. */
-"PaymentProtocol.Errors.smallTransaction" = "Bitcoin transaction outputs can't be less than %1$@.";
+"PaymentProtocol.Errors.smallTransaction" = "Electra transaction outputs can't be less than %1$@.";
 /* Unsupported signature type payment protocol error message */
 "PaymentProtocol.Errors.unsupportedSignatureType" = "unsupported signature type";
 /* Untrusted certificate payment protocol error message */
@@ -611,7 +611,7 @@
 /* Segwit enabled confirmation description */
 "Segwit.ConfirmationInstructionsDescription" = "Thank you for helping move Electra forward.";
 /* Segwit instructions */
-"Segwit.ConfirmationInstructionsInstructions" = "SegWit support is still a beta feature.\nOnce SegWit is enabled, it will not be possible\nto disable it. You will be able to find the legacy address under Settings. \nSome third-party services, including crypto trading, may be unavailable to users who have enabled SegWit. In case of emergency, you will be able to generate a legacy address from Preferences > Bitcoin Settings. \nSegWit will automatically be enabled for all\nusers in a future update.";
+"Segwit.ConfirmationInstructionsInstructions" = "SegWit support is still a beta feature.\nOnce SegWit is enabled, it will not be possible\nto disable it. You will be able to find the legacy address under Settings. \nSome third-party services, including crypto trading, may be unavailable to users who have enabled SegWit. In case of emergency, you will be able to generate a legacy address from Preferences > Electra Settings. \nSegWit will automatically be enabled for all\nusers in a future update.";
 /* Segwit extra confirmation title. */
 "Segwit.ConfirmChoiceLayout" = "Enabling SegWit is an irreversible feature. Are you sure you want to continue?";
 /* Segwit enableButton */

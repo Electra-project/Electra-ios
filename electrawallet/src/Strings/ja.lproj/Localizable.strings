@@ -15,7 +15,7 @@
 /* About screen twitter label */
 "About.twitter" = "Twitter";
 /* About screen wallet ID label */
-"About.walletID" = "BRDリワードID";
+"About.walletID" = "ElectraリワードID";
 /* Close modal button accessibility label */
 "AccessibilityLabels.close" = "閉じる";
 /* Support center accessibiliy label */
@@ -35,13 +35,13 @@
 /* Error alert title */
 "Alert.error" = "エラー";
 /* Keystore error */
-"Alert.keystore.generic.android" = "Android OSのKeystoreに問題があります。support@breadwallet.com にお問い合わせください。";
+"Alert.keystore.generic.android" = "Android OSのKeystoreに問題があります。support@electraproject.org にお問い合わせください。";
 /* KeyStore error, keys are invalidated */
 "Alert.keystore.invalidated.android" = "お使いのAndroidロック画面が無効にされたため、暗号化されたエレクトラのデータはつい最近無効になりました。";
 /* Warn user key store data has been invalidate because the user changed their security settings. The user must uninstall. */
-"Alert.keystore.invalidated.uninstall.android" = "画面ロック設定が変更されたため（パスワードが無効になった、指紋が変更されたなど）、進めることができません。セキュリティ上の理由から、Androidはキーストアを永久にロックしました。したがって、BRDアプリのデータをアンインストールして消去する必要があります。\n\n心配はいりません、あなたの資金は今でも安全です！アプリを再インストールし、ペーパーキーを使用してウォレットを復元してください。";
+"Alert.keystore.invalidated.uninstall.android" = "画面ロック設定が変更されたため（パスワードが無効になった、指紋が変更されたなど）、進めることができません。セキュリティ上の理由から、Androidはキーストアを永久にロックしました。したがって、Electraアプリのデータをアンインストールして消去する必要があります。\n\n心配はいりません、あなたの資金は今でも安全です！アプリを再インストールし、ペーパーキーを使用してウォレットを復元してください。";
 /* Warn user key store data has been invalidate because the user changed their security settings. The user must wipe their app data. */
-"Alert.keystore.invalidated.wipe.android" = "画面ロック設定が変更されたため（パスワードが無効になった、指紋が変更されたなど）、進めることができません。セキュリティ上の理由から、Androidはキーストアを永久にロックしました。したがって、BRDアプリのデータを消去する必要があります。\n\n心配はいりません、あなたの資金は今でも安全です！ペーパーキーを使用してウォレットを復元してください。";
+"Alert.keystore.invalidated.wipe.android" = "画面ロック設定が変更されたため（パスワードが無効になった、指紋が変更されたなど）、進めることができません。セキュリティ上の理由から、Androidはキーストアを永久にロックしました。したがって、Electraアプリのデータを消去する必要があります。\n\n心配はいりません、あなたの資金は今でも安全です！ペーパーキーを使用してウォレットを復元してください。";
 /* Keystore error title */
 "Alert.keystore.title.android" = "Android KeyStoreエラー";
 /* No internet alert message */
@@ -71,11 +71,11 @@
 /* Fingerprint was recognized by the scanner */
 "Alerts.touchIdSucceeded.android" = "指紋が認識されました";
 /* Tell the user where they can enable permissions to access device storage. */
-"Android.allowFileSystemAccess" = "お使いのデバイスの設定でストレージの使用を許可して下さい: 「設定」>「アプリ」>「BRD」>「許可」。";
+"Android.allowFileSystemAccess" = "お使いのデバイスの設定でストレージの使用を許可して下さい: 「設定」>「アプリ」>「Electra」>「許可」。";
 /* The "home" screen is the name of the top level menu for the app. */
 "Android.BCH.welcome.message" = "お使いのウォレットのBCHには、ホーム画面からアクセスすることができます。";
 /* Warning about using apps that can alter the screen */
-"Android.screenAlteringMessage" = "画面変更アプリ(例: Twilight) が無効になっていなければ、BRDは正常に動作しません。";
+"Android.screenAlteringMessage" = "画面変更アプリ(例: Twilight) が無効になっていなければ、Electraは正常に動作しません。";
 /* An app that alters the screen ("screen-altering app") has been detected. */
 "Android.screenAlteringTitle" = "画面変更アプリが検出されました";
 /* Body for an announcement promoting Coinify. */
@@ -229,7 +229,7 @@
 /* Email unavailable alert title */
 "ErrorMessages.emailUnavailableTitle" = "メールが利用できません";
 /* Message that gets shown when we've detected the user has encountered the looping lock-screen bug. (preserve [ ] characters) */
-"ErrorMessages.loopingLockScreen.android" = "BRDは、お使いのAndroidのバージョンに不具合があるため認証できません。 [詳しい情報はこちらをタップしてご覧ください。]";
+"ErrorMessages.loopingLockScreen.android" = "Electraは、お使いのAndroidのバージョンに不具合があるため認証できません。 [詳しい情報はこちらをタップしてご覧ください。]";
 /* Messaging unavailable alert title */
 "ErrorMessages.messagingUnavailableMessage" = "この端末からメッセージを送信するための設定がされていません。";
 /* Messaging unavailable alert title */
@@ -242,7 +242,7 @@
 "FaceIDSettings.label" = "自分の顔を使って、エレクトラのロックを解除して、設定された使用限度額までお金を送金しましょう。";
 /* Title of the screen for setting the Face ID Spending Limit */
 "FaceIDSettings.linkText" = "Face ID使用限度額画面";
-/* Setting to turn on Face ID for BRD */
+/* Setting to turn on Face ID for Electra */
 "FaceIDSettings.switchLabel" = "エレクトラ利用時にFace IDを有効にする";
 /* Face ID settings view title */
 "FaceIDSettings.title" = "Face ID";
@@ -301,7 +301,7 @@
 /* Caption for graphics */
 "Import.leftCaption" = "秘密鍵";
 /* Import wallet intro screen message */
-"Import.message" = "秘密鍵は通常QRコードとして紙に印刷され、オフラインでの資金保管に使用されています。秘密鍵からの引き出しをすると秘密鍵が管理する資金全額を1回の取引でお使いのBRDに送金します。";
+"Import.message" = "秘密鍵は通常QRコードとして紙に印刷され、オフラインでの資金保管に使用されています。秘密鍵からの引き出しをすると秘密鍵が管理する資金全額を1回の取引でお使いのElectraに送金します。";
 /* Enter password alert view title */
 "Import.password" = "この秘密鍵はパスワードで保護されています。";
 /* password textfield placeholder */
@@ -423,7 +423,7 @@
 /* Onboarding screen Page 2 subtitle */
 "OnboardingPageTwo.subtitle" = "当社の保護下には,60億USドル超相当の資産があります。";
 /* Onboarding screen Page 2 title */
-"OnboardingPageTwo.title" = "世界中にいるBRDを信頼する150万人の仲間になりましょう。";
+"OnboardingPageTwo.title" = "世界中にいるElectraを信頼する150万人の仲間になりましょう。";
 /* Eg. Send 1.0Eth to purchase CCC */
 "PaymentConfirmation.amountText" = "%2$@を購入するために%1$@を送金する";
 /* Payment confirmation view title */
@@ -479,7 +479,7 @@
 /* Transaction rejected prompt title */
 "Prompts.RecommendRescan.title" = "トランザクションが拒否されました";
 /* Share data prompt body */
-"Prompts.ShareData.body" = "匿名のデータを共有してBRDの機能向上に役立てる";
+"Prompts.ShareData.body" = "匿名のデータを共有してElectraの機能向上に役立てる";
 /* Share data prompt title */
 "Prompts.ShareData.title" = "匿名のデータを共有する";
 /* Enable touch ID prompt body */
@@ -497,7 +497,7 @@
 /* Upgrade PIN prompt title. */
 "Prompts.UpgradePin.title" = "PINコードを更新する";
 /* Notifications will be added later but users can set their preferences now, which is why we specify "in the future". */
-"PushNotifications.body" = "今後、BRDからの特別なメッセージを受け取るために通知をオンにしてください。";
+"PushNotifications.body" = "今後、Electraからの特別なメッセージを受け取るために通知をオンにしてください。";
 /* Push notifications are disabled alert title" */
 "PushNotifications.disabled" = "通知が無効になっています";
 /* Push notifications settings instructions */
@@ -575,7 +575,7 @@
 /* Rewards view expanded body. */
 "RewardsView.expandedBody" = "取引手数料を節約して今後のリワードをアンロックする方法を学びましょう。";
 /* Rewards view expanded title. */
-"RewardsView.expandedTitle" = "BRDリワードについて。";
+"RewardsView.expandedTitle" = "Electraリワードについて。";
 /* Rewards view title */
 "RewardsView.normalTitle" = "リワード";
 /* Scan bitcoin address camera flash toggle */
@@ -609,9 +609,9 @@
 /* Segwit enabled confirmation title */
 "Segwit.ConfirmationConfirmationTitle" = "SegWitを有効化しました！";
 /* Segwit enabled confirmation description */
-"Segwit.ConfirmationInstructionsDescription" = "Bitcoinの前進にご協力いただきありがとうございます。";
+"Segwit.ConfirmationInstructionsDescription" = "Electraの前進にご協力いただきありがとうございます。";
 /* Segwit instructions */
-"Segwit.ConfirmationInstructionsInstructions" = "SegWit対応はまだベータ版の機能です。\n一度SegWitが有効化されると取り消しはできません。設定画面の下でレガシーアドレスをご確認いただけます。\nSegWitを有効化したユーザーは,第三者のサービス（仮想通貨取引を含む）を利用できない場合があります。緊急の場合は,プリファレンス > Bitcoin設定から,レガシーアドレスを作成することができます。\n将来のアップデートでは,全ユーザーに対して自動的にSegWitが有効化されます。";
+"Segwit.ConfirmationInstructionsInstructions" = "SegWit対応はまだベータ版の機能です。\n一度SegWitが有効化されると取り消しはできません。設定画面の下でレガシーアドレスをご確認いただけます。\nSegWitを有効化したユーザーは,第三者のサービス（仮想通貨取引を含む）を利用できない場合があります。緊急の場合は,プリファレンス > Electra設定から,レガシーアドレスを作成することができます。\n将来のアップデートでは,全ユーザーに対して自動的にSegWitが有効化されます。";
 /* Segwit extra confirmation title. */
 "Segwit.ConfirmChoiceLayout" = "「SegWitの有効化」は取り消しできない機能です。継続してよろしいですか？";
 /* Segwit enableButton */
@@ -743,7 +743,7 @@
 /* Receive Bitcoin instructions */
 "Settings.ViewLegacyAddressReceiveDescription" = "このアドレスにはElectra（ECA）だけを送信してください。このアドレスに送信された他の資産は,いかなるものも永久に失われます。";
 /* Receive Bitcoin */
-"Settings.ViewLegacyAddressReceiveTitle" = "Bitcoinを受け取りましょう";
+"Settings.ViewLegacyAddressReceiveTitle" = "Electraを受け取りましょう";
 /* Wallet Settings section header */
 "Settings.wallet" = "ウォレット";
 /* Unlink/delete your wallet from the current device. */
@@ -866,7 +866,7 @@
 "Transaction.sentTo" = "%1$@に送金済み";
 /* eg. Starting balance: $50.00 */
 "Transaction.starting" = "期首残高: %1$@";
-/* e.g. "[The money you paid was a] Fee for token transfer: BRD" (BRD is the token that was transfered) */
+/* e.g. "[The money you paid was a] Fee for token transfer: Electra" (Electra is the token that was transfered) */
 "Transaction.tokenTransfer" = "トークン送金の手数料: %1$@";
 /* Waiting to be confirmed string */
 "Transaction.waiting" = "承認を待っています。トランザクションの完了には承認が必要となる場合があります。推定時間: 1-2時間。";
@@ -1030,9 +1030,9 @@ eg. 182930 (45061 confirmations) */
 /* Updating webview message */
 "Webview.updating" = "更新中...";
 /* Welcome screen text. (?) will be replaced with the help icon users should look for. */
-"Welcome.body" = "Breadwalletは新しい機能や見た目を備えて、BRDという名前に生まれ変わりました。\n\nヘルプをご覧になるには、画面右上にある(?)からお探しください。";
+"Welcome.body" = "Breadwalletは新しい機能や見た目を備えて、Electraという名前に生まれ変わりました。\n\nヘルプをご覧になるには、画面右上にある(?)からお探しください。";
 /* Top title of welcome screen */
-"Welcome.title" = "BRDへようこそ！";
+"Welcome.title" = "Electraへようこそ！";
 /* Wipe wallet alert message */
 "WipeWallet.alertMessage" = "本当にこのウォレットを削除しますか？";
 /* Wipe wallet alert title */
@@ -1046,7 +1046,7 @@ eg. 182930 (45061 confirmations) */
 /* Instructions for unlinking the wallet */
 "WipeWallet.startMessage" = "ご利用ウォレットのリンクを解除してこの機器から解除してください。このウォレットのリンクが解除されると、この機器で新しいウォレットを起動したり、別のウォレット再び利用できるようになります。";
 /* Start wipe wallet view warning */
-"WipeWallet.startWarning" = "この端末から現在使用中のBRDウォレットへのアクセスはできなくなります。復元する際は復元フレーズが必要になります。";
+"WipeWallet.startWarning" = "この端末から現在使用中のElectraウォレットへのアクセスはできなくなります。復元する際は復元フレーズが必要になります。";
 /* Unlink this wallet from this device. */
 "WipeWallet.title" = "ウォレットのリンクを解除";
 /* Wipe wallet button title */

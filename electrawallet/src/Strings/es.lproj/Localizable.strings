@@ -15,7 +15,7 @@
 /* About screen twitter label */
 "About.twitter" = "Twitter";
 /* About screen wallet ID label */
-"About.walletID" = "ID de Recompensas de BRD";
+"About.walletID" = "ID de Recompensas de Electra";
 /* Close modal button accessibility label */
 "AccessibilityLabels.close" = "Cerrar";
 /* Support center accessibiliy label */
@@ -35,13 +35,13 @@
 /* Error alert title */
 "Alert.error" = "Error";
 /* Keystore error */
-"Alert.keystore.generic.android" = "Hay un problema con el almacén de claves de tu sistema operativo Android. Ponte en contacto con support@breadwallet.com.";
+"Alert.keystore.generic.android" = "Hay un problema con el almacén de claves de tu sistema operativo Android. Ponte en contacto con support@electraproject.org.";
 /* KeyStore error, keys are invalidated */
-"Alert.keystore.invalidated.android" = "Tus datos codificados en BRD fueron anulados recientemente debido a que no estaba habilitada tu pantalla de bloqueo de Android.";
+"Alert.keystore.invalidated.android" = "Tus datos codificados en Electra fueron anulados recientemente debido a que no estaba habilitada tu pantalla de bloqueo de Android.";
 /* Warn user key store data has been invalidate because the user changed their security settings. The user must uninstall. */
-"Alert.keystore.invalidated.uninstall.android" = "No podemos continuar porque su configuración de bloqueo de la pantalla ha cambiado (por ejemplo, la contraseña se ha deshabilitado, se han cambiado las huellas dactilares). Por razones de seguridad, Android ha bloqueado su almacenamiento de contraseñas de manera permanente. Por lo tanto, los datos de la aplicación BRD se deben borrar mediante la desinstalación.\n\n¡No se preocupe, sus fondos están asegurados! Reinstale la aplicación y recupere su monedero introduciendo su clave impresa.";
+"Alert.keystore.invalidated.uninstall.android" = "No podemos continuar porque su configuración de bloqueo de la pantalla ha cambiado (por ejemplo, la contraseña se ha deshabilitado, se han cambiado las huellas dactilares). Por razones de seguridad, Android ha bloqueado su almacenamiento de contraseñas de manera permanente. Por lo tanto, los datos de la aplicación Electra se deben borrar mediante la desinstalación.\n\n¡No se preocupe, sus fondos están asegurados! Reinstale la aplicación y recupere su monedero introduciendo su clave impresa.";
 /* Warn user key store data has been invalidate because the user changed their security settings. The user must wipe their app data. */
-"Alert.keystore.invalidated.wipe.android" = "No podemos continuar porque su configuración de bloqueo de la pantalla ha cambiado (por ejemplo, la contraseña se ha deshabilitado, se han cambiado las huellas dactilares). Por razones de seguridad, Android ha bloqueado su almacenamiento de contraseñas de manera permanente. Por lo tanto, se deben borrar los datos de la aplicación BRD.\n\n¡No se preocupe, sus fondos están asegurados! Recupere su monedero introduciendo su clave impresa.";
+"Alert.keystore.invalidated.wipe.android" = "No podemos continuar porque su configuración de bloqueo de la pantalla ha cambiado (por ejemplo, la contraseña se ha deshabilitado, se han cambiado las huellas dactilares). Por razones de seguridad, Android ha bloqueado su almacenamiento de contraseñas de manera permanente. Por lo tanto, se deben borrar los datos de la aplicación Electra.\n\n¡No se preocupe, sus fondos están asegurados! Recupere su monedero introduciendo su clave impresa.";
 /* Keystore error title */
 "Alert.keystore.title.android" = "Error de Android KeyStore";
 /* No internet alert message */
@@ -71,11 +71,11 @@
 /* Fingerprint was recognized by the scanner */
 "Alerts.touchIdSucceeded.android" = "Huella digital reconocida";
 /* Tell the user where they can enable permissions to access device storage. */
-"Android.allowFileSystemAccess" = "Activa los permisos de almacenamiento en los ajustes de tu dispositivo: \"Ajustes\" > \"Aplicaciones\" > \"BRD\" > \"Permisos\".";
+"Android.allowFileSystemAccess" = "Activa los permisos de almacenamiento en los ajustes de tu dispositivo: \"Ajustes\" > \"Aplicaciones\" > \"Electra\" > \"Permisos\".";
 /* The "home" screen is the name of the top level menu for the app. */
 "Android.BCH.welcome.message" = "Puedes acceder a cualquier BCH en tu monedero a través de la pantalla de inicio.";
 /* Warning about using apps that can alter the screen */
-"Android.screenAlteringMessage" = "BRD no funcionará correctamente a menos que las aplicaciones que alteran la pantalla (como Twilight) estén desactivadas.";
+"Android.screenAlteringMessage" = "Electra no funcionará correctamente a menos que las aplicaciones que alteran la pantalla (como Twilight) estén desactivadas.";
 /* An app that alters the screen ("screen-altering app") has been detected. */
 "Android.screenAlteringTitle" = "Se ha detectado una aplicación de alteración de pantalla";
 /* Body for an announcement promoting Coinify. */
@@ -227,7 +227,7 @@
 /* Email unavailable alert title */
 "ErrorMessages.emailUnavailableTitle" = "Correo electrónico no disponible";
 /* Message that gets shown when we've detected the user has encountered the looping lock-screen bug. (preserve [ ] characters) */
-"ErrorMessages.loopingLockScreen.android" = "BRD no se puede autenticar debido a un error de tu versión de Android. [Por favor pulsa aquí para más información]";
+"ErrorMessages.loopingLockScreen.android" = "Electra no se puede autenticar debido a un error de tu versión de Android. [Por favor pulsa aquí para más información]";
 /* Messaging unavailable alert title */
 "ErrorMessages.messagingUnavailableMessage" = "Este dispositivo no está configurado para enviar mensajes.";
 /* Messaging unavailable alert title */
@@ -240,7 +240,7 @@
 "FaceIDSettings.label" = "Utiliza la cara para desbloquear Electra y enviar dinero hasta un límite establecido.";
 /* Title of the screen for setting the Face ID Spending Limit */
 "FaceIDSettings.linkText" = "Pantalla del límite de gastos con Face ID";
-/* Setting to turn on Face ID for BRD */
+/* Setting to turn on Face ID for Electra */
 "FaceIDSettings.switchLabel" = "Activar Face ID para Electra";
 /* Face ID settings view title */
 "FaceIDSettings.title" = "Face ID";
@@ -349,7 +349,7 @@
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Los servicios de ubicación están desactivados.";
 /* No permissions for location services */
-"LocationPlugin.notAuthorized" = "BRD no tiene permiso para acceder a los servicios de ubicación.";
+"LocationPlugin.notAuthorized" = "Electra no tiene permiso para acceder a los servicios de ubicación.";
 /* Wallet creation date prefix */
 "ManageWallet.creationDatePrefix" = "Has creado una cartera en %1$@";
 /* Manage wallet description text */
@@ -421,7 +421,7 @@
 /* Onboarding screen Page 2 subtitle */
 "OnboardingPageTwo.subtitle" = "Tenemos activos protegidos por valor de más de 6 billones de $.";
 /* Onboarding screen Page 2 title */
-"OnboardingPageTwo.title" = "Únete al millón y medio de personas de todo el mundo que confían en BRD.";
+"OnboardingPageTwo.title" = "Únete al millón y medio de personas de todo el mundo que confían en Electra.";
 /* Eg. Send 1.0Eth to purchase CCC */
 "PaymentConfirmation.amountText" = "Envía %1$@ para comprar %2$@";
 /* Payment confirmation view title */
@@ -439,7 +439,7 @@
 /* Amount too small error message */
 "PaymentProtocol.Errors.smallPayment" = "Los pagos en Electras no pueden ser inferiores a %1$@.";
 /* Output too small error message. */
-"PaymentProtocol.Errors.smallTransaction" = "La transacción de bitcoins no puede ser inferior a %1$@.";
+"PaymentProtocol.Errors.smallTransaction" = "La transacción de Electras no puede ser inferior a %1$@.";
 /* Unsupported signature type payment protocol error message */
 "PaymentProtocol.Errors.unsupportedSignatureType" = "tipo de firma no compatible";
 /* Untrusted certificate payment protocol error message */
@@ -477,7 +477,7 @@
 /* Transaction rejected prompt title */
 "Prompts.RecommendRescan.title" = "Transacción rechazada";
 /* Share data prompt body */
-"Prompts.ShareData.body" = "Ayuda a mejorar BRD compartiendo tus datos anónimos con nosotros";
+"Prompts.ShareData.body" = "Ayuda a mejorar Electra compartiendo tus datos anónimos con nosotros";
 /* Share data prompt title */
 "Prompts.ShareData.title" = "Compartir datos anónimos";
 /* Enable touch ID prompt body */
@@ -495,7 +495,7 @@
 /* Upgrade PIN prompt title. */
 "Prompts.UpgradePin.title" = "Actualizar PIN";
 /* Notifications will be added later but users can set their preferences now, which is why we specify "in the future". */
-"PushNotifications.body" = "Activa las notificaciones para recibir mensajes especiales de BRD en el futuro.";
+"PushNotifications.body" = "Activa las notificaciones para recibir mensajes especiales de Electra en el futuro.";
 /* Push notifications are disabled alert title" */
 "PushNotifications.disabled" = "Notificaciones deshabilitadas";
 /* Push notifications settings instructions */
@@ -573,7 +573,7 @@
 /* Rewards view expanded body. */
 "RewardsView.expandedBody" = "Descubra cómo puede ahorrar en comisiones de negociación y desbloquear futuras recompensas";
 /* Rewards view expanded title. */
-"RewardsView.expandedTitle" = "Presentamos BRD Rewards.";
+"RewardsView.expandedTitle" = "Presentamos Electra Rewards.";
 /* Rewards view title */
 "RewardsView.normalTitle" = "Recompensas";
 /* Scan bitcoin address camera flash toggle */
@@ -591,7 +591,7 @@
 /* Face ID button title */
 "SecurityCenter.faceIdTitle" = "Face ID";
 /* Paper Key button description */
-"SecurityCenter.paperKeyDescription" = "La única manera de acceder a tu bitcoin si pierdes o actualizas tu teléfono.";
+"SecurityCenter.paperKeyDescription" = "La única manera de acceder a tu Electra si pierdes o actualizas tu teléfono.";
 /* Paper Key button title */
 "SecurityCenter.paperKeyTitle" = "Clave en papel";
 /* PIN button description */
@@ -607,9 +607,9 @@
 /* Segwit enabled confirmation title */
 "Segwit.ConfirmationConfirmationTitle" = "¡Has habilitado SegWit!";
 /* Segwit enabled confirmation description */
-"Segwit.ConfirmationInstructionsDescription" = "Gracias por ayudar a que las bitcoins avancen.";
+"Segwit.ConfirmationInstructionsDescription" = "Gracias por ayudar a que las Electras avancen.";
 /* Segwit instructions */
-"Segwit.ConfirmationInstructionsInstructions" = "El soporte de SegWit sigue siendo una característica beta.\nUna vez que SegWit esté habilitado, no será posible\ndesactivarlo. Encontrarás la dirección heredada en los Ajustes.\nPuede que algunos servicios de terceros, incluido el comercio de cifrado, no estén disponibles para los usuarios que hayan habilitado SegWit. En caso de emergencia podrás generar una dirección heredada desde Preferencias > Ajustes de Bitcoin.\nSegWit se habilitará automáticamente para todos los\nusuarios en una actualización futura.";
+"Segwit.ConfirmationInstructionsInstructions" = "El soporte de SegWit sigue siendo una característica beta.\nUna vez que SegWit esté habilitado, no será posible\ndesactivarlo. Encontrarás la dirección heredada en los Ajustes.\nPuede que algunos servicios de terceros, incluido el comercio de cifrado, no estén disponibles para los usuarios que hayan habilitado SegWit. En caso de emergencia podrás generar una dirección heredada desde Preferencias > Ajustes de Electra.\nSegWit se habilitará automáticamente para todos los\nusuarios en una actualización futura.";
 /* Segwit extra confirmation title. */
 "Segwit.ConfirmChoiceLayout" = "Habilitar SegWit es una característica irreversible. ¿Estás seguro de que quieres continuar?";
 /* Segwit enableButton */
@@ -621,9 +621,9 @@
 /* Balance: $4.00 */
 "Send.balance" = "Saldo: %1$@";
 /* Instructions how to allow the camera access for the app */
-"Send.cameraUnavailabeMessage.android" = "Para permitir el acceso a la cámara, ve a «Ajustes», selecciona «Aplicaciones», busca la aplicación «BRD» y selecciona la opción «Permisos»";
+"Send.cameraUnavailabeMessage.android" = "Para permitir el acceso a la cámara, ve a «Ajustes», selecciona «Aplicaciones», busca la aplicación «Electra» y selecciona la opción «Permisos»";
 /* Permission required to access camera */
-"Send.cameraUnavailabeTitle.android" = "BRD no tiene permitido el acceso a la cámara";
+"Send.cameraUnavailabeTitle.android" = "Electra no tiene permitido el acceso a la cámara";
 /* Camera not allowed message */
 "Send.cameraunavailableMessage" = "Ve a Ajustes para activar el acceso a la cámara.";
 /* Camera not allowed alert title */
@@ -657,7 +657,7 @@
 /* Is rescanning error message */
 "Send.isRescanning" = "El envío se inhabilita durante un reescaneado completo.";
 /* Warning when the user is trying to send bitcoin cash to a legacy bitcoin address (possible, but probably not what the user wants to do) */
-"Send.legacyAddressWarning" = "Aviso: Esta es una dirección Bitcoin antigua. ¿Estás seguro/a de que deseas enviar dinero en bitcoines a ella?";
+"Send.legacyAddressWarning" = "Aviso: Esta es una dirección Electra antigua. ¿Estás seguro/a de que deseas enviar dinero en Electras a ella?";
 /* We are loading the request (now) */
 "Send.loadingRequest" = "Cargando solicitud";
 /* Transaction fee could not be be caluculated error. */
@@ -707,7 +707,7 @@
 /* Enable segwit. */
 "Settings.EnableSegwit" = "Habilitar Segwit";
 /* Are you enjoying bread alert message body */
-"Settings.enjoying" = "¿Te gusta BRD?";
+"Settings.enjoying" = "¿Te gusta Electra?";
 /* Face ID spending limit label */
 "Settings.faceIdLimit" = "Límite de gastos con Face ID";
 /* Redeem the funds stored on this private key. */
@@ -741,13 +741,13 @@
 /* Receive Bitcoin instructions */
 "Settings.ViewLegacyAddressReceiveDescription" = "Envía solo Electras (ECA) a esta dirección. Cualquier otro activo que se envíe a esta dirección se perderá permanentemente.";
 /* Receive Bitcoin */
-"Settings.ViewLegacyAddressReceiveTitle" = "Recibir Bitcoin";
+"Settings.ViewLegacyAddressReceiveTitle" = "Recibir Electra";
 /* Wallet Settings section header */
 "Settings.wallet" = "Cartera";
 /* Unlink/delete your wallet from the current device. */
 "Settings.wipe" = "Desvincular de este dispositivo";
 /* Share data view body */
-"ShareData.body" = "Ayuda a mejorar BRD compartiendo tus datos anónimos con nosotros. Esto no incluye ninguna información financiera. Respetamos tu privacidad financiera.";
+"ShareData.body" = "Ayuda a mejorar Electra compartiendo tus datos anónimos con nosotros. Esto no incluye ninguna información financiera. Respetamos tu privacidad financiera.";
 /* Share data header */
 "ShareData.header" = "¿Compartir datos?";
 /* Share data switch label. */
@@ -763,7 +763,7 @@
 /* button label */
 "StartViewController.createButton" = "Crear nuevo monedero";
 /* Start view message */
-"StartViewController.message" = "La forma más segura de usar bitcoin.";
+"StartViewController.message" = "La forma más segura de usar Electra.";
 /* Recover your wallet from a backup */
 "StartViewController.recoverButton" = "Recuperar monedero";
 /* Syncing view connectiong state header text */
@@ -864,7 +864,7 @@
 "Transaction.sentTo" = "enviado a %1$@";
 /* eg. Starting balance: $50.00 */
 "Transaction.starting" = "Saldo inicial: %1$@";
-/* e.g. "[The money you paid was a] Fee for token transfer: BRD" (BRD is the token that was transfered) */
+/* e.g. "[The money you paid was a] Fee for token transfer: Electra" (Electra is the token that was transfered) */
 "Transaction.tokenTransfer" = "Comisión por transferencia de token: %1$@";
 /* Waiting to be confirmed string */
 "Transaction.waiting" = "Esperando confirmación. Algunos comerciantes requieren confirmación para completar una transacción. Tiempo estimado: 1-2 horas.";
@@ -958,7 +958,7 @@ eg. 182930 (45061 confirmations) */
 /* Tx detail field header */
 "TransactionDetails.totalHeader" = "Total";
 /* Transaction ID header */
-"TransactionDetails.txHashHeader" = "Identificador de transacción de Bitcoin";
+"TransactionDetails.txHashHeader" = "Identificador de transacción de Electra";
 /* (this transaction was) Received at this address: */
 "TransactionDirection.address" = "Recibido en esta dirección";
 /* (this transaction was) Sent to this address: */
@@ -984,7 +984,7 @@ eg. 182930 (45061 confirmations) */
 /* Device authentication title */
 "UnlockScreen.touchIdTitle.android" = "Se requiere autenticación";
 /* Update PIN caption text */
-"UpdatePin.caption" = "Recuerda este PIN. Si lo olvidas, no podrás acceder a tu bitcoin.";
+"UpdatePin.caption" = "Recuerda este PIN. Si lo olvidas, no podrás acceder a tu Electra.";
 /* PIN creation info. */
 "UpdatePin.createInstruction" = "Tu PIN se usará para desbloquear ECA y enviar dinero.";
 /* Update PIN title */
@@ -1028,9 +1028,9 @@ eg. 182930 (45061 confirmations) */
 /* Updating webview message */
 "Webview.updating" = "Actualizando...";
 /* Welcome screen text. (?) will be replaced with the help icon users should look for. */
-"Welcome.body" = "Breadwallet ha cambiado su nombre por el de BRD, con un nuevo aspecto y algunas características nuevas.\n\nSi necesitas ayuda, busca el (?) en la parte superior derecha de la mayoría de las pantallas.";
+"Welcome.body" = "Breadwallet ha cambiado su nombre por el de Electra, con un nuevo aspecto y algunas características nuevas.\n\nSi necesitas ayuda, busca el (?) en la parte superior derecha de la mayoría de las pantallas.";
 /* Top title of welcome screen */
-"Welcome.title" = "¡Bienvenido a BRD!";
+"Welcome.title" = "¡Bienvenido a Electra!";
 /* Wipe wallet alert message */
 "WipeWallet.alertMessage" = "¿Seguro que quieres eliminar esta cartera?";
 /* Wipe wallet alert title */
@@ -1044,7 +1044,7 @@ eg. 182930 (45061 confirmations) */
 /* Instructions for unlinking the wallet */
 "WipeWallet.startMessage" = "Desvincula tu monedero para eliminarlo de este dispositivo. Una vez que tu monedero esté desvinculado, puedes iniciar un nuevo monedero o recuperar un monedero diferente en este dispositivo.";
 /* Start wipe wallet view warning */
-"WipeWallet.startWarning" = "Ya no podrás acceder a tu cartera BRD actual desde este dispositivo. El saldo se mantendrá en la frase.";
+"WipeWallet.startWarning" = "Ya no podrás acceder a tu cartera Electra actual desde este dispositivo. El saldo se mantendrá en la frase.";
 /* Unlink this wallet from this device. */
 "WipeWallet.title" = "Desvincular monedero";
 /* Wipe wallet button title */
