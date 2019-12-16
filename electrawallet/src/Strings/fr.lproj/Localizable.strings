@@ -165,7 +165,7 @@
 /* Click this button to sell an asset */
 "Button.sell" = "Vendre";
 /* send button */
-"Button.send" = "envoyer";
+"Button.send" = "Envoyer";
 /* Settings button label */
 "Button.settings" = "Paramètres";
 /* Settings button label */
@@ -173,7 +173,7 @@
 /* Button label to uninstall the app. */
 "Button.uninstall.android" = "Désinstallez";
 /* Button label to wipe the user's application data. */
-"Button.wipe.android" = "Effacez";
+"Button.wipe.android" = "Effacer";
 /* Yes button */
 "Button.yes" = "Oui";
 /* Camera plugin instruction */
