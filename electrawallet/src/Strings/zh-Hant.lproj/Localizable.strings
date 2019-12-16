@@ -15,7 +15,7 @@
 /* About screen twitter label */
 "About.twitter" = "Twitter";
 /* About screen wallet ID label */
-"About.walletID" = "BRD 獎勵 ID";
+"About.walletID" = "Electra 獎勵 ID";
 /* Close modal button accessibility label */
 "AccessibilityLabels.close" = "關閉";
 /* Support center accessibiliy label */
@@ -35,13 +35,13 @@
 /* Error alert title */
 "Alert.error" = "錯誤";
 /* Keystore error */
-"Alert.keystore.generic.android" = "您的 Android OS 金鑰儲存區有問題，請聯絡 support@breadwallet.com";
+"Alert.keystore.generic.android" = "您的 Android OS 金鑰儲存區有問題，請聯絡 support@electraproject.org";
 /* KeyStore error, keys are invalidated */
-"Alert.keystore.invalidated.android" = "您的 BRD 加密資料最近已被判定為無效，因爲您的 Android 螢幕鎖定已被停用。";
+"Alert.keystore.invalidated.android" = "您的 Electra 加密資料最近已被判定為無效，因爲您的 Android 螢幕鎖定已被停用。";
 /* Warn user key store data has been invalidate because the user changed their security settings. The user must uninstall. */
-"Alert.keystore.invalidated.uninstall.android" = "無法繼續執行動作，因為您的螢幕鎖定設置有變動（例如，密碼關閉、指紋變動）。基於安全考量，Android 已永久關鎖您的密鑰庫。因此，必須透過解除安裝來消除您的 BRD 應用程式資料。\n\n別擔心，您的資金仍然安全！ 重新安裝應用程式，並使用紙密鑰來復原您的錢包。";
+"Alert.keystore.invalidated.uninstall.android" = "無法繼續執行動作，因為您的螢幕鎖定設置有變動（例如，密碼關閉、指紋變動）。基於安全考量，Android 已永久關鎖您的密鑰庫。因此，必須透過解除安裝來消除您的 Electra 應用程式資料。\n\n別擔心，您的資金仍然安全！ 重新安裝應用程式，並使用紙密鑰來復原您的錢包。";
 /* Warn user key store data has been invalidate because the user changed their security settings. The user must wipe their app data. */
-"Alert.keystore.invalidated.wipe.android" = "無法繼續執行動作，因為您的螢幕鎖定設置有變動（例如，密碼關閉、指紋變動）。基於安全考量，Android 已永久關鎖您的密鑰庫。因此，您的 BRD 應用程式資料必須消除。\n\n別擔心，您的資金仍然安全！使用紙密鑰來復原您的錢包。";
+"Alert.keystore.invalidated.wipe.android" = "無法繼續執行動作，因為您的螢幕鎖定設置有變動（例如，密碼關閉、指紋變動）。基於安全考量，Android 已永久關鎖您的密鑰庫。因此，您的 Electra 應用程式資料必須消除。\n\n別擔心，您的資金仍然安全！使用紙密鑰來復原您的錢包。";
 /* Keystore error title */
 "Alert.keystore.title.android" = "Android 金鑰儲存區錯誤";
 /* No internet alert message */
@@ -71,11 +71,11 @@
 /* Fingerprint was recognized by the scanner */
 "Alerts.touchIdSucceeded.android" = "已辨識指紋";
 /* Tell the user where they can enable permissions to access device storage. */
-"Android.allowFileSystemAccess" = "請在您的裝置啟用儲存權限：[設定] > [應用程式] > [BRD] > [權限]。";
+"Android.allowFileSystemAccess" = "請在您的裝置啟用儲存權限：[設定] > [應用程式] > [Electra] > [權限]。";
 /* The "home" screen is the name of the top level menu for the app. */
 "Android.BCH.welcome.message" = "任何在您錢包裡的 BCH 都可透過主畫面存取。";
 /* Warning about using apps that can alter the screen */
-"Android.screenAlteringMessage" = "除非停用螢幕改變應用程式（例如 Twilight），否則 BRD 無法正常運作。";
+"Android.screenAlteringMessage" = "除非停用螢幕改變應用程式（例如 Twilight），否則 Electra 無法正常運作。";
 /* An app that alters the screen ("screen-altering app") has been detected. */
 "Android.screenAlteringTitle" = "偵測到螢幕改變應用程式";
 /* Body for an announcement promoting Coinify. */
@@ -213,7 +213,7 @@
 /* Retry Identity verification button */
 "Crowdsale.retry" = "重試";
 /* Bitcoin denomination picker label */
-"DefaultCurrency.bitcoinLabel" = "比特幣顯示單位";
+"DefaultCurrency.bitcoinLabel" = "Electra";
 /* Exchange rate label */
 "DefaultCurrency.rateLabel" = "匯率";
 /* The wallet is disabled. */
@@ -229,7 +229,7 @@
 /* Email unavailable alert title */
 "ErrorMessages.emailUnavailableTitle" = "無法使用電子郵件";
 /* Message that gets shown when we've detected the user has encountered the looping lock-screen bug. (preserve [ ] characters) */
-"ErrorMessages.loopingLockScreen.android" = "由於您安卓系統版本中的錯誤，因此 BRD 無法取得認證。[請點擊此瞭解更多資訊。]";
+"ErrorMessages.loopingLockScreen.android" = "由於您安卓系統版本中的錯誤，因此 Electra 無法取得認證。[請點擊此瞭解更多資訊。]";
 /* Messaging unavailable alert title */
 "ErrorMessages.messagingUnavailableMessage" = "本裝置並非設定來傳送訊息。";
 /* Messaging unavailable alert title */
@@ -242,7 +242,7 @@
 "FaceIDSettings.label" = "刷臉解鎖您的 Electra 並在設定的限制內撥款。";
 /* Title of the screen for setting the Face ID Spending Limit */
 "FaceIDSettings.linkText" = "Face ID 消費上限畫面";
-/* Setting to turn on Face ID for BRD */
+/* Setting to turn on Face ID for Electra */
 "FaceIDSettings.switchLabel" = "開放 Electra 使用 Face ID";
 /* Face ID settings view title */
 "FaceIDSettings.title" = "Face ID";
@@ -327,9 +327,9 @@
 /* Ignore jailbreak warning button */
 "JailbreakWarnings.ignore" = "略過";
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithBalance" = "裝置安全性遭破解\n 任何「越獄」應用程式都可以存取 BRD 的鑰匙圈資料、 竊取您的比特幣！立即抹除這個錢包，在安全的裝置上還原。";
+"JailbreakWarnings.messageWithBalance" = "裝置安全性遭破解\n 任何「越獄」應用程式都可以存取 Electra 的鑰匙圈資料、 竊取您的比特幣！立即抹除這個錢包，在安全的裝置上還原。";
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithoutBalance" = "裝置安全性遭破解\n 任何「越獄」應用程式都可以存取 BRD 的鑰匙圈資料、 竊取您的比特幣。請只在未越獄的裝置上使用 BRD。";
+"JailbreakWarnings.messageWithoutBalance" = "裝置安全性遭破解\n 任何「越獄」應用程式都可以存取 Electra 的鑰匙圈資料、 竊取您的比特幣。請只在未越獄的裝置上使用 Electra。";
 /* Jailbreak warning title */
 "JailbreakWarnings.title" = "警告";
 /* Wipe wallet button */
@@ -351,7 +351,7 @@
 /* Location services disabled error */
 "LocationPlugin.disabled" = "定位服務已停用。";
 /* No permissions for location services */
-"LocationPlugin.notAuthorized" = "BRD 沒有存取定位服務的權限。";
+"LocationPlugin.notAuthorized" = "Electra 沒有存取定位服務的權限。";
 /* Wallet creation date prefix */
 "ManageWallet.creationDatePrefix" = "您在 %1$@ 建立了電子錢包";
 /* Manage wallet description text */
@@ -423,7 +423,7 @@
 /* Onboarding screen Page 2 subtitle */
 "OnboardingPageTwo.subtitle" = "我們擁有價值超過 60 億美元受到保護的資產。";
 /* Onboarding screen Page 2 title */
-"OnboardingPageTwo.title" = "加入世界各地信賴 BRD 服務的 150 萬用戶的行列。";
+"OnboardingPageTwo.title" = "加入世界各地信賴 Electra 服務的 150 萬用戶的行列。";
 /* Eg. Send 1.0Eth to purchase CCC */
 "PaymentConfirmation.amountText" = "匯出%1$@來購買%2$@";
 /* Payment confirmation view title */
@@ -479,7 +479,7 @@
 /* Transaction rejected prompt title */
 "Prompts.RecommendRescan.title" = "交易被拒";
 /* Share data prompt body */
-"Prompts.ShareData.body" = "和我們分享您的匿名資料來協助改善 BRD";
+"Prompts.ShareData.body" = "和我們分享您的匿名資料來協助改善 Electra";
 /* Share data prompt title */
 "Prompts.ShareData.title" = "分享匿名資料";
 /* Enable touch ID prompt body */
@@ -497,7 +497,7 @@
 /* Upgrade PIN prompt title. */
 "Prompts.UpgradePin.title" = "升級 PIN 碼";
 /* Notifications will be added later but users can set their preferences now, which is why we specify "in the future". */
-"PushNotifications.body" = "開啟通知，好在未來收到 BRD 的特別訊息。";
+"PushNotifications.body" = "開啟通知，好在未來收到 Electra 的特別訊息。";
 /* Push notifications are disabled alert title" */
 "PushNotifications.disabled" = "已停用通知功能";
 /* Push notifications settings instructions */
@@ -575,7 +575,7 @@
 /* Rewards view expanded body. */
 "RewardsView.expandedBody" = "了解如何節省交易費用，解鎖未來的財富。";
 /* Rewards view expanded title. */
-"RewardsView.expandedTitle" = "我們為您介紹BRD Rewards。";
+"RewardsView.expandedTitle" = "我們為您介紹Electra Rewards。";
 /* Rewards view title */
 "RewardsView.normalTitle" = "獎勵";
 /* Scan bitcoin address camera flash toggle */
@@ -623,9 +623,9 @@
 /* Balance: $4.00 */
 "Send.balance" = "餘額：%1$@";
 /* Instructions how to allow the camera access for the app */
-"Send.cameraUnavailabeMessage.android" = "到「設定」 > 「應用程式」 > 「BRD」 > 「權限」允許相機存取";
+"Send.cameraUnavailabeMessage.android" = "到「設定」 > 「應用程式」 > 「Electra」 > 「權限」允許相機存取";
 /* Permission required to access camera */
-"Send.cameraUnavailabeTitle.android" = "BRD 尚未獲准存取相機";
+"Send.cameraUnavailabeTitle.android" = "Electra 尚未獲准存取相機";
 /* Camera not allowed message */
 "Send.cameraunavailableMessage" = "請至「設定」允許存取相機。";
 /* Camera not allowed alert title */
@@ -709,7 +709,7 @@
 /* Enable segwit. */
 "Settings.EnableSegwit" = "啟用 Segwit";
 /* Are you enjoying bread alert message body */
-"Settings.enjoying" = "您喜歡 BRD 嗎？";
+"Settings.enjoying" = "您喜歡 Electra 嗎？";
 /* Face ID spending limit label */
 "Settings.faceIdLimit" = "Face ID 消費上限";
 /* Redeem the funds stored on this private key. */
@@ -749,7 +749,7 @@
 /* Unlink/delete your wallet from the current device. */
 "Settings.wipe" = "移除與此裝置連結";
 /* Share data view body */
-"ShareData.body" = "請跟我們分享您的匿名資料，以協助我們改善 BRD。其中不會包含財務資訊。我們尊重您的財務隱私。";
+"ShareData.body" = "請跟我們分享您的匿名資料，以協助我們改善 Electra。其中不會包含財務資訊。我們尊重您的財務隱私。";
 /* Share data header */
 "ShareData.header" = "分享資料？";
 /* Share data switch label. */
@@ -866,7 +866,7 @@
 "Transaction.sentTo" = "寄送至 %1$@";
 /* eg. Starting balance: $50.00 */
 "Transaction.starting" = "開始餘額：%1$@";
-/* e.g. "[The money you paid was a] Fee for token transfer: BRD" (BRD is the token that was transfered) */
+/* e.g. "[The money you paid was a] Fee for token transfer: Electra" (Electra is the token that was transfered) */
 "Transaction.tokenTransfer" = "代幣傳送費用：%1$@";
 /* Waiting to be confirmed string */
 "Transaction.waiting" = "正在等待確認。部分商家要求確認完成交易。預估時間：1-2 小時。";
@@ -1030,9 +1030,9 @@ eg. 182930 (45061 confirmations) */
 /* Updating webview message */
 "Webview.updating" = "正在更新……";
 /* Welcome screen text. (?) will be replaced with the help icon users should look for. */
-"Welcome.body" = "Breadwallet 已經改名爲 BRD，有嶄新的面貌和一些新功能。\n\n如果需要協助，就在大部分畫面的右上角尋找(?)。";
+"Welcome.body" = "Breadwallet 已經改名爲 Electra，有嶄新的面貌和一些新功能。\n\n如果需要協助，就在大部分畫面的右上角尋找(?)。";
 /* Top title of welcome screen */
-"Welcome.title" = "歡迎使用 BRD！";
+"Welcome.title" = "歡迎使用 Electra！";
 /* Wipe wallet alert message */
 "WipeWallet.alertMessage" = "確定要刪除此錢包嗎？";
 /* Wipe wallet alert title */
@@ -1046,7 +1046,7 @@ eg. 182930 (45061 confirmations) */
 /* Instructions for unlinking the wallet */
 "WipeWallet.startMessage" = "自此裝置移除您錢包的連結。一旦移除此錢包的連結，您可在此裝置上啟用新錢包或恢復其他不同錢包。";
 /* Start wipe wallet view warning */
-"WipeWallet.startWarning" = "您將再也無法從這項裝置存取目前的 BRD 錢包。餘額會留在片段上。";
+"WipeWallet.startWarning" = "您將再也無法從這項裝置存取目前的 Electra 錢包。餘額會留在片段上。";
 /* Unlink this wallet from this device. */
 "WipeWallet.title" = "移除錢包連結";
 /* Wipe wallet button title */

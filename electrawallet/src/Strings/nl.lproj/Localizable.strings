@@ -15,7 +15,7 @@
 /* About screen twitter label */
 "About.twitter" = "Twitter";
 /* About screen wallet ID label */
-"About.walletID" = "BRD-beloningenidentificatie";
+"About.walletID" = "Electra-beloningenidentificatie";
 /* Close modal button accessibility label */
 "AccessibilityLabels.close" = "Sluiten";
 /* Support center accessibiliy label */
@@ -35,13 +35,13 @@
 /* Error alert title */
 "Alert.error" = "Error";
 /* Keystore error */
-"Alert.keystore.generic.android" = "Er is een probleem met uw Android OS keystore, neem alstublieft contact op met support@breadwallet.com";
+"Alert.keystore.generic.android" = "Er is een probleem met uw Android OS keystore, neem alstublieft contact op met support@electraproject.org";
 /* KeyStore error, keys are invalidated */
-"Alert.keystore.invalidated.android" = "Uw door BRD geëncrypteerde data is onlangs ongeldig gemaakt omdat uw Android schermvergrendeling is uitgeschakeld.";
+"Alert.keystore.invalidated.android" = "Uw door Electra geëncrypteerde data is onlangs ongeldig gemaakt omdat uw Android schermvergrendeling is uitgeschakeld.";
 /* Warn user key store data has been invalidate because the user changed their security settings. The user must uninstall. */
-"Alert.keystore.invalidated.uninstall.android" = "We kunnen niet doorgaan omdat uw instellingen voor schermvergrendeling zijn gewijzigd (bijv. wachtwoord was uitgeschakeld, vingerafdrukken waren gewijzigd). Om veiligheidsredenen heeft Android uw sleutelarchief permanent gesloten. Daarom moeten uw BRD-app-gegevens worden gewist door de installatie ongedaan te maken.\n\nGeen zorgen, uw geld is nog steeds veilig! Installeer de app opnieuw en herstel uw portemonnee met behulp van uw papieren sleutel.";
+"Alert.keystore.invalidated.uninstall.android" = "We kunnen niet doorgaan omdat uw instellingen voor schermvergrendeling zijn gewijzigd (bijv. wachtwoord was uitgeschakeld, vingerafdrukken waren gewijzigd). Om veiligheidsredenen heeft Android uw sleutelarchief permanent gesloten. Daarom moeten uw Electra-app-gegevens worden gewist door de installatie ongedaan te maken.\n\nGeen zorgen, uw geld is nog steeds veilig! Installeer de app opnieuw en herstel uw portemonnee met behulp van uw papieren sleutel.";
 /* Warn user key store data has been invalidate because the user changed their security settings. The user must wipe their app data. */
-"Alert.keystore.invalidated.wipe.android" = "We kunnen niet doorgaan omdat uw instellingen voor schermvergrendeling zijn gewijzigd (bijv. wachtwoord was uitgeschakeld, vingerafdrukken waren gewijzigd). Om veiligheidsredenen heeft Android uw sleutelarchief permanent gesloten. Daarom moeten uw BRD-app-gegevens worden gewist.\n\nGeen zorgen, uw geld is nog steeds veilig! Herstel uw portemonnee met behulp van uw papieren sleutel.";
+"Alert.keystore.invalidated.wipe.android" = "We kunnen niet doorgaan omdat uw instellingen voor schermvergrendeling zijn gewijzigd (bijv. wachtwoord was uitgeschakeld, vingerafdrukken waren gewijzigd). Om veiligheidsredenen heeft Android uw sleutelarchief permanent gesloten. Daarom moeten uw Electra-app-gegevens worden gewist.\n\nGeen zorgen, uw geld is nog steeds veilig! Herstel uw portemonnee met behulp van uw papieren sleutel.";
 /* Keystore error title */
 "Alert.keystore.title.android" = "Android KeyStore fout";
 /* No internet alert message */
@@ -71,11 +71,11 @@
 /* Fingerprint was recognized by the scanner */
 "Alerts.touchIdSucceeded.android" = "Vingerafdruk geaccepteerd";
 /* Tell the user where they can enable permissions to access device storage. */
-"Android.allowFileSystemAccess" = "Schakel opslagtoestemmingen in uw apparaatinstellingen in: \"Instellingen\"> \"Apps\"> \"BRD\"> \"Toestemmingen\".";
+"Android.allowFileSystemAccess" = "Schakel opslagtoestemmingen in uw apparaatinstellingen in: \"Instellingen\"> \"Apps\"> \"Electra\"> \"Toestemmingen\".";
 /* The "home" screen is the name of the top level menu for the app. */
 "Android.BCH.welcome.message" = "Elke BCH in uw wallet is toegankelijk via het startscherm.";
 /* Warning about using apps that can alter the screen */
-"Android.screenAlteringMessage" = "BRD zal niet goed werken tenzij schermveranderende apps (zoals Twilight) zijn uitgeschakeld.";
+"Android.screenAlteringMessage" = "Electra zal niet goed werken tenzij schermveranderende apps (zoals Twilight) zijn uitgeschakeld.";
 /* An app that alters the screen ("screen-altering app") has been detected. */
 "Android.screenAlteringTitle" = "Schermveranderende app gedetecteerd";
 /* Body for an announcement promoting Coinify. */
@@ -227,7 +227,7 @@
 /* Email unavailable alert title */
 "ErrorMessages.emailUnavailableTitle" = "E-mail niet beschikbaar";
 /* Message that gets shown when we've detected the user has encountered the looping lock-screen bug. (preserve [ ] characters) */
-"ErrorMessages.loopingLockScreen.android" = "BRD kan niet gewaarmerkt worden vanwege een fout in uw versie van Android. [Klik hier voor meer informatie.]";
+"ErrorMessages.loopingLockScreen.android" = "Electra kan niet gewaarmerkt worden vanwege een fout in uw versie van Android. [Klik hier voor meer informatie.]";
 /* Messaging unavailable alert title */
 "ErrorMessages.messagingUnavailableMessage" = "Dit apparaat is niet geconfigureerd om berichten te sturen.";
 /* Messaging unavailable alert title */
@@ -240,7 +240,7 @@
 "FaceIDSettings.label" = "Gebruik uw gezicht om uw Electra te ontgrendelen en verstuur geld tot een vastgestelde limiet.";
 /* Title of the screen for setting the Face ID Spending Limit */
 "FaceIDSettings.linkText" = "Scherm bestedingslimiet Face-ID";
-/* Setting to turn on Face ID for BRD */
+/* Setting to turn on Face ID for Electra */
 "FaceIDSettings.switchLabel" = "Face-ID voor Electra inschakelen";
 /* Face ID settings view title */
 "FaceIDSettings.title" = "Face-ID";
@@ -349,7 +349,7 @@
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Locatievoorzieningen zijn uitgeschakeld.";
 /* No permissions for location services */
-"LocationPlugin.notAuthorized" = "BRD heeft geen toestemming om locatievoorzieningen te gebruiken.";
+"LocationPlugin.notAuthorized" = "Electra heeft geen toestemming om locatievoorzieningen te gebruiken.";
 /* Wallet creation date prefix */
 "ManageWallet.creationDatePrefix" = "Je hebt je portemonnee gecreëerd op %1$@";
 /* Manage wallet description text */
@@ -421,7 +421,7 @@
 /* Onboarding screen Page 2 subtitle */
 "OnboardingPageTwo.subtitle" = "We hebben meer dan $6 miljard USD waard aan aandelen onder onze bescherming.";
 /* Onboarding screen Page 2 title */
-"OnboardingPageTwo.title" = "Sluit u aan bij de 1,5 miljoen mensen van over de hele wereld die op BRD vertrouwen.";
+"OnboardingPageTwo.title" = "Sluit u aan bij de 1,5 miljoen mensen van over de hele wereld die op Electra vertrouwen.";
 /* Eg. Send 1.0Eth to purchase CCC */
 "PaymentConfirmation.amountText" = "%1$@ versturen om %2$@ te kopen";
 /* Payment confirmation view title */
@@ -439,7 +439,7 @@
 /* Amount too small error message */
 "PaymentProtocol.Errors.smallPayment" = "Electra betalingen kunnen niet minder zijn dan %1$@.";
 /* Output too small error message. */
-"PaymentProtocol.Errors.smallTransaction" = "Bitcoin transactie outputs kunnen niet minder zijn dan %1$@.";
+"PaymentProtocol.Errors.smallTransaction" = "Electra transactie outputs kunnen niet minder zijn dan %1$@.";
 /* Unsupported signature type payment protocol error message */
 "PaymentProtocol.Errors.unsupportedSignatureType" = "niet-ondersteund handtekening type";
 /* Untrusted certificate payment protocol error message */
@@ -477,7 +477,7 @@
 /* Transaction rejected prompt title */
 "Prompts.RecommendRescan.title" = "Transactie Geweigerd";
 /* Share data prompt body */
-"Prompts.ShareData.body" = "Help ons bij het verbeteren van BRD door je anonieme data met ons te delen";
+"Prompts.ShareData.body" = "Help ons bij het verbeteren van Electra door je anonieme data met ons te delen";
 /* Share data prompt title */
 "Prompts.ShareData.title" = "Deel Anonieme Data";
 /* Enable touch ID prompt body */
@@ -573,7 +573,7 @@
 /* Rewards view expanded body. */
 "RewardsView.expandedBody" = "Leer hoe je kan besparen op handelskosten en toekomstige beloningen vrijspeelt.";
 /* Rewards view expanded title. */
-"RewardsView.expandedTitle" = "Introductie van BRD-beloningen.";
+"RewardsView.expandedTitle" = "Introductie van Electra-beloningen.";
 /* Rewards view title */
 "RewardsView.normalTitle" = "Beloningen";
 /* Scan bitcoin address camera flash toggle */
@@ -591,7 +591,7 @@
 /* Face ID button title */
 "SecurityCenter.faceIdTitle" = "Face-ID";
 /* Paper Key button description */
-"SecurityCenter.paperKeyDescription" = "De enige manier om toegang te hebben tot je Bitcoins is als je je telefoon verliest of upgrade.";
+"SecurityCenter.paperKeyDescription" = "De enige manier om toegang te hebben tot je Electras is als je je telefoon verliest of upgrade.";
 /* Paper Key button title */
 "SecurityCenter.paperKeyTitle" = "Papieren Sleutel";
 /* PIN button description */
@@ -607,9 +607,9 @@
 /* Segwit enabled confirmation title */
 "Segwit.ConfirmationConfirmationTitle" = "U hebt SegWit geactiveerd!";
 /* Segwit enabled confirmation description */
-"Segwit.ConfirmationInstructionsDescription" = "Bedankt voor het ondersteunen van Bitcoin.";
+"Segwit.ConfirmationInstructionsDescription" = "Bedankt voor het ondersteunen van Electra.";
 /* Segwit instructions */
-"Segwit.ConfirmationInstructionsInstructions" = "SegWit-support is nog een bèta-functie.\nZodra SegWit is geactiveerd, zal het niet langer mogelijk zijn om de functie te deactiveren. U kunt de het legacyadres vinden onder Instellingen.\nSommige externe diensten, waaronder de cryptotrade, zijn mogelijk niet beschikbaar voor gebruikers die SegWit hebben geactiveerd. In geval van nood kunt u een legacyadres genereren via Voorkeuren > Bitcoininstellingen.\nSegWit zal automatisch worden geactiveerd voor alle gebruikers in een toekomstige update.";
+"Segwit.ConfirmationInstructionsInstructions" = "SegWit-support is nog een bèta-functie.\nZodra SegWit is geactiveerd, zal het niet langer mogelijk zijn om de functie te deactiveren. U kunt de het legacyadres vinden onder Instellingen.\nSommige externe diensten, waaronder de cryptotrade, zijn mogelijk niet beschikbaar voor gebruikers die SegWit hebben geactiveerd. In geval van nood kunt u een legacyadres genereren via Voorkeuren > Electra instellingen.\nSegWit zal automatisch worden geactiveerd voor alle gebruikers in een toekomstige update.";
 /* Segwit extra confirmation title. */
 "Segwit.ConfirmChoiceLayout" = "Het activeren van SegWit is een onomkeerbaar proces. Weet u zeker dat u verder wilt gaan?";
 /* Segwit enableButton */
@@ -621,9 +621,9 @@
 /* Balance: $4.00 */
 "Send.balance" = "Balans: %1$@";
 /* Instructions how to allow the camera access for the app */
-"Send.cameraUnavailabeMessage.android" = "Sta cameratoegang toe via \"Instellingen\" > \"Apps\" > \"BRD\" > \"Toestemmingen\"";
+"Send.cameraUnavailabeMessage.android" = "Sta cameratoegang toe via \"Instellingen\" > \"Apps\" > \"Electra\" > \"Toestemmingen\"";
 /* Permission required to access camera */
-"Send.cameraUnavailabeTitle.android" = "BRD heeft geen toegang tot de camera";
+"Send.cameraUnavailabeTitle.android" = "Electra heeft geen toegang tot de camera";
 /* Camera not allowed message */
 "Send.cameraunavailableMessage" = "Ga naar Instellingen om camera gebruik toe te staan.";
 /* Camera not allowed alert title */
@@ -707,7 +707,7 @@
 /* Enable segwit. */
 "Settings.EnableSegwit" = "Activeer SegWit";
 /* Are you enjoying bread alert message body */
-"Settings.enjoying" = "Vind je BRD leuk?";
+"Settings.enjoying" = "Vind je Electra leuk?";
 /* Face ID spending limit label */
 "Settings.faceIdLimit" = "Bestedingslimiet Face-ID";
 /* Redeem the funds stored on this private key. */
@@ -741,13 +741,13 @@
 /* Receive Bitcoin instructions */
 "Settings.ViewLegacyAddressReceiveDescription" = "Verzend enkel Electra (ECA) naar dit adres. Elk ander activum dat naar dit adres wordt verzonden, zal permanent verloren gaan.";
 /* Receive Bitcoin */
-"Settings.ViewLegacyAddressReceiveTitle" = "Ontvang Bitcoin";
+"Settings.ViewLegacyAddressReceiveTitle" = "Ontvang Electra";
 /* Wallet Settings section header */
 "Settings.wallet" = "Portemonnee";
 /* Unlink/delete your wallet from the current device. */
 "Settings.wipe" = "Ontkoppelen van dit toestel";
 /* Share data view body */
-"ShareData.body" = "Help om BRD te verbeteren door je anonieme data met ons te delen. Dit bevat geen financiële informatie. We respecteren je financiële privacy.";
+"ShareData.body" = "Help om Electra te verbeteren door je anonieme data met ons te delen. Dit bevat geen financiële informatie. We respecteren je financiële privacy.";
 /* Share data header */
 "ShareData.header" = "Data Delen?";
 /* Share data switch label. */
@@ -763,7 +763,7 @@
 /* button label */
 "StartViewController.createButton" = "Nieuwe wallet maken";
 /* Start view message */
-"StartViewController.message" = "De veiligste en betrouwbaarste manier om bitcoin te gebruiken.";
+"StartViewController.message" = "De veiligste en betrouwbaarste manier om Electra te gebruiken.";
 /* Recover your wallet from a backup */
 "StartViewController.recoverButton" = "Wallet herstellen";
 /* Syncing view connectiong state header text */
@@ -864,7 +864,7 @@
 "Transaction.sentTo" = "verstuurd naar %1$@";
 /* eg. Starting balance: $50.00 */
 "Transaction.starting" = "Startbalans: %1$@";
-/* e.g. "[The money you paid was a] Fee for token transfer: BRD" (BRD is the token that was transfered) */
+/* e.g. "[The money you paid was a] Fee for token transfer: Electra" (Electra is the token that was transfered) */
 "Transaction.tokenTransfer" = "Fee voor token verzending: %1$@";
 /* Waiting to be confirmed string */
 "Transaction.waiting" = "Wachtend op bevestiging. Sommige handelaren willen bevestiging om een transactie af te roden. Geschatte tijd: 1-2 uur.";
@@ -958,7 +958,7 @@ eg. 182930 (45061 confirmations) */
 /* Tx detail field header */
 "TransactionDetails.totalHeader" = "Totaal";
 /* Transaction ID header */
-"TransactionDetails.txHashHeader" = "Bitcoin Transactie-ID";
+"TransactionDetails.txHashHeader" = "Electra Transactie-ID";
 /* (this transaction was) Received at this address: */
 "TransactionDirection.address" = "Ontvangen op dit adres";
 /* (this transaction was) Sent to this address: */
@@ -984,7 +984,7 @@ eg. 182930 (45061 confirmations) */
 /* Device authentication title */
 "UnlockScreen.touchIdTitle.android" = "Authenticatie vereist";
 /* Update PIN caption text */
-"UpdatePin.caption" = "Onthoud deze PIN. Als je deze vergeet, zul je niet in staat zijn om bij je Bitcoins te kunnen.";
+"UpdatePin.caption" = "Onthoud deze PIN. Als je deze vergeet, zul je niet in staat zijn om bij je Electras te kunnen.";
 /* PIN creation info. */
 "UpdatePin.createInstruction" = "Je PIN zal worden gebruikt om je ECA te ontgrendelen en geld te versturen.";
 /* Update PIN title */
@@ -1028,9 +1028,9 @@ eg. 182930 (45061 confirmations) */
 /* Updating webview message */
 "Webview.updating" = "Updaten...";
 /* Welcome screen text. (?) will be replaced with the help icon users should look for. */
-"Welcome.body" = "Breadwallet is omgedoopt tot BRD, met een gloednieuw uiterlijk en enkele nieuwe functies.\n\nAls u hulp nodig hebt, zoek naar de (?) rechtsboven in de meeste schermen.";
+"Welcome.body" = "Breadwallet is omgedoopt tot Electra, met een gloednieuw uiterlijk en enkele nieuwe functies.\n\nAls u hulp nodig hebt, zoek naar de (?) rechtsboven in de meeste schermen.";
 /* Top title of welcome screen */
-"Welcome.title" = "Welkom bij BRD!";
+"Welcome.title" = "Welkom bij Electra!";
 /* Wipe wallet alert message */
 "WipeWallet.alertMessage" = "Weet je zeker dat je deze portomonnee wilt verwijderen?";
 /* Wipe wallet alert title */
@@ -1044,7 +1044,7 @@ eg. 182930 (45061 confirmations) */
 /* Instructions for unlinking the wallet */
 "WipeWallet.startMessage" = "Ontkoppel je portemonnee om het te verwijderen van dit toestel. Wanneer deze portemonnee ontkoppeld is kunt u een nieuwe portemonnee beginnen of een andere portemonnee laden op dit toestel.";
 /* Start wipe wallet view warning */
-"WipeWallet.startWarning" = "U zal niet langer uw huidige BRD portemonnee kunnen bereiken vanaf dit apparaat. Uw saldo zal hetzelfde blijven.";
+"WipeWallet.startWarning" = "U zal niet langer uw huidige Electra portemonnee kunnen bereiken vanaf dit apparaat. Uw saldo zal hetzelfde blijven.";
 /* Unlink this wallet from this device. */
 "WipeWallet.title" = "Portemonnee Ontkoppelen";
 /* Wipe wallet button title */
