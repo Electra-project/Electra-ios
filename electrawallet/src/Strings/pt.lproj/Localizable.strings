@@ -253,7 +253,7 @@
 /* Economy fee */
 "FeeSelector.economy" = "Economia";
 /* E.g. [This transaction is predicted to complete in] 1-24 hours */
-"FeeSelector.economyTime" = "1-24 horas";
+"FeeSelector.economyTime" = " ";
 /* Warning message for economy fee */
 "FeeSelector.economyWarning" = "Esta opção não se recomenda para transações delicadas a nível de tempo.";
 /* E.g. Estimated delivery: 10-60 minutes */
