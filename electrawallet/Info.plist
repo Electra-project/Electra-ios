@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>electraWallet</string>
+	<string>Electra</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
@@ -160,6 +160,8 @@
 	</array>
 	<key>UISupportsDocumentBrowser</key>
 	<false/>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
 	<key>UTImportedTypeDeclarations</key>

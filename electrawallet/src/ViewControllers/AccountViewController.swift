@@ -183,7 +183,13 @@ class AccountViewController: UIViewController, Subscriber, Trackable {
             topConstraint,
             headerContainer.trailingAnchor.constraint(equalTo: view.trailingAnchor)])
         headerView.constrain(toSuperviewEdges: nil)
-        searchHeaderview.constrain(toSuperviewEdges: nil)
+        
+        //searchHeaderview.constrain(toSuperviewEdges: nil)
+        searchHeaderview.constrain([
+            searchHeaderview.widthAnchor.constraint(equalTo: headerContainer.widthAnchor),
+            searchHeaderview.bottomAnchor.constraint(equalTo: headerContainer.bottomAnchor),
+            searchHeaderview.topAnchor.constraint(equalTo: headerContainer.topAnchor, constant: 0)//100)
+        ])
 
         footerHeightConstraint = footerView.heightAnchor.constraint(equalToConstant: AccountFooterView.height)
         footerView.constrain([

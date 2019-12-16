@@ -101,6 +101,9 @@ class SearchHeaderView: UIView {
     private let pending = BRDButton(title: S.Search.pending, type: .search)
     private let complete = BRDButton(title: S.Search.complete, type: .search)
     private let cancel = UIButton(type: .system)
+    private let currencyLogo = UIImageView(image: #imageLiteral(resourceName: "eca_white"))
+    private let skinHeader = UIView()
+    
     fileprivate var filters: [SearchFilterType] = [] {
         didSet {
             didChangeFilters?(filters.map { $0.filter })
@@ -126,6 +129,9 @@ class SearchHeaderView: UIView {
     private func addSubviews() {
         addSubview(searchBar)
         addSubview(cancel)
+        addSubview(skinHeader)
+        addSubview(currencyLogo)
+        
     }
 
     private func addConstraints() {
@@ -137,13 +143,28 @@ class SearchHeaderView: UIView {
             cancel.widthAnchor.constraint(equalToConstant: titleSize.width + C.padding[4])])
         searchBar.constrain([
             searchBar.leadingAnchor.constraint(equalTo: leadingAnchor, constant: C.padding[1]),
-            searchBar.topAnchor.constraint(equalTo: topAnchor, constant: E.isIPhoneX ? C.padding[5] : C.padding[2]),
+            //searchBar.topAnchor.constraint(equalTo: topAnchor, constant: E.isIPhoneX ? C.padding[5] : C.padding[2]),
+            searchBar.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -C.padding[10]),
             searchBar.trailingAnchor.constraint(equalTo: cancel.leadingAnchor, constant: -C.padding[1]) ])
+        currencyLogo.contentMode = .scaleAspectFit
+        currencyLogo.constrain([
+            currencyLogo.constraint(.leading, toView: self, constant: C.padding[1]),
+            currencyLogo.constraint(.trailing, toView: self, constant: -C.padding[1]),
+            currencyLogo.constraint(.height, constant: 55),
+            currencyLogo.constraint(.top, toView: self, constant: E.isIPhoneX ? C.padding[5] : C.padding[3])])
+        skinHeader.constrain([
+        skinHeader.leadingAnchor.constraint(equalTo: leadingAnchor, constant: C.padding[1]),
+        //searchBar.topAnchor.constraint(equalTo: topAnchor, constant: E.isIPhoneX ? C.padding[5] : C.padding[2]),
+        skinHeader.bottomAnchor.constraint(equalTo: searchBar.topAnchor, constant: -C.padding[4]),
+        skinHeader.topAnchor.constraint(equalTo: topAnchor),
+        skinHeader.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -C.padding[1]) ])
     }
 
     private func setData() {
-        backgroundColor = .whiteTint
-        searchBar.backgroundImage = UIImage()
+        skinHeader.backgroundColor = .ecaLightPurple
+        
+        backgroundColor = .ecaDarkPurple
+        //searchBar.backgroundImage = UIImage()
         searchBar.delegate = self
         cancel.tap = { [weak self] in
             self?.didChangeFilters?([])
