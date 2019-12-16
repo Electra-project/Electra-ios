@@ -281,25 +281,25 @@
 /* Checking private key balance progress view text */
 "Import.checking" = "Private key balans checken...";
 /* Sweep private key confirmation message */
-"Import.confirm" = "%1$@ van deze private key naar je wallet sturen? Het Electranetwerk zal een fee ontvangen van %2$@.";
+"Import.confirm" = "%1$@ van deze private key naar je wallet sturen? De transactiekosten zijn %2$@.";
 /* Duplicate key error message */
 "Import.Error.duplicate" = "Deze private key zit al in je portemonnee.";
 /* empty private key error message */
 "Import.Error.empty" = "Deze private key is leeg.";
 /* High fees error message */
-"Import.Error.highFees" = "Transactiekosten zouden hoger zijn dan de fondsen die op deze private key aanwezig zijn.";
+"Import.Error.highFees" = "Transactiekosten zijn hoger dan het beschikbare saldo op deze wallet.";
 /* Not a valid private key error message */
 "Import.Error.notValid" = "Geen geldige private key";
 /* Import signing error message */
-"Import.Error.signing" = "Error bij transactie ondertekenen";
+"Import.Error.signing" = "Error bij het ondertekenen van de transactie.";
 /* [Redeem] the funds stored on this private key. */
-"Import.importButton" = "Import";
+"Import.importButton" = "Importeren";
 /* Importing wallet progress view label */
 "Import.importing" = "Private key importeren";
 /* Caption for graphics */
 "Import.leftCaption" = "Wallet om te importeren";
 /* Import wallet intro screen message */
-"Import.message" = "Private keys worden vaak afgedrukt op papier als een QR-code en gebruikt om middelen online op te slaan. Wissel een persoonlijke sleutel in om al het geld dat het beheert over te schrijven naar je Electra via een enkele transactie.";
+"Import.message" = "Private keys worden vaak afgedrukt op papier als een QR-code en bieden de mogelijkheid om geld uit te geven. Scan de private key om het volledige saldo van die wallet over te schrijven naar deze Android Electra wallet, via één enkele transactie.";
 /* Enter password alert view title */
 "Import.password" = "Deze private key is beveiligd met een wachtwoord.";
 /* password textfield placeholder */
@@ -311,15 +311,15 @@
 /* Import wallet success alert title */
 "Import.success" = "Succes";
 /* Successfully imported wallet message body */
-"Import.SuccessBody" = "Persoonlijke sleutel met succes ingewisseld.";
+"Import.SuccessBody" = "Private key met succes geïmporteerd.";
 /* Import Wallet screen title */
-"Import.title" = "Persoonlijke Sleutel Inwisselen";
+"Import.title" = "Private key scannen";
 /* Unlocking Private key activity view message. */
-"Import.unlockingActivity" = "Sleutel Ontgrendelen";
+"Import.unlockingActivity" = "Private key ontgrendelen";
 /* Import wallet intro warning message */
-"Import.warning" = "Het inwisselen van een persoonlijke sleutel zal geen transactiegeschiedenis of andere details importeren.";
+"Import.warning" = "Het importeren van een private key zal geen transactiegeschiedenis of andere details importeren.";
 /* Wrong password alert message */
-"Import.wrongPassword" = "Verkeerd wachtwoord, probeer alstublieft opnieuw.";
+"Import.wrongPassword" = "Verkeerd wachtwoord, probeer het nog eens.";
 /* Close app button */
 "JailbreakWarnings.close" = "Sluiten";
 /* Ignore jailbreak warning button */
@@ -345,7 +345,7 @@
 /* Link Wallet view title above permissions list */
 "LinkWallet.permissionsTitle" = "Deze app zal in staat zijn om:";
 /* Link Wallet view title */
-"LinkWallet.title" = "Portefeuille Koppelen";
+"LinkWallet.title" = "Wallet Koppelen";
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Locatievoorzieningen zijn uitgeschakeld.";
 /* No permissions for location services */
@@ -557,9 +557,9 @@
 /* extimated time */
 "ReScan.body1" = "20-45 minuten";
 /* Syncing explanation */
-"ReScan.body2" = "Als een transactie als voltooid staat op het Electra netwerk maar niet in je Electra.";
+"ReScan.body2" = "Als een transactie als voltooid staat op het Electra netwerk maar niet in de Electra.";
 /* Syncing explanation */
-"ReScan.body3" = "Je kreeg herhaaldelijk een foutmelding die zei dat je transactie werd afgewezen.";
+"ReScan.body3" = "Of, wanneer je herhaaldelijk een foutmelding kreeg die zei dat de transactie werd afgewezen.";
 /* Start Sync button label */
 "ReScan.buttonTitle" = "Start Synchronisatie";
 /* Sync blockchain view footer */
@@ -755,11 +755,11 @@
 /* button label */
 "StartPaperPhrase.againButtonTitle" = "Schrijf Papieren Sleutel Opnieuw Op";
 /* Paper key explanation text. */
-"StartPaperPhrase.body" = "Je papieren sleutel is de enige manier om je Electra te herstellen als je telefoon verloren, gestolen, kapot of geüpgrade is.\n\nWe zullen je een lijst met woorden laten zie die je op een papiertje moet schrijven en veilig moet bewaren.";
+"StartPaperPhrase.body" = "De papieren sleutel is de enige manier om je Electra te herstellen als je telefoon verloren, gestolen, kapot of geüpgrade is.\n\nWe zullen je een lijst met woorden laten zie die je op een papiertje moet schrijven en veilig moet bewaren.";
 /* button label */
 "StartPaperPhrase.buttonTitle" = "Schrijf Papieren Sleutel Op";
 /* Argument is date */
-"StartPaperPhrase.date" = "Je hebt voor het laatst je papieren sleutel opgeschreven op %1$@";
+"StartPaperPhrase.date" = "Je hebt de paper key voor het laatst opgeschreven op %1$s";
 /* button label */
 "StartViewController.createButton" = "Nieuwe wallet maken";
 /* Start view message */
@@ -775,9 +775,9 @@
 /* Retry button label */
 "SyncingView.retry" = "Opnieuw proberen";
 /* "eg. Synced through <Jan 12, 2015> */
-"SyncingView.syncedThrough" = "Gesynchroniseerd via %1$@";
+"SyncingView.syncedThrough" = "Laatst gesynchroniseerd op %1$s";
 /* Syncing view syncing state header text */
-"SyncingView.syncing" = "Aan het synchroniseren";
+"SyncingView.syncing" = " ";
 /* 6 d (6 days) */
 "TimeSince.days" = "%1$@ d";
 /* 6 h (6 hours) */
@@ -1002,7 +1002,7 @@ eg. 182930 (45061 confirmations) */
 /* Update PIN failure alert view title */
 "UpdatePin.setPinErrorTitle" = "Update PIN Error";
 /* Update PIN title */
-"UpdatePin.updateTitle" = "Update PIN";
+"UpdatePin.updateTitle" = "Updaten PIN";
 /* Authorize to copy wallet addresses alert message */
 "URLHandling.addressaddressListAlertMessage" = "Portemonnee adressen naar plakbord kopiëren?";
 /* Authorize to copy wallet address PIN view prompt. */

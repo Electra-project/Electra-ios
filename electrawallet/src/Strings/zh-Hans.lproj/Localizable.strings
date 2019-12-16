@@ -779,7 +779,7 @@
 /* "eg. Synced through <Jan 12, 2015> */
 "SyncingView.syncedThrough" = "从 %1$@ 同步";
 /* Syncing view syncing state header text */
-"SyncingView.syncing" = "同步中";
+"SyncingView.syncing" = " ";
 /* 6 d (6 days) */
 "TimeSince.days" = "%1$@ 天";
 /* 6 h (6 hours) */

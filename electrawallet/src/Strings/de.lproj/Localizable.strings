@@ -777,7 +777,7 @@
 /* "eg. Synced through <Jan 12, 2015> */
 "SyncingView.syncedThrough" = "Synchronisiert am %1$@";
 /* Syncing view syncing state header text */
-"SyncingView.syncing" = "Synchronisiert";
+"SyncingView.syncing" = " ";
 /* 6 d (6 days) */
 "TimeSince.days" = "%1$@ d";
 /* 6 h (6 hours) */
