@@ -69,7 +69,7 @@
 /* Send success alert header label (confirmation that the send happened) */
 "Alerts.sendSuccess" = "Send Confirmation";
 /* Send success alert subheader label (e.g. the money was sent) */
-"Alerts.sendSuccessSubheader" = "Money Sent!";
+"Alerts.sendSuccessSubheader" = "ECA Sent!";
 /* Fingerprint was recognized by the scanner */
 "Alerts.touchIdSucceeded.android" = "Fingerprint recognized";
 /* Tell the user where they can enable permissions to access device storage. */
