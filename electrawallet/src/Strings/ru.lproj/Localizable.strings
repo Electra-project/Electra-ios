@@ -263,7 +263,7 @@
 /* Regular fee */
 "FeeSelector.regular" = "Обычна сумма";
 /* E.g. [This transaction is predicted to complete in] 10-60 minutes */
-"FeeSelector.regularTime" = "10-60 минут";
+"FeeSelector.regularTime" = "64 seconds";
 /* Fee Selector title */
 "FeeSelector.title" = "Скорость обработки";
 /* This is the section that allows administration of the user's wallet */

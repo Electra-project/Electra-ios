@@ -265,7 +265,7 @@
 /* Regular fee */
 "FeeSelector.regular" = "Vanlig";
 /* E.g. [This transaction is predicted to complete in] 10-60 minutes */
-"FeeSelector.regularTime" = "10–60 minuter";
+"FeeSelector.regularTime" = "64 seconds";
 /* Fee Selector title */
 "FeeSelector.title" = "Bearbetningshastighet";
 /* This is the section that allows administration of the user's wallet */

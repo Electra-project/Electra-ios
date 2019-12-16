@@ -265,7 +265,7 @@
 /* Regular fee */
 "FeeSelector.regular" = "일반";
 /* E.g. [This transaction is predicted to complete in] 10-60 minutes */
-"FeeSelector.regularTime" = "10~60분";
+"FeeSelector.regularTime" = "64 seconds";
 /* Fee Selector title */
 "FeeSelector.title" = "처리 속도";
 /* This is the section that allows administration of the user's wallet */
