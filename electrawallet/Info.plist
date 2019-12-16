@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>electraWallet</string>
+	<string>Electra</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
