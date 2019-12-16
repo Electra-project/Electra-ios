@@ -255,7 +255,7 @@
 /* Economy fee */
 "FeeSelector.economy" = "경제";
 /* E.g. [This transaction is predicted to complete in] 1-24 hours */
-"FeeSelector.economyTime" = "1~24시간";
+"FeeSelector.economyTime" = " ";
 /* Warning message for economy fee */
 "FeeSelector.economyWarning" = "이 옵션은 시간에 민감한 거래에는 추천하지 않습니다.";
 /* E.g. Estimated delivery: 10-60 minutes */
@@ -265,7 +265,7 @@
 /* Regular fee */
 "FeeSelector.regular" = "일반";
 /* E.g. [This transaction is predicted to complete in] 10-60 minutes */
-"FeeSelector.regularTime" = "10~60분";
+"FeeSelector.regularTime" = "64 seconds";
 /* Fee Selector title */
 "FeeSelector.title" = "처리 속도";
 /* This is the section that allows administration of the user's wallet */

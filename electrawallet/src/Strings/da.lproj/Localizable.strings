@@ -255,7 +255,7 @@
 /* Economy fee */
 "FeeSelector.economy" = "Økonomi";
 /* E.g. [This transaction is predicted to complete in] 1-24 hours */
-"FeeSelector.economyTime" = "1-24 timer";
+"FeeSelector.economyTime" = " ";
 /* Warning message for economy fee */
 "FeeSelector.economyWarning" = "Denne mulighed er ikke anbefalet for tidsfølsomme transaktioner.";
 /* E.g. Estimated delivery: 10-60 minutes */
@@ -265,7 +265,7 @@
 /* Regular fee */
 "FeeSelector.regular" = "Almindelig";
 /* E.g. [This transaction is predicted to complete in] 10-60 minutes */
-"FeeSelector.regularTime" = "10-60 minutter";
+"FeeSelector.regularTime" = "64 seconds";
 /* Fee Selector title */
 "FeeSelector.title" = "Behandlingshastighed";
 /* This is the section that allows administration of the user's wallet */

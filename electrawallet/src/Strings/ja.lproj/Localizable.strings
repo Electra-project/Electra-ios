@@ -255,7 +255,7 @@
 /* Economy fee */
 "FeeSelector.economy" = "エコノミー";
 /* E.g. [This transaction is predicted to complete in] 1-24 hours */
-"FeeSelector.economyTime" = "1～24時間";
+"FeeSelector.economyTime" = " ";
 /* Warning message for economy fee */
 "FeeSelector.economyWarning" = "このオプションは早く送金を済ませたい方にはお勧めしません。";
 /* E.g. Estimated delivery: 10-60 minutes */
@@ -265,7 +265,7 @@
 /* Regular fee */
 "FeeSelector.regular" = "レギュラー";
 /* E.g. [This transaction is predicted to complete in] 10-60 minutes */
-"FeeSelector.regularTime" = "10～60分";
+"FeeSelector.regularTime" = "64 seconds";
 /* Fee Selector title */
 "FeeSelector.title" = "処理速度";
 /* This is the section that allows administration of the user's wallet */
