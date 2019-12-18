@@ -67,7 +67,7 @@
 /* Send success alert header label (confirmation that the send happened) */
 "Alerts.sendSuccess" = "Bestätigung gesendet";
 /* Send success alert subheader label (e.g. the money was sent) */
-"Alerts.sendSuccessSubheader" = "Geld versandt!";
+"Alerts.sendSuccessSubheader" = "ECA versandt!";
 /* Fingerprint was recognized by the scanner */
 "Alerts.touchIdSucceeded.android" = "Fingerabdruck erkannt";
 /* Tell the user where they can enable permissions to access device storage. */
@@ -551,7 +551,7 @@
 /* Alert action button label */
 "ReScan.alertAction" = "Synchronisieren";
 /* Alert message body */
-"ReScan.alertMessage" = "Während der Synchronisation kannst du kein Geld versenden.";
+"ReScan.alertMessage" = "Während der Synchronisation kannst du kein ECA versenden.";
 /* Alert message title */
 "ReScan.alertTitle" = "Mit der Blockchain synchronisieren?";
 /* extimated time */

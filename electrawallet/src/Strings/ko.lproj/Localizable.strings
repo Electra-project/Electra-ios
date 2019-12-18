@@ -67,7 +67,7 @@
 /* Send success alert header label (confirmation that the send happened) */
 "Alerts.sendSuccess" = "송금 완료";
 /* Send success alert subheader label (e.g. the money was sent) */
-"Alerts.sendSuccessSubheader" = "송금이 완료 되었습니다.";
+"Alerts.sendSuccessSubheader" = "ECA 완료 되었습니다.";
 /* Fingerprint was recognized by the scanner */
 "Alerts.touchIdSucceeded.android" = "지문 인식 완료";
 /* Tell the user where they can enable permissions to access device storage. */
