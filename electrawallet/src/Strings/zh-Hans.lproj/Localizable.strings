@@ -229,7 +229,7 @@
 /* Email unavailable alert title */
 "ErrorMessages.emailUnavailableTitle" = "电子邮箱不可用";
 /* Message that gets shown when we've detected the user has encountered the looping lock-screen bug. (preserve [ ] characters) */
-"ErrorMessages.loopingLockScreen.android" = "由于您的 Android 版本错误，Electra 无法验证。[Please tap here for more information.]";
+"ErrorMessages.loopingLockScreen.android" = "由于您的安卓系统版本中的错误，Electra 无法进行验证。[点击此处了解更多信息]";
 /* Messaging unavailable alert title */
 "ErrorMessages.messagingUnavailableMessage" = "本设备未被配置来发送消息。";
 /* Messaging unavailable alert title */
@@ -257,9 +257,9 @@
 /* E.g. [This transaction is predicted to complete in] 1-24 hours */
 "FeeSelector.economyTime" = " ";
 /* Warning message for economy fee */
-"FeeSelector.economyWarning" = "对于有时效性的交易，不推荐使用此选项。";
+"FeeSelector.economyWarning" = "对于即时交易，不推荐使用此选项。";
 /* E.g. Estimated delivery: 10-60 minutes */
-"FeeSelector.estimatedDeliver" = "预计交付时间：%1$@";
+"FeeSelector.estimatedDeliver" = "预计到账时间：%1$@";
 /* [This transaction will complete in] 2-5 minutes */
 "FeeSelector.ethTime" = "2-5 分钟";
 /* Regular fee */
@@ -289,7 +289,7 @@
 /* empty private key error message */
 "Import.Error.empty" = "本私钥为空。";
 /* High fees error message */
-"Import.Error.highFees" = "交易费将超过本私钥的可用资金。";
+"Import.Error.highFees" = "手续费将超过本私钥的可用资金。";
 /* Not a valid private key error message */
 "Import.Error.notValid" = "并非有效私钥";
 /* Import signing error message */
@@ -317,7 +317,7 @@
 /* Import Wallet screen title */
 "Import.title" = "兑换私钥";
 /* Unlocking Private key activity view message. */
-"Import.unlockingActivity" = "解锁键";
+"Import.unlockingActivity" = "解锁钱包";
 /* Import wallet intro warning message */
 "Import.warning" = "兑换私钥不需要输入交易历史或其他细节。";
 /* Wrong password alert message */
@@ -635,19 +635,19 @@
 /* Could not create transaction alert title */
 "Send.creatTransactionError" = "无法创建交易。";
 /* Description for sending money label */
-"Send.descriptionLabel" = "备忘录";
+"Send.descriptionLabel" = "备注";
 /* Emtpy pasteboard error message */
 "Send.emptyPasteboard" = "粘贴板为空";
 /* "(you) can't send (to your)self" */
 "Send.ethSendSelf" = "不能发给自己";
 /* Network Fee: $0.01 */
-"Send.fee" = "网络费：%1$@";
+"Send.fee" = "手续费：%1$@";
 /* Payee identity not certified alert title. */
 "Send.identityNotCertified" = "收款人身份未经认证。";
 /* Insufficient funds error */
 "Send.insufficientFunds" = "资金不足";
 /* e,g, "You must have at least $2 in your wallet in order to transfer this type of token." In this case, "token" is an ethereum ERC20 token. */
-"Send.insufficientGasMessage" = "您的钱包里必须至少有 %1$@ 才能够转让此种类型的代币。您现在想前往您的以太坊钱包吗？";
+"Send.insufficientGasMessage" = "您的钱包里必须至少有 %1$@ 才能够发送此种类型的代币。您现在想前往您的以太坊钱包吗？";
 /* Your ethereum balance is insufficient to complete this action. */
 "Send.insufficientGasTitle" = "以太坊余额不足";
 /* e.g. The destination is not a valid (bitcoin) address. */
@@ -663,7 +663,7 @@
 /* We are loading the request (now) */
 "Send.loadingRequest" = "加载请求中";
 /* Transaction fee could not be be caluculated error. */
-"Send.nilFeeError" = "资金不够支付交易费。";
+"Send.nilFeeError" = "资金不够支付手续费。";
 /* Empty address alert message */
 "Send.noAddress" = "请输入收件人地址。";
 /* Emtpy amount alert message */
@@ -713,7 +713,7 @@
 /* Face ID spending limit label */
 "Settings.faceIdLimit" = "面部识别支出限额";
 /* Redeem the funds stored on this private key. */
-"Settings.importTitle" = "兑换私钥";
+"Settings.importTitle" = "导入私钥";
 /* Manage settings section header */
 "Settings.manage" = "管理";
 /* Notifications label */
