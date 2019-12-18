@@ -3,7 +3,7 @@
 /* About screen blog label */
 "About.blog" = "部落格";
 /* About screen footer */
-"About.footer" = "由全球 Electra 團隊製作。版本 %1$@構建%2$@";
+"About.footer" = "由 Electra 小組開發. 版本號 %1$s Build %2$s";
 /* Privay Policy button label */
 "About.privacy" = "隱私政策";
 /* About screen reddit label */
@@ -15,7 +15,7 @@
 /* About screen twitter label */
 "About.twitter" = "Twitter";
 /* About screen wallet ID label */
-"About.walletID" = "Electra 獎勵 ID";
+"About.walletID" = "網址";
 /* Close modal button accessibility label */
 "AccessibilityLabels.close" = "關閉";
 /* Support center accessibiliy label */
@@ -29,7 +29,7 @@
 /* Loading Wallet Message */
 "Account.loadingMessage" = "正在載入電子錢包";
 /* Default wallet name */
-"AccountHeader.defaultWalletName" = "我的 Electra";
+"AccountHeader.defaultWalletName" = "我的 Electra 錢包";
 /* Third party keyboard warning */
 "Alert.customKeyboard.android" = "您似乎在使用第三方鍵盤，這可能會記錄您按下的鍵並竊取您的「紙鑰」。請切換至預設的 Android 鍵盤以獲得額外的保護。";
 /* Error alert title */
@@ -49,7 +49,7 @@
 /* General error message */
 "Alert.somethingWentWrong" = "發生錯誤。請再試一次。";
 /* Request timed out error message */
-"Alert.timedOut" = "請求暫停。請檢查您的連接並再次嘗試。";
+"Alert.timedOut" = "請求超時。請檢查您的連接並再次嘗試。";
 /* Warning alert title */
 "Alert.warning" = "警告";
 /* 'the addresses were copied'' Alert title */
@@ -63,11 +63,11 @@
 /* Alert Header label (the PIN was set) */
 "Alerts.pinSet" = "PIN 已設定";
 /* Send failure alert header label (the send failed to happen) */
-"Alerts.sendFailure" = "寄出失敗";
+"Alerts.sendFailure" = "發送失敗";
 /* Send success alert header label (confirmation that the send happened) */
-"Alerts.sendSuccess" = "寄出確認";
+"Alerts.sendSuccess" = "發送確認";
 /* Send success alert subheader label (e.g. the money was sent) */
-"Alerts.sendSuccessSubheader" = "ECA 已寄出！";
+"Alerts.sendSuccessSubheader" = "數字貨幣已發送！";
 /* Fingerprint was recognized by the scanner */
 "Alerts.touchIdSucceeded.android" = "已辨識指紋";
 /* Tell the user where they can enable permissions to access device storage. */
@@ -101,11 +101,11 @@
 /* Wallet not ready error message */
 "ApiClient.notReady" = "電子錢包尚未就緒";
 /* API Token error message */
-"ApiClient.tokenError" = "無法擷取 API 權杖";
+"ApiClient.tokenError" = "無法擷取 API 令牌";
 /* Send BCH view body. */
 "BCH.body" = "在下方輸入目的地 BCH 地址。分叉（%1$@）之時錢包內所有的 BCH 都會送出。";
 /* Confirm sending <$5.00> to <address>? */
-"BCH.confirmationMessage" = "確定送出 %1$@ 至 %2$@";
+"BCH.confirmationMessage" = "確定將 %1$s 發送到 %2$@";
 /* Confirmation alert title */
 "BCH.confirmationTitle" = "確認";
 /* Generic bch erorr message */
@@ -113,11 +113,11 @@
 /* Transaction ID copied message */
 "BCH.hashCopiedMessage" = "已複制交易 ID";
 /* No address error message */
-"BCH.noAddressError" = "請輸入地位";
+"BCH.noAddressError" = "請輸入位址";
 /* Attempted to scan unsupported qr code error message. */
 "BCH.paymentProtocolError" = "BCH 交易不支援付款組合要求";
 /* BCH successfully sent alert message */
-"BCH.successMessage" = "BCH 已成功寄送。";
+"BCH.successMessage" = "BCH 已成功放。";
 /* Widthdraw BCH view title */
 "BCH.title" = "提取 BCH";
 /* Tx Hash button header */
@@ -125,7 +125,7 @@
 /* Approve button label */
 "BitID.approve" = "許可";
 /* <sitename> is requesting authentication using your bitcoin wallet */
-"BitID.authenticationRequest" = "%1$@ 要求認證使用您的比特幣錢包";
+"BitID.authenticationRequest" = "%1$@ 要求使用您的Electra錢包進行授權";
 /* Deny button label */
 "BitID.deny" = "拒絕";
 /* BitID error alert title */
@@ -213,11 +213,11 @@
 /* Retry Identity verification button */
 "Crowdsale.retry" = "重試";
 /* Bitcoin denomination picker label */
-"DefaultCurrency.bitcoinLabel" = "Electra";
+"DefaultCurrency.bitcoinLabel" = "Electra顯示單位";
 /* Exchange rate label */
 "DefaultCurrency.rateLabel" = "匯率";
 /* The wallet is disabled. */
-"Disabled.title" = "停用錢包";
+"Disabled.title" = "錢包已停止使用";
 /* Service capabilities description */
 "EME.permissions.accountRequest" = "要求%1$@帳戶資訊";
 /* Service capabilities description */
@@ -225,15 +225,15 @@
 /* Service capabilities description */
 "EME.permissions.paymentRequest" = "要求%1$@付款";
 /* Email unavailable alert title */
-"ErrorMessages.emailUnavailableMessage" = "本裝置並非設定來以 iOS 郵件應用程式傳送電子郵件。";
+"ErrorMessages.emailUnavailableMessage" = "本行動裝置尚未進行設置，無法通過 郵件應用程式傳送電子郵件。";
 /* Email unavailable alert title */
 "ErrorMessages.emailUnavailableTitle" = "無法使用電子郵件";
 /* Message that gets shown when we've detected the user has encountered the looping lock-screen bug. (preserve [ ] characters) */
 "ErrorMessages.loopingLockScreen.android" = "由於您安卓系統版本中的錯誤，因此 Electra 無法取得認證。[請點擊此瞭解更多資訊。]";
 /* Messaging unavailable alert title */
-"ErrorMessages.messagingUnavailableMessage" = "本裝置並非設定來傳送訊息。";
+"ErrorMessages.messagingUnavailableMessage" = "本行動裝置尚未完成設定，不能發送訊息。";
 /* Messaging unavailable alert title */
-"ErrorMessages.messagingUnavailableTitle" = "無法使用傳訊";
+"ErrorMessages.messagingUnavailableTitle" = "無法發送訊息";
 /* Fingerprint was not recognized by the scanner, please try scanning again */
 "ErrorMessages.touchIdFailed.android" = "指紋無法識別。請再試一次。";
 /* You can customize your Face ID Spending Limit from the [menu] */
@@ -243,7 +243,7 @@
 /* Title of the screen for setting the Face ID Spending Limit */
 "FaceIDSettings.linkText" = "Face ID 消費上限畫面";
 /* Setting to turn on Face ID for Electra */
-"FaceIDSettings.switchLabel" = "開放 Electra 使用 Face ID";
+"FaceIDSettings.switchLabel" = "開啓 Electra 使用 Face ID";
 /* Face ID settings view title */
 "FaceIDSettings.title" = "Face ID";
 /* Instructions on how to turn on face id on the iPhone. Please ensure the name of the menu in this string matches the wording Apple uses in the iPhone menu. */
@@ -257,9 +257,9 @@
 /* E.g. [This transaction is predicted to complete in] 1-24 hours */
 "FeeSelector.economyTime" = " ";
 /* Warning message for economy fee */
-"FeeSelector.economyWarning" = "此選項不建議用於時效性的交易。";
+"FeeSelector.economyWarning" = "此選項不建議用於即時交易。";
 /* E.g. Estimated delivery: 10-60 minutes */
-"FeeSelector.estimatedDeliver" = "預計發送時間：%1$@";
+"FeeSelector.estimatedDeliver" = "預計到账時間：%1$@";
 /* [This transaction will complete in] 2-5 minutes */
 "FeeSelector.ethTime" = "2-5 分鐘";
 /* Regular fee */
@@ -279,11 +279,11 @@
 /* Label for the total balance of all the user's assets (style is all lower case if your language permits) */
 "HomeScreen.totalAssets" = "總資產";
 /* (Tap here to) trade (your assets for other assets) */
-"HomeScreen.trade" = "換";
+"HomeScreen.trade" = "交易";
 /* Checking private key balance progress view text */
 "Import.checking" = "正在檢查私密金鑰餘額…";
 /* Sweep private key confirmation message */
-"Import.confirm" = "要從這個私密金鑰寄出 %1$@ 到您的電子錢包嗎？比特幣網路會收到 %2$@ 的費用。";
+"Import.confirm" = "要從這個私密金鑰寄出 %1$@ 到您的電子錢包嗎？Electra網路會收到 %2$@ 的費用。";
 /* Duplicate key error message */
 "Import.Error.duplicate" = "此私密金鑰已經在您的電子錢包了。";
 /* empty private key error message */
@@ -293,11 +293,11 @@
 /* Not a valid private key error message */
 "Import.Error.notValid" = "不是有效的私密金鑰";
 /* Import signing error message */
-"Import.Error.signing" = "簽署交易出錯";
+"Import.Error.signing" = "交易簽署出錯";
 /* [Redeem] the funds stored on this private key. */
 "Import.importButton" = "兌換";
 /* Importing wallet progress view label */
-"Import.importing" = "兌換私密金鑰中";
+"Import.importing" = "導入私密金鑰中";
 /* Caption for graphics */
 "Import.leftCaption" = "私密金鑰";
 /* Import wallet intro screen message */
@@ -313,13 +313,13 @@
 /* Import wallet success alert title */
 "Import.success" = "成功";
 /* Successfully imported wallet message body */
-"Import.SuccessBody" = "成功兌換私密金鑰。";
+"Import.SuccessBody" = "成功導入私密金鑰。";
 /* Import Wallet screen title */
-"Import.title" = "兌換私密金鑰";
+"Import.title" = "導入私密金鑰";
 /* Unlocking Private key activity view message. */
-"Import.unlockingActivity" = "正在解除鎖定金鑰";
+"Import.unlockingActivity" = "正在解除鎖定";
 /* Import wallet intro warning message */
-"Import.warning" = "兌換私密金鑰並不會匯入交易歷史或其他資料。";
+"Import.warning" = "導入私密金鑰並不會導入交易歷史或其他資料，僅含有代幣。";
 /* Wrong password alert message */
 "Import.wrongPassword" = "密碼錯誤，請重試一次。";
 /* Close app button */
@@ -327,9 +327,9 @@
 /* Ignore jailbreak warning button */
 "JailbreakWarnings.ignore" = "略過";
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithBalance" = "裝置安全性遭破解\n 任何「越獄」應用程式都可以存取 Electra 的鑰匙圈資料、 竊取您的比特幣！立即抹除這個錢包，在安全的裝置上還原。";
+"JailbreakWarnings.messageWithBalance" = "裝置安全性遭破解\n 任何「越獄」應用程式都可以存取 Electra 的密鑰資料、 竊取您的Electra！立即抹除這個錢包，在安全的裝置上還原。";
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithoutBalance" = "裝置安全性遭破解\n 任何「越獄」應用程式都可以存取 Electra 的鑰匙圈資料、 竊取您的比特幣。請只在未越獄的裝置上使用 Electra。";
+"JailbreakWarnings.messageWithoutBalance" = "裝置安全性遭破解\n 任何「越獄」應用程式都可以存取 Electra 的密鑰資料、 竊取您的Electra。請只在未越獄的裝置上使用 Electra。";
 /* Jailbreak warning title */
 "JailbreakWarnings.title" = "警告";
 /* Wipe wallet button */
@@ -385,7 +385,7 @@
 /* Node is connected label */
 "NodeSelector.connected" = "已連線";
 /* Node is connecting label */
-"NodeSelector.connecting" = "連接中";
+"NodeSelector.connecting" = "連綫中";
 /* Enter node ip address view body */
 "NodeSelector.enterBody" = "輸入節點的 IP 位址及連接埠（選擇性）";
 /* Enter Node ip address view title */
@@ -399,7 +399,7 @@
 /* Node status label */
 "NodeSelector.statusLabel" = "節點連線狀態";
 /* Node Selector view title */
-"NodeSelector.title" = "比特幣節點";
+"NodeSelector.title" = "Electra節點";
 /* Onboarding screen 'I'll browse first' button */
 "Onboarding.browseFirst" = "我先瀏覽一下";
 /* Onboarding screen 'Buy some coin' button */
@@ -407,7 +407,7 @@
 /* Onboarding screen 'Get started' (create new wallet) button */
 "Onboarding.getStarted" = "開始使用服務";
 /* Onboarding screen 'Next' button */
-"Onboarding.next" = "下一個";
+"Onboarding.next" = "下一步";
 /* Onboarding screen restore an existing wallet. */
 "Onboarding.restoreWallet" = "恢復錢包";
 /* Onboarding screen Skip button title that allows the user to exit the onboarding process. */
@@ -415,21 +415,21 @@
 /* Onboarding screen Page 4 title */
 "OnboardingPageFour.title" = "只需 50 美元,便可在今日立即展開投資！";
 /* Onboarding screen Page 1 title */
-"OnboardingPageOne.title" = "歡迎來到您全新的Electra電子錢包!";
+"OnboardingPageOne.title" = "歡迎來到您全新的Electra電子錢包！";
 /* Onboarding screen Page 3 subtitle */
 "OnboardingPageThree.subtitle" = "使用 Electra 進行多元分散投資,既輕鬆又安全。";
 /* Onboarding screen Page 3 title */
-"OnboardingPageThree.title" = "購買及交易比特幣,代幣及其他數位貨幣。";
+"OnboardingPageThree.title" = "購買及交易Electra,代幣及其他數位貨幣。";
 /* Onboarding screen Page 2 subtitle */
-"OnboardingPageTwo.subtitle" = "我們擁有價值超過 60 億美元受到保護的資產。";
+"OnboardingPageTwo.subtitle" = "我們擁有價值超過 600 億美元受到保護的資產。";
 /* Onboarding screen Page 2 title */
-"OnboardingPageTwo.title" = "加入世界各地信賴 Electra 服務的 150 萬用戶的行列。";
+"OnboardingPageTwo.title" = "加入和成為世界各地信賴 Electra 的 150 萬用戶的一員。";
 /* Eg. Send 1.0Eth to purchase CCC */
 "PaymentConfirmation.amountText" = "匯出%1$@來購買%2$@";
 /* Payment confirmation view title */
 "PaymentConfirmation.title" = "確認";
 /* Bad Payment request alert title */
-"PaymentProtocol.Errors.badPaymentRequest" = "不良的付款請求";
+"PaymentProtocol.Errors.badPaymentRequest" = "錯誤的付款請求";
 /* Error opening payment protocol file message */
 "PaymentProtocol.Errors.corruptedDocument" = "不支持的或損毀的文件";
 /* Missing certificate payment protocol error message */
@@ -439,9 +439,9 @@
 /* Payment too small alert title */
 "PaymentProtocol.Errors.smallOutputError" = "無法進行付款";
 /* Amount too small error message */
-"PaymentProtocol.Errors.smallPayment" = "比特幣付款不能少於 %1$@。";
+"PaymentProtocol.Errors.smallPayment" = "Electra付款不能少於 %1$@。";
 /* Output too small error message. */
-"PaymentProtocol.Errors.smallTransaction" = "比特幣交易輸出不能少於 %1$@。";
+"PaymentProtocol.Errors.smallTransaction" = "Electra交易輸出不能少於 %1$@。";
 /* Unsupported signature type payment protocol error message */
 "PaymentProtocol.Errors.unsupportedSignatureType" = "不受支援的簽章類型";
 /* Untrusted certificate payment protocol error message */
@@ -457,15 +457,15 @@
 /* Title that is shown when the user successfully subscribes to email updates. */
 "Prompts.Email.successTitle" = "謝謝您！";
 /* Title for a prompt that asks the user to subscribe to email updates to find out product updates. */
-"Prompts.Email.title" = "進入循環";
+"Prompts.Email.title" = "加入";
 /* Enable face ID prompt body */
 "Prompts.FaceId.body" = "點擊繼續來啟用 Face ID";
 /* Enable face ID prompt title */
 "Prompts.FaceId.title" = "啟用 Face ID";
 /* No passcode set warning body */
-"Prompts.NoPasscode.body" = "必須有裝置密碼來保護您的錢包。進入設定並開啟密碼。";
+"Prompts.NoPasscode.body" = "必須有行動裝置密碼來保護您的錢包。進入設定並開啟密碼。";
 /* No Passcode set warning title */
-"Prompts.NoPasscode.title" = "開啟裝置密碼。";
+"Prompts.NoPasscode.title" = "開啟行動裝置密碼。";
 /* Instruction how to enable device encryption */
 "Prompts.NoScreenLock.body.android" = "需要裝置螢幕鎖定來保護您的錢包。前往「設定」 > 「安全性」 > 「螢幕鎖定」，啟用來繼續。";
 /* Device encryption prompt title */
@@ -497,13 +497,13 @@
 /* Upgrade PIN prompt title. */
 "Prompts.UpgradePin.title" = "升級 PIN 碼";
 /* Notifications will be added later but users can set their preferences now, which is why we specify "in the future". */
-"PushNotifications.body" = "開啟通知，好在未來收到 Electra 的特別訊息。";
+"PushNotifications.body" = "開啟通知，以便未來接收 Electra 的訊息。";
 /* Push notifications are disabled alert title" */
-"PushNotifications.disabled" = "已停用通知功能";
+"PushNotifications.disabled" = "已停用PUSH通知功能";
 /* Push notifications settings instructions */
-"PushNotifications.enableInstructions" = "開啟設定中的通知功能來接收提醒";
+"PushNotifications.enableInstructions" = "開啟設定中的PUSH通知功能來接收提醒";
 /* Push notifications toggle switch label */
-"PushNotifications.label" = "推播";
+"PushNotifications.label" = "PUSH通知";
 /* Push notifications are off label */
 "PushNotifications.off" = "關閉";
 /* Push notifications are on label */
@@ -515,7 +515,7 @@
 /* Share via email button label */
 "Receive.emailButton" = "電子郵件";
 /* Request button label */
-"Receive.request" = "要求帳戶";
+"Receive.request" = "申請金額";
 /* Share button label */
 "Receive.share" = "分享";
 /* Share via text message (SMS) */
@@ -529,11 +529,11 @@
 /* Reset PIN with paper key: header */
 "RecoverWallet.header_reset_pin" = "重設 PIN 碼";
 /* Enter paper key instruction */
-"RecoverWallet.instruction" = "輸入紙本金鑰";
+"RecoverWallet.instruction" = "輸入紙上金鑰";
 /* Recover wallet intro */
-"RecoverWallet.intro" = "以您的紙本金鑰復原您的 Electra";
+"RecoverWallet.intro" = "以您的紙上金鑰復原您的  Electra";
 /* Invalid paper key message */
-"RecoverWallet.invalid" = "紙本金鑰";
+"RecoverWallet.invalid" = "紙上金鑰";
 /* Previous button accessibility label */
 "RecoverWallet.leftArrow" = "左箭頭";
 /* Next button label */
@@ -543,13 +543,13 @@
 /* Next button accessibility label */
 "RecoverWallet.rightArrow" = "右箭頭";
 /* Recover wallet sub-header */
-"RecoverWallet.subheader" = "針對您想要復原的錢包輸入紙本金鑰。";
+"RecoverWallet.subheader" = "針對您想要復原的錢包輸入紙上金鑰。";
 /* Reset PIN with paper key: sub-header */
-"RecoverWallet.subheader_reset_pin" = "為重設 PIN 碼，請在下方空格內輸入您的紙本金鑰上的字串。";
+"RecoverWallet.subheader_reset_pin" = "為重設 PIN 碼，請在下方空格內輸入您的紙上金鑰上的字串。";
 /* No amount entered error message. */
-"RequestAnAmount.noAmount" = "請先輸入一個帳戶";
+"RequestAnAmount.noAmount" = "請先輸入一個金額";
 /* Request a specific amount of bitcoin */
-"RequestAnAmount.title" = "要求帳戶";
+"RequestAnAmount.title" = "申請金額";
 /* Alert action button label */
 "ReScan.alertAction" = "同步";
 /* Alert message body */
@@ -559,9 +559,9 @@
 /* extimated time */
 "ReScan.body1" = "20-45 分鐘";
 /* Syncing explanation */
-"ReScan.body2" = "如果交易在比特幣網上已經顯示為完成，但沒有出現在您的 Electra 上。";
+"ReScan.body2" = "1.如果交易在Electra網路上已經顯示為已完成，但沒有出現在您的 Electra 上。";
 /* Syncing explanation */
-"ReScan.body3" = "你不斷收到「交易被拒」的錯誤。";
+"ReScan.body3" = "2.你不斷收到「交易被拒」的錯誤訊息。";
 /* Start Sync button label */
 "ReScan.buttonTitle" = "開始同步";
 /* Sync blockchain view footer */
@@ -579,11 +579,11 @@
 /* Rewards view title */
 "RewardsView.normalTitle" = "獎勵";
 /* Scan bitcoin address camera flash toggle */
-"Scanner.flashButtonLabel" = "相機閃光";
+"Scanner.flashButtonLabel" = "相機閃光燈";
 /* Complete filter label */
 "Search.complete" = "完成";
 /* Pending filter label */
-"Search.pending" = "待決";
+"Search.pending" = "待確認交易";
 /* Received filter label */
 "Search.received" = "已收到";
 /* [Click here to] search */
@@ -593,9 +593,9 @@
 /* Face ID button title */
 "SecurityCenter.faceIdTitle" = "Face ID";
 /* Paper Key button description */
-"SecurityCenter.paperKeyDescription" = "您的手機遺失或升級時，存取您的比特幣唯一的方式。";
+"SecurityCenter.paperKeyDescription" = "您的手機遺失或升級時，訪問您的Electra唯一的方式。";
 /* Paper Key button title */
-"SecurityCenter.paperKeyTitle" = "紙本金鑰";
+"SecurityCenter.paperKeyTitle" = "紙上金鑰";
 /* PIN button description */
 "SecurityCenter.pinDescription" = "保護您的 ECA，防範未經授權的使用者。";
 /* PIN button title */
@@ -609,7 +609,7 @@
 /* Segwit enabled confirmation title */
 "Segwit.ConfirmationConfirmationTitle" = "您已啟用 SegWit！";
 /* Segwit enabled confirmation description */
-"Segwit.ConfirmationInstructionsDescription" = "感謝您協助推動比特幣向前發展。";
+"Segwit.ConfirmationInstructionsDescription" = "感謝您協助推動Electra向前發展。";
 /* Segwit instructions */
 "Segwit.ConfirmationInstructionsInstructions" = "SegWit 支援仍為測試功能。\n一旦 SegWit 被啟用,將無法停用。您將能夠在設定中找到舊版位址。\n啟用 SegWit 的使用者可能無法使用某些第三方服務,包括加密貨幣交易。在緊急情況下,您可以在偏好選項 > 比特幣設定中產生一個舊版位址。\n在未來更新中,SegWit 將自動為所有使用者啟用。";
 /* Segwit extra confirmation title. */
@@ -627,9 +627,9 @@
 /* Permission required to access camera */
 "Send.cameraUnavailabeTitle.android" = "Electra 尚未獲准存取相機";
 /* Camera not allowed message */
-"Send.cameraunavailableMessage" = "請至「設定」允許存取相機。";
+"Send.cameraunavailableMessage" = "請至「設定」允許訪問相機。";
 /* Camera not allowed alert title */
-"Send.cameraUnavailableTitle" = "Electra 未獲得存取相機的權限";
+"Send.cameraUnavailableTitle" = "Electra 未獲得訪問相機的權限";
 /* Warning when sending to self. */
 "Send.containsAddress" = "目的地為您自己的地址。您不能寄送給自己。";
 /* Could not create transaction alert title */
@@ -641,7 +641,7 @@
 /* "(you) can't send (to your)self" */
 "Send.ethSendSelf" = "無法寄給自己";
 /* Network Fee: $0.01 */
-"Send.fee" = "網路費：%1$@";
+"Send.fee" = "手續費：%1$@";
 /* Payee identity not certified alert title. */
 "Send.identityNotCertified" = "受款人身分未經認證。";
 /* Insufficient funds error */
@@ -659,7 +659,7 @@
 /* Is rescanning error message */
 "Send.isRescanning" = "完全重新掃描期間無法寄送。";
 /* Warning when the user is trying to send bitcoin cash to a legacy bitcoin address (possible, but probably not what the user wants to do) */
-"Send.legacyAddressWarning" = "注意，這是一個 legacy 比特幣位址。您確定要傳送比特幣現金至此嗎？";
+"Send.legacyAddressWarning" = "注意，這是一個 legacy Electra位址。您確定要傳送Electra現金至此嗎？";
 /* We are loading the request (now) */
 "Send.loadingRequest" = "正在載入要求";
 /* Transaction fee could not be be caluculated error. */
@@ -687,7 +687,7 @@
 /* Send money to label */
 "Send.toLabel" = "給";
 /* Adress already used alert message - first part */
-"Send.UsedAddress.firstLine" = "比特幣位址專供一次性使用。";
+"Send.UsedAddress.firstLine" = "Electra位址專供一次性使用。";
 /* Adress already used alert message - second part */
 "Send.UsedAddress.secondLIne" = "重複使用會降低您與收受者的隱私，如果收受者無法直接控制該位址，可能會造成損失。";
 /* Adress already used alert title */
@@ -713,7 +713,7 @@
 /* Face ID spending limit label */
 "Settings.faceIdLimit" = "Face ID 消費上限";
 /* Redeem the funds stored on this private key. */
-"Settings.importTitle" = "兌換私密金鑰";
+"Settings.importTitle" = "導入私密金鑰";
 /* Manage settings section header */
 "Settings.manage" = "管理";
 /* Notifications label */
@@ -743,7 +743,7 @@
 /* Receive Bitcoin instructions */
 "Settings.ViewLegacyAddressReceiveDescription" = "請只發送比特幣（ECA）至此位址。任何發送到此位址的資產將永久遺失。";
 /* Receive Bitcoin */
-"Settings.ViewLegacyAddressReceiveTitle" = "接收比特幣";
+"Settings.ViewLegacyAddressReceiveTitle" = "接收Electra";
 /* Wallet Settings section header */
 "Settings.wallet" = "錢包";
 /* Unlink/delete your wallet from the current device. */
@@ -755,17 +755,17 @@
 /* Share data switch label. */
 "ShareData.toggleLabel" = "分享匿名資料？";
 /* button label */
-"StartPaperPhrase.againButtonTitle" = "再寫一次紙本金鑰";
+"StartPaperPhrase.againButtonTitle" = "再寫一次紙上金鑰";
 /* Paper key explanation text. */
-"StartPaperPhrase.body" = "您的手機遺失、損壞或升級時，紙本金鑰是復原\n Electra 唯一的方式。\n\n我們會向您出示一個字串，請寫在紙上並妥善保管。";
+"StartPaperPhrase.body" = "您的手機遺失、損壞或升級時，紙上金鑰是復原\n Electra 唯一的方式。\n\n我們會向您出示一個字串，請寫在紙上並妥善保管。";
 /* button label */
-"StartPaperPhrase.buttonTitle" = "寫下紙本金鑰";
+"StartPaperPhrase.buttonTitle" = "寫下紙上金鑰";
 /* Argument is date */
-"StartPaperPhrase.date" = "您最近一次在 %1$@ 寫下了您的紙本金鑰";
+"StartPaperPhrase.date" = "您最近一次在 %1$@ 寫下了您的紙上金鑰";
 /* button label */
 "StartViewController.createButton" = "創建新錢包";
 /* Start view message */
-"StartViewController.message" = "使用比特幣最安全、最有保障的方式。";
+"StartViewController.message" = "使用Electra最安全、最有保障的方式。";
 /* Recover your wallet from a backup */
 "StartViewController.recoverButton" = "恢復錢包";
 /* Syncing view connectiong state header text */
@@ -849,7 +849,7 @@
 /* Transaction failed status text */
 "Transaction.failed" = "失敗";
 /* (b600 fee) */
-"Transaction.fee" = "（%1$@ 費）";
+"Transaction.fee" = "（費用 %1$@）";
 /* Invalid transaction */
 "Transaction.invalid" = "無效";
 /* Timestamp label for event that just happened */
@@ -960,7 +960,7 @@ eg. 182930 (45061 confirmations) */
 /* Tx detail field header */
 "TransactionDetails.totalHeader" = "總計";
 /* Transaction ID header */
-"TransactionDetails.txHashHeader" = "比特幣交易識別碼";
+"TransactionDetails.txHashHeader" = "Electra交易識別碼";
 /* (this transaction was) Received at this address: */
 "TransactionDirection.address" = "已於此地址接收";
 /* (this transaction was) Sent to this address: */
@@ -986,7 +986,7 @@ eg. 182930 (45061 confirmations) */
 /* Device authentication title */
 "UnlockScreen.touchIdTitle.android" = "需要驗證";
 /* Update PIN caption text */
-"UpdatePin.caption" = "請記住此 PIN 碼。如果忘記，會無法存取您的比特幣。";
+"UpdatePin.caption" = "請記住此 PIN 碼。如果忘記，會無法存取您的Electra。";
 /* PIN creation info. */
 "UpdatePin.createInstruction" = "您的 PIN 碼會用於解鎖 ECA 及送出款項。";
 /* Update PIN title */
