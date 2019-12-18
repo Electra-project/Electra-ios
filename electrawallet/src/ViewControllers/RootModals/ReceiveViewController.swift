@@ -40,7 +40,7 @@ class ReceiveViewController: UIViewController, Subscriber, Trackable {
     private let share = BRDButton(title: S.Receive.share, type: .tertiary, image: #imageLiteral(resourceName: "Share"))
     private let sharePopout = InViewAlert(type: .secondary)
     private let border = UIView()
-    private let request = BRDButton(title: S.Receive.request, type: .secondary)
+    private let request = BRDButton(title: S.Receive.request, type: .primary)
     private let addressButton = UIButton(type: .system)
     private var topSharePopoutConstraint: NSLayoutConstraint?
     fileprivate let isRequestAmountVisible: Bool
@@ -181,6 +181,7 @@ class ReceiveViewController: UIViewController, Subscriber, Trackable {
         copiedMessage.textColor = .white
         copiedMessage.text = S.Receive.copied
         copiedMessage.textAlignment = .center
+        copiedMessage.backgroundColor = .ecaDarkPurple
         addressPopout.contentView = copiedMessage
     }
     
