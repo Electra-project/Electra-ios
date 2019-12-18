@@ -553,7 +553,7 @@
 /* Alert action button label */
 "ReScan.alertAction" = "Sync";
 /* Alert message body */
-"ReScan.alertMessage" = "You will not be able to send money while syncing.";
+"ReScan.alertMessage" = "You will not be able to send ECA while syncing.";
 /* Alert message title */
 "ReScan.alertTitle" = "Sync with Blockchain?";
 /* extimated time */

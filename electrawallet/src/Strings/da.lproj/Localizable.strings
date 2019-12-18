@@ -553,7 +553,7 @@
 /* Alert action button label */
 "ReScan.alertAction" = "Synkroniser";
 /* Alert message body */
-"ReScan.alertMessage" = "Du vil ikke kunne sende penge mens du synkroniserer.";
+"ReScan.alertMessage" = "Du vil ikke kunne sende ECA mens du synkroniserer.";
 /* Alert message title */
 "ReScan.alertTitle" = "Synkroniser med blokkæde?";
 /* extimated time */

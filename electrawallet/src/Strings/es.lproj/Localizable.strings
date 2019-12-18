@@ -551,7 +551,7 @@
 /* Alert action button label */
 "ReScan.alertAction" = "Sincronizar";
 /* Alert message body */
-"ReScan.alertMessage" = "No podrás enviar dinero durante la sincronización.";
+"ReScan.alertMessage" = "No podrás enviar ECA durante la sincronización.";
 /* Alert message title */
 "ReScan.alertTitle" = "¿Quieres sincronizar con la cadena de bloques?";
 /* extimated time */
