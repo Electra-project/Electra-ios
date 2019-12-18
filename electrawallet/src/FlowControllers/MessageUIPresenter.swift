@@ -17,8 +17,9 @@ class MessageUIPresenter: NSObject, Trackable {
     func presentShareSheet(text: String, image: UIImage) {
         let shareItems = [text, image] as [Any]
         let shareVC = UIActivityViewController(activityItems: shareItems, applicationActivities: nil)
-
+        
         shareVC.excludedActivityTypes = shareAddressExclusions
+        UIApplication.shared.keyWindow?.tintColor = .black
         present(shareVC)
     }
     
