@@ -551,7 +551,7 @@
 /* Alert action button label */
 "ReScan.alertAction" = "Sincronizza";
 /* Alert message body */
-"ReScan.alertMessage" = "Non potrai inviare denaro durante la sincronizzazione.";
+"ReScan.alertMessage" = "Non potrai inviare ECA durante la sincronizzazione.";
 /* Alert message title */
 "ReScan.alertTitle" = "Sincronizza con la Blockchain?";
 /* extimated time */

@@ -49,7 +49,7 @@
 /* General error message */
 "Alert.somethingWentWrong" = "Что-то пошло не так. Повторите попытку.";
 /* Request timed out error message */
-"Alert.timedOut" = "Истекло время запроса. Проверьте подключение и повторите попытку.";
+"Alert.timedOut" = "Время запроса истекло.. Проверьте подключение и повторите попытку.";
 /* Warning alert title */
 "Alert.warning" = "Предупреждение";
 /* 'the addresses were copied'' Alert title */
@@ -73,7 +73,7 @@
 /* Tell the user where they can enable permissions to access device storage. */
 "Android.allowFileSystemAccess" = "Включите разрешения на хранение в настройках вашего устройства: «Настройки» > «Приложения» > «Electra» > «Разрешения».";
 /* The "home" screen is the name of the top level menu for the app. */
-"Android.BCH.welcome.message" = "Доступ к BCH в вашем кошельке теперь возможен с главного экрана.";
+"Android.BCH.welcome.message" = "Доступ к Electra в вашем кошельке теперь возможен с главного экрана.";
 /* Warning about using apps that can alter the screen */
 "Android.screenAlteringMessage" = "Electra не сможет нормально работать, если не отключить изменяющие экран приложения (такие как Twilight).";
 /* An app that alters the screen ("screen-altering app") has been detected. */
@@ -97,21 +97,21 @@
 /* JSON Serialization error message */
 "ApiClient.jsonError" = "Ошибка JSON-сериализации";
 /* Wallet not ready error message */
-"ApiClient.notReady" = "Кошелек не готов";
+"ApiClient.notReady" = "Кошелёк не готов";
 /* API Token error message */
 "ApiClient.tokenError" = "Не удалось извлечь токен API";
 /* Send BCH view body. */
-"BCH.body" = "Введите адрес адресата BCH ниже. Вся сумма BCH в вашем кошельке во время форка (%1$@) будет отправлена.";
+"BCH.body" = "Введите адрес адресата Electra ниже. Вся сумма ECA в вашем кошельке во время форка (%1$@) будет отправлена.";
 /* Confirm sending <$5.00> to <address>? */
 "BCH.confirmationMessage" = "Подтвердить отправку %1$@ на %2$@";
 /* Confirmation alert title */
 "BCH.confirmationTitle" = "Подтверждение";
 /* Generic bch erorr message */
-"BCH.genericError" = "На Вашем аккаунте нет BCH, или вы получили BCH после форка.";
+"BCH.genericError" = "На Вашем аккаунте нет ECA.";
 /* Transaction ID copied message */
 "BCH.hashCopiedMessage" = "Идентификатор транзакции скопирован";
 /* No address error message */
-"BCH.noAddressError" = "Пожалуйста, введите и адрес";
+"BCH.noAddressError" = "Пожалуйста, введите адрес";
 /* Attempted to scan unsupported qr code error message. */
 "BCH.paymentProtocolError" = "Запросы протокола платежей не поддерживаются для транзакций BCH";
 /* BCH successfully sent alert message */
@@ -165,7 +165,7 @@
 /* Click this button to sell an asset */
 "Button.sell" = "Продать";
 /* send button */
-"Button.send" = "отправить";
+"Button.send" = "Отправить";
 /* Settings button label */
 "Button.settings" = "Настройки";
 /* Settings button label */
@@ -197,11 +197,11 @@
 /* Confirm paper phrase error message */
 "ConfirmPaperPhrase.error" = "Введенные слова не совпадают с вашим бумажным ключом. Повторите попытку.";
 /* Confirm paper phrase view label. */
-"ConfirmPaperPhrase.label" = "Чтобы убедиться, что всё записано корректно, пожалуйста, введите следующие слова с вашего бумажного ключа.";
+"ConfirmPaperPhrase.label" = "Чтобы убедиться, что всё записано корректно, пожалуйста, введите следующие слова из вашего бумажного ключа.";
 /* Word label eg. Word #1, Word #2 */
 "ConfirmPaperPhrase.word" = "Слово #%1$@";
 /* Agree to legal terms button */
-"Crowdsale.agree" = "Согласен";
+"Crowdsale.agree" = "Подтвердить";
 /* As in "(tap here to) buy (some) tokens" */
 "Crowdsale.buyButton" = "Купить токены";
 /* Decline to legal terms button */
@@ -215,7 +215,7 @@
 /* Exchange rate label */
 "DefaultCurrency.rateLabel" = "Обменный курс";
 /* The wallet is disabled. */
-"Disabled.title" = "Кошелек отключен";
+"Disabled.title" = "Кошелёк отключен";
 /* Service capabilities description */
 "EME.permissions.accountRequest" = "Запросить %1$@ информацию об учётной записи";
 /* Service capabilities description */
@@ -247,7 +247,7 @@
 /* Instructions on how to turn on face id on the iPhone. Please ensure the name of the menu in this string matches the wording Apple uses in the iPhone menu. */
 "FaceIDSettings.unavailableAlertMessage" = "Вы не настроили Face ID на данном устройстве. Перейдите в Настройки->Face ID и Секретный код, чтобы настроить его сейчас.";
 /* Face ID unavailable alert title */
-"FaceIDSettings.unavailableAlertTitle" = "Face ID не настроена";
+"FaceIDSettings.unavailableAlertTitle" = "Face ID не настроен";
 /* Face Id spending limit screen title */
 "FaceIDSpendingLimit.title" = "Лимит расходов Face ID";
 /* Economy fee */
@@ -255,13 +255,13 @@
 /* E.g. [This transaction is predicted to complete in] 1-24 hours */
 "FeeSelector.economyTime" = " ";
 /* Warning message for economy fee */
-"FeeSelector.economyWarning" = "Этот параметр не рекомендуется для транзакций, чувствительных с точки зрения времени.";
+"FeeSelector.economyWarning" = "Этот параметр не рекомендуется для транзакций, чувствительных к времени.";
 /* E.g. Estimated delivery: 10-60 minutes */
 "FeeSelector.estimatedDeliver" = "Ожидаемое исполнение: %1$@";
 /* [This transaction will complete in] 2-5 minutes */
 "FeeSelector.ethTime" = "2-5 минут";
 /* Regular fee */
-"FeeSelector.regular" = "Обычна сумма";
+"FeeSelector.regular" = "Обычная сумма";
 /* E.g. [This transaction is predicted to complete in] 10-60 minutes */
 "FeeSelector.regularTime" = "64 seconds";
 /* Fee Selector title */
@@ -287,7 +287,7 @@
 /* empty private key error message */
 "Import.Error.empty" = "Этот персональный ключ пуст.";
 /* High fees error message */
-"Import.Error.highFees" = "Комиссия транзакции стоит больше, чем доступно средств на счете";
+"Import.Error.highFees" = "Комиссия транзакции стоит больше, чем доступно средств на счёте";
 /* Not a valid private key error message */
 "Import.Error.notValid" = "Недействительный персональный ключ";
 /* Import signing error message */
@@ -325,11 +325,11 @@
 /* Ignore jailbreak warning button */
 "JailbreakWarnings.ignore" = "Игнорировать";
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithBalance" = "БЕЗОПАСНОСТЬ УСТРОЙСТВА ПОДВЕРГНУТА РИСКУ\n Какое-либо приложение по снятию ограничений с файловой системы может получить доступ к данным цепочки ключей  Electra и украсть ваши биткойны! Немедленно очистите ваш кошелек и восстановите его на безопасном устройстве.";
+"JailbreakWarnings.messageWithBalance" = "БЕЗОПАСНОСТЬ УСТРОЙСТВА ПОДВЕРГНУТА РИСКУ\n Какое-либо приложение по снятию ограничений с файловой системы может получить доступ к данным цепочки ключей Electra и украсть ваши средства! Немедленно очистите ваш кошелек и восстановите его на безопасном устройстве.";
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithoutBalance" = "БЕЗОПАСНОСТЬ УСТРОЙСТВА ПОДВЕРГНУТА РИСКУ\n Какое-либо приложение по снятию ограничений с файловой системы может получить доступ к данным цепочки ключей  Electra и украсть ваши биткойны. Пожалуйста, используйте Electra только на устройствах с не снятыми с файловой системы ограничениями.";
+"JailbreakWarnings.messageWithoutBalance" = "БЕЗОПАСНОСТЬ УСТРОЙСТВА ПОДВЕРГНУТА РИСКУ\n Какое-либо приложение по снятию ограничений с файловой системы может получить доступ к данным цепочки ключей Electra и украсть ваши средства. Пожалуйста, используйте Electra только на устройствах с не снятыми с файловой системы ограничениями.";
 /* Jailbreak warning title */
-"JailbreakWarnings.title" = "ПРЕДУПРЕЖДЕНИЕ";
+"JailbreakWarnings.title" = "Предупреждение!";
 /* Wipe wallet button */
 "JailbreakWarnings.wipe" = "Очистить";
 /* Approve link wallet button label */
@@ -337,35 +337,35 @@
 /* Decline link wallet button label */
 "LinkWallet.decline" = "Отклонить";
 /* Link Wallet view dislaimer footer */
-"LinkWallet.disclaimer" = "Внешние приложения не могут отправлять деньги без согласия с этого устройства";
+"LinkWallet.disclaimer" = "Внешние приложения не могут отправлять деньги без согласия, с этого устройства";
 /* Link Wallet view title above domain list */
 "LinkWallet.domainTitle" = "Примечание: взаимодействуйте ТОЛЬКО с этим приложением, когда находитесь на одном из следующих доменов";
 /* Link wallet logo footer text */
-"LinkWallet.logoFooter" = "Защищенная Оплата Покупок";
+"LinkWallet.logoFooter" = "Защищённая оплата покупок";
 /* Link Wallet view title above permissions list */
 "LinkWallet.permissionsTitle" = "Это приложение способно:";
 /* Link Wallet view title */
-"LinkWallet.title" = "Прикрепить Кошелек";
+"LinkWallet.title" = "Прикрепить Кошелёк";
 /* Location services disabled error */
 "LocationPlugin.disabled" = "Сервисы определения местоположения отключены.";
 /* No permissions for location services */
-"LocationPlugin.notAuthorized" = "У Electra не разрешения на доступ к сервисам определения местоположения.";
+"LocationPlugin.notAuthorized" = "У Electra нет разрешения на доступ к сервисам определения местоположения.";
 /* Wallet creation date prefix */
 "ManageWallet.creationDatePrefix" = "Вы создали ваш кошелек %1$@";
 /* Manage wallet description text */
-"ManageWallet.description" = "Название вашего кошелька отображается только в журнале транзакций вашей учетной записи, и ни один другой пользователь не может его видеть.";
+"ManageWallet.description" = "Название вашего кошелька отображается только в журнале транзакций вашей учетной записи и ни один другой пользователь не может его видеть.";
 /* Change Wallet name textfield label */
 "ManageWallet.textFeildLabel" = "Название кошелька";
 /* Manage wallet modal title */
 "ManageWallet.title" = "Управление кошельком";
 /* "Add [a] Wallet [to the home screen]" */
-"MenuButton.addWallet" = "Добавить кошелек";
+"MenuButton.addWallet" = "Добавить кошелёк";
 /* Menu button title */
 "MenuButton.lock" = "Заблокировать кошелек";
 /* (Click here to) manage (your list of) wallets */
 "MenuButton.manageWallets" = "Управлять кошельками";
 /* (press here to) scan (a) QR code */
-"MenuButton.scan" = "Сканировать QR код";
+"MenuButton.scan" = "Сканировать QR-код";
 /* Menu button title */
 "MenuButton.security" = "Центр безопасности";
 /* Menu button title */
@@ -373,7 +373,7 @@
 /* Menu button title */
 "MenuButton.support" = "Поддержка";
 /* button label */
-"MenuViewController.createButton" = "Создать новый кошелек";
+"MenuViewController.createButton" = "Создать новый кошелёк";
 /* Menu modal title */
 "MenuViewController.modalTitle" = "Меню";
 /* button label */
@@ -411,7 +411,7 @@
 /* Onboarding screen Skip button title that allows the user to exit the onboarding process. */
 "Onboarding.skip" = "Пропустить";
 /* Onboarding screen Page 4 title */
-"OnboardingPageFour.title" = "Начинайте инвестировать уже сегодня всего с 50 долларами США!";
+"OnboardingPageFour.title" = "Начинайте инвестировать уже сегодня всего с 50$!";
 /* Onboarding screen Page 1 title */
 "OnboardingPageOne.title" = "Добро пожаловать в ваш новый мобильный кошелек Electra!";
 /* Onboarding screen Page 3 subtitle */
@@ -421,7 +421,7 @@
 /* Onboarding screen Page 2 subtitle */
 "OnboardingPageTwo.subtitle" = "Под нашей защитой находятся активы общей суммой более 6 миллиардов долларов США.";
 /* Onboarding screen Page 2 title */
-"OnboardingPageTwo.title" = "Присоединяйтесь к 1,5 миллиона человек, которые доверяют Electra.";
+"OnboardingPageTwo.title" = "Присоединяйтесь к 1,5 миллиона человек, мобильный кошелек Electra!";
 /* Eg. Send 1.0Eth to purchase CCC */
 "PaymentConfirmation.amountText" = "Отправить %1$@, чтобы купить %2$@";
 /* Payment confirmation view title */
@@ -431,23 +431,23 @@
 /* Error opening payment protocol file message */
 "PaymentProtocol.Errors.corruptedDocument" = "Неподдерживаемый или поврежденный документ";
 /* Missing certificate payment protocol error message */
-"PaymentProtocol.Errors.missingCertificate" = "недостающий сертификат";
+"PaymentProtocol.Errors.missingCertificate" = "Отсутсвуюет сертификат";
 /* Request expired payment protocol error message */
-"PaymentProtocol.Errors.requestExpired" = "срок действия запроса истек";
+"PaymentProtocol.Errors.requestExpired" = "Срок действия запроса истёк";
 /* Payment too small alert title */
-"PaymentProtocol.Errors.smallOutputError" = "Не удалось выполнить платеж";
+"PaymentProtocol.Errors.smallOutputError" = "Не удалось выполнить платёж";
 /* Amount too small error message */
 "PaymentProtocol.Errors.smallPayment" = "Размер биткоин-платежей должен превышать %1$@.";
 /* Output too small error message. */
-"PaymentProtocol.Errors.smallTransaction" = "Результаты биткойн-транзакции должны превышать %1$@.";
+"PaymentProtocol.Errors.smallTransaction" = "Результаты Electra-транзакции должны превышать %1$@.";
 /* Unsupported signature type payment protocol error message */
-"PaymentProtocol.Errors.unsupportedSignatureType" = "неподдерживаемый тип подписи";
+"PaymentProtocol.Errors.unsupportedSignatureType" = "Неподдерживаемый тип подписи";
 /* Untrusted certificate payment protocol error message */
-"PaymentProtocol.Errors.untrustedCertificate" = "недостоверный сертификат";
+"PaymentProtocol.Errors.untrustedCertificate" = "Сертификат ненадежён";
 /* Body text for a prompt that asks the user to subscribe to email updates to find out product updates. */
-"Prompts.Email.body" = "Станьте первым, кто получит существенную поддержку и обновления продукта";
+"Prompts.Email.body" = "Станьте первым, кто узнает о самом важном";
 /* Placeholder text for an email address text field. */
-"Prompts.Email.placeholder" = "введите ваш адрес электронной почты";
+"Prompts.Email.placeholder" = "Введите ваш адрес электронной почты";
 /* Body text that is shown when the user successfully subscribes to email updates. */
 "Prompts.Email.successBody" = "Вы успешно подписались на получение обновлений";
 /* Text that is displayed as a footnote when the user successfully subscribes to email updates. */
@@ -455,9 +455,9 @@
 /* Title that is shown when the user successfully subscribes to email updates. */
 "Prompts.Email.successTitle" = "Спасибо!";
 /* Title for a prompt that asks the user to subscribe to email updates to find out product updates. */
-"Prompts.Email.title" = "Войти в узкий круг";
+"Prompts.Email.title" = "Будьте в курсе обновлений";
 /* Enable face ID prompt body */
-"Prompts.FaceId.body" = "Нажмите \"Продолжить\", чтобы включить Идентификацию по лицу";
+"Prompts.FaceId.body" = "Нажмите \"Продолжить\", чтобы включить FaceId";
 /* Enable face ID prompt title */
 "Prompts.FaceId.title" = "Включить Face ID";
 /* No passcode set warning body */
@@ -529,7 +529,7 @@
 /* Enter paper key instruction */
 "RecoverWallet.instruction" = "Введите бумажный ключ";
 /* Recover wallet intro */
-"RecoverWallet.intro" = "Восстановите Ваш Electra-кошелек с помощью бумажного ключа.";
+"RecoverWallet.intro" = "Восстановите Ваш Electra-кошелёк с помощью бумажного ключа.";
 /* Invalid paper key message */
 "RecoverWallet.invalid" = "Введенный вами бумажный ключ недействителен. Пожалуйста, внимательно перепроверьте каждое слово и повторите попытку.";
 /* Previous button accessibility label */
@@ -577,17 +577,17 @@
 /* Rewards view title */
 "RewardsView.normalTitle" = "Бонусы";
 /* Scan bitcoin address camera flash toggle */
-"Scanner.flashButtonLabel" = "Вспышка камеры";
+"Scanner.flashButtonLabel" = "Включить вспышку";
 /* Complete filter label */
-"Search.complete" = "выполнено";
+"Search.complete" = "Выполнено";
 /* Pending filter label */
-"Search.pending" = "в ожидании";
+"Search.pending" = "В ожидании";
 /* Received filter label */
-"Search.received" = "получено";
+"Search.received" = "Получено";
 /* [Click here to] search */
 "Search.search" = "Поиск";
 /* Sent filter label */
-"Search.sent" = "отправлено";
+"Search.sent" = "Отправлено";
 /* Face ID button title */
 "SecurityCenter.faceIdTitle" = "Face ID";
 /* Paper Key button description */
@@ -599,7 +599,7 @@
 /* PIN button title */
 "SecurityCenter.pinTitle" = "6-цифровой PIN-код";
 /* Touch ID button description */
-"SecurityCenter.touchIdDescription" = "Легко и просто разблокируйте ваш ECA-кошелек и отправляйте суммы, не превышающие ваш лимит на расходы.";
+"SecurityCenter.touchIdDescription" = "Легко и просто разблокируйте ваш Electra-кошелёк и отправляйте суммы, не превышающие ваш лимит на расходы.";
 /* Touch ID button title */
 "SecurityCenter.touchIdTitle" = "Touch ID";
 /* Security center fingerprint authentication button */
@@ -623,7 +623,7 @@
 /* Instructions how to allow the camera access for the app */
 "Send.cameraUnavailabeMessage.android" = "Разрешить доступ к камере в: \"Настройки\" > \"Приложения\" > \"Electra\" > \"Разрешения\"";
 /* Permission required to access camera */
-"Send.cameraUnavailabeTitle.android" = "Приложению Electra не разрешен доступ к камере";
+"Send.cameraUnavailabeTitle.android" = "Приложению Electra не разрешён доступ к камере";
 /* Camera not allowed message */
 "Send.cameraunavailableMessage" = "Перейдите в \"Настройки\", чтобы разрешить доступ к камере.";
 /* Camera not allowed alert title */
@@ -645,9 +645,9 @@
 /* Insufficient funds error */
 "Send.insufficientFunds" = "Недостаточно средств";
 /* e,g, "You must have at least $2 in your wallet in order to transfer this type of token." In this case, "token" is an ethereum ERC20 token. */
-"Send.insufficientGasMessage" = "Чтобы передать токен этого типа, у вас в кошельке должно быть хотя бы %1$@. Вы хотите перейти к своему Ethereum-кошельку?";
+"Send.insufficientGasMessage" = "Чтобы передать токен этого типа, у вас в кошельке должно быть хотя бы %1$@. Вы хотите перейти к своему Electra-кошельку?";
 /* Your ethereum balance is insufficient to complete this action. */
-"Send.insufficientGasTitle" = "Недостаточно Ethereum";
+"Send.insufficientGasTitle" = "Недостаточно Electra";
 /* e.g. The destination is not a valid (bitcoin) address. */
 "Send.invalidAddressMessage" = "Недействительный %1$@-адрес получателя.";
 /* Invalid address on pasteboard message */
@@ -657,7 +657,7 @@
 /* Is rescanning error message */
 "Send.isRescanning" = "Отправка отключена во время полного сканирования.";
 /* Warning when the user is trying to send bitcoin cash to a legacy bitcoin address (possible, but probably not what the user wants to do) */
-"Send.legacyAddressWarning" = "Внимание: это унаследованный биткойн-адрес. Вы уверены, что хотите отправить криптовалюту Bitcoin Cash на него?";
+"Send.legacyAddressWarning" = "Внимание: этот кошелёк не из сети Electra. Вы уверены, что хотите отправить криптовалюту Bitcoin Cash на него?";
 /* We are loading the request (now) */
 "Send.loadingRequest" = "Загрузка запроса";
 /* Transaction fee could not be be caluculated error. */
@@ -667,7 +667,7 @@
 /* Emtpy amount alert message */
 "Send.noAmount" = "Пожалуйста, введите сумму для отправки.";
 /* No Fees error */
-"Send.noFeesError" = "Условия Network Fee загружаются. Повторите попытку.";
+"Send.noFeesError" = "Комиссионные загружаются. Повторите попытку.";
 /* Paste button label */
 "Send.pasteLabel" = "Вставить";
 /* Could not publish transaction alert title */
@@ -743,7 +743,7 @@
 /* Receive Bitcoin */
 "Settings.ViewLegacyAddressReceiveTitle" = "Получить биткоин";
 /* Wallet Settings section header */
-"Settings.wallet" = "Кошелек";
+"Settings.wallet" = "Кошелёк";
 /* Unlink/delete your wallet from the current device. */
 "Settings.wipe" = "Отвязать от этого устройства";
 /* Share data view body */
@@ -755,17 +755,17 @@
 /* button label */
 "StartPaperPhrase.againButtonTitle" = "Выписать бумажный ключ снова";
 /* Paper key explanation text. */
-"StartPaperPhrase.body" = "Бумажный ключ – это единственный способ восстановить ваш Electra-кошелек в случае потери, кражи, поломки или замены вашего телефона.\n\nМы покажем вам список слов, которые необходимо записать на листе бумаги и хранить в надежном месте.";
+"StartPaperPhrase.body" = "Бумажный ключ – это единственный способ восстановить ваш Electra-Кошелёк в случае потери, кражи, поломки или замены вашего телефона.\n\nМы покажем вам список слов, которые необходимо записать на листе бумаги и хранить в надежном месте.";
 /* button label */
 "StartPaperPhrase.buttonTitle" = "Выписать бумажный ключ";
 /* Argument is date */
-"StartPaperPhrase.date" = "Вы выписывали свой бумажный ключ в последний раз %1$@";
+"StartPaperPhrase.date" = "Когда вы выписывали свой бумажный ключ в последний раз %1$@";
 /* button label */
-"StartViewController.createButton" = "Создать новый кошелек";
+"StartViewController.createButton" = "Создать новый Кошелёк";
 /* Start view message */
 "StartViewController.message" = "Самый надежный и безопасный способ использования Electra.";
 /* Recover your wallet from a backup */
-"StartViewController.recoverButton" = "Восстановить кошелек";
+"StartViewController.recoverButton" = "Восстановить Кошелёк";
 /* Syncing view connectiong state header text */
 "SyncingView.connecting" = "Соединение";
 /* The sync has failed (to complete) */
@@ -859,9 +859,9 @@
 /* Send status text: 'In progress: 20%' */
 "Transaction.sendingStatus" = "Выполнено: %1$@";
 /* sending to <address> */
-"Transaction.sendingTo" = "отправка по адресу %1$@";
+"Transaction.sendingTo" = "Отправка по адресу %1$@";
 /* sent to <address> */
-"Transaction.sentTo" = "отправлено по адресу %1$@";
+"Transaction.sentTo" = "Отправлено по адресу %1$@";
 /* eg. Starting balance: $50.00 */
 "Transaction.starting" = "Начальный баланс: %1$@";
 /* e.g. "[The money you paid was a] Fee for token transfer: Electra" (Electra is the token that was transfered) */
@@ -869,7 +869,7 @@
 /* Waiting to be confirmed string */
 "Transaction.waiting" = "Ожидает подтверждения. Некоторые продавцы требуют подтверждения для выполнения транзакции. Предполагаемое время: 1-2 часа.";
 /* e.g. I received money from an account. */
-"TransactionDetails.account" = "счет";
+"TransactionDetails.account" = "Счет";
 /* Address received from header */
 "TransactionDetails.addressFromHeader" = "От:";
 /* Address sent to header */
@@ -922,13 +922,13 @@ eg. 182930 (45061 confirmations) */
 /* Received $5.00 */
 "TransactionDetails.receivedAmountDescription" = "Получено <b>%1$@</b>";
 /* received from <address> */
-"TransactionDetails.receivedFrom" = "получено от %1$@";
+"TransactionDetails.receivedFrom" = "Получено от %1$@";
 /* received via <address> */
-"TransactionDetails.receivedVia" = "получено через %1$@";
+"TransactionDetails.receivedVia" = "Получено через %1$@";
 /* receiving from <address> */
-"TransactionDetails.receivingFrom" = "получение от %1$@";
+"TransactionDetails.receivingFrom" = "Получение от %1$@";
 /* receiving via <address> */
-"TransactionDetails.receivingVia" = "идет получение через %1$@";
+"TransactionDetails.receivingVia" = "Идет получение через %1$@";
 /* "Sent [$5] to [address]" => This is the "Sent [$5]" part. */
 "TransactionDetails.sent" = "Отправить %1$@";
 /* Sent $5.00 */
@@ -954,7 +954,7 @@ eg. 182930 (45061 confirmations) */
 /* Transaction Details Title - Sent */
 "TransactionDetails.titleSent" = "Отправлено";
 /* "Sent [$5] to [address]" => This is the "to [address]" part. */
-"TransactionDetails.to" = "на %1$@";
+"TransactionDetails.to" = "На %1$@";
 /* Tx detail field header */
 "TransactionDetails.totalHeader" = "Всего";
 /* Transaction ID header */
@@ -1032,9 +1032,9 @@ eg. 182930 (45061 confirmations) */
 /* Top title of welcome screen */
 "Welcome.title" = "Добро пожаловать в Electra!";
 /* Wipe wallet alert message */
-"WipeWallet.alertMessage" = "Вы действительно хотите удалить этот кошелек?";
+"WipeWallet.alertMessage" = "Вы действительно хотите удалить этот кошелёк?";
 /* Wipe wallet alert title */
-"WipeWallet.alertTitle" = "Удалить кошелек?";
+"WipeWallet.alertTitle" = "Удалить кошелёк?";
 /* Failed wipe wallet alert message */
 "WipeWallet.failedMessage" = "Не удалось удалить кошелек.";
 /* Failed wipe wallet alert title */

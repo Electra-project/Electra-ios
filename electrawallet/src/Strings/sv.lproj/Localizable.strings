@@ -553,7 +553,7 @@
 /* Alert action button label */
 "ReScan.alertAction" = "Synka";
 /* Alert message body */
-"ReScan.alertMessage" = "Du kan inte skicka pengar under synkning.";
+"ReScan.alertMessage" = "Du kan inte skicka ECA under synkning.";
 /* Alert message title */
 "ReScan.alertTitle" = "Synka med blockkedja?";
 /* extimated time */
