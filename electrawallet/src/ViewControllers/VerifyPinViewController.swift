@@ -21,7 +21,7 @@ class VerifyPinViewController: UIViewController, ContentBoxPresenter {
         self.bodyText = bodyText
         self.success = success
         self.pinLength = pinLength
-        self.pinView = PinView(style: .verify, length: pinLength)
+        self.pinView = PinView(style: .login, length: pinLength)
         self.walletAuthenticator = walletAuthenticator
         super.init(nibName: nil, bundle: nil)
     }
@@ -31,9 +31,9 @@ class VerifyPinViewController: UIViewController, ContentBoxPresenter {
     let effect = UIBlurEffect(style: .dark)
     let contentBox = UIView()
     private let success: (String) -> Void
-    private let pinPad = PinPadViewController(style: .white, keyboardType: .pinPad, maxDigits: 0, shouldShowBiometrics: false)
-    private let titleLabel = UILabel(font: .customBold(size: 17.0), color: .darkText)
-    private let body = UILabel(font: .customBody(size: 14.0), color: .darkText)
+    private let pinPad = PinPadViewController(style: .clear, keyboardType: .pinPad, maxDigits: 0, shouldShowBiometrics: false)
+    private let titleLabel = UILabel(font: .customBold(size: 17.0), color: .black)
+    private let body = UILabel(font: .customBody(size: 14.0), color: .black)
     private let pinView: PinView
     private let toolbar = UIView(color: .whiteTint)
     private let cancel = UIButton(type: .system)
@@ -91,10 +91,12 @@ class VerifyPinViewController: UIViewController, ContentBoxPresenter {
     }
 
     private func setupSubviews() {
-        contentBox.backgroundColor = .white
+        contentBox.backgroundColor = .transparent
+        toolbar.backgroundColor = .transparent
+        view.layer.contents =  #imageLiteral(resourceName: "Background").cgImage
         contentBox.layer.cornerRadius = 8.0
         contentBox.layer.borderWidth = 1.0
-        contentBox.layer.borderColor = UIColor.secondaryShadow.cgColor
+        contentBox.layer.borderColor = UIColor.black.cgColor
         contentBox.layer.shadowColor = UIColor.black.cgColor
         contentBox.layer.shadowOpacity = 0.15
         contentBox.layer.shadowRadius = 4.0
