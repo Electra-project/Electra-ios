@@ -83,6 +83,7 @@ class ReScanViewController: UIViewController, Subscriber {
             self.dismiss(animated: true, completion: nil)
         }))
         present(alert, animated: true, completion: nil)
+        alert.view.tintColor = .ecaDarkPurple
     }
 
     private var bodyText: NSAttributedString {
