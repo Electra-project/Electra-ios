@@ -636,7 +636,7 @@ enum S {
     }
 
     enum Welcome {
-        static let title = NSLocalizedString("Welcome.title", value: "Electra now supports Ethereum!", comment: "Welcome view title")
+        static let title = NSLocalizedString("Welcome.title", value: "Electra!", comment: "Welcome view title")
         static let body = NSLocalizedString("Welcome.body", value: "Any ETH in your wallet can be accessed through the home screen.", comment: "Welcome view body text")
     }
 

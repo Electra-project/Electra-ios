@@ -3,7 +3,7 @@
 /* About screen blog label */
 "About.blog" = "Blog";
 /* About screen footer */
-"About.footer" = "Fait par l'équipe Electra monde. Version %1$@ Build %2$@";
+"About.footer" = "Réalisé par la team Electra. Version %1$@ Build %2$@";
 /* Privay Policy button label */
 "About.privacy" = "Politique de confidentialité";
 /* About screen reddit label */
@@ -27,45 +27,45 @@
 /* $10000 per BTC */
 "Account.exchangeRate" = "%1$@ par %2$@";
 /* Loading Wallet Message */
-"Account.loadingMessage" = "Chargement du portefeuille";
+"Account.loadingMessage" = "Chargement du wallet";
 /* Default wallet name */
 "AccountHeader.defaultWalletName" = "Mon Electra";
 /* Third party keyboard warning */
-"Alert.customKeyboard.android" = "Il semble que vous utilisez un clavier tiers. Ce dernier peut enregistrer ce que vous tapez et voler votre portefeuille papier. Veuillez basculer vers le clavier Android par défaut pour plus de sécurité.";
+"Alert.customKeyboard.android" = "Il semble que vous utilisez un clavier tiers. Ce dernier peut enregistrer ce que vous tapez et voler votre wallet papier. Veuillez basculer vers le clavier Android par défaut pour plus de sécurité.";
 /* Error alert title */
 "Alert.error" = "Erreur";
 /* Keystore error */
 "Alert.keystore.generic.android" = "Un problème est survenu avec votre keystore Android OS, veuillez contacter support@electraproject.org";
 /* KeyStore error, keys are invalidated */
-"Alert.keystore.invalidated.android" = "Vos données cryptées de Electra ont été récemment invalidées, car le verrouillage de l'écran de votre appareil Android a été désactivé.";
+"Alert.keystore.invalidated.android" = "Vos données cryptées Electra ont été récemment invalidées, car le verrouillage de l'écran de votre appareil Android a été désactivé.";
 /* Warn user key store data has been invalidate because the user changed their security settings. The user must uninstall. */
-"Alert.keystore.invalidated.uninstall.android" = "Nous ne pouvons pas continuer car les paramètres de verrouillage de votre écran ont été modifiés (par exemple, le mot de passe a été désactivé, les empreintes digitales ont été modifiées). Pour des raisons de sécurité, Android a verrouillé en permanence votre magasin de clés. Par conséquent, les données de votre application Electra doivent être effacées par désinstallation.\n\nNe vous inquiétez pas, vos fonds sont toujours en sécurité ! Réinstallez l'application et récupérez votre portefeuille à l'aide de votre clé en papier.";
+"Alert.keystore.invalidated.uninstall.android" = "Nous ne pouvons pas continuer car les paramètres de verrouillage de votre écran ont été modifiés (par exemple, le mot de passe a été désactivé, les empreintes digitales ont été modifiées). Pour des raisons de sécurité, Android a verrouillé votre wallet. Par conséquent, les données de votre application Electra doivent être effacées par désinstallation.\n\nNe vous inquiétez pas, vos fonds sont toujours en sécurité ! Réinstallez l'application et récupérez votre wallet à l'aide de votre mnemonic (liste de mots).";
 /* Warn user key store data has been invalidate because the user changed their security settings. The user must wipe their app data. */
-"Alert.keystore.invalidated.wipe.android" = "Nous ne pouvons pas continuer car les paramètres de verrouillage de votre écran ont été modifiés (par exemple, le mot de passe a été désactivé, les empreintes digitales ont été modifiées). Pour des raisons de sécurité, Android a verrouillé en permanence votre magasin de clés. Par conséquent, les données de votre application Electra doivent être effacées.\n\nNe vous inquiétez pas, vos fonds sont toujours en sécurité ! Récupérez votre portefeuille en utilisant votre clé en papier.";
+"Alert.keystore.invalidated.wipe.android" = "Nous ne pouvons pas continuer car les paramètres de verrouillage de votre écran ont été modifiés (par exemple, le mot de passe a été désactivé, les empreintes digitales ont été modifiées). Pour des raisons de sécurité, Android a verrouillé votre wallet. Par conséquent, les données de votre application Electra doivent être effacées.\n\nNe vous inquiétez pas, vos fonds sont toujours en sécurité ! Récupérez votre wallet en utilisant votre mnemonic (liste de mots).";
 /* Keystore error title */
 "Alert.keystore.title.android" = "Erreur avec le KeyStore Android";
 /* No internet alert message */
 "Alert.noInternet" = "Aucune connexion Internet n'a été trouvée. Vérifiez votre connexion et réessayez.";
 /* General error message */
-"Alert.somethingWentWrong" = "Quelque chose a échoué. Veuillez s'il vous plaît réessayer.";
+"Alert.somethingWentWrong" = "Quelque chose s'est ma passée. Veuillez s'il vous plaît réessayer.";
 /* Request timed out error message */
 "Alert.timedOut" = "Demande expirée. Vérifiez votre connexion et réessayez.";
 /* Warning alert title */
 "Alert.warning" = "Avertissement";
 /* 'the addresses were copied'' Alert title */
-"Alerts.copiedAddressesHeader" = "Adresses copiées";
+"Alerts.copiedAddressesHeader" = "Adresse copiée";
 /* Addresses Copied Alert sub header */
-"Alerts.copiedAddressesSubheader" = "Toutes les adresses du portefeuille ont été copiées avec succès.";
+"Alerts.copiedAddressesSubheader" = "Toutes les adresses du wallet ont été copiées avec succès.";
 /* Alert Header Label (the paper key was set) */
 "Alerts.paperKeySet" = "Ensemble des clés papier";
 /* Alert Subheader label (playfully positive) */
 "Alerts.paperKeySetSubheader" = "Impressionnant !";
 /* Alert Header label (the PIN was set) */
-"Alerts.pinSet" = "Ensemble PIN";
+"Alerts.pinSet" = "PIN enregistré!";
 /* Send failure alert header label (the send failed to happen) */
 "Alerts.sendFailure" = "Échec de l'envoi";
 /* Send success alert header label (confirmation that the send happened) */
-"Alerts.sendSuccess" = "Envoyer confirmation";
+"Alerts.sendSuccess" = "Envoi confirmé";
 /* Send success alert subheader label (e.g. the money was sent) */
 "Alerts.sendSuccessSubheader" = "ECA envoyé !";
 /* Fingerprint was recognized by the scanner */
@@ -73,19 +73,19 @@
 /* Tell the user where they can enable permissions to access device storage. */
 "Android.allowFileSystemAccess" = "Veuillez activer les autorisations de stockage dans les paramètres de votre appareil : « Paramètres » > « Applications » > « Electra » > « Autorisations ».";
 /* The "home" screen is the name of the top level menu for the app. */
-"Android.BCH.welcome.message" = "Vous pouvez consulter le montant de BCH de votre portefeuille via l'écran d'accueil.";
+"Android.BCH.welcome.message" = "Vous pouvez consulter le montant de BCH de votre wallet via l'écran d'accueil.";
 /* Warning about using apps that can alter the screen */
 "Android.screenAlteringMessage" = "Electra ne fonctionnera pas correctement à moins que les applications modifiant l'écran (telles que Twilight) ne soient désactivées.";
 /* An app that alters the screen ("screen-altering app") has been detected. */
 "Android.screenAlteringTitle" = "Application modifiant l'écran détectée";
 /* Body for an announcement promoting Coinify. */
-"Announcement.coinifyPromoBody" = "Achetez 100 € de Bitcoin avant le 16 avril 2019 et recevez une carte-cadeau Amazon.de de 20 €*";
+"Announcement.coinifyPromoBody" = " ";
 /* Button title for an announcement promoting Coinify. */
-"Announcement.coinifyPromoActionTitle" = "Obtenez votre carte-cadeau";
+"Announcement.coinifyPromoActionTitle" = " ";
 /* Footnote text for an announcement promoting Coinify. */
-"Announcement.coinifyPromoFootnote" = "*Limite d'une carte-cadeau par client. Disponible uniquement en Autriche, en Allemagne, au Luxembourg et aux Pays-Bas.";
+"Announcement.coinifyPromoFootnote" = " ";
 /* Title for an announcement promoting Coinify. */
-"Announcement.coinifyPromoTitle" = "Recevez une carte-cadeau Amazon.de de 20 €!";
+"Announcement.coinifyPromoTitle" = " ";
 /* Body text for in-app announcement about our partner Glidera. Glidera should be capitalized and not translated. */
 "Announcement.glideraBodyOne" = "Les achats BTC et ETH via votre banque auront des plafonds plus hauts, des délais de livraison bien plus rapides, et des frais moins importants. Inscrivez-vous pour recevoir une notification dès le lancement.";
 /* Body text for in-app announcement about our partner Glidera. Glidera should be capitalized and not translated. */
@@ -97,11 +97,11 @@
 /* JSON Serialization error message */
 "ApiClient.jsonError" = "Erreur de sérialisation JSON";
 /* Wallet not ready error message */
-"ApiClient.notReady" = "Le portefeuille n'est pas prêt";
+"ApiClient.notReady" = "Le wallet n'est pas prêt";
 /* API Token error message */
 "ApiClient.tokenError" = "Impossible de récupérer le jeton de l'API";
 /* Send BCH view body. */
-"BCH.body" = "Entrez une adresse de destination BCH ci-dessous. Tous les BCH dans votre portefeuille au moment de la fourchette (%1$@) seront envoyés.";
+"BCH.body" = "Entrez une adresse de destination BCH ci-dessous. Tous les BCH dans votre wallet au moment de la fourchette (%1$@) seront envoyés.";
 /* Confirm sending <$5.00> to <address>? */
 "BCH.confirmationMessage" = "Confirmer l'envoi de %1$@ à %2$@";
 /* Confirmation alert title */
@@ -123,7 +123,7 @@
 /* Approve button label */
 "BitID.approve" = "Approuver";
 /* <sitename> is requesting authentication using your bitcoin wallet */
-"BitID.authenticationRequest" = "%1$@ requiert l'authentification en utilisant votre portefeuille Electra";
+"BitID.authenticationRequest" = "%1$@ requiert l'authentification en utilisant votre wallet Electra";
 /* Deny button label */
 "BitID.deny" = "Refuser";
 /* BitID error alert title */
@@ -171,7 +171,7 @@
 /* Settings button label */
 "Button.submit" = "Envoyer";
 /* Button label to uninstall the app. */
-"Button.uninstall.android" = "Désinstallez";
+"Button.uninstall.android" = "Désinstaller";
 /* Button label to wipe the user's application data. */
 "Button.wipe.android" = "Effacer";
 /* Yes button */
@@ -195,9 +195,9 @@
 /* Total Cost: ($5.00) */
 "Confirmation.totalLabel" = "Coût total :";
 /* Confirm paper phrase error message */
-"ConfirmPaperPhrase.error" = "Les mots saisis ne correspondent pas à votre clé papier. Veuillez réessayer.";
+"ConfirmPaperPhrase.error" = "Les mots saisis ne correspondent pas à votre mnemonic (liste de mots). Veuillez réessayer.";
 /* Confirm paper phrase view label. */
-"ConfirmPaperPhrase.label" = "Pour vous assurer que tout a été écrit correctement, entrez les mots suivants à partir de votre clé papier.";
+"ConfirmPaperPhrase.label" = "Pour vous assurer que tout a été écrit correctement, entrez les mots suivants à partir de votre mnemonic (liste de mots).";
 /* Word label eg. Word #1, Word #2 */
 "ConfirmPaperPhrase.word" = "Mot no.%1$@";
 /* Agree to legal terms button */
@@ -215,7 +215,7 @@
 /* Exchange rate label */
 "DefaultCurrency.rateLabel" = "Taux de change";
 /* The wallet is disabled. */
-"Disabled.title" = "Portefeuille désactivé";
+"Disabled.title" = "wallet désactivé";
 /* Service capabilities description */
 "EME.permissions.accountRequest" = "Demande %1$@ des informations de compte";
 /* Service capabilities description */
@@ -227,7 +227,7 @@
 /* Email unavailable alert title */
 "ErrorMessages.emailUnavailableTitle" = "E-mail non disponible";
 /* Message that gets shown when we've detected the user has encountered the looping lock-screen bug. (preserve [ ] characters) */
-"ErrorMessages.loopingLockScreen.android" = "Electra ne peut pas être authentifié en raison d'un bug dans votre version d'Android. [Veuillez cliquer ici pour plus d'informations.]";
+"ErrorMessages.loopingLockScreen.android" = "Electra ne peut pas être authentifié en raison d'un bug dans votre version d'Android. [Contactez le support Electra via discord ou telegram]";
 /* Messaging unavailable alert title */
 "ErrorMessages.messagingUnavailableMessage" = "Cet appareil n'est pas configuré pour envoyer des messages.";
 /* Messaging unavailable alert title */
@@ -237,7 +237,7 @@
 /* You can customize your Face ID Spending Limit from the [menu] */
 "FaceIDSettings.customizeText" = "Vous pouvez personnaliser votre limite de dépense Face ID à partir de %1$@.";
 /* Face Id screen label */
-"FaceIDSettings.label" = "Utilisez votre visage pour déverrouiller votre Electra et envoyer de l'argent jusqu'à une limite définie.";
+"FaceIDSettings.label" = "Utilisez votre visage pour déverrouiller votre wallet et envoyer des ECA jusqu'à une limite définie.";
 /* Title of the screen for setting the Face ID Spending Limit */
 "FaceIDSettings.linkText" = "Réglage des limites de dépenses Face ID";
 /* Setting to turn on Face ID for Electra */
@@ -259,11 +259,11 @@
 /* E.g. Estimated delivery: 10-60 minutes */
 "FeeSelector.estimatedDeliver" = "Délai de réception estimé : %1$@";
 /* [This transaction will complete in] 2-5 minutes */
-"FeeSelector.ethTime" = "2 à 5 minutes";
+"FeeSelector.ethTime" = " ";
 /* Regular fee */
 "FeeSelector.regular" = "Régulier";
 /* E.g. [This transaction is predicted to complete in] 10-60 minutes */
-"FeeSelector.regularTime" = "64 seconds";
+"FeeSelector.regularTime" = "64 secondes";
 /* Fee Selector title */
 "FeeSelector.title" = "Vitesse de traitement";
 /* This is the section that allows administration of the user's wallet */
@@ -273,7 +273,7 @@
 /* Menu button on the home screen toolbar */
 "HomeScreen.menu" = "Menu";
 /* This section lists the users wallets */
-"HomeScreen.portfolio" = "Portefeuilles";
+"HomeScreen.portfolio" = "Wallets";
 /* Label for the total balance of all the user's assets (style is all lower case if your language permits) */
 "HomeScreen.totalAssets" = "Capital total";
 /* (Tap here to) trade (your assets for other assets) */
@@ -281,43 +281,43 @@
 /* Checking private key balance progress view text */
 "Import.checking" = "Vérification du solde des clés privées...";
 /* Sweep private key confirmation message */
-"Import.confirm" = "Envoyer %1$@ de cette clé privée dans votre portefeuille ? Le réseau Electra recevra des frais de %2$@.";
+"Import.confirm" = "Envoyer %1$@ de cette clé privée dans votre wallet ? Le réseau Electra recevra des frais de %2$@.";
 /* Duplicate key error message */
-"Import.Error.duplicate" = "Cette clé privée est déjà dans votre portefeuille.";
+"Import.Error.duplicate" = "Cette clé privée est déjà dans votre wallet.";
 /* empty private key error message */
 "Import.Error.empty" = "Cette clé privée est vide.";
 /* High fees error message */
-"Import.Error.highFees" = "Les frais de transactions excederaient le sold disponible sur cette clé privée";
+"Import.Error.highFees" = "Les frais de transactions excèdent le solde disponible sur cette clé privée";
 /* Not a valid private key error message */
-"Import.Error.notValid" = "Pas une clé privée valide";
+"Import.Error.notValid" = "Cette clé privée n'est pas valide";
 /* Import signing error message */
 "Import.Error.signing" = "Erreur lors de la signature de la transaction";
 /* [Redeem] the funds stored on this private key. */
 "Import.importButton" = "Importer";
 /* Importing wallet progress view label */
-"Import.importing" = "Importation du portefeuille";
+"Import.importing" = "Import du wallet";
 /* Caption for graphics */
-"Import.leftCaption" = "Portefeuille à importer";
+"Import.leftCaption" = "wallet à importer";
 /* Import wallet intro screen message */
-"Import.message" = "Importer un portefeuille signifie le transfert de tout son contenu dans votre portfeuille Electra en une seule transaction.\n";
+"Import.message" = "Importer un wallet signifie le transfert de tout son contenu dans votre wallet Electra en une seule transaction.\n";
 /* Enter password alert view title */
 "Import.password" = "Cette clé privée est protégée par mot de passe.";
 /* password textfield placeholder */
-"Import.passwordPlaceholder" = "mot de passe";
+"Import.passwordPlaceholder" = "Mot de passe";
 /* Caption for graphics */
-"Import.rightCaption" = "Votre portefeuille Electra";
+"Import.rightCaption" = "Votre wallet Electra";
 /* Scan Private key button label */
 "Import.scan" = "Scanner la clé privée";
 /* Import wallet success alert title */
-"Import.success" = "Succès";
+"Import.success" = "Succès!";
 /* Successfully imported wallet message body */
-"Import.SuccessBody" = "Portefeuille importé avec succès.";
+"Import.SuccessBody" = "wallet importé avec succès.";
 /* Import Wallet screen title */
-"Import.title" = "Importer un portefeuille";
+"Import.title" = "Importer un wallet";
 /* Unlocking Private key activity view message. */
 "Import.unlockingActivity" = "Clé de déverrouillage";
 /* Import wallet intro warning message */
-"Import.warning" = "L'importation d'un portefeuille exclue l'historique de transaction ou tout autre information.";
+"Import.warning" = "L'importation d'un wallet est une transaction vers votre wallet actuel, donc l'historique des transaction et messages ne sont pas importés.";
 /* Wrong password alert message */
 "Import.wrongPassword" = "Mauvais mot de passe saisi, veuillez essayer de nouveau.";
 /* Close app button */
@@ -325,9 +325,9 @@
 /* Ignore jailbreak warning button */
 "JailbreakWarnings.ignore" = "Ignorer";
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithBalance" = "SÉCURITÉ DU DISPOSITIF COMPROMISE\nToute application « évasive » peut accéder aux données du porte-clé de Electra et voler vos Electras ! Détruisez ce portefeuille immédiatement et restaurez-le sur un appareil sécurisé.";
+"JailbreakWarnings.messageWithBalance" = "SÉCURITÉ DU DISPOSITIF COMPROMISE\nToute application « évasive » peut accéder aux données du wallet Electra et voler vos ECA ! Détruisez ce wallet immédiatement et restaurez-le sur un appareil sécurisé.";
 /* Jailbreak warning message */
-"JailbreakWarnings.messageWithoutBalance" = "SÉCURITÉ DU DISPOSITIF COMPROMISE\nToute application « évasive » peut accéder aux données du porte-clé de Electra et voler vos Electras. N'utilisez Electra que sur un appareil non évasif.";
+"JailbreakWarnings.messageWithoutBalance" = "SÉCURITÉ DU DISPOSITIF COMPROMISE\nToute application « évasive » peut accéder aux données du wallet Electra et voler vos ECA. N'utilisez le wallet Electra que sur un appareil sécurisé.";
 /* Jailbreak warning title */
 "JailbreakWarnings.title" = "AVERTISSEMENT";
 /* Wipe wallet button */
@@ -343,7 +343,7 @@
 /* Link wallet logo footer text */
 "LinkWallet.logoFooter" = "Paiement sécurisé";
 /* Link Wallet view title above permissions list */
-"LinkWallet.permissionsTitle" = "Cette appli pourra : ";
+"LinkWallet.permissionsTitle" = "Cette application pourra : ";
 /* Link Wallet view title */
 "LinkWallet.title" = "Relier le porte-monnaie ";
 /* Location services disabled error */
@@ -351,17 +351,17 @@
 /* No permissions for location services */
 "LocationPlugin.notAuthorized" = "Electra n'a pas l'autorisation d'accéder aux services de localisation.";
 /* Wallet creation date prefix */
-"ManageWallet.creationDatePrefix" = "Vous avez créé votre portefeuille sur %1$@";
+"ManageWallet.creationDatePrefix" = "Vous avez créé votre wallet sur %1$@";
 /* Manage wallet description text */
-"ManageWallet.description" = "Le nom de votre portefeuille n'apparaît que dans l'historique des transactions de votre compte et ne peut être vu par personne d'autre.";
+"ManageWallet.description" = "Le nom de votre wallet n'apparaît que dans l'historique des transactions de votre compte et ne peut être vu par personne d'autre.";
 /* Change Wallet name textfield label */
-"ManageWallet.textFeildLabel" = "Nom du portefeuille";
+"ManageWallet.textFeildLabel" = "Nom du wallet";
 /* Manage wallet modal title */
-"ManageWallet.title" = "Gérer le portefeuille";
+"ManageWallet.title" = "Gérer le wallet";
 /* "Add [a] Wallet [to the home screen]" */
-"MenuButton.addWallet" = "Ajouter un portefeuille";
+"MenuButton.addWallet" = "Ajouter un wallet";
 /* Menu button title */
-"MenuButton.lock" = "Verrouiller le portefeuille";
+"MenuButton.lock" = "Verrouiller le wallet";
 /* (Click here to) manage (your list of) wallets */
 "MenuButton.manageWallets" = "Gérer les portefeuilles";
 /* (press here to) scan (a) QR code */
@@ -373,11 +373,11 @@
 /* Menu button title */
 "MenuButton.support" = "Assistance";
 /* button label */
-"MenuViewController.createButton" = "Créer un nouveau portefeuille";
+"MenuViewController.createButton" = "Créer un nouveau wallet";
 /* Menu modal title */
 "MenuViewController.modalTitle" = "Menu";
 /* button label */
-"MenuViewController.recoverButton" = "Récupérer le portefeuille";
+"MenuViewController.recoverButton" = "Récupérer le wallet";
 /* Switch to automatic mode button label */
 "NodeSelector.automaticButton" = "Passer au mode automatique";
 /* Node is connected label */
@@ -385,29 +385,29 @@
 /* Node is connecting label */
 "NodeSelector.connecting" = "Connexion en cours";
 /* Enter node ip address view body */
-"NodeSelector.enterBody" = "Entrer l'adresse IP et le port des nœuds (optionnel)";
+"NodeSelector.enterBody" = "Entrer l'adresse IP et le port des nodes (optionnel)";
 /* Enter Node ip address view title */
-"NodeSelector.enterTitle" = "Soumettre le nœud";
+"NodeSelector.enterTitle" = "Soumettre le node";
 /* Switch to manual mode button label */
 "NodeSelector.manualButton" = "Passer au mode manuel";
 /* Node address label */
-"NodeSelector.nodeLabel" = "Nœud principal actuel";
+"NodeSelector.nodeLabel" = "Node principal actuel";
 /* Node is not connected label */
 "NodeSelector.notConnected" = "Non connecté";
 /* Node status label */
-"NodeSelector.statusLabel" = "Statut de connexion du nœud";
+"NodeSelector.statusLabel" = "Statut de connexion du node";
 /* Node Selector view title */
-"NodeSelector.title" = "Nœuds Electra";
+"NodeSelector.title" = "Nodes Electra";
 /* Onboarding screen 'I'll browse first' button */
 "Onboarding.browseFirst" = "Je vais d'abord explorer le site";
 /* Onboarding screen 'Buy some coin' button */
-"Onboarding.buyCoin" = "Acheter de la monnaie";
+"Onboarding.buyCoin" = "Acheter des ECAs";
 /* Onboarding screen 'Get started' (create new wallet) button */
 "Onboarding.getStarted" = "Démarrer";
 /* Onboarding screen 'Next' button */
 "Onboarding.next" = "Suivant";
 /* Onboarding screen restore an existing wallet. */
-"Onboarding.restoreWallet" = "Restaurer le portefeuille";
+"Onboarding.restoreWallet" = "Restaurer le wallet";
 /* Onboarding screen Skip button title that allows the user to exit the onboarding process. */
 "Onboarding.skip" = "Passer";
 /* Onboarding screen Page 4 title */
@@ -415,11 +415,11 @@
 /* Onboarding screen Page 1 title */
 "OnboardingPageOne.title" = "Bienvenue dans votre nouveau wallet Electra!";
 /* Onboarding screen Page 3 subtitle */
-"OnboardingPageThree.subtitle" = "Investissez et diversifiez facilement et en toute sécurité avec Electra.";
+"OnboardingPageThree.subtitle" = "Investissez, diversifiez facilement et en toute sécurité avec Electra.";
 /* Onboarding screen Page 3 title */
-"OnboardingPageThree.title" = "Achetez et vendez des Electras, des tokens, et d'autres monnaies électroniques.";
+"OnboardingPageThree.title" = "Achetez et vendez des Electras.";
 /* Onboarding screen Page 2 subtitle */
-"OnboardingPageTwo.subtitle" = "Nous avons sous protection des actifs valant plus de 6 millions de dollars US.";
+"OnboardingPageTwo.subtitle" = " ";
 /* Onboarding screen Page 2 title */
 "OnboardingPageTwo.title" = "Rejoignez les 1,5 million de personnes dans le monde entier qui font confiance à Electra.";
 /* Eg. Send 1.0Eth to purchase CCC */
@@ -427,13 +427,13 @@
 /* Payment confirmation view title */
 "PaymentConfirmation.title" = "Confirmation ";
 /* Bad Payment request alert title */
-"PaymentProtocol.Errors.badPaymentRequest" = "Mauvaise demande de paiement";
+"PaymentProtocol.Errors.badPaymentRequest" = "Erreur dans la demande de paiement";
 /* Error opening payment protocol file message */
 "PaymentProtocol.Errors.corruptedDocument" = "Document non pris en charge ou endommagé";
 /* Missing certificate payment protocol error message */
 "PaymentProtocol.Errors.missingCertificate" = "certificat manquant";
 /* Request expired payment protocol error message */
-"PaymentProtocol.Errors.requestExpired" = "demande expirée";
+"PaymentProtocol.Errors.requestExpired" = "Demande expirée";
 /* Payment too small alert title */
 "PaymentProtocol.Errors.smallOutputError" = "Impossible de faire un paiement";
 /* Amount too small error message */
@@ -443,7 +443,7 @@
 /* Unsupported signature type payment protocol error message */
 "PaymentProtocol.Errors.unsupportedSignatureType" = "type de signature non pris en charge";
 /* Untrusted certificate payment protocol error message */
-"PaymentProtocol.Errors.untrustedCertificate" = "certificat non approuvé";
+"PaymentProtocol.Errors.untrustedCertificate" = "Certificat non approuvé";
 /* Body text for a prompt that asks the user to subscribe to email updates to find out product updates. */
 "Prompts.Email.body" = "Soyez le premier/la première à recevoir des mises à jour importantes sur l'assistance et les produits";
 /* Placeholder text for an email address text field. */
@@ -457,23 +457,23 @@
 /* Title for a prompt that asks the user to subscribe to email updates to find out product updates. */
 "Prompts.Email.title" = "Tenez-vous au courant";
 /* Enable face ID prompt body */
-"Prompts.FaceId.body" = "Touchez Continuer pour activer Face ID";
+"Prompts.FaceId.body" = "Touchez : Continuer pour activer Face ID";
 /* Enable face ID prompt title */
 "Prompts.FaceId.title" = "Activer Face ID";
 /* No passcode set warning body */
-"Prompts.NoPasscode.body" = "Un code d'accès pour l'appareil est requis pour sécuriser votre portefeuille. Allez aux paramètres et activez le code d'accès.";
+"Prompts.NoPasscode.body" = "Un code d'accès pour l'appareil est requis pour sécuriser votre wallet. Allez aux paramètres et activez le code d'accès.";
 /* No Passcode set warning title */
 "Prompts.NoPasscode.title" = "Activez le code d'accès de l'appareil";
 /* Instruction how to enable device encryption */
-"Prompts.NoScreenLock.body.android" = "Il est nécessaire de configurer un verrouillage d'écran pour protéger votre portefeuille. Allez dans « Paramètres » > « Sécurité » > « Verrouillage d'écran », puis activez-le pour continuer.";
+"Prompts.NoScreenLock.body.android" = "Il est nécessaire de configurer un verrouillage d'écran pour protéger votre wallet. Allez dans « Paramètres » > « Sécurité » > « Verrouillage d'écran », puis activez-le pour continuer.";
 /* Device encryption prompt title */
 "Prompts.NoScreenLock.title.android" = "Verrouillage d'écran désactivé";
 /* Warning about paper key. */
-"Prompts.PaperKey.body" = "Votre paperkey doit être sauvegardé au cas où vous perdiez ou changiez votre téléphone. Cliquez ici pour continuer.";
+"Prompts.PaperKey.body" = "Votre mnemonic doit être sauvegardé au cas où vous perdiez ou changiez votre téléphone. Cliquez ici pour continuer.";
 /* An action is required (You must do this action). */
 "Prompts.PaperKey.title" = "Une action est requise";
 /* Transaction rejected prompt body */
-"Prompts.RecommendRescan.body" = "Votre portefeuille n'est peut être pas synchronisé. Cela peut souvent être corrigé en scannant la blockchain à nouveau.";
+"Prompts.RecommendRescan.body" = "Votre wallet n'est peut être pas synchronisé. Cela peut souvent être corrigé en scannant la blockchain à nouveau.";
 /* Transaction rejected prompt title */
 "Prompts.RecommendRescan.title" = "Transaction rejetée";
 /* Share data prompt body */
@@ -523,15 +523,15 @@
 /* Done button text */
 "RecoverWallet.done" = "Terminé";
 /* Recover wallet header */
-"RecoverWallet.header" = "Récupérer le portefeuille";
+"RecoverWallet.header" = "Restaurer le wallet";
 /* Reset PIN with paper key: header */
 "RecoverWallet.header_reset_pin" = "Réinitialiser PIN";
 /* Enter paper key instruction */
-"RecoverWallet.instruction" = "Entrez la clé papier";
+"RecoverWallet.instruction" = "Entrez le mnemonic";
 /* Recover wallet intro */
-"RecoverWallet.intro" = "Récupérez votre Electra avec votre clé papier.";
+"RecoverWallet.intro" = "Récupérez votre wallet Electra avec votre mnemonic.";
 /* Invalid paper key message */
-"RecoverWallet.invalid" = "La clé papier saisie n'est pas valide. Revérifiez chaque mot et réessayez.";
+"RecoverWallet.invalid" = "Le mnemonic saisi n'est pas valide. Revérifiez chaque mot et réessayez.";
 /* Previous button accessibility label */
 "RecoverWallet.leftArrow" = "Flèche gauche";
 /* Next button label */
@@ -541,9 +541,9 @@
 /* Next button accessibility label */
 "RecoverWallet.rightArrow" = "Flèche droite";
 /* Recover wallet sub-header */
-"RecoverWallet.subheader" = "Entrez la clé papier pour le portefeuille que vous souhaitez récupérer.";
+"RecoverWallet.subheader" = "Entrez le mnemonic pour le wallet que vous souhaitez récupérer.";
 /* Reset PIN with paper key: sub-header */
-"RecoverWallet.subheader_reset_pin" = "Pour réinitialiser votre PIN, entrez les mots de votre clé papier dans les cases ci-dessous.";
+"RecoverWallet.subheader_reset_pin" = "Pour réinitialiser votre PIN, entrez les mots de votre mnemonic dans les cases ci-dessous.";
 /* No amount entered error message. */
 "RequestAnAmount.noAmount" = "Veuillez d'abord entrer un montant.";
 /* Request a specific amount of bitcoin */
@@ -557,7 +557,7 @@
 /* extimated time */
 "ReScan.body1" = "20-45 minutes";
 /* Syncing explanation */
-"ReScan.body2" = "Si une transaction apparaît comme achevée sur le réseau Electra mais pas dans votre portefeuil.";
+"ReScan.body2" = "Si une transaction apparaît comme achevée sur le réseau Electra mais pas dans votre wallet.";
 /* Syncing explanation */
 "ReScan.body3" = "Vous recevez de manière répétée un message d'erreur vous informant du rejet de votre transaction.";
 /* Start Sync button label */
@@ -579,23 +579,23 @@
 /* Scan bitcoin address camera flash toggle */
 "Scanner.flashButtonLabel" = "Flash d'appareil photo";
 /* Complete filter label */
-"Search.complete" = "terminé";
+"Search.complete" = "Terminé";
 /* Pending filter label */
-"Search.pending" = "en attente";
+"Search.pending" = "En cour";
 /* Received filter label */
-"Search.received" = "reçu";
+"Search.received" = "Reçu";
 /* [Click here to] search */
 "Search.search" = "Rechercher";
 /* Sent filter label */
-"Search.sent" = "envoyé";
+"Search.sent" = "Envoyé";
 /* Face ID button title */
 "SecurityCenter.faceIdTitle" = "Face ID";
 /* Paper Key button description */
 "SecurityCenter.paperKeyDescription" = "La seule façon d'accéder à votre wallet Electra si vous perdez ou mettez à niveau votre téléphone.";
 /* Paper Key button title */
-"SecurityCenter.paperKeyTitle" = "Clé papier";
+"SecurityCenter.paperKeyTitle" = "Mnemonic";
 /* PIN button description */
-"SecurityCenter.pinDescription" = "Protège vos ECA contre les utilisateurs non autorisés.";
+"SecurityCenter.pinDescription" = "Protège votre wallet Electra contre les utilisateurs non autorisés.";
 /* PIN button title */
 "SecurityCenter.pinTitle" = "PIN à six chiffres";
 /* Touch ID button description */
@@ -645,7 +645,7 @@
 /* Insufficient funds error */
 "Send.insufficientFunds" = "Fonds insuffisants";
 /* e,g, "You must have at least $2 in your wallet in order to transfer this type of token." In this case, "token" is an ethereum ERC20 token. */
-"Send.insufficientGasMessage" = "Vous devez avoir au moins %1$@ dans votre portefeuille pour transférer ce type de jeton. Souhaitez-vous être redirigé vers votre portefeuille Ethereum maintenant ?";
+"Send.insufficientGasMessage" = "Vous devez avoir au moins %1$@ dans votre wallet pour transférer ce type de jeton. Souhaitez-vous être redirigé vers votre wallet Ethereum maintenant ?";
 /* Your ethereum balance is insufficient to complete this action. */
 "Send.insufficientGasTitle" = "Solde d'Ethereum insuffisant";
 /* e.g. The destination is not a valid (bitcoin) address. */
@@ -657,7 +657,7 @@
 /* Is rescanning error message */
 "Send.isRescanning" = "L'envoi est désactivé pendant un re-scan complet.";
 /* Warning when the user is trying to send bitcoin cash to a legacy bitcoin address (possible, but probably not what the user wants to do) */
-"Send.legacyAddressWarning" = "Attention : il s'agit d'une ancienne adresse Electra. Etes-vous sûr de vouloir y envoyer des Bitcoins Cash ?";
+"Send.legacyAddressWarning" = "Attention : il s'agit d'une ancienne adresse Electra";
 /* We are loading the request (now) */
 "Send.loadingRequest" = "Chargement de la demande";
 /* Transaction fee could not be be caluculated error. */
@@ -729,7 +729,7 @@
 /* Share anonymous data label */
 "Settings.shareData" = "Partager des données anonymes";
 /* Sync blockchain label */
-"Settings.sync" = "Synchroniser avec la blockchain";
+"Settings.sync" = "Synchronisation avec la blockchain";
 /* Settings title */
 "Settings.title" = "Paramètres";
 /* Touch ID spending limit label */
@@ -739,13 +739,13 @@
 /* View legacy address (old format). */
 "Settings.ViewLegacyAddress" = "Voir l'adresse de réception du patrimoine";
 /* Receive Bitcoin instructions */
-"Settings.ViewLegacyAddressReceiveDescription" = "N'envoyez de Electras (ECA) qu'à cette adresse. Tout autre actif envoyé à cette adresse sera définitivement perdu.";
+"Settings.ViewLegacyAddressReceiveDescription" = "N'envoyez que des Electras (ECA) à cette adresse. Tout autre actif envoyé à cette adresse sera définitivement perdu.";
 /* Receive Bitcoin */
 "Settings.ViewLegacyAddressReceiveTitle" = "Recevoir des Electras";
 /* Wallet Settings section header */
-"Settings.wallet" = "Portefeuille";
+"Settings.wallet" = "Wallet";
 /* Unlink/delete your wallet from the current device. */
-"Settings.wipe" = "Supprimer le lien de cet appareil";
+"Settings.wipe" = "Supprimer le wallet de cet appareil";
 /* Share data view body */
 "ShareData.body" = "Aidez à améliorer Electra en partageant vos données anonymes avec nous. Cela n'inclut aucune information financière. Nous respectons votre confidentialité financière.";
 /* Share data header */
@@ -753,19 +753,19 @@
 /* Share data switch label. */
 "ShareData.toggleLabel" = "Partager des données anonymes ?";
 /* button label */
-"StartPaperPhrase.againButtonTitle" = "Enregistrez la clé papier à nouveau";
+"StartPaperPhrase.againButtonTitle" = "Enregistrez le mnemonic à nouveau";
 /* Paper key explanation text. */
-"StartPaperPhrase.body" = "Votre clé papier est la seule façon de restaurer votre Electra si votre téléphone est perdu, volé, cassé ou mis à niveau.\n\nNous allons vous montrer une liste de mots à écrire sur un morceau de papier et à garder en sécurité.";
+"StartPaperPhrase.body" = "Votre mnemonic est la seule façon de restaurer votre wallet Electra si votre téléphone est perdu, volé, cassé ou mis à niveau.\n\nNous allons vous montrer une liste de mots à écrire sur un morceau de papier et à garder en sécurité.";
 /* button label */
-"StartPaperPhrase.buttonTitle" = "Écrire la clé papier";
+"StartPaperPhrase.buttonTitle" = "Écrire le mnemonic";
 /* Argument is date */
-"StartPaperPhrase.date" = "Vous avez écrit votre clé papier la dernière fois sur %1$@";
+"StartPaperPhrase.date" = "Vous avez écrit votre mnemonic la dernière fois le %1$@";
 /* button label */
-"StartViewController.createButton" = "Créer un nouveau portefeuille";
+"StartViewController.createButton" = "Créer un nouveau wallet";
 /* Start view message */
-"StartViewController.message" = "La façon la plus facile et sécurisée  d'utiliser Electra.";
+"StartViewController.message" = "La façon la plus facile et sécurisée d'utiliser vos Electras.";
 /* Recover your wallet from a backup */
-"StartViewController.recoverButton" = "Récupérer le portefeuille";
+"StartViewController.recoverButton" = "Restaurer le wallet";
 /* Syncing view connectiong state header text */
 "SyncingView.connecting" = "Connexion";
 /* The sync has failed (to complete) */
@@ -775,7 +775,7 @@
 /* Retry button label */
 "SyncingView.retry" = "Réessayer";
 /* "eg. Synced through <Jan 12, 2015> */
-"SyncingView.syncedThrough" = "Synchronisé jusqu'à %1$@";
+"SyncingView.syncedThrough" = "Synchronisé au %1$@";
 /* Syncing view syncing state header text */
 "SyncingView.syncing" = " ";
 /* 6 d (6 days) */
@@ -807,7 +807,7 @@
 /* Fingerprint Is Not Setup */
 "TouchIdSettings.disabledWarning.title.android" = "L'identification par empreinte digitale n'est pas activée";
 /* Touch Id screen label */
-"TouchIdSettings.label" = "Utilisez votre empreinte digitale pour débloquer votre Electra et envoyer de l'argent jusqu'à une limite définie.";
+"TouchIdSettings.label" = "Utilisez votre empreinte digitale pour débloquer votre wallet Electra et envoyer de l'argent jusqu'à une limite définie.";
 /* Link Text (see TouchIdSettings.customizeText) */
 "TouchIdSettings.linkText" = "Écran de plafond de dépenses Touch ID";
 /* Spending Limit: b100,000 ($100) */
@@ -851,7 +851,7 @@
 /* Invalid transaction */
 "Transaction.invalid" = "NON VALIDE";
 /* Timestamp label for event that just happened */
-"Transaction.justNow" = "juste maintenant";
+"Transaction.justNow" = "Maintenant";
 /* Transaction is pending status text */
 "Transaction.pending" = "En attente";
 /* Receive status text: 'In progress: 20%' */
@@ -859,17 +859,17 @@
 /* Send status text: 'In progress: 20%' */
 "Transaction.sendingStatus" = "En cours : %1$@";
 /* sending to <address> */
-"Transaction.sendingTo" = "envoi à %1$@";
+"Transaction.sendingTo" = "Envoi à %1$@";
 /* sent to <address> */
-"Transaction.sentTo" = "envoyé à %1$@";
+"Transaction.sentTo" = "Envoyé à %1$@";
 /* eg. Starting balance: $50.00 */
 "Transaction.starting" = "Solde initial : %1$@";
 /* e.g. "[The money you paid was a] Fee for token transfer: Electra" (Electra is the token that was transfered) */
 "Transaction.tokenTransfer" = "Frais de transfert du jeton : %1$@";
 /* Waiting to be confirmed string */
-"Transaction.waiting" = "En attente d'être confirmé. Certains marchands exigent une confirmation pour mener à bien une transaction. Temps estimé : 1-2 heures.";
+"Transaction.waiting" = "En attente d'être confirmé. Certains marchands exigent une confirmation pour mener à bien une transaction. Temps estimé : 64s.";
 /* e.g. I received money from an account. */
-"TransactionDetails.account" = "compte";
+"TransactionDetails.account" = "Compte";
 /* Address received from header */
 "TransactionDetails.addressFromHeader" = "Depuis";
 /* Address sent to header */
@@ -879,9 +879,9 @@
 /* Amount section header */
 "TransactionDetails.amountHeader" = "Montant";
 /* "(it was worth) $100 when sent, (and it is worth) $200 now" */
-"TransactionDetails.amountWhenReceived" = "%1$@ à la réception, %2$@ maintenant";
+"TransactionDetails.amountWhenReceived" = "%1$@ lors de la réception, %2$@ à présent";
 /* "(it was worth) $100 when sent, (and it is worth) $200 now" */
-"TransactionDetails.amountWhenSent" = "%1$@ au moment de l'envoi, %2$@ à présent";
+"TransactionDetails.amountWhenSent" = "%1$@ lors de l'envoi, %2$@ à présent";
 /* Block height label */
 "TransactionDetails.blockHeightLabel" = "Confirmé au bloc";
 /* Memo section header */
@@ -918,19 +918,19 @@ eg. 182930 (45061 confirmations) */
 /* eg. Confirmed in Block: Not Confirmed */
 "TransactionDetails.notConfirmedBlockHeightLabel" = "Non confirmé";
 /* "Received [$5] at [which of my addresses]" => This is the "Received [$5]" part. */
-"TransactionDetails.received" = "A reçu %1$@";
+"TransactionDetails.received" = "Reçu %1$@";
 /* Received $5.00 */
 "TransactionDetails.receivedAmountDescription" = "Reçu <b>%1$@</b>";
 /* received from <address> */
-"TransactionDetails.receivedFrom" = "reçu de %1$@";
+"TransactionDetails.receivedFrom" = "Reçu de %1$@";
 /* received via <address> */
-"TransactionDetails.receivedVia" = "reçu via %1$@";
+"TransactionDetails.receivedVia" = "Reçu via %1$@";
 /* receiving from <address> */
-"TransactionDetails.receivingFrom" = "reçu de %1$@";
+"TransactionDetails.receivingFrom" = "Reçu de %1$@";
 /* receiving via <address> */
-"TransactionDetails.receivingVia" = "réception via %1$@";
+"TransactionDetails.receivingVia" = "Réception via %1$@";
 /* "Sent [$5] to [address]" => This is the "Sent [$5]" part. */
-"TransactionDetails.sent" = "A envoyé %1$@";
+"TransactionDetails.sent" = "Envoyé %1$@";
 /* Sent $5.00 */
 "TransactionDetails.sentAmountDescription" = "Envoyé <b>%1$@</b>";
 /* Show Details button */
@@ -964,7 +964,7 @@ eg. 182930 (45061 confirmations) */
 /* (this transaction was) Sent to this address: */
 "TransactionDirection.to" = "Envoyé à cette adresse";
 /* Disabled until date */
-"UnlockScreen.disabled" = "Désactivé jusqu'à : %1$@";
+"UnlockScreen.disabled" = "Désactivé jusqu'au : %1$@";
 /* Unlock with FaceID accessibility label */
 "UnlockScreen.faceIdText" = "Déverrouiller avec Face ID";
 /* My Address button title */
@@ -986,11 +986,11 @@ eg. 182930 (45061 confirmations) */
 /* Update PIN caption text */
 "UpdatePin.caption" = "Souvenez-vous de ce code PIN. Si vous l'oubliez, vous ne pourrez pas accéder à votre wallet Electra.";
 /* PIN creation info. */
-"UpdatePin.createInstruction" = "Votre PIN sera utilisé pour débloquer votre wallet Electra et envoyer de l'argent.";
+"UpdatePin.createInstruction" = "Votre code PIN sera utilisé pour débloquer votre wallet Electra et envoyer de l'argent.";
 /* Update PIN title */
-"UpdatePin.createTitle" = "Définir PIN";
+"UpdatePin.createTitle" = "Définir code PIN";
 /* Update PIN title */
-"UpdatePin.createTitleConfirm" = "Entrer le PIN à nouveau";
+"UpdatePin.createTitleConfirm" = "Entrer le code PIN à nouveau";
 /* Enter current PIN instruction */
 "UpdatePin.enterCurrent" = "Entrez votre code PIN actuel.";
 /* Enter new PIN instruction */
@@ -1004,15 +1004,15 @@ eg. 182930 (45061 confirmations) */
 /* Update PIN title */
 "UpdatePin.updateTitle" = "Mettre à jour le code PIN";
 /* Authorize to copy wallet addresses alert message */
-"URLHandling.addressaddressListAlertMessage" = "Copier les adresses du portefeuille dans le presse-papiers ?";
+"URLHandling.addressaddressListAlertMessage" = "Copier les adresses du wallet dans le presse-papiers ?";
 /* Authorize to copy wallet address PIN view prompt. */
-"URLHandling.addressList" = "Autoriser à copier l'adresse du portefeuille dans le presse-papiers";
+"URLHandling.addressList" = "Autoriser à copier l'adresse du wallet dans le presse-papiers";
 /* Authorize to copy wallet address alert title */
-"URLHandling.addressListAlertTitle" = "Copier les adresses du portefeuille";
+"URLHandling.addressListAlertTitle" = "Copier les adresses du wallet";
 /* Copy wallet addresses alert button label */
 "URLHandling.copy" = "Copier";
 /* Verify PIN for transaction view body */
-"VerifyPin.authorize" = "Veuillez entrer votre PIN pour autoriser cette transaction.";
+"VerifyPin.authorize" = "Veuillez entrer votre code PIN pour autoriser cette transaction.";
 /* Verify PIN view body */
 "VerifyPin.continueBody" = "Entrez votre code PIN pour continuer.";
 /* Verify PIN view title */
@@ -1020,7 +1020,7 @@ eg. 182930 (45061 confirmations) */
 /* Authorize transaction with touch id message */
 "VerifyPin.touchIdMessage" = "Autoriser cette transaction";
 /* 'No wallet' warning for watch app */
-"Watch.noWalletWarning" = "Ouvrez l'application Electra de l'iPhone pour configurer votre portefeuille.";
+"Watch.noWalletWarning" = "Ouvrez l'application Electra de l'iPhone pour configurer votre wallet.";
 /* Dismiss button label */
 "Webview.dismiss" = "Ignorer";
 /* Webview loading error message */
@@ -1028,31 +1028,31 @@ eg. 182930 (45061 confirmations) */
 /* Updating webview message */
 "Webview.updating" = "Mise à jour...";
 /* Welcome screen text. (?) will be replaced with the help icon users should look for. */
-"Welcome.body" = "Electra vous présente le wallet mobile Electra, avec un nouveau design et de nouvelles fonctionnalités. \n\nSi vous avez besoin d'aide, cliquez sur le (?) en haut à droite de la plupart des écrans.";
+"Welcome.body" = "Electra vous présente le wallet mobile Electra, avec un nouveau design et de nouvelles fonctionnalités. \n\nSi vous avez besoin d'aide, contacter le support Electra via discord ou telegram.";
 /* Top title of welcome screen */
 "Welcome.title" = "Bienvenue chez Electra!";
 /* Wipe wallet alert message */
-"WipeWallet.alertMessage" = "Souhaitez-vous vraiment supprimer ce portefeuille ?";
+"WipeWallet.alertMessage" = "Souhaitez-vous vraiment supprimer ce wallet ?";
 /* Wipe wallet alert title */
-"WipeWallet.alertTitle" = "Effacer le portefeuille ?";
+"WipeWallet.alertTitle" = "Effacer le wallet ?";
 /* Failed wipe wallet alert message */
-"WipeWallet.failedMessage" = "Échec de la suppression du portefeuille.";
+"WipeWallet.failedMessage" = "Échec de la suppression du wallet.";
 /* Failed wipe wallet alert title */
 "WipeWallet.failedTitle" = "Échec";
 /* Enter phrase to wipe wallet instruction. (Important to explain it is the CURRENT [this wallet's] paper key that needs to be entered). */
-"WipeWallet.instruction" = "Pour commencer un nouveau portefeuille ou rétablir un portefeuille existant, vous devez d'abord supprimer le portefeuille actuellement installé. Pour continuer, saisissez la Clé Papier du portefeuille actuel.";
+"WipeWallet.instruction" = "Pour commencer un nouveau wallet ou rétablir un wallet existant, vous devez d'abord supprimer le wallet actuellement installé. Pour continuer, saisissez le mnemonic du wallet actuel.";
 /* Instructions for unlinking the wallet */
-"WipeWallet.startMessage" = "Démarrer ou récupérer un autre portefeuille vous permet d'accéder et de gérer un portefeuille Electra différent sur cet appareil.";
+"WipeWallet.startMessage" = "Démarrer ou récupérer un autre wallet vous permet d'accéder et de gérer un wallet Electra différent sur cet appareil.";
 /* Start wipe wallet view warning */
-"WipeWallet.startWarning" = "Vous ne pourrez plus accéder à votre portefeuille courant depuis cet appareil. Si vous souhaitez le récupérer plus tard, vous devrais réentrer la clé papier.";
+"WipeWallet.startWarning" = "Vous ne pourrez plus accéder à votre wallet actuel depuis cet appareil. Si vous souhaitez le récupérer plus tard, vous devrez réentrer le mnemonic.";
 /* Unlink this wallet from this device. */
-"WipeWallet.title" = "Démarrer our réinitialiser un autre portefeuille";
+"WipeWallet.title" = "Démarrer ou réinitialiser un autre wallet";
 /* Wipe wallet button title */
 "WipeWallet.wipe" = "Effacer";
 /* Wiping activity message */
 "WipeWallet.wiping" = "Effacement...";
 /* Paper key instructions. */
-"WritePaperPhrase.instruction" = "Écrivez chaque mot en ordre et conserver dans un lieu sûr.";
+"WritePaperPhrase.instruction" = "Écrivez chaque mot en ordre et conserver les dans un lieu sûr et sécurisé!";
 /* button label */
 "WritePaperPhrase.next" = "Suivant";
 /* button label */
