@@ -144,7 +144,7 @@ struct BtcTransaction: Transaction {
             switch confirmations {
             case 0:
                 status = .pending
-            case 1..<6:
+            case 1..<3:
                 status = .confirmed
             default:
                 status = .complete
@@ -157,7 +157,7 @@ struct BtcTransaction: Transaction {
         if let kvStore = kvStore {
             metaDataContainer = MetaDataContainer(key: tx.pointee.txHash.txKey, kvStore: kvStore)
             if let rate = rate,
-                confirmations < 6 && direction == .received {
+                confirmations < 3 && direction == .received {
                 metaDataContainer!.createMetaData(tx: self, rate: rate)
             }
         } else {

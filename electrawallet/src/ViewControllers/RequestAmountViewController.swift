@@ -134,6 +134,7 @@ class RequestAmountViewController: UIViewController {
         copiedMessage.textColor = .white
         copiedMessage.text = S.Receive.copied
         copiedMessage.textAlignment = .center
+        copiedMessage.backgroundColor = .ecaDarkPurple
         addressPopout.contentView = copiedMessage
     }
 

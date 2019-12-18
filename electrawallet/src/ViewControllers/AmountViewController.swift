@@ -31,7 +31,7 @@ class AmountViewController: UIViewController, Trackable {
                                            keyboardType: .decimalPad,
                                            maxDigits: currency.state?.maxDigits ?? currency.commonUnit.decimals,
                                            shouldShowBiometrics: false)
-        self.canEditFee = (currency is Bitcoin)
+        self.canEditFee = false //(currency is Bitcoin)
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -284,7 +284,7 @@ class AmountViewController: UIViewController, Trackable {
             balanceLabel.attributedText = balance
             feeLabel.attributedText = fee
             if let amount = amount, amount.rawValue > UInt256(0), !isRequesting {
-                editFee.isHidden = !canEditFee
+                editFee.isHidden = true
             } else {
                 editFee.isHidden = true
             }
@@ -336,7 +336,7 @@ class AmountViewController: UIViewController, Trackable {
         if let amount = amount, amount.rawValue > UInt256(0) {
             balanceLabel.isHidden = false
             if !isRequesting {
-                editFee.isHidden = !canEditFee
+                editFee.isHidden = true
             }
         } else {
             balanceLabel.isHidden = cursor.isHidden
