@@ -237,7 +237,7 @@
 /* You can customize your Face ID Spending Limit from the [menu] */
 "FaceIDSettings.customizeText" = "Sie können Ihr Ausgabenlimit für Face ID im %1$@ anpassen.";
 /* Face Id screen label */
-"FaceIDSettings.label" = "Mit Ihrem Gesicht können Sie Ihre Electra Wallet entsperren und Ihre ECA’s versenden.";
+"FaceIDSettings.label" = "Mit deinem Gesicht kannst du deine Electra Wallet entsperren und deine ECA versenden.";
 /* Title of the screen for setting the Face ID Spending Limit */
 "FaceIDSettings.linkText" = "Bildschirm für Face-ID-Ausgabenlimit";
 /* Setting to turn on Face ID for Electra */
@@ -413,7 +413,7 @@
 /* Onboarding screen Page 4 title */
 "OnboardingPageFour.title" = "Beginnen Sie noch heute mit einer Einlage von nur US$ 50!";
 /* Onboarding screen Page 1 title */
-"OnboardingPageOne.title" = "Herzlich willkommen bei Ihrer neuen Electra Wallet!";
+"OnboardingPageOne.title" = "Herzlich willkommen zu deiner neuen Electra Wallet!";
 /* Onboarding screen Page 3 subtitle */
 "OnboardingPageThree.subtitle" = "Einfach und sicher - Mit Electra investieren und Investitionen diversifizieren";
 /* Onboarding screen Page 3 title */
@@ -563,7 +563,7 @@
 /* Start Sync button label */
 "ReScan.buttonTitle" = "Synchronisation starten";
 /* Sync blockchain view footer */
-"ReScan.footer" = "Während der Synchronisation mit der Blockchain kannst du kein ECA versenden.";
+"ReScan.footer" = "Während der Synchronisation mit der Blockchain kannst du keine ECA versenden.";
 /* Sync Blockchain view header */
 "ReScan.header" = "Blockchain-Synchronisation";
 /* Subheader label */
@@ -753,11 +753,11 @@
 /* Share data switch label. */
 "ShareData.toggleLabel" = "Anonyme Nutzungsdaten übermitteln?";
 /* button label */
-"StartPaperPhrase.againButtonTitle" = "Offlineschlüssel erneut notieren";
+"StartPaperPhrase.againButtonTitle" = "Wiederherstellungsschlüssel erneut notieren";
 /* Paper key explanation text. */
 "StartPaperPhrase.body" = "Dein Wiederherstellungsschlüssel ist die einzige Möglichkeit, deine Electra Wallet wiederherzustellen, falls du dein Gerät verlierst, austauschst oder es kaputt geht. Bitte notiere die folgenden Wörter auf einem Blatt Papier und bewahre es sicher auf.";
 /* button label */
-"StartPaperPhrase.buttonTitle" = "Offlineschlüssel notieren";
+"StartPaperPhrase.buttonTitle" = "Wiederherstellungsschlüssel notieren";
 /* Argument is date */
 "StartPaperPhrase.date" = "Du hast dir deinen Offlineschlüssel zuletzt am %1$@ notiert";
 /* button label */
@@ -879,9 +879,9 @@
 /* Amount section header */
 "TransactionDetails.amountHeader" = "Betrag";
 /* "(it was worth) $100 when sent, (and it is worth) $200 now" */
-"TransactionDetails.amountWhenReceived" = "%1$@ zum Zeitpunkt beim Empfangs, %2$@ jetzt";
+"TransactionDetails.amountWhenReceived" = "%1$@ beim empfang, jetzt %2$@";
 /* "(it was worth) $100 when sent, (and it is worth) $200 now" */
-"TransactionDetails.amountWhenSent" = "%1$@ beim Senden, jetzt %2$@";
+"TransactionDetails.amountWhenSent" = "%1$@ beim senden, jetzt %2$@";
 /* Block height label */
 "TransactionDetails.blockHeightLabel" = "Bestätigt im Block";
 /* Memo section header */
@@ -986,7 +986,7 @@ eg. 182930 (45061 confirmations) */
 /* Update PIN caption text */
 "UpdatePin.caption" = "Solltest du deine PIN vergessen, kannst du nur über den Wiederherstellungsschlüssel deine Electra Wallet wiederherstellen.";
 /* PIN creation info. */
-"UpdatePin.createInstruction" = "Die PIN wird verwendet, um deine Electra Wallet zu entsperren und ECA’s zu versenden.";
+"UpdatePin.createInstruction" = "Die PIN wird verwendet, um deine Electra Wallet zu entsperren und ECA zu versenden.";
 /* Update PIN title */
 "UpdatePin.createTitle" = "PIN festlegen";
 /* Update PIN title */
@@ -1040,11 +1040,11 @@ eg. 182930 (45061 confirmations) */
 /* Failed wipe wallet alert title */
 "WipeWallet.failedTitle" = "Fehlgeschlagen";
 /* Enter phrase to wipe wallet instruction. (Important to explain it is the CURRENT [this wallet's] paper key that needs to be entered). */
-"WipeWallet.instruction" = "Um ein neues Wallet anzulegen oder ein existierendes Wallet wiederherzustellen, müssen Sie erst die Verknüpfung mit dem aktuell installierten Wallet aufheben. Um fortzufahren, geben Sie den Papierschlüssel des aktuellen Wallets ein.";
+"WipeWallet.instruction" = "Um eine neue Electra Wallet anzulegen oder eine bereits existierende Wallet wiederherzustellen, musst du erst die Verknüpfung mit der aktuell installierten Electra Wallet aufheben. Um fortzufahren, gib den Wiederherstellungsschlüssel der aktuellen Wallet ein.";
 /* Instructions for unlinking the wallet */
 "WipeWallet.startMessage" = "Hier kannst du deine Wallet vom Gerät trennen. Nachdem die Trennung erfolgreich abgeschlossen wurde, kannst du eine neue Wallet erstellen oder eine bestehende wiederherstellen.";
 /* Start wipe wallet view warning */
-"WipeWallet.startWarning" = "Achtung: Du wirst mit diesem Gerät kein Zugriff mehr auf deine Electra Wallet haben. Deine ECA’s sind sicher und können nur noch mit dem Wiederherstellungsschlüssel wiederhergestellt werden.";
+"WipeWallet.startWarning" = "Achtung: Du wirst mit diesem Gerät kein Zugriff mehr auf deine Electra Wallet haben. Deine ECA sind sicher und können nur noch mit dem Wiederherstellungsschlüssel wiederhergestellt werden.";
 /* Unlink this wallet from this device. */
 "WipeWallet.title" = "Wallet vom Gerät trennen";
 /* Wipe wallet button title */
