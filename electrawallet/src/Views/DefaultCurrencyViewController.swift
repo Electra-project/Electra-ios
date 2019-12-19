@@ -94,7 +94,7 @@ class DefaultCurrencyViewController: UITableViewController, Subscriber, Trackabl
         cell.textLabel?.textColor = .white
         if rate.code == defaultCurrencyCode {
             let check = UIImageView(image: #imageLiteral(resourceName: "CircleCheck").withRenderingMode(.alwaysTemplate))
-            check.tintColor = .ecaDarkPurple
+            check.tintColor = .white
             cell.accessoryView = check
         } else {
             cell.accessoryView = nil
