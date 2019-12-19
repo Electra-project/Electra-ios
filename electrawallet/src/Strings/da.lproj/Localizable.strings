@@ -1061,3 +1061,6 @@ eg. 182930 (45061 confirmations) */
 "WritePaperPhrase.previous" = "Forrige";
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$li af %2$li";
+/* New Electra Strings*/
+/* User Agreement */
+"Settings.UserAgreements" = "Brugeraftale";
