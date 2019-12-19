@@ -22,7 +22,7 @@ class PinView: UIView {
         case .create:
             return 24.0
         case .login:
-            return 16.0
+            return 24.0
         case .verify:
             return 24.0
         }
@@ -38,8 +38,10 @@ class PinView: UIView {
         self.length = length
         switch style {
         case .create:
-            filled = (0...(length-1)).map { _ in Circle(color: .white, style: .filled) }
-            unFilled = (0...(length-1)).map { _ in Circle(color: .white, style: .unfilled) }
+            filled = (0...(length-1)).map { _ in Circle(color: .black, style: .filled) }
+            unFilled = (0...(length-1)).map { _ in Circle(color: .black, style: .unfilled) }
+            //filled = (0...(length-1)).map { _ in Circle(color: .white, style: .filled) }
+            //unFilled = (0...(length-1)).map { _ in Circle(color: .white, style: .unfilled) }
         case .login:
             filled = (0...(length-1)).map { _ in Circle(color: .black, style: .filled) }
             unFilled = (0...(length-1)).map { _ in Circle(color: .black, style: .unfilled) }
