@@ -87,7 +87,14 @@ class BRDButton: UIControl {
                 if isSelected {
                     container.layer.borderColor = UIColor.primaryButton.cgColor
                     imageView?.tintColor = .primaryButton
-                    label.textColor = .primaryButton
+                    if type == .search
+                    {
+                        label.textColor = .ecaDarkPurple
+                    }
+                    else
+                    {
+                        label.textColor = .primaryButton
+                    }
                 } else {
                     setColors()
                 }

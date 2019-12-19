@@ -127,9 +127,9 @@ class SearchHeaderView: UIView {
     }
 
     private func addSubviews() {
+        addSubview(skinHeader)
         addSubview(searchBar)
         addSubview(cancel)
-        addSubview(skinHeader)
         addSubview(currencyLogo)
         
     }
@@ -153,18 +153,26 @@ class SearchHeaderView: UIView {
             currencyLogo.constraint(.height, constant: 55),
             currencyLogo.constraint(.top, toView: self, constant: E.isIPhoneX ? C.padding[5] : C.padding[3])])
         skinHeader.constrain([
-        skinHeader.leadingAnchor.constraint(equalTo: leadingAnchor, constant: C.padding[1]),
-        //searchBar.topAnchor.constraint(equalTo: topAnchor, constant: E.isIPhoneX ? C.padding[5] : C.padding[2]),
-        skinHeader.bottomAnchor.constraint(equalTo: searchBar.topAnchor, constant: -C.padding[4]),
-        skinHeader.topAnchor.constraint(equalTo: topAnchor),
-        skinHeader.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -C.padding[1]) ])
+        skinHeader.leadingAnchor.constraint(equalTo: leadingAnchor),
+        skinHeader.topAnchor.constraint(equalTo: searchBar.topAnchor, constant: -C.padding[2]),
+        skinHeader.bottomAnchor.constraint(equalTo: bottomAnchor),
+        skinHeader.trailingAnchor.constraint(equalTo: trailingAnchor) ])
     }
 
     private func setData() {
-        skinHeader.backgroundColor = .ecaLightPurple
+        skinHeader.backgroundColor = .ecaDarkPurple
+        cancel.tintColor = .white
+        backgroundColor = .transparent
+        searchBar.backgroundImage = UIImage()
         
-        backgroundColor = .ecaDarkPurple
-        //searchBar.backgroundImage = UIImage()
+        if #available(iOS 13.0, *) {
+            searchBar.searchTextField.backgroundColor = .white
+        }
+        else {
+            searchBar.backgroundColor = .white
+            searchBar.searchBarStyle = UISearchBar.Style.minimal
+        }
+        
         searchBar.delegate = self
         cancel.tap = { [weak self] in
             self?.didChangeFilters?([])
