@@ -48,8 +48,10 @@ class PinView: UIView {
 //            filled = (0...(length-1)).map { _ in ClearCircle(style: .filled) }
 //            unFilled = (0...(length-1)).map { _ in ClearCircle(style: .unfilled) }
         case .verify:
-            filled = (0...(length-1)).map { _ in Circle(color: .black, style: .filled) }
-            unFilled = (0...(length-1)).map { _ in Circle(color: .borderGray, style: .filled) }
+            //filled = (0...(length-1)).map { _ in Circle(color: .black, style: .filled) }
+            //unFilled = (0...(length-1)).map { _ in Circle(color: .borderGray, style: .filled) }
+            filled = (0...(length-1)).map { _ in Circle(color: .white, style: .filled) }
+            unFilled = (0...(length-1)).map { _ in Circle(color: .white, style: .unfilled) }
         }
 
         super.init(frame: CGRect())
