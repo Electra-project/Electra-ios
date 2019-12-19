@@ -1061,3 +1061,6 @@ eg. 182930 (45061 confirmations) */
 "WritePaperPhrase.previous" = "이전";
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%2$li의 %1$li";
+/* New Electra Strings*/
+/* User Agreement */
+/* "Settings.UserAgreements" = ""; */

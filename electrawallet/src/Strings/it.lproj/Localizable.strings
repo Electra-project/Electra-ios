@@ -1059,3 +1059,6 @@ eg. 182930 (45061 confirmations) */
 "WritePaperPhrase.previous" = "Precedente";
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$li di %2$li";
+/* New Electra Strings*/
+/* User Agreement */
+"Settings.UserAgreements" = "Termini di servizio";
