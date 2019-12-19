@@ -169,7 +169,7 @@
 /* Settings button label */
 "Button.settings" = "Einstellungen";
 /* Settings button label */
-"Button.submit" = "Abschicken";
+"Button.submit" = "Bestätigen";
 /* Button label to uninstall the app. */
 "Button.uninstall.android" = "Deinstallieren";
 /* Button label to wipe the user's application data. */
@@ -591,7 +591,7 @@
 /* Face ID button title */
 "SecurityCenter.faceIdTitle" = "Face ID";
 /* Paper Key button description */
-"SecurityCenter.paperKeyDescription" = "Die einzige Möglichkeit, wie du auf deine Electra zugreifen kannst, falls du dein Smartphone verlierst oder wechselst.";
+"SecurityCenter.paperKeyDescription" = "Die einzige Möglichkeit, wie du auf deine Electra Wallet zugreifen kannst, falls du dein Smartphone verlierst oder wechselst.";
 /* Paper Key button title */
 "SecurityCenter.paperKeyTitle" = "Wiederherstellungsschlüssel";
 /* PIN button description */
