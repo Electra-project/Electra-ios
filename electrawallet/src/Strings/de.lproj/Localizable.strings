@@ -237,11 +237,11 @@
 /* You can customize your Face ID Spending Limit from the [menu] */
 "FaceIDSettings.customizeText" = "Sie können Ihr Ausgabenlimit für Face ID im %1$@ anpassen.";
 /* Face Id screen label */
-"FaceIDSettings.label" = "Mit Ihrem Gesicht können Sie Ihre Electra freischalten und Geld bis zu einem festgelegten Limit senden.";
+"FaceIDSettings.label" = "Mit Ihrem Gesicht können Sie Ihre Electra Wallet entsperren und Ihre ECA’s versenden.";
 /* Title of the screen for setting the Face ID Spending Limit */
 "FaceIDSettings.linkText" = "Bildschirm für Face-ID-Ausgabenlimit";
 /* Setting to turn on Face ID for Electra */
-"FaceIDSettings.switchLabel" = "Face-ID für Electra aktivieren";
+"FaceIDSettings.switchLabel" = "Face ID für Ihre Electra Wallet aktivieren";
 /* Face ID settings view title */
 "FaceIDSettings.title" = "Face ID";
 /* Instructions on how to turn on face id on the iPhone. Please ensure the name of the menu in this string matches the wording Apple uses in the iPhone menu. */
@@ -403,7 +403,7 @@
 /* Onboarding screen 'Buy some coin' button */
 "Onboarding.buyCoin" = "Einige Coins kaufen";
 /* Onboarding screen 'Get started' (create new wallet) button */
-"Onboarding.getStarted" = "So geht's los";
+"Onboarding.getStarted" = "Los geht’s";
 /* Onboarding screen 'Next' button */
 "Onboarding.next" = "Weiter";
 /* Onboarding screen restore an existing wallet. */
@@ -413,7 +413,7 @@
 /* Onboarding screen Page 4 title */
 "OnboardingPageFour.title" = "Beginnen Sie noch heute mit einer Einlage von nur US$ 50!";
 /* Onboarding screen Page 1 title */
-"OnboardingPageOne.title" = "Willkommen in Ihrer neuen Electra-Wallet!";
+"OnboardingPageOne.title" = "Herzlich willkommen bei Ihrer neuen Electra Wallet!";
 /* Onboarding screen Page 3 subtitle */
 "OnboardingPageThree.subtitle" = "Einfach und sicher - Mit Electra investieren und Investitionen diversifizieren";
 /* Onboarding screen Page 3 title */
@@ -519,7 +519,7 @@
 /* Share via text message (SMS) */
 "Receive.textButton" = "Textnachricht";
 /* Receive modal title */
-"Receive.title" = "Erhalten";
+"Receive.title" = "Erhalte";
 /* Done button text */
 "RecoverWallet.done" = "Fertig";
 /* Recover wallet header */
@@ -557,19 +557,19 @@
 /* extimated time */
 "ReScan.body1" = "20–45 Minuten";
 /* Syncing explanation */
-"ReScan.body2" = "Wenn eine Transaktion im Electra-Netzwerk, aber nicht in deinem Electra als abgeschlossen angezeigt wird.";
+"ReScan.body2" = "Wenn eine Transaktion im Electra Netzwerk als abgeschlossen angezeigt wird, aber nicht in deiner Electra Wallet.";
 /* Syncing explanation */
-"ReScan.body3" = "Sie erhalten wiederholt eine Fehlermeldung, dass Ihre Transaktion abgewiesen wurde.";
+"ReScan.body3" = "Du erhältst wiederholt eine Fehlermeldung, dass deine Transaktion abgewiesen wurde";
 /* Start Sync button label */
 "ReScan.buttonTitle" = "Synchronisation starten";
 /* Sync blockchain view footer */
-"ReScan.footer" = "Während der Synchronisation mit der Blockchain kannst du kein Geld versenden.";
+"ReScan.footer" = "Während der Synchronisation mit der Blockchain kannst du kein ECA versenden.";
 /* Sync Blockchain view header */
 "ReScan.header" = "Blockchain-Synchronisation";
 /* Subheader label */
 "ReScan.subheader1" = "Voraussichtliche Dauer";
 /* Subheader label */
-"ReScan.subheader2" = "Wann soll synchronisiert werden?";
+"ReScan.subheader2" = "Wann sollte die Blockchain synchronisiert werden?";
 /* Rewards view expanded body. */
 "RewardsView.expandedBody" = "Erfahren Sie, wie Sie Handelsgebühren sparen und zukünftige Belohnungen freischalten können.";
 /* Rewards view expanded title. */
@@ -681,7 +681,7 @@
 /* Send button label (for special case where the user specified send amount is too high and does not leave a balance to cover fees.) */
 "Send.sendMaximum" = "Den maximalen Betrag senden?";
 /* Send screen title (as in "this is the screen for sending money") */
-"Send.title" = "Senden";
+"Send.title" = "Sende";
 /* Send money to label */
 "Send.toLabel" = "An";
 /* Adress already used alert message - first part */
@@ -755,7 +755,7 @@
 /* button label */
 "StartPaperPhrase.againButtonTitle" = "Offlineschlüssel erneut notieren";
 /* Paper key explanation text. */
-"StartPaperPhrase.body" = "Dein Offlineschlüssel ist die einzige Möglichkeit deine Electra wiederherzustellen, falls du dein Smartphone verlierst, austauschst, es gestohlen wird oder es kaputt geht. Hierfür zeigen wir dir eine Liste von Wörtern an, damit du sie dir auf ein Stück Papier notieren kannst, so dass sie sicher aufbewahrt sind.";
+"StartPaperPhrase.body" = "Dein Wiederherstellungsschlüssel ist die einzige Möglichkeit, deine Electra Wallet wiederherzustellen, falls du dein Gerät verlierst, austauschst oder es kaputt geht. Bitte notiere die folgenden Wörter auf einem Blatt Papier und bewahre es sicher auf.";
 /* button label */
 "StartPaperPhrase.buttonTitle" = "Offlineschlüssel notieren";
 /* Argument is date */
@@ -827,7 +827,7 @@
 /* Always require passcode option */
 "TouchIdSpendingLimit" = "Immer PIN anfordern";
 /* Touch ID spending limit screen body */
-"TouchIdSpendingLimit.body" = "Du musst deine 6-stellige PIN eingeben, um Transaktionen abzuschicken, die über deinem Ausgabenlimit liegen, sowie alle 48 Stunden seit du deine 6-stellige PIN das letzte Mal eingegeben hast.";
+"TouchIdSpendingLimit.body" = "Du musst deine 6-stellige PIN eingeben, um Transaktionen durchzuführen die über deinem Limit liegen. Grundsätzlich muss die PIN nach 48 Stunden erneut eingegeben werden.";
 /* Touch Id spending limit screen title */
 "TouchIdSpendingLimit.title" = "Touch-ID-Ausgabenlimit";
 /* name of spending limit when using fingerprint authorization */
@@ -875,11 +875,11 @@
 /* Address sent to header */
 "TransactionDetails.addressToHeader" = "An";
 /* e.g. "(this was received) via (address #1)" via = by way of */
-"TransactionDetails.addressViaHeader" = "Über";
+"TransactionDetails.addressViaHeader" = "Von";
 /* Amount section header */
 "TransactionDetails.amountHeader" = "Betrag";
 /* "(it was worth) $100 when sent, (and it is worth) $200 now" */
-"TransactionDetails.amountWhenReceived" = "%1$@ zum Zeitpunkt des Empfangs, %2$@ jetzt";
+"TransactionDetails.amountWhenReceived" = "%1$@ zum Zeitpunkt beim Empfangs, %2$@ jetzt";
 /* "(it was worth) $100 when sent, (and it is worth) $200 now" */
 "TransactionDetails.amountWhenSent" = "%1$@ beim Senden, jetzt %2$@";
 /* Block height label */
@@ -984,9 +984,9 @@ eg. 182930 (45061 confirmations) */
 /* Device authentication title */
 "UnlockScreen.touchIdTitle.android" = "Authentifizierung erforderlich";
 /* Update PIN caption text */
-"UpdatePin.caption" = "Merke dir diese PIN. Falls du sie vergisst, kannst du nicht mehr auf deine Electra zugreifen.";
+"UpdatePin.caption" = "Solltest du deine PIN vergessen, kannst du nur über den Wiederherstellungsschlüssel deine Electra Wallet wiederherstellen.";
 /* PIN creation info. */
-"UpdatePin.createInstruction" = "Deine PIN wird verwendet, um dein ECA zu entsperren und Geld zu versenden.";
+"UpdatePin.createInstruction" = "Die PIN wird verwendet, um deine Electra Wallet zu entsperren und ECA’s zu versenden.";
 /* Update PIN title */
 "UpdatePin.createTitle" = "PIN festlegen";
 /* Update PIN title */
@@ -1042,11 +1042,11 @@ eg. 182930 (45061 confirmations) */
 /* Enter phrase to wipe wallet instruction. (Important to explain it is the CURRENT [this wallet's] paper key that needs to be entered). */
 "WipeWallet.instruction" = "Um ein neues Wallet anzulegen oder ein existierendes Wallet wiederherzustellen, müssen Sie erst die Verknüpfung mit dem aktuell installierten Wallet aufheben. Um fortzufahren, geben Sie den Papierschlüssel des aktuellen Wallets ein.";
 /* Instructions for unlinking the wallet */
-"WipeWallet.startMessage" = "Heben Sie die Verknüpfung Ihres Wallets auf, um es von diesem Gerät zu entfernen. Sobald die Verknüpfung dieses Wallets entfernt ist, können Sie ein neues Wallet anlegen oder ein anderes Wallet auf diesem Gerät wiederherstellen.";
+"WipeWallet.startMessage" = "Hier kannst du deine Wallet vom Gerät trennen. Nachdem die Trennung erfolgreich abgeschlossen wurde, kannst du eine neue Wallet erstellen oder eine bestehende wiederherstellen.";
 /* Start wipe wallet view warning */
-"WipeWallet.startWarning" = "Sie werden von diesem Gerät aus keinen Zugriff auf Ihr aktuelles Electra-Wallet mehr haben. Der Saldo verbleibt auf dem Satz.";
+"WipeWallet.startWarning" = "Achtung: Du wirst mit diesem Gerät kein Zugriff mehr auf deine Electra Wallet haben. Deine ECA’s sind sicher und können nur noch mit dem Wiederherstellungsschlüssel wiederhergestellt werden.";
 /* Unlink this wallet from this device. */
-"WipeWallet.title" = "Verknüpfung des Wallets aufheben";
+"WipeWallet.title" = "Wallet vom Gerät trennen";
 /* Wipe wallet button title */
 "WipeWallet.wipe" = "Löschen";
 /* Wiping activity message */
@@ -1059,3 +1059,6 @@ eg. 182930 (45061 confirmations) */
 "WritePaperPhrase.previous" = "Zurück";
 /* 1 of 3 */
 "WritePaperPhrase.step" = "%1$li von %2$li";
+/* New Electra Strings*/
+/* User Agreement */
+"Settings.UserAgreements" = "Datenschutzbestimmungen";

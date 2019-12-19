@@ -21,7 +21,7 @@ class VerifyPinViewController: UIViewController, ContentBoxPresenter {
         self.bodyText = bodyText
         self.success = success
         self.pinLength = pinLength
-        self.pinView = PinView(style: .login, length: pinLength)
+        self.pinView = PinView(style: .verify, length: pinLength)
         self.walletAuthenticator = walletAuthenticator
         super.init(nibName: nil, bundle: nil)
     }
@@ -32,8 +32,8 @@ class VerifyPinViewController: UIViewController, ContentBoxPresenter {
     let contentBox = UIView()
     private let success: (String) -> Void
     private let pinPad = PinPadViewController(style: .clear, keyboardType: .pinPad, maxDigits: 0, shouldShowBiometrics: false)
-    private let titleLabel = UILabel(font: .customBold(size: 17.0), color: .black)
-    private let body = UILabel(font: .customBody(size: 14.0), color: .black)
+    private let titleLabel = UILabel(font: .customBold(size: 19.0), color: .white)
+    private let body = UILabel(font: .customBody(size: 15.0), color: .white)
     private let pinView: PinView
     private let toolbar = UIView(color: .whiteTint)
     private let cancel = UIButton(type: .system)
@@ -67,8 +67,8 @@ class VerifyPinViewController: UIViewController, ContentBoxPresenter {
     private func addConstraints() {
         contentBox.constrain([
             contentBox.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            contentBox.bottomAnchor.constraint(equalTo: pinPad.view.topAnchor, constant: -C.padding[12]),
-            contentBox.widthAnchor.constraint(equalToConstant: 256.0) ])
+            contentBox.bottomAnchor.constraint(equalTo: pinPad.view.topAnchor, constant: -C.padding[20]),
+            contentBox.widthAnchor.constraint(equalToConstant: view.frame.size.width * 0.8) ])
         titleLabel.constrainTopCorners(sidePadding: C.padding[2], topPadding: C.padding[2])
         body.constrain([
             body.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
@@ -96,16 +96,14 @@ class VerifyPinViewController: UIViewController, ContentBoxPresenter {
         view.layer.contents =  #imageLiteral(resourceName: "Background").cgImage
         contentBox.layer.cornerRadius = 8.0
         contentBox.layer.borderWidth = 1.0
-        contentBox.layer.borderColor = UIColor.black.cgColor
-        contentBox.layer.shadowColor = UIColor.black.cgColor
-        contentBox.layer.shadowOpacity = 0.15
-        contentBox.layer.shadowRadius = 4.0
-        contentBox.layer.shadowOffset = .zero
+        contentBox.layer.borderColor = UIColor.white.cgColor
 
         titleLabel.text = S.VerifyPin.title
+        titleLabel.textAlignment = .center
         body.text = bodyText
         body.numberOfLines = 0
         body.lineBreakMode = .byWordWrapping
+        body.textAlignment = .center
 
         pinPad.ouputDidUpdate = { [weak self] output in
             guard let myself = self else { return }

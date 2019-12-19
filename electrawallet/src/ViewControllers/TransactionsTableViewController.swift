@@ -121,7 +121,8 @@ class TransactionsTableViewController: UITableViewController, Subscriber, Tracka
         self.transactions.enumerated().forEach { i, tx in
             if tx.hash == txHash {
                 DispatchQueue.main.async {
-                    self.tableView.reload(row: i, section: self.hasExtraSection ? 1 : 0)
+                    //self.tableView.reload(row: i, section: self.hasExtraSection ? 1 : 0)
+                    self.tableView.reload(row: 0, section: i)
                 }
             }
         }
