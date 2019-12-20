@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StartWipeWalletViewController: UIViewController {
+class StartWipeWalletViewController: UIViewController, Subscriber {
 
     init(didTapNext: @escaping () -> Void) {
         self.didTapNext = didTapNext
@@ -22,10 +22,22 @@ class StartWipeWalletViewController: UIViewController {
     private let warning = UILabel.wrapping(font: .customBody(size: 16.0), color: .white)
     private let button = BRDButton(title: S.RecoverWallet.next, type: .primary)
 
+    deinit {
+           Store.unsubscribe(self)
+       }
+    
     override func viewDidLoad() {
         addSubviews()
         addConstraints()
         setInitialData()
+        
+        // need to ensure the sync is done before unlink wallet (Core update needed)
+        Store.trigger(name: .retrySync(Currencies.btc))
+        Store.subscribe(self, selector: { $0[Currencies.btc]?.syncState != $1[Currencies.btc]?.syncState },
+                       callback: { state in
+                           guard let syncState = state[Currencies.btc]?.syncState else { return }
+                           self.button.isEnabled = syncState == .success
+        })
     }
 
     private func addSubviews() {
