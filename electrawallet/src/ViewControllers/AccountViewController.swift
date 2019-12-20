@@ -270,7 +270,7 @@ class AccountViewController: UIViewController, Subscriber, Trackable {
                           options: [.transitionFlipFromBottom, .showHideTransitionViews, .curveEaseOut],
                           completion: { _ in
                             self.searchHeaderview.triggerUpdate()
-                            self.setNeedsStatusBarAppearanceUpdate()
+                            //self.setNeedsStatusBarAppearanceUpdate()
         })
     }
     
@@ -285,7 +285,7 @@ class AccountViewController: UIViewController, Subscriber, Trackable {
                           duration: C.animationDuration,
                           options: [.transitionFlipFromTop, .showHideTransitionViews, .curveEaseOut],
                           completion: { _ in
-                            self.setNeedsStatusBarAppearanceUpdate()
+                           // self.setNeedsStatusBarAppearanceUpdate()
         })
     }
     
