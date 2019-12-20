@@ -168,8 +168,19 @@ struct Amount {
         guard var fiatString = formatter.string(from: fiatValue as NSDecimalNumber) else { return "" }
         if let stringValue = formatter.number(from: fiatString), abs(fiatValue) > 0.0, stringValue == 0 {
             // if non-zero values show as 0, show minimum fractional value for fiat
-            let minimumValue = pow(10.0, Double(-formatter.minimumFractionDigits)) * (negative ? -1.0 : 1.0)
-            fiatString = formatter.string(from: NSDecimalNumber(value: minimumValue)) ?? fiatString
+            //let minimumValue = pow(10.0, Double(-formatter.minimumFractionDigits)) * (negative ? -1.0 : 1.0)
+            //fiatString = formatter.string(from: NSDecimalNumber(value: minimumValue)) ?? fiatString
+            //fiatString = "\(fiatValue)"
+            
+            // Allows currency to go up to maximumFractionDigits precision. Usefull when btc is the currency.
+            if (fiatValue as NSDecimalNumber).doubleValue < pow(10.0, Double(-maximumFractionDigits))
+            {
+                fiatString = formatter.string(from: 0) ?? fiatString
+            }
+            else
+            {
+                fiatString = formatter.string(from: 0)?.replacingOccurrences(of: "0", with: (fiatValue as NSDecimalNumber).doubleValue.stringWithSignificantDigit(significantDigit: 1)) ?? fiatString
+            }
         }
         return fiatString
     }
