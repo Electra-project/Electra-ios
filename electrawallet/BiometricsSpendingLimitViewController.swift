@@ -77,7 +77,7 @@ class BiometricsSpendingLimitViewController: UITableViewController, Subscriber {
         }
         if limits[indexPath.row] == selectedLimit {
             let check = UIImageView(image: #imageLiteral(resourceName: "CircleCheck").withRenderingMode(.alwaysTemplate))
-            check.tintColor = .ecaDarkPurple
+            check.tintColor = .white
             cell.accessoryView = check
         } else {
             cell.accessoryView = nil

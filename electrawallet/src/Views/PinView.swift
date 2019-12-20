@@ -108,8 +108,8 @@ class PinView: UIView {
     }
 
     private func addCircleContraints(_ circles: [UIView]) {
-        let padding: CGFloat = style == .login ? 4.0 : 8.0
-        let extraWidth: CGFloat = style == .login ? 4.0 : 0.0
+        let padding: CGFloat = 8.0
+        let extraWidth: CGFloat = 0.0
         circles.enumerated().forEach { index, circle in
             addSubview(circle)
             let leadingConstraint: NSLayoutConstraint?
