@@ -52,59 +52,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>3.11</string>
 	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>ethereum</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>ethereum</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>bitcoincash</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>bitcoincash</string>
-				<string>bchtest</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>bitcoin</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>bitcoin</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>bread</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>bitid</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>bitid</string>
-			</array>
-		</dict>
-	</array>
+	<array/>
 	<key>CFBundleVersion</key>
 	<string>3</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
@@ -165,52 +113,6 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
 	<key>UTImportedTypeDeclarations</key>
-	<array>
-		<dict>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.data</string>
-			</array>
-			<key>UTTypeDescription</key>
-			<string>Bitcoin Payment Request</string>
-			<key>UTTypeIdentifier</key>
-			<string>bitcoin.paymentrequest</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.mime-type</key>
-				<string>application/bitcoin-paymentrequest</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.data</string>
-			</array>
-			<key>UTTypeDescription</key>
-			<string>Bitcoin Payment</string>
-			<key>UTTypeIdentifier</key>
-			<string>bitcoin.payment</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.mime-type</key>
-				<string>application/bitcoin-payment</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>UTTypeConformsTo</key>
-			<array>
-				<string>public.data</string>
-			</array>
-			<key>UTTypeDescription</key>
-			<string>Bitcoin Payment ACK</string>
-			<key>UTTypeIdentifier</key>
-			<string>bitcoin.paymentack</string>
-			<key>UTTypeTagSpecification</key>
-			<dict>
-				<key>public.mime-type</key>
-				<string>application/bitcoin-paymentack</string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 </dict>
 </plist>
