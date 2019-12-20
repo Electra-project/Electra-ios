@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         redirectStdOut()
         UIView.swizzleSetFrame()
         applicationController.launch(application: application, options: launchOptions)
-        window?.tintColor = .white
+        window?.tintColor = .black
         return true
     }
 
