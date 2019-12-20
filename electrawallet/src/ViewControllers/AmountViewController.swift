@@ -184,6 +184,7 @@ class AmountViewController: UIViewController, Trackable {
     }
 
     private func setInitialData() {
+        currencyToggle.isEnabled = false
         cursor.isHidden = true
         cursor.startBlinking()
         amountLabel.text = ""
