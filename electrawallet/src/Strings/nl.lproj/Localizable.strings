@@ -3,7 +3,7 @@
 /* About screen blog label */
 "About.blog" = "Blog";
 /* About screen footer */
-"About.footer" = "Gemaakt door het globale Electra team. Versie %1$@ Bouw %2$@";
+"About.footer" = "Ontwikkeld door het team van Electra. Versie %1$@ Bouw %2$@";
 /* Privay Policy button label */
 "About.privacy" = "Privacyverklaring";
 /* About screen reddit label */
@@ -165,7 +165,7 @@
 /* Click this button to sell an asset */
 "Button.sell" = "Verkoop";
 /* send button */
-"Button.send" = "versturen";
+"Button.send" = "Versturen";
 /* Settings button label */
 "Button.settings" = "Instellingen";
 /* Settings button label */
@@ -287,7 +287,7 @@
 /* empty private key error message */
 "Import.Error.empty" = "Deze private key is leeg.";
 /* High fees error message */
-"Import.Error.highFees" = "Transactiekosten zijn hoger dan het beschikbare saldo op deze wallet.";
+"Import.Error.highFees" = "Transactiekosten zijn hoger dan het beschikbare saldo op deze portemonnee.";
 /* Not a valid private key error message */
 "Import.Error.notValid" = "Geen geldige private key";
 /* Import signing error message */
@@ -415,7 +415,7 @@
 /* Onboarding screen Page 1 title */
 "OnboardingPageOne.title" = "Welkom bij uw nieuwe Electra portemonnee!";
 /* Onboarding screen Page 3 subtitle */
-"OnboardingPageThree.subtitle" = "Investeer en diversifieer met Electra, snel en veilig.";
+"OnboardingPageThree.subtitle" = "Investeer en betaal met Electra, snel en veilig.";
 /* Onboarding screen Page 3 title */
 "OnboardingPageThree.title" = "Koop en handel in Electra, tokens en andere digitale valuta.";
 /* Onboarding screen Page 2 subtitle */
@@ -461,7 +461,7 @@
 /* Enable face ID prompt title */
 "Prompts.FaceId.title" = "Face-ID inschakelen";
 /* No passcode set warning body */
-"Prompts.NoPasscode.body" = "Er is een apparaat-pascode nodig om je portomonnee te beschermen. Ga naar de instellingen en zet je pascode aan.";
+"Prompts.NoPasscode.body" = "Er is een apparaat-pincode nodig om je portemonnee te beschermen. Ga naar de instellingen en zet je pincode aan.";
 /* No Passcode set warning title */
 "Prompts.NoPasscode.title" = "Zet pascode voor apparaat aan";
 /* Instruction how to enable device encryption */
@@ -513,7 +513,7 @@
 /* Share via email button label */
 "Receive.emailButton" = "E-mail";
 /* Request button label */
-"Receive.request" = "Een bedrag aanvragen";
+"Receive.request" = ""Een betaalverzoek aanmaken";
 /* Share button label */
 "Receive.share" = "Delen";
 /* Share via text message (SMS) */
@@ -885,16 +885,16 @@
 /* Block height label */
 "TransactionDetails.blockHeightLabel" = "Bevestigd in block";
 /* Memo section header */
-"TransactionDetails.commentsHeader" = "Memo";
+"TransactionDetails.commentsHeader" = "Onderwerp";
 /* Memo field placeholder */
-"TransactionDetails.commentsPlaceholder" = "Voeg memo toe...";
+"TransactionDetails.commentsPlaceholder" = "Voeg onderwerp toe...";
 /* Timestamp section header for complete tx */
 "TransactionDetails.completeTimestampHeader" = "Voltooid";
 /* Block height and confirmations label
 eg. 182930 (45061 confirmations) */
 "TransactionDetails.confirmationsLabel" = "Bevestigingen";
 /* Empty transaction list message. */
-"TransactionDetails.emptyMessage" = "Je transacties zullen hier verschijnen.";
+"TransactionDetails.emptyMessage" = "Je transacties verschijnen hier.";
 /* e.g. the users balance after the transaction was compeleted */
 "TransactionDetails.endingBalanceHeader" = "Eindsaldo";
 /* Exchange rate section header */
@@ -1032,11 +1032,11 @@ eg. 182930 (45061 confirmations) */
 /* Top title of welcome screen */
 "Welcome.title" = "Welkom bij Electra!";
 /* Wipe wallet alert message */
-"WipeWallet.alertMessage" = "Weet je zeker dat je deze portomonnee wilt verwijderen?";
+"WipeWallet.alertMessage" = "Weet je zeker dat je deze portemonnee wilt verwijderen?";
 /* Wipe wallet alert title */
-"WipeWallet.alertTitle" = "Portomonnee wissen?";
+"WipeWallet.alertTitle" = "Portemonnee wissen?";
 /* Failed wipe wallet alert message */
-"WipeWallet.failedMessage" = "Wissen van portomonnee niet gelukt";
+"WipeWallet.failedMessage" = "Wissen van portemonnee niet gelukt";
 /* Failed wipe wallet alert title */
 "WipeWallet.failedTitle" = "Mislukt";
 /* Enter phrase to wipe wallet instruction. (Important to explain it is the CURRENT [this wallet's] paper key that needs to be entered). */
