@@ -173,13 +173,15 @@ struct Amount {
             //fiatString = "\(fiatValue)"
             
             // Allows currency to go up to maximumFractionDigits precision. Usefull when btc is the currency.
-            if (fiatValue as NSDecimalNumber).doubleValue < pow(10.0, Double(-maximumFractionDigits))
+            if abs((fiatValue as NSDecimalNumber).doubleValue) < pow(10.0, Double(-maximumFractionDigits))
             {
                 fiatString = formatter.string(from: 0) ?? fiatString
             }
             else
             {
-                fiatString = formatter.string(from: 0)?.replacingOccurrences(of: "0", with: (fiatValue as NSDecimalNumber).doubleValue.stringWithSignificantDigit(significantDigit: 1)) ?? fiatString
+                let newformatter = localFormat
+                newformatter.maximumFractionDigits = 0
+                fiatString = newformatter.string(from: 0)?.replacingOccurrences(of: "0", with: (fiatValue as NSDecimalNumber).doubleValue.stringWithSignificantDigit(significantDigit: 1)) ?? fiatString
             }
         }
         return fiatString
