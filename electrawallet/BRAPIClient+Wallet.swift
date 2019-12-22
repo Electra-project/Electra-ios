@@ -124,7 +124,7 @@ extension BRAPIClient {
                     {
                         let filtered = excludingExchangeList.filter({ $0.range(of: exchange, options: .caseInsensitive) != nil })
                        
-                        if filtered.count == 0 && target.caseInsensitiveCompare("BTC") == .orderedSame && last > 0 && volume > 0
+                        if filtered.count == 0 && target.caseInsensitiveCompare("BTC") == .orderedSame && last > 0 && volume > 10
                         {
                             summedValue += last
                             exchangeCount += 1
