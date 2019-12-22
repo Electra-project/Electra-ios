@@ -4116,8 +4116,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = electrawallet/electrawallet.entitlements;
-				CURRENT_PROJECT_VERSION = 11;
-				DEVELOPMENT_TEAM = 5N9K7C3HL8;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZJ2C82F7TC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/**",
 					"$(PROJECT_DIR)",
@@ -4127,7 +4127,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1;
 				OTHER_SWIFT_FLAGS = "-DDebug";
-				PRODUCT_BUNDLE_IDENTIFIER = org.electraproject.iosapp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.electraproject.ioswallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/electrawallet/src/Platform";
@@ -4143,8 +4143,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = electrawallet/electrawallet.entitlements;
-				CURRENT_PROJECT_VERSION = 11;
-				DEVELOPMENT_TEAM = 5N9K7C3HL8;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZJ2C82F7TC;
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					"brd-web-3-staging.tar",
 					"brd-tokens-staging.tar",
@@ -4158,7 +4158,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1;
 				OTHER_SWIFT_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = org.electraproject.iosapp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.electraproject.ioswallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/electrawallet/src/Platform";
@@ -4299,8 +4299,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = electrawallet/electrawallet.entitlements;
-				CURRENT_PROJECT_VERSION = 11;
-				DEVELOPMENT_TEAM = 5N9K7C3HL8;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZJ2C82F7TC;
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					"brd-web-3.tar",
 					"brd-tokens.tar",
@@ -4314,7 +4314,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1;
 				OTHER_SWIFT_FLAGS = "-DTestflight -DTestnet";
-				PRODUCT_BUNDLE_IDENTIFIER = org.electraproject.iosapp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.electraproject.ioswallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/electrawallet/src/Platform";
@@ -4544,8 +4544,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = electrawallet/electrawallet.entitlements;
-				CURRENT_PROJECT_VERSION = 11;
-				DEVELOPMENT_TEAM = 5N9K7C3HL8;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZJ2C82F7TC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/**",
 					"$(PROJECT_DIR)",
@@ -4555,7 +4555,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1;
 				OTHER_SWIFT_FLAGS = "-DInternal -DDebug";
-				PRODUCT_BUNDLE_IDENTIFIER = org.electraproject.iosapp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.electraproject.ioswallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/electrawallet/src/Platform";
@@ -4778,8 +4778,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = electrawallet/electrawallet.entitlements;
-				CURRENT_PROJECT_VERSION = 11;
-				DEVELOPMENT_TEAM = 5N9K7C3HL8;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZJ2C82F7TC;
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					"brd-web-3.tar",
 					"brd-tokens.tar",
@@ -4793,7 +4793,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1;
 				OTHER_SWIFT_FLAGS = "-DTestflight -DInternal";
-				PRODUCT_BUNDLE_IDENTIFIER = org.electraproject.iosapp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.electraproject.ioswallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/electrawallet/src/Platform";
@@ -5012,8 +5012,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = electrawallet/electrawallet.entitlements;
-				CURRENT_PROJECT_VERSION = 11;
-				DEVELOPMENT_TEAM = 5N9K7C3HL8;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZJ2C82F7TC;
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					"brd-web-3.tar",
 					"brd-tokens.tar",
@@ -5027,7 +5027,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1;
 				OTHER_SWIFT_FLAGS = "-DTestflight -DTestnet -DInternal";
-				PRODUCT_BUNDLE_IDENTIFIER = org.electraproject.iosapp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.electraproject.ioswallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/electrawallet/src/Platform";
@@ -5302,8 +5302,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = electrawallet/electrawallet.entitlements;
-				CURRENT_PROJECT_VERSION = 11;
-				DEVELOPMENT_TEAM = 5N9K7C3HL8;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZJ2C82F7TC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/**",
 					"$(PROJECT_DIR)",
@@ -5313,7 +5313,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1;
 				OTHER_SWIFT_FLAGS = "-DDebug -DScreenshots -DTestnet";
-				PRODUCT_BUNDLE_IDENTIFIER = org.electraproject.iosapp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.electraproject.ioswallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/electrawallet/src/Platform";
@@ -5521,8 +5521,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = electrawallet/electrawallet.entitlements;
-				CURRENT_PROJECT_VERSION = 11;
-				DEVELOPMENT_TEAM = 5N9K7C3HL8;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZJ2C82F7TC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/**",
 					"$(PROJECT_DIR)",
@@ -5532,7 +5532,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1;
 				OTHER_SWIFT_FLAGS = "-DDebug -DTestnet";
-				PRODUCT_BUNDLE_IDENTIFIER = org.electraproject.iosapp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.electraproject.ioswallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/electrawallet/src/Platform";
@@ -5734,8 +5734,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = electrawallet/electrawallet.entitlements;
-				CURRENT_PROJECT_VERSION = 11;
-				DEVELOPMENT_TEAM = 5N9K7C3HL8;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZJ2C82F7TC;
 				EXCLUDED_SOURCE_FILE_NAMES = (
 					"brd-web-3.tar",
 					"brd-tokens.tar",
@@ -5749,7 +5749,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1;
 				OTHER_SWIFT_FLAGS = "-DTestflight";
-				PRODUCT_BUNDLE_IDENTIFIER = org.electraproject.iosapp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.electraproject.ioswallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_INCLUDE_PATHS = "$(SDK_DIR)/usr/include $(SRCROOT)/Modules $(SRCROOT)/electrawallet/src/Platform";
