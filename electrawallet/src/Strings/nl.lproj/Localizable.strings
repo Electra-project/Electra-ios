@@ -513,7 +513,7 @@
 /* Share via email button label */
 "Receive.emailButton" = "E-mail";
 /* Request button label */
-"Receive.request" = ""Een betaalverzoek aanmaken";
+"Receive.request" = "Een betaalverzoek aanmaken";
 /* Share button label */
 "Receive.share" = "Delen";
 /* Share via text message (SMS) */
