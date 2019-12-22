@@ -31,7 +31,7 @@ class PinPadViewController: UICollectionViewController {
                 return /*forStyle == .clear ? #imageLiteral(resourceName: "CutoutDelete") :*/ #imageLiteral(resourceName: "Delete")
             case .biometrics:
                 //accessibility: LAContext.biometricType() == .face ? S.UnlockScreen.faceIdText : S.UnlockScreen.touchIdText
-                return LAContext.biometricType() == .face ? #imageLiteral(resourceName: "CutoutFaceId").withRenderingMode(.alwaysTemplate) : #imageLiteral(resourceName: "TouchIDCutout").withRenderingMode(.alwaysTemplate)
+                return LAContext.biometricType() == .face ? #imageLiteral(resourceName: "CutoutFaceId").withRenderingMode(.alwaysTemplate).withTint(.white) : #imageLiteral(resourceName: "TouchIDCutout").withRenderingMode(.alwaysTemplate)
             }
         }
     }
