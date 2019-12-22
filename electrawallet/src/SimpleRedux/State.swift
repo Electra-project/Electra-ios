@@ -183,7 +183,7 @@ struct WalletState {
                            rates: [],
                            currentRate: UserDefaults.currentRate(forCode: currency.code),
                            fees: nil,
-                           maxDigits: (currency is Bitcoin) ? UserDefaults.maxDigits : currency.commonUnit.decimals,
+                           maxDigits: (currency is Bitcoin) ? 2 : currency.commonUnit.decimals,
                            connectionStatus: BRPeerStatusDisconnected)
     }
 
