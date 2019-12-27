@@ -136,11 +136,11 @@ extension UserDefaults {
         get {
             //If user's haven't set this key, default to true
             if defaults.object(forKey: hasAquiredShareDataPermissionKey) == nil {
-                return true
+                return false
             }
             return defaults.bool(forKey: hasAquiredShareDataPermissionKey)
         }
-        set { defaults.set(newValue, forKey: hasAquiredShareDataPermissionKey) }
+        set { defaults.set(false, forKey: hasAquiredShareDataPermissionKey) }
     }
 
     static var isBtcSwapped: Bool {
