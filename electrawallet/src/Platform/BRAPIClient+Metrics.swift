@@ -8,15 +8,15 @@
 
 import Foundation
 import UIKit
-import iAd
-import AdSupport
+//import iAd
+//import AdSupport
 
 // swiftlint:disable function_parameter_count
 
 extension BRAPIClient {
     
     func sendLaunchEvent(userAgent: String) {
-        DispatchQueue.global(qos: .background).async { [weak self] in
+        /*DispatchQueue.global(qos: .background).async { [weak self] in
             guard let `self` = self else { return }
             self.getAttributionDetails { attributionInfo in
                 let idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString
@@ -26,7 +26,7 @@ extension BRAPIClient {
                                                                                         attributionInfo: attributionInfo)))
                 self.sendMetrics(payload: payload)
             }
-        }
+        }*/
     }
 
     func sendCheckoutEvent(status: Int,
@@ -67,14 +67,14 @@ extension BRAPIClient {
     }
     
     private func sendMetrics(payload: MetricsPayload) {
-        guard let data = try? JSONEncoder().encode(payload) else { return }
+        /*guard let data = try? JSONEncoder().encode(payload) else { return }
         var req = URLRequest(url: self.url("/me/metrics"))
         req.httpMethod = "POST"
         req.setValue("application/json", forHTTPHeaderField: "Content-Type")
         req.setValue("application/json", forHTTPHeaderField: "Accept")
         req.httpBody = data
         self.dataTaskWithRequest(req, authenticated: true, handler: { _, _, _ in
-        }).resume()
+        }).resume()*/
     }
     
     private var bundles: [String: String] {
@@ -93,13 +93,13 @@ extension BRAPIClient {
     }
     
     private func getAttributionDetails(completion: @escaping (AnyCodable) -> Void) {
-        ADClient.shared().requestAttributionDetails({ (attributionDetails, error) in
+        /*ADClient.shared().requestAttributionDetails({ (attributionDetails, error) in
             if let error = error {
                 print("error fetching attribution details: \(error.localizedDescription)")
             }
             let attributionInfo = AnyCodable(value: attributionDetails ?? "")
             completion(attributionInfo)
-        })
+        })*/
     }
 }
 
