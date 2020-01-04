@@ -759,7 +759,7 @@
 /* button label */
 "StartPaperPhrase.buttonTitle" = "Schrijf Papieren Sleutel Op";
 /* Argument is date */
-"StartPaperPhrase.date" = "Je hebt de paper key voor het laatst opgeschreven op %1$s";
+"StartPaperPhrase.date" = "Je hebt de paper key voor het laatst opgeschreven op %1$@";
 /* button label */
 "StartViewController.createButton" = "Nieuwe wallet maken";
 /* Start view message */
@@ -775,7 +775,7 @@
 /* Retry button label */
 "SyncingView.retry" = "Opnieuw proberen";
 /* "eg. Synced through <Jan 12, 2015> */
-"SyncingView.syncedThrough" = "Laatst gesynchroniseerd op %1$s";
+"SyncingView.syncedThrough" = "Laatst gesynchroniseerd op %1$@";
 /* Syncing view syncing state header text */
 "SyncingView.syncing" = " ";
 /* 6 d (6 days) */
