@@ -1,15 +1,15 @@
 //
 //  TxAddressCell.swift
-//  breadwallet
+//  electraWallet
 //
-//  Created by Ehsan Rezaie on 2017-12-20.
-//  Copyright © 2017 breadwallet LLC. All rights reserved.
+//  Created by CaribouECA on 2020-02-2011.
+//  Copyright © 2020 The Electra Foundation. All rights reserved.
 //
 
 import UIKit
 
-
-class TxAddressCell: TxDetailRowCell {
+class TxAddressExplorerCell: TxDetailRowCell
+{
     
     // MARK: Views
     
@@ -28,6 +28,7 @@ class TxAddressCell: TxDetailRowCell {
         addressButton.constrain([
             addressButton.leadingAnchor.constraint(greaterThanOrEqualTo: titleLabel.trailingAnchor, constant: C.padding[1]),
             addressButton.constraint(.trailing, toView: container),
+            
             addressButton.constraint(.top, toView: container),
             addressButton.constraint(.bottom, toView: container)
             ])
@@ -57,5 +58,4 @@ class TxAddressCell: TxDetailRowCell {
     func set(address: String) {
         addressButton.setTitle(address, for: .normal)
     }
-
 }

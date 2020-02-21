@@ -10,9 +10,9 @@ import UIKit
 
 private extension C {
     static let statusRowHeight: CGFloat = 48.0
-    static let compactContainerHeight: CGFloat = 322.0
+    static let compactContainerHeight: CGFloat = 370.0
     static let expandedContainerHeight: CGFloat = 546.0
-    static let detailsButtonHeight: CGFloat = 65.0
+    static let detailsButtonHeight: CGFloat = 50.0
 }
 
 class TxDetailViewController: UIViewController, Subscriber {
@@ -25,6 +25,7 @@ class TxDetailViewController: UIViewController, Subscriber {
     private let footer = UIView()
     private let separator = UIView()
     private let detailsButton = UIButton(type: .custom)
+    private let explorerButton = UIButton(type: .custom)
     private let tableView = UITableView()
     
     private var containerHeightConstraint: NSLayoutConstraint!
@@ -97,7 +98,9 @@ class TxDetailViewController: UIViewController, Subscriber {
         container.addSubview(tableView)
         container.addSubview(footer)
         container.addSubview(separator)
+        footer.addSubview(explorerButton)
         footer.addSubview(detailsButton)
+        
     }
     
     private func addConstraints() {
@@ -119,13 +122,28 @@ class TxDetailViewController: UIViewController, Subscriber {
             tableView.bottomAnchor.constraint(equalTo: footer.topAnchor)
             ])
         
-        footer.constrainBottomCorners(height: C.detailsButtonHeight)
+        footer.constrainBottomCorners(height: C.detailsButtonHeight + C.padding[8])
         separator.constrain([
             separator.leadingAnchor.constraint(equalTo: footer.leadingAnchor),
             separator.topAnchor.constraint(equalTo: footer.topAnchor, constant: 1.0),
             separator.trailingAnchor.constraint(equalTo: footer.trailingAnchor),
             separator.heightAnchor.constraint(equalToConstant: 0.5) ])
-        detailsButton.constrain(toSuperviewEdges: .zero)
+        
+        detailsButton.constrain([
+            detailsButton.leadingAnchor.constraint(equalTo: footer.leadingAnchor),
+            detailsButton.trailingAnchor.constraint(equalTo: footer.trailingAnchor),
+            detailsButton.bottomAnchor.constraint(equalTo: footer.bottomAnchor, constant: -C.padding[2]),
+            detailsButton.topAnchor.constraint(equalTo: footer.topAnchor, constant: C.detailsButtonHeight + C.padding[2])
+        ])
+        
+        explorerButton.constrain([
+            explorerButton.leadingAnchor.constraint(equalTo: footer.leadingAnchor),
+            explorerButton.trailingAnchor.constraint(equalTo: footer.trailingAnchor),
+            explorerButton.bottomAnchor.constraint(equalTo: footer.topAnchor, constant: C.detailsButtonHeight + C.padding[2]),
+            explorerButton.topAnchor.constraint(equalTo: footer.topAnchor, constant: C.padding[2])
+        ])
+    
+        
     }
     
     private func setupActions() {
@@ -162,6 +180,17 @@ class TxDetailViewController: UIViewController, Subscriber {
         detailsButton.addTarget(self, action: #selector(onToggleDetails), for: .touchUpInside)
         
         header.setTitle(viewModel.title)
+        
+        explorerButton.setImage(#imageLiteral(resourceName: "Explorer"), for: .normal)
+        explorerButton.tintColor = .ecaDarkPurple
+        explorerButton.contentVerticalAlignment = .fill
+        explorerButton.contentHorizontalAlignment = .fill
+        explorerButton.imageView?.contentMode = .scaleAspectFit
+        explorerButton.imageView?.layer.transform = CATransform3DMakeScale(0.8, 0.8, 0.8)
+        
+        explorerButton.tap = strongify(self) { myself in
+                Store.trigger(name: .presentExplorer(self.viewModel.transactionHash))
+        }
     }
     
     private func reload() {

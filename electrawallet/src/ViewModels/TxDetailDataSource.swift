@@ -35,8 +35,10 @@ class TxDetailDataSource: NSObject {
                 return TxStatusCell.self
             case .memo:
                 return TxMemoCell.self
-            case .address, .transactionId:
+            case .address:/*, .transactionId:*/
                 return TxAddressCell.self
+            case .transactionId:
+                return TxAddressExplorerCell.self
             default:
                 return TxLabelCell.self
             }
@@ -161,7 +163,7 @@ extension TxDetailDataSource: UITableViewDataSource {
             labelCell.value = viewModel.blockHeight
             
         case .transactionId:
-            guard let addressCell = cell as? TxAddressCell else { return cell }
+            guard let addressCell = cell as? TxAddressExplorerCell else { return cell }
             addressCell.set(address: viewModel.transactionHash)
             
         case .gasPrice:

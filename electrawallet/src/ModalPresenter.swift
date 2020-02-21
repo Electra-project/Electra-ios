@@ -9,6 +9,7 @@
 import UIKit
 import LocalAuthentication
 import BRCore
+import SafariServices
 
 // swiftlint:disable type_body_length
 // swiftlint:disable cyclomatic_complexity
@@ -63,6 +64,13 @@ class ModalPresenter: Subscriber, Trackable {
             guard let trigger = $0 else { return }
             if case .presentFaq(let articleId, let currency) = trigger {
                 self?.presentFaq(articleId: articleId, currency: currency)
+            }
+        })
+        
+        Store.subscribe(self, name: .presentExplorer(""), callback: { [weak self] in
+            guard let trigger = $0 else {return}
+            if case .presentExplorer(let transactionID) = trigger {
+                self?.presentExplorer(transactionID: transactionID)
             }
         })
 
@@ -254,6 +262,14 @@ class ModalPresenter: Subscriber, Trackable {
         }
         supportCenter.navigate(to: url)
         topViewController?.present(supportCenter, animated: true, completion: {})
+    }
+    
+    func presentExplorer(transactionID: String){
+        if transactionID.count > 0, let url = URL(string: "https://explorer.electraproject.org/tx/\(transactionID)")
+        {
+            let vc = SFSafariViewController(url: url)
+            topViewController?.present(vc, animated: true, completion: nil)
+        }
     }
 
     private func rootModalViewController(_ type: RootModal) -> UIViewController? {
