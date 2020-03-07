@@ -3,6 +3,7 @@
 //
 //  Created by Aaron Voisine on 1/10/18.
 //  Copyright (c) 2019 breadwallet LLC
+//  Copyright (c) 2019-2020 Electra Project
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -49,12 +50,11 @@ typedef struct {
 } BRChainParams;
 
 static const char *BRMainNetDNSSeeds[] = {
-    "139.99.88.125", "167.114.67.75", "54.37.235.120", "51.38.83.67", "79.137.39.240", "51.38.115.250", "54.38.53.207", "167.114.145.147", NULL
+    "seed01.electraproject.org", "seed02.electraproject.org", "seed03.electraproject.org", "seed04.electraproject.org", "seed05.electraproject.org", "seed06.electraproject.org", "seed07.electraproject.org", "seed08.electraproject.org", NULL
 };
 
 static const char *BRTestNetDNSSeeds[] = {
-    "testnet-seed.breadwallet.com.", "testnet-seed.bitcoin.petertodd.org.", "testnet-seed.bluematt.me.",
-    "testnet-seed.bitcoin.schildbach.de.", NULL
+    "testnet-seed.com.", "testnet-seed.org.", "testnet-seed.me.", NULL
 };
 
 // blockchain checkpoints - these are also used as starting points for partial chain downloads, so they must be at
@@ -85,8 +85,10 @@ static const BRCheckPoint BRMainNetCheckpoints[] = {
     { 450000, uint256("214e491946d8f227d7069135f40800df0ec3a6cd7f1b889b2a171839b2fb9a44"), 1568649230, 0x19331f08 },
     { 500000, uint256("13d1610e4d7d2501b2d3139265391c4363de332228d3bac68c9d959133ade686"), 1571988755, 0x193b5fe8 },
     { 520000, uint256("f4b1fd9948df5c7adb785657cebf35cc23acd24878595285e01dd6967ba44216"), 1573322530, 0x194a2d5b },
-    { 575000, uint256("91a6069df63fde8e5330bd84c0363abe688f4617ed6d50d93d56c156b05cb76d"), 1576992081, 0x19459b28 }
-	//{ 600000,
+    { 575000, uint256("91a6069df63fde8e5330bd84c0363abe688f4617ed6d50d93d56c156b05cb76d"), 1576992081, 0x19459b28 },
+    { 600000, uint256("6d0478d3bda0737760fb0e9c821c57527e142264dbf3739233e6d0fe304e5e1c"), 1578659794, 0x193eb1bb },
+    { 645000, uint256("53c4deeef20ed0af390dafbda677061990da797d688ab29e266defabdbd35a79"), 1581661184, 0x1926ae21 }
+	//{ 700000,,
 };
 
 static const BRCheckPoint BRTestNetCheckpoints[] = {
